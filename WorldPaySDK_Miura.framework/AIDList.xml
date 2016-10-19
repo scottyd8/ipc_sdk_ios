@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+        <section name="Applications" type="System.Configuration.AppSettingsSection, System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </configSections>
+  <Applications>
+      <!-- Visa Credit/Debit -->
+      <add key="A0000000031010" value="CreditDebit"/>
+      <!-- Visa Credit/Debit -->
+      <!--<add key="A000000003101002" value="CreditDebit"/>-->
+      <!-- Visa Electron -->
+      <add key="A0000000032010" value="CreditDebit"/>
+      <!-- VISA Interlink -->
+      <add key="A0000000033010" value="CreditDebit"/>
+      <!-- VISA Plus -->
+      <add key="A0000000038010" value="Debit"/>
+      <!-- Visa US Common Debit -->
+      <add key="A0000000980840" value="Debit"/>
+      <!-- Mastercard Credit or Debit -->
+      <add key="A0000000041010" value="CreditDebit"/>
+      <!-- MasterCard Maestro -->
+      <add key="A0000000043060" value="Debit"/>
+      <!-- Cirrus -->
+      <add key="A0000000046000" value="Debit"/>
+      <!-- U.S. Maestro AID -->
+      <add key="A0000000042203" value="CreditDebit"/>
+      <!-- American Express -->
+      <add key="A0000000250000" value="CreditDebit"/>
+      <!-- American Express -->
+      <add key="A0000000250104" value="Credit"/>
+      <!-- ExpressPay -->
+      <add key="A0000000250107" value="Credit"/>
+      <!-- American Express -->
+      <add key="A0000000250108" value="Credit"/>
+      <!-- Discover DPAS -->
+      <add key="A0000001523010" value="Credit"/>
+      <!-- Discover Common Debit -->
+      <add key="A0000001524010" value="Debit"/>
+      <!-- Discover ZIP -->
+      <add key="A0000003241010" value="Credit"/>
+      <!-- MasterCard Issuer Defined -->
+      <add key="A0000000049999" value="Credit"/>
+      <!-- SecureCode Auth EMV-CAP -->
+      <add key="A0000000048002" value="Credit"/>
+      <!-- VISA Specific -->
+      <add key="A0000000034010" value="Credit"/>
+      <!-- VISA Specific -->
+      <add key="A0000000035010" value="Credit"/>
+      <!-- VISA -->
+      <add key="A0000000032020" value="Credit"/>
+      <!-- Mastercard Specific -->
+      <add key="A0000000044010" value="Credit"/>
+      <!-- MasterCard Specific -->
+      <add key="A0000000042010" value="Credit"/>
+      <!-- MasterCard Specific -->
+      <add key="A0000000043010" value="Credit"/>
+      <!-- MasterCard Specific -->
+      <add key="A0000000045010" value="Credit"/>
+      <!-- American Express -->
+      <add key="A000000025010" value="Credit"/>
+      <!-- American Express -->
+      <add key="A00000002501" value="Credit"/>
+      <!-- Discover -->
+      <add key="A0000000152010" value="Credit"/>
+      <!-- INTERAC -->
+      <add key="A0000000277010" value="Credit"/>
+  </Applications>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+  <appSettings>
+    <add key="BaseUrl" value="http://localhost:8081" />
+    <add key="TerminalId" value="12345678" />
+    <add key="StoreNumber" value="12345678" />
+    <add key="secureNetId" value="1000093" />
+    <add key="secureKey" value="cWpQuPz0lI3p" />
+    <add key="mode" value="test" />
+
+    <!-- Local machine dev "http://localhost/GwApiWrapper"      -->
+    <!-- DEV KEY           "http://192.168.67.223:8088/"        -->
+    <!-- QA KEY            "http://192.168.66.223:8088/"        -->
+    <!-- DEMO              "https://gwapi.demo.securenet.com"   -->        
+    <add key="endpoint" value="http://localhost/GwApiWrapper" />           
+            
+    <add key="timeout" value="180000" />
+    <add key="connectionTimeout" value="180000" />
+    <add key="developerId" value="12345678" />
+    <add key="versionId" value="1.2" />
+    <add key="BaudRate" value="9600" />
+    <add key="DataBit" value="8" />
+    <add key="StopBit" value="0" />
+    <add key="Parity" value="1" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+    <add key="ActiveDevicePluginName" value="Verifone VX805" />
+    <add key="LogToEventViewer" value="1" />
+    <add key="LogToConsole" value="1" />
+    <add key="SleepTime" value="2000" />
+    <add key="SendReceiptToPrinter" value="0" />
+    <add key="ReceiptFormat" value="3X6" />    
+  </appSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-7.0.0.0" newVersion="7.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Owin" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.0.1.0" newVersion="3.0.1.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Owin.Cors" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.0.1.0" newVersion="3.0.1.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Cors" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.2.3.0" newVersion="5.2.3.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Http" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.2.3.0" newVersion="5.2.3.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Http.Formatting" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.2.3.0" newVersion="5.2.3.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
