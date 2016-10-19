@@ -1,1 +1,1 @@
-# iOS-demo-app
+# Worldpay Integrated Payment Client for iOS
