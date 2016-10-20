@@ -20,7 +20,7 @@ You can use the card reader on your iOS device:
 4.  Connect your card reader to your iOS device via bluetooth
 5.  Run the app
 
-## More information
+## More Information
 Read the [Getting Started Guide](https://github.com/worldpayus/ipc_sdk_ios/blob/master/docs/Getting%20Started%20with%20the%20Worldpay%20IPC%20SDK%20for%20iOS%20beta%201.pdf) first
 
 ### IPC SDK Class Documentation
