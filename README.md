@@ -14,7 +14,7 @@ The quickest way to see the Integrated Payment Client SDK in action is with the 
 You can run the app in the iOS simulator and exercise the functions that don't require a device.
 
 ### With a Card Reader
-You can use the card reader on your iOS device
+You can use the card reader on your iOS device:
 
 3.  Deploy the app on your iOS device
 4.  Connect your card reader to your iOS device via bluetooth
