@@ -12,15 +12,15 @@
 <body class="appledoc">
 	<header>
 		<div class="container" class="hide-in-xcode">
-
+			
 			<h1 id="library-title">
 				<a href="../index.html">WorldPaySDK </a>
 			</h1>
 
 			<p id="developer-home">
-				<a href="../index.html">Worldpay</a>
+				<a href="../index.html">iMobile3</a>
 			</p>
-
+			
 		</div>
 	</header>
 
@@ -42,39 +42,39 @@
 
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
-
+	
 	<option value="overview">Overview</option>
+	
 
-
-
-
+	
+	
 	<option value="tasks">Tasks</option>
+	
+	
 
-
-
-
-
+	
+	
 	<optgroup label="Properties">
-
+		
 		<option value="//api/name/address">address</option>
-
+		
 		<option value="//api/name/amountOther">amountOther</option>
-
+		
 		<option value="//api/name/card">card</option>
-
+		
 		<option value="//api/name/check">check</option>
-
+		
 		<option value="//api/name/extendedData">extendedData</option>
-
+		
 		<option value="//api/name/token">token</option>
-
+		
 	</optgroup>
+	
 
+	
 
-
-
-
-
+	
+	
 </select>
 						</label>
 					</li>
@@ -89,7 +89,7 @@
 				<main role="main">
 					<h1 class="title">WPYPaymentRequest Class Reference</h1>
 
-
+					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
@@ -99,10 +99,10 @@
 	<td>WPYPaymentRequest.h<br />WPYPaymentRequest.m</td>
 </tr>
 						</tbody></table></div>
+					
 
-
-
-
+                    
+					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
@@ -112,17 +112,17 @@ you must use a child object such as <a href="../Classes/WPYPaymentAuthorize.html
 ID and not passed in as a payment request in an EMV transaction.  The SDK will automatically generate a PaymentVoid request if the terminal requests
 that a transaction be reversed.</p>
 					</div>
+					
+					
 
-
-
-
-
+					
+					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
+						
 
-
-
-
+						
+						
 
 						<div class="task-list">
 							<div class="section-method">
@@ -134,41 +134,41 @@ that a transaction be reversed.</p>
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-
-
+			
+			
 			<div class="method-subsection brief-description">
 				<p>The amountOther is typically used to represent the cashback amount of a transaction and is an optional parameter.  It defaults to 0.00</p>
 			</div>
-
-
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDecimalNumber *amountOther</code></div>
 
+		    
+			
 
+			
 
+			
 
-
-
-
-
-
+			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The amountOther is typically used to represent the cashback amount of a transaction and is an optional parameter.  It defaults to 0.00</p>
 			</div>
+			
 
+			
 
+			
 
-
-
-
-
+			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">WPYPaymentRequest.h</code></p>
 			</div>
-
-
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -180,43 +180,43 @@ that a transaction be reversed.</p>
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-
-
+			
+			
 			<div class="method-subsection brief-description">
 				<p>The card that will be charged on this transaction.  If the card data comes from the terminal, the SDK will automatically add this parameter in order
 to help limit the PCI obligations on the merchant</p>
 			</div>
-
-
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WPYTenderedCard *card</code></div>
 
+		    
+			
 
+			
 
+			
 
-
-
-
-
-
+			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The card that will be charged on this transaction.  If the card data comes from the terminal, the SDK will automatically add this parameter in order
 to help limit the PCI obligations on the merchant</p>
 			</div>
+			
 
+			
 
+			
 
-
-
-
-
+			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">WPYPaymentRequest.h</code></p>
 			</div>
-
-
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -228,41 +228,41 @@ to help limit the PCI obligations on the merchant</p>
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-
-
+			
+			
 			<div class="method-subsection brief-description">
 				<p>If the purchaser is presenting a check instead of a <a href="#//api/name/card">card</a>, this parameter should be supplied at the time of the transaction</p>
 			</div>
-
-
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WPYTenderedCheck *check</code></div>
 
+		    
+			
 
+			
 
+			
 
-
-
-
-
-
+			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>If the purchaser is presenting a check instead of a <a href="#//api/name/card">card</a>, this parameter should be supplied at the time of the transaction</p>
 			</div>
+			
 
+			
 
+			
 
-
-
-
-
+			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">WPYPaymentRequest.h</code></p>
 			</div>
-
-
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -274,41 +274,41 @@ to help limit the PCI obligations on the merchant</p>
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-
-
+			
+			
 			<div class="method-subsection brief-description">
 				<p>If using a payment token instead of a presented <a href="#//api/name/card">card</a> or <a href="#//api/name/check">check</a>, this property should be set</p>
 			</div>
-
-
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WPYPaymentToken *token</code></div>
 
+		    
+			
 
+			
 
+			
 
-
-
-
-
-
+			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>If using a payment token instead of a presented <a href="#//api/name/card">card</a> or <a href="#//api/name/check">check</a>, this property should be set</p>
 			</div>
+			
 
+			
 
+			
 
-
-
-
-
+			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">WPYPaymentRequest.h</code></p>
 			</div>
-
-
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -320,41 +320,41 @@ to help limit the PCI obligations on the merchant</p>
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-
-
+			
+			
 			<div class="method-subsection brief-description">
 				<p>Address for the account holder</p>
 			</div>
-
-
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WPYAddressInfo *address</code></div>
 
+		    
+			
 
+			
 
+			
 
-
-
-
-
-
+			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Address for the account holder</p>
 			</div>
+			
 
+			
 
+			
 
-
-
-
-
+			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">WPYPaymentRequest.h</code></p>
 			</div>
-
-
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -366,67 +366,67 @@ to help limit the PCI obligations on the merchant</p>
 		<div class="pointy-thing"></div>
 
 		<div class="method-info-container">
-
-
+			
+			
 			<div class="method-subsection brief-description">
 				<p>Optional extended <a href="#//api/name/card">card</a> data to be provided by the merchant.  On <a href="#//api/name/card">card</a> present transactions, the SDK will automatically add this object and populate
 <a href="#//api/name/card">card</a> terminal information, including &ldquo;Terminal ID&rdquo;.  If a custom terminal ID is required, this object should be included or the terminal ID should
 be set via the request Auth <a href="#//api/name/token">token</a> method</p>
 			</div>
-
-
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WPYExtendedCardData *extendedData</code></div>
 
+		    
+			
 
+			
 
+			
 
-
-
-
-
-
+			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Optional extended <a href="#//api/name/card">card</a> data to be provided by the merchant.  On <a href="#//api/name/card">card</a> present transactions, the SDK will automatically add this object and populate
 <a href="#//api/name/card">card</a> terminal information, including &ldquo;Terminal ID&rdquo;.  If a custom terminal ID is required, this object should be included or the terminal ID should
 be set via the request Auth <a href="#//api/name/token">token</a> method</p>
 			</div>
+			
 
+			
 
+			
 
-
-
-
-
+			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">WPYPaymentRequest.h</code></p>
 			</div>
-
-
+			
+			
 		</div>
 	</div>
 </div>
 						</div>
-
+						
 					</div>
+					
+					
 
-
-
-
-
-
+                    
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
-
-						<p class="copyright">Copyright &copy; 2016 Worldpay. All rights reserved. Updated: 2016-10-20</p>
-
-
+						
+						<p class="copyright">Copyright &copy; 2016 iMobile3. All rights reserved. Updated: 2016-10-20</p>
+						
+						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
-
+						
 					</div>
 				</footer>
 			</div>

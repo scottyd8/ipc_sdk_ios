@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AdelleSans_Regular.otf">
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoidRefundViewController">
+            <connections>
+                <outlet property="amountTextField" destination="G9B-PZ-rPQ" id="I5j-T8-wnU"/>
+                <outlet property="startButton" destination="XbT-Op-vSo" id="eET-1y-Fwy"/>
+                <outlet property="transactionIdTextField" destination="XqD-BV-3FO" id="9Hu-Pv-mcA"/>
+                <outlet property="transactionTypeDropDown" destination="h1P-6H-ECf" id="UGI-bs-E4b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="textFields" destination="XqD-BV-3FO" id="0jw-TJ-c2Y"/>
+                <outletCollection property="textFields" destination="G9B-PZ-rPQ" id="SCK-lL-jaQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-8Q-ufW">
+                    <rect key="frame" x="8" y="77" width="130" height="22"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h1P-6H-ECf" customClass="DropDownTextField">
+                    <rect key="frame" x="195" y="73" width="397" height="30"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8f-ia-WxP">
+                    <rect key="frame" x="8" y="112" width="109" height="22"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XqD-BV-3FO">
+                    <rect key="frame" x="195" y="108" width="397" height="30"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9B-PZ-rPQ">
+                    <rect key="frame" x="195" y="143" width="397" height="30"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cb-gJ-DTK">
+                    <rect key="frame" x="8" y="147" width="63" height="22"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbT-Op-vSo">
+                    <rect key="frame" x="234" y="206" width="133" height="35"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <state key="normal" title="Start Transaction"/>
+                    <connections>
+                        <action selector="startTransaction:" destination="-1" eventType="touchUpInside" id="Wi0-PE-d8A"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XbT-Op-vSo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0PF-dO-TBS"/>
+                <constraint firstItem="XqD-BV-3FO" firstAttribute="trailing" secondItem="h1P-6H-ECf" secondAttribute="trailing" id="7af-YJ-Akr"/>
+                <constraint firstItem="h1P-6H-ECf" firstAttribute="leading" secondItem="cwg-8Q-ufW" secondAttribute="trailing" constant="57" id="Gch-cE-7fQ"/>
+                <constraint firstItem="2Cb-gJ-DTK" firstAttribute="top" secondItem="N8f-ia-WxP" secondAttribute="bottom" constant="13" id="J5g-C8-yQT"/>
+                <constraint firstAttribute="trailing" secondItem="h1P-6H-ECf" secondAttribute="trailing" constant="8" id="LrK-lx-1Nq"/>
+                <constraint firstItem="2Cb-gJ-DTK" firstAttribute="leading" secondItem="N8f-ia-WxP" secondAttribute="leading" id="QYM-Wf-CXH"/>
+                <constraint firstItem="cwg-8Q-ufW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="V8l-4r-Qeg"/>
+                <constraint firstItem="h1P-6H-ECf" firstAttribute="centerY" secondItem="cwg-8Q-ufW" secondAttribute="centerY" id="WZz-bm-QOZ"/>
+                <constraint firstItem="G9B-PZ-rPQ" firstAttribute="trailing" secondItem="XqD-BV-3FO" secondAttribute="trailing" id="czj-Na-5Bc"/>
+                <constraint firstItem="XqD-BV-3FO" firstAttribute="centerY" secondItem="N8f-ia-WxP" secondAttribute="centerY" id="fZV-UF-hEM"/>
+                <constraint firstItem="N8f-ia-WxP" firstAttribute="top" secondItem="cwg-8Q-ufW" secondAttribute="bottom" constant="13" id="fcb-tg-jpC"/>
+                <constraint firstItem="XqD-BV-3FO" firstAttribute="leading" secondItem="h1P-6H-ECf" secondAttribute="leading" id="hTy-Oy-0u3"/>
+                <constraint firstItem="N8f-ia-WxP" firstAttribute="leading" secondItem="cwg-8Q-ufW" secondAttribute="leading" id="oGj-9G-Jd3"/>
+                <constraint firstItem="G9B-PZ-rPQ" firstAttribute="leading" secondItem="XqD-BV-3FO" secondAttribute="leading" id="qmz-QB-mKW"/>
+                <constraint firstItem="XbT-Op-vSo" firstAttribute="top" secondItem="G9B-PZ-rPQ" secondAttribute="bottom" constant="33" id="uft-dB-wj3"/>
+                <constraint firstItem="G9B-PZ-rPQ" firstAttribute="centerY" secondItem="2Cb-gJ-DTK" secondAttribute="centerY" id="yx9-6M-dKx"/>
+                <constraint firstItem="cwg-8Q-ufW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="yya-of-ArJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

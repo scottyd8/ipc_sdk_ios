@@ -6,7 +6,7 @@
 	<dict>
 		<key>AIDList.xml</key>
 		<data>
-		EV82+ERi54d32Ln9k5laFnyDoi8=
+		0REfsxy9nV1kYVQ3/ffoOiL6psQ=
 		</data>
 		<key>Headers/WPYAddressInfo.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vi6sG+MYeT8ZMrZGfZj/+SBxQTU=
+		KFNpgfVBtOF8bd9vQ3qYI7LnMvE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -179,11 +179,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EV82+ERi54d32Ln9k5laFnyDoi8=
+			0REfsxy9nV1kYVQ3/ffoOiL6psQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			910t+0fd11ezaidJJe1Qw0chsjYfN5n9UxzQRU+wx4Y=
+			fFQTYlMsbwXzy+LDvuymFuWhjXLXRe0zXcEDpgWFh9c=
 			</data>
 		</dict>
 		<key>Headers/WPYAddressInfo.h</key>
