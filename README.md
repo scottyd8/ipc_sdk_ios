@@ -7,13 +7,16 @@ The SDK package is coming on 10/22/2016!
 ## Building the Sample Application
 The quickest way to see the Integrated Payment Client SDK in action is with the sample application.
 
+### Quick win
 1.  Get the sample app here:  http://github.com/worldpayus/ipc_sdk_ios/sampleapp
-2.  Open the project in Xcode and build it
+2.  Open the project in Xcode, build it and run it in the simulator
+
+You can run the app in the iOS simulator and exercise the functions that don't require a device.
+
+### After you have received your card reader
 3.  Deploy the app on your iOS device
 4.  Connect your card reader to your iOS device via bluetooth
 5.  Run the app
-
-Simply open the project in Xcode, build it, and run.  Be sure to establish a bluetooth connection with your card reader.
 
 ## More information
 Read the [Getting Started Guide](https://github.com/worldpayus/ipc_sdk_ios/blob/master/docs/Getting%20Started%20with%20the%20Worldpay%20IPC%20SDK%20for%20iOS%20beta%201.pdf) first
