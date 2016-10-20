@@ -1,0 +1,6 @@
+framework module WorldPaySDK_AC {
+  umbrella header "WorldPaySDK_AC.h"
+
+  export *
+  module * { export * }
+}
