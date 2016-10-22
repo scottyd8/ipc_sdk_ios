@@ -1,0 +1,23 @@
+*.o
+*.lo
+*.la
+*.al
+.libs
+*.so
+*.so.[0-9]*
+*.a
+*.pyc
+*.pyo
+*.rej
+*~ #*# .#*
+.*.swp
+.DS_Store
+*.mode1v3
+*.mode2v3
+*.pbxuser
+Icon?
+xcuserdata
+*.xcuserdatad
+*.xccheckout
+*.xcworkspacedata
+DerivedData
