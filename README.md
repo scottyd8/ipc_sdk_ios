@@ -1,8 +1,4 @@
-# Worldpay Integrated Payment Client for IOS BETA
-
-The SDK package is coming on 10/22/2016!
-
-
+# Worldpay Integrated Payment Client for IOS
 
 ## Building the Sample Application
 The quickest way to see the Integrated Payment Client SDK in action is with the sample application.
