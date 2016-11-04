@@ -1,4 +1,4 @@
-# Worldpay Integrated Payment Client for IOS
+# Worldpay Integrated Payment Client for IOS (Beta)
 
 ## Building the Sample Application
 The quickest way to see the Integrated Payment Client SDK in action is with the sample application.
