@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WPYDevicePrompt Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WorldPaySDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Worldpay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WPYDevicePrompt Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>WPYSwiper.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">WPYDevicePrompt</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(uint8_t, WPYDevicePrompt ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptInsertCard</a> = 0 x00,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptInsertOrSwipe</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptChipCardSwiped</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptSwipeError</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptConfirmAmount</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptNonICCard</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptApproved</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptDeclined</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptCanceled</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptRetry</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptTransactionTimedOut</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptNfcErrorCardInserted</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptNfcErrorCardSwiped</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptNfcErrorUseICCard</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptNfcErrorUseICCOrMSR</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptNfcHardwareError</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptEmvReaderError</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptEmvMSRFallback</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptEmvInvalidCard</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptProcessing</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptEmvRemoveCard</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptTapCardAgain</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptReversal</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptCallBank</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptNotAccepted</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptRemoveCard</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptMultipleCardsDetected</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">WPYDevicePromptTapCard</a>,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="WPYDevicePromptInsertCard"></a><code>WPYDevicePromptInsertCard</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptInsertOrSwipe"></a><code>WPYDevicePromptInsertOrSwipe</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptChipCardSwiped"></a><code>WPYDevicePromptChipCardSwiped</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptSwipeError"></a><code>WPYDevicePromptSwipeError</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptConfirmAmount"></a><code>WPYDevicePromptConfirmAmount</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptNonICCard"></a><code>WPYDevicePromptNonICCard</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptApproved"></a><code>WPYDevicePromptApproved</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptDeclined"></a><code>WPYDevicePromptDeclined</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptCanceled"></a><code>WPYDevicePromptCanceled</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptRetry"></a><code>WPYDevicePromptRetry</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptTransactionTimedOut"></a><code>WPYDevicePromptTransactionTimedOut</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptNfcErrorCardInserted"></a><code>WPYDevicePromptNfcErrorCardInserted</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptNfcErrorCardSwiped"></a><code>WPYDevicePromptNfcErrorCardSwiped</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptNfcErrorUseICCard"></a><code>WPYDevicePromptNfcErrorUseICCard</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptNfcErrorUseICCOrMSR"></a><code>WPYDevicePromptNfcErrorUseICCOrMSR</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptNfcHardwareError"></a><code>WPYDevicePromptNfcHardwareError</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptEmvReaderError"></a><code>WPYDevicePromptEmvReaderError</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptEmvMSRFallback"></a><code>WPYDevicePromptEmvMSRFallback</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptEmvInvalidCard"></a><code>WPYDevicePromptEmvInvalidCard</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptProcessing"></a><code>WPYDevicePromptProcessing</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptEmvRemoveCard"></a><code>WPYDevicePromptEmvRemoveCard</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptTapCardAgain"></a><code>WPYDevicePromptTapCardAgain</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptReversal"></a><code>WPYDevicePromptReversal</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptCallBank"></a><code>WPYDevicePromptCallBank</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptNotAccepted"></a><code>WPYDevicePromptNotAccepted</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptRemoveCard"></a><code>WPYDevicePromptRemoveCard</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptMultipleCardsDetected"></a><code>WPYDevicePromptMultipleCardsDetected</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="WPYDevicePromptTapCard"></a><code>WPYDevicePromptTapCard</code></dt>
+<dd>
+
+
+<p>When certain text needs to be displayed to the user, these prompts will be sent to the application developer to indicate
+what kind of text should be displayed.  For terminals that canDisplayText, you can choose not to handle device prompt text
+if you&rsquo;d like to use the default text.  For terminals that cannot display text, all of these prompts must be handled and
+properly presented to the card holder</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">WPYSwiper.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">WPYSwiper.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Worldpay. All rights reserved. Updated: 2016-11-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

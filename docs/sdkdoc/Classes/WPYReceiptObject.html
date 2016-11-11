@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WPYReceiptObject Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WorldPaySDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Worldpay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/applicationCryptogram">applicationCryptogram</option>
+		
+		<option value="//api/name/applicationId">applicationId</option>
+		
+		<option value="//api/name/applicationPreferredName">applicationPreferredName</option>
+		
+		<option value="//api/name/authMode">authMode</option>
+		
+		<option value="//api/name/cardEntryMode">cardEntryMode</option>
+		
+		<option value="//api/name/cardHolderName">cardHolderName</option>
+		
+		<option value="//api/name/cardHolderVerificationMethod">cardHolderVerificationMethod</option>
+		
+		<option value="//api/name/cardRequiresSignature">cardRequiresSignature</option>
+		
+		<option value="//api/name/maskedPan">maskedPan</option>
+		
+		<option value="//api/name/terminalVerificationResults">terminalVerificationResults</option>
+		
+		<option value="//api/name/transactionStatusInformation">transactionStatusInformation</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WPYReceiptObject Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/WPYDomainObject.html">WPYDomainObject</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WPYReceiptObject.h<br />WPYReceiptObject.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The purpose of this object is to consolidate all of the information that a developer will need to create
+a receipt that is in compliance with card brand and Worldpay receipt formatting requirements</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cardHolderName" title="cardHolderName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardHolderName">&nbsp;&nbsp;cardHolderName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The cardholder&rsquo;s name.  It may be &ldquo;Last Name / First Name&rdquo; or just &ldquo;Last Name&rdquo; depending on how the data
+was acquired</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *cardHolderName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The cardholder&rsquo;s name.  It may be &ldquo;Last Name / First Name&rdquo; or just &ldquo;Last Name&rdquo; depending on how the data
+was acquired</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maskedPan" title="maskedPan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maskedPan">&nbsp;&nbsp;maskedPan</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The masked card number</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *maskedPan</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The masked card number</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cardEntryMode" title="cardEntryMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardEntryMode">&nbsp;&nbsp;cardEntryMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This field indicates how the terminal acquired the card data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) WPYCardEntryMode cardEntryMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This field indicates how the terminal acquired the card data</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/applicationId" title="applicationId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applicationId">&nbsp;&nbsp;applicationId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For EMV transactions only: This lists the Application ID that was used in the card transaction.  This data must
+be included on all receipts, if available</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *applicationId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For EMV transactions only: This lists the Application ID that was used in the card transaction.  This data must
+be included on all receipts, if available</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/applicationPreferredName" title="applicationPreferredName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applicationPreferredName">&nbsp;&nbsp;applicationPreferredName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For EMV transactions only: This is &lsquo;Brand Name&rsquo; of the Card as supplied by the issuer and is required to be displayed on all receipts,
+if available</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *applicationPreferredName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For EMV transactions only: This is &lsquo;Brand Name&rsquo; of the Card as supplied by the issuer and is required to be displayed on all receipts,
+if available</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/terminalVerificationResults" title="terminalVerificationResults"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminalVerificationResults">&nbsp;&nbsp;terminalVerificationResults</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For EMV transactions only: This is the TVR code that indicates what actions were performed between the terminal and the
+card to validate the authenticity of the card and the cardholder.  This information should be included on all receipts, if
+available</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *terminalVerificationResults</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For EMV transactions only: This is the TVR code that indicates what actions were performed between the terminal and the
+card to validate the authenticity of the card and the cardholder.  This information should be included on all receipts, if
+available</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionStatusInformation" title="transactionStatusInformation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionStatusInformation">&nbsp;&nbsp;transactionStatusInformation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For EMV transactions only: This contains information about the functions that were performed throughout the transaction.
+This should be included on all receipts, if available</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *transactionStatusInformation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For EMV transactions only: This contains information about the functions that were performed throughout the transaction.
+This should be included on all receipts, if available</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/applicationCryptogram" title="applicationCryptogram"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applicationCryptogram">&nbsp;&nbsp;applicationCryptogram</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For EMV transactions only: This contains the application cryptogram supplied by the terminal</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *applicationCryptogram</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For EMV transactions only: This contains the application cryptogram supplied by the terminal</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cardHolderVerificationMethod" title="cardHolderVerificationMethod"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardHolderVerificationMethod">&nbsp;&nbsp;cardHolderVerificationMethod</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This property contains the cardholder verification method that was used to validate that a valid user presented the card.
+You can use this information to help determine whether or not a signature should be captured, and the receipt should indicate
+what method was used to validate the transaction, if any.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) WPYCVMethod cardHolderVerificationMethod</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This property contains the cardholder verification method that was used to validate that a valid user presented the card.
+You can use this information to help determine whether or not a signature should be captured, and the receipt should indicate
+what method was used to validate the transaction, if any.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authMode" title="authMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authMode">&nbsp;&nbsp;authMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This property indicates whether or not the transaction result is due to a determination made by the issuer / gateway or the
+card / terminal.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) WPYAuthMode authMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This property indicates whether or not the transaction result is due to a determination made by the issuer / gateway or the
+card / terminal.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cardRequiresSignature" title="cardRequiresSignature"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardRequiresSignature">&nbsp;&nbsp;cardRequiresSignature</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This flag is set when the SDK believes that a signature should be required for the transaction
+While this is usually set in accordance with the CVM Method above, the Miura terminal sometimes
+indicates that a signature is required even on a PIN based transaction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL cardRequiresSignature</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This flag is set when the SDK believes that a signature should be required for the transaction
+While this is usually set in accordance with the CVM Method above, the Miura terminal sometimes
+indicates that a signature is required even on a PIN based transaction.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYReceiptObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Worldpay. All rights reserved. Updated: 2016-11-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

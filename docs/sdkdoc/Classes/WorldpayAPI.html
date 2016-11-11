@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WorldpayAPI Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WorldPaySDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Worldpay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/debugDelegate">debugDelegate</option>
+		
+		<option value="//api/name/enableTestHost">enableTestHost</option>
+		
+		<option value="//api/name/enableTestHostDebug">enableTestHostDebug</option>
+		
+		<option value="//api/name/terminalId">terminalId</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/instance">+ instance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearSDKKeychain">- clearSDKKeychain</option>
+		
+		<option value="//api/name/closeCurrentBatchWithCompletion:">- closeCurrentBatchWithCompletion:</option>
+		
+		<option value="//api/name/createCustomer:withCompletion:">- createCustomer:withCompletion:</option>
+		
+		<option value="//api/name/createGiftCard:withCompletion:">- createGiftCard:withCompletion:</option>
+		
+		<option value="//api/name/createPaymentMethod:customerId:withCompletion:">- createPaymentMethod:customerId:withCompletion:</option>
+		
+		<option value="//api/name/deletePaymentMethod:withCompletion:">- deletePaymentMethod:withCompletion:</option>
+		
+		<option value="//api/name/generateAuthToken:withCompletion:">- generateAuthToken:withCompletion:</option>
+		
+		<option value="//api/name/getCurrentBatchWithCompletion:">- getCurrentBatchWithCompletion:</option>
+		
+		<option value="//api/name/getCustomerDataForCustomerId:withCompletion:">- getCustomerDataForCustomerId:withCompletion:</option>
+		
+		<option value="//api/name/getGiftCard:withCompletion:">- getGiftCard:withCompletion:</option>
+		
+		<option value="//api/name/getPaymentMethod:withCompletion:">- getPaymentMethod:withCompletion:</option>
+		
+		<option value="//api/name/getTransactionDetails:withCompletion:">- getTransactionDetails:withCompletion:</option>
+		
+		<option value="//api/name/getTransactionsInBatch:withCompletion:">- getTransactionsInBatch:withCompletion:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/paymentAuthorize:withCompletion:">- paymentAuthorize:withCompletion:</option>
+		
+		<option value="//api/name/paymentCapture:withCompletion:">- paymentCapture:withCompletion:</option>
+		
+		<option value="//api/name/paymentCharge:withCompletion:">- paymentCharge:withCompletion:</option>
+		
+		<option value="//api/name/paymentCredit:withCompletion:">- paymentCredit:withCompletion:</option>
+		
+		<option value="//api/name/paymentRefund:withCompletion:">- paymentRefund:withCompletion:</option>
+		
+		<option value="//api/name/paymentVoid:withCompletion:">- paymentVoid:withCompletion:</option>
+		
+		<option value="//api/name/searchTransactions:withCompletion:">- searchTransactions:withCompletion:</option>
+		
+		<option value="//api/name/swiperWithDelegate:">- swiperWithDelegate:</option>
+		
+		<option value="//api/name/updateCustomer:withData:andCompletion:">- updateCustomer:withData:andCompletion:</option>
+		
+		<option value="//api/name/updateGiftCard:withCompletion:">- updateGiftCard:withCompletion:</option>
+		
+		<option value="//api/name/updatePaymentMethod:paymentMethod:withCompletion:">- updatePaymentMethod:paymentMethod:withCompletion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WorldpayAPI Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WorldPayAPI.h<br />WorldPayAPI.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/enableTestHost" title="enableTestHost"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableTestHost">&nbsp;&nbsp;enableTestHost</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the WorldpayAPI object to send messages to the test host configured at compile time</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL enableTestHost</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tells the WorldpayAPI object to send messages to the test host configured at compile time</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableTestHostDebug" title="enableTestHostDebug"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableTestHostDebug">&nbsp;&nbsp;enableTestHostDebug</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When enabled, and TestHost is enabled, the <a href="#//api/name/debugDelegate">debugDelegate</a> will be sent HTTP request and response bodies for logging purposes.
+These bodies may contain PCI or PII data and may only be used with test cards on a test environment</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL enableTestHostDebug</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When enabled, and TestHost is enabled, the <a href="#//api/name/debugDelegate">debugDelegate</a> will be sent HTTP request and response bodies for logging purposes.
+These bodies may contain PCI or PII data and may only be used with test cards on a test environment</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/debugDelegate" title="debugDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debugDelegate">&nbsp;&nbsp;debugDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The delegate that would like to receive debug messages containing HTTP request and response bodies</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;WPYDebugDelegate&gt; debugDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The delegate that would like to receive debug messages containing HTTP request and response bodies</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/terminalId" title="terminalId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminalId">&nbsp;&nbsp;terminalId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The terminal ID set when the auth token request was made</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *terminalId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The terminal ID set when the auth token request was made</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/instance" title="instance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/instance">+&nbsp;instance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns shared instance pointer of the WorldpayAPI entry point</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (WorldpayAPI *)instance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>instance pointer to singleton class</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns shared instance pointer of the WorldpayAPI entry point</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Class instance init unavailable.  Use [WorldpayApi instance] to get class <a href="#//api/name/instance">instance</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="#//api/name/instance">instance</a> of class</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Class instance init unavailable.  Use [WorldpayApi instance] to get class <a href="#//api/name/instance">instance</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiperWithDelegate:" title="swiperWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiperWithDelegate:">&ndash;&nbsp;swiperWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a pointer to a credit card <a href="#//api/name/swiper">swiper</a> object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (WPYSwiper *)swiperWithDelegate:(id&lt;WPYSwiperDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>that will listen to <a href="#//api/name/swiper">swiper</a> events</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="../Classes/WPYSwiper.html">WPYSwiper</a> object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a pointer to a credit card <a href="#//api/name/swiper">swiper</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateAuthToken:withCompletion:" title="generateAuthToken:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateAuthToken:withCompletion:">&ndash;&nbsp;generateAuthToken:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authenticates user credentials against the World Pay server. The token
+will automatically be saved in the application keychain by the SDK and
+can be removed by calling: - (void)<a href="#//api/name/clearSDKKeychain">clearSDKKeychain</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)generateAuthToken:(WPYAuthTokenRequest *)<em>authTokenRequest</em> withCompletion:(void ( ^ ) ( NSString *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Auth</code></th>
+						<td><p>Token Request object containing user credentials</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Authenticates user credentials against the World Pay server. The token
+will automatically be saved in the application keychain by the SDK and
+can be removed by calling: - (void)<a href="#//api/name/clearSDKKeychain">clearSDKKeychain</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearSDKKeychain" title="clearSDKKeychain"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearSDKKeychain">&ndash;&nbsp;clearSDKKeychain</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clears the keychain data out of the application. Completely resets the auth token information
+and removes it from the application keychain.  A new auth token must be generated in order
+to make calls to the web APIs after this is executed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearSDKKeychain</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Clears the keychain data out of the application. Completely resets the auth token information
+and removes it from the application keychain.  A new auth token must be generated in order
+to make calls to the web APIs after this is executed</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurrentBatchWithCompletion:" title="getCurrentBatchWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurrentBatchWithCompletion:">&ndash;&nbsp;getCurrentBatchWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the current batch identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCurrentBatchWithCompletion:(void ( ^ ) ( WPYBatchResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Gets the current batch identifier</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeCurrentBatchWithCompletion:" title="closeCurrentBatchWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeCurrentBatchWithCompletion:">&ndash;&nbsp;closeCurrentBatchWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Closes the current batch</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)closeCurrentBatchWithCompletion:(void ( ^ ) ( WPYBatchResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Closes the current batch</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCustomerDataForCustomerId:withCompletion:" title="getCustomerDataForCustomerId:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCustomerDataForCustomerId:withCompletion:">&ndash;&nbsp;getCustomerDataForCustomerId:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets customer data from the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCustomerDataForCustomerId:(NSString *)<em>customerId</em> withCompletion:(void ( ^ ) ( WPYCustomerResponseData *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Customer</code></th>
+						<td><p>ID that reqpresents the desired customer</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Gets customer data from the server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createCustomer:withCompletion:" title="createCustomer:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createCustomer:withCompletion:">&ndash;&nbsp;createCustomer:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new customer object to be stored on the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createCustomer:(WPYCustomerRequestData *)<em>customerData</em> withCompletion:(void ( ^ ) ( WPYCustomerResponseData *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>customer data that should be saved on the server</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new customer object to be stored on the server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateCustomer:withData:andCompletion:" title="updateCustomer:withData:andCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateCustomer:withData:andCompletion:">&ndash;&nbsp;updateCustomer:withData:andCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates an existing customer on the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateCustomer:(NSString *)<em>customerId</em> withData:(WPYCustomerRequestData *)<em>customerData</em> andCompletion:(void ( ^ ) ( WPYCustomerResponseData *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>customerId</code></th>
+						<td><p>corresponding to the customer being updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>customer data that should be updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates an existing customer on the server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGiftCard:withCompletion:" title="getGiftCard:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGiftCard:withCompletion:">&ndash;&nbsp;getGiftCard:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Gift Card from server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getGiftCard:(NSString *)<em>identifier</em> withCompletion:(void ( ^ ) ( WPYGiftCardResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>for gift card</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Gift Card from server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateGiftCard:withCompletion:" title="updateGiftCard:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateGiftCard:withCompletion:">&ndash;&nbsp;updateGiftCard:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update gift card stored on the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateGiftCard:(NSString *)<em>identifer</em> withCompletion:(void ( ^ ) ( WPYGiftCardResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update gift card stored on the server</p>
+
+<p>param identifier for the card to be updated</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createGiftCard:withCompletion:" title="createGiftCard:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGiftCard:withCompletion:">&ndash;&nbsp;createGiftCard:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a new gift card to be stored on the serfver</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createGiftCard:(NSString *)<em>identifier</em> withCompletion:(void ( ^ ) ( WPYGiftCardResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>of the card to be stored on the server</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Create a new gift card to be stored on the serfver</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deletePaymentMethod:withCompletion:" title="deletePaymentMethod:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deletePaymentMethod:withCompletion:">&ndash;&nbsp;deletePaymentMethod:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete a payment method being stored on the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deletePaymentMethod:(WPYPaymentMethod *)<em>paymentMethod</em> withCompletion:(void ( ^ ) ( NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>payment</code></th>
+						<td><p>method to be deleted on the server</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Delete a payment method being stored on the server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPaymentMethod:withCompletion:" title="getPaymentMethod:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPaymentMethod:withCompletion:">&ndash;&nbsp;getPaymentMethod:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get payment method from the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPaymentMethod:(NSString *)<em>identifier</em> withCompletion:(void ( ^ ) ( WPYPaymentMethod *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>of the payment method stored on the server</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get payment method from the server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatePaymentMethod:paymentMethod:withCompletion:" title="updatePaymentMethod:paymentMethod:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatePaymentMethod:paymentMethod:withCompletion:">&ndash;&nbsp;updatePaymentMethod:paymentMethod:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update an existing payment method on the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updatePaymentMethod:(WPYPaymentMethodRequest *)<em>request</em> paymentMethod:(WPYPaymentMethod *)<em>paymentMethod</em> withCompletion:(void ( ^ ) ( WPYPaymentMethod *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Request</code></th>
+						<td><p>object containing the new payment method information</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>existing payment method that is to be updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update an existing payment method on the server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createPaymentMethod:customerId:withCompletion:" title="createPaymentMethod:customerId:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createPaymentMethod:customerId:withCompletion:">&ndash;&nbsp;createPaymentMethod:customerId:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a new payment method on the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createPaymentMethod:(WPYPaymentMethodRequest *)<em>request</em> customerId:(NSString *)<em>customerId</em> withCompletion:(void ( ^ ) ( WPYPaymentMethod *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Request</code></th>
+						<td><p>object containing the payment method information</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>The</code></th>
+						<td><p>customer ID for the new payment method</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Create a new payment method on the server</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentAuthorize:withCompletion:" title="paymentAuthorize:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentAuthorize:withCompletion:">&ndash;&nbsp;paymentAuthorize:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request Authorization of a payment</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)paymentAuthorize:(WPYPaymentAuthorize *)<em>request</em> withCompletion:(void ( ^ ) ( WPYPaymentResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>payment</code></th>
+						<td><p>authorize request object with the appropriate payment information</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Request Authorization of a payment</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentCapture:withCompletion:" title="paymentCapture:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCapture:withCompletion:">&ndash;&nbsp;paymentCapture:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Capture an authorized payment</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)paymentCapture:(WPYPaymentCapture *)<em>request</em> withCompletion:(void ( ^ ) ( WPYPaymentResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>payment</code></th>
+						<td><p>capture request object with the information about the authorized request</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Capture an authorized payment</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentCharge:withCompletion:" title="paymentCharge:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCharge:withCompletion:">&ndash;&nbsp;paymentCharge:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Immediately charge payment using the requested payment type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)paymentCharge:(WPYPaymentCharge *)<em>request</em> withCompletion:(void ( ^ ) ( WPYPaymentResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>payment</code></th>
+						<td><p>charge request object containing all of the information needed to charge a payment</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Immediately charge payment using the requested payment type</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentVoid:withCompletion:" title="paymentVoid:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentVoid:withCompletion:">&ndash;&nbsp;paymentVoid:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Void an authorized payment</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)paymentVoid:(WPYPaymentVoid *)<em>request</em> withCompletion:(void ( ^ ) ( WPYPaymentResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Payment</code></th>
+						<td><p>Void request object that contains the needed information to void an authorized transaction</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Void an authorized payment</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentRefund:withCompletion:" title="paymentRefund:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentRefund:withCompletion:">&ndash;&nbsp;paymentRefund:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refund a payment that has been captured</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)paymentRefund:(WPYPaymentRefund *)<em>request</em> withCompletion:(void ( ^ ) ( WPYPaymentResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>PaymentRefund</code></th>
+						<td><p>request object needed to refund a captured payment</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Refund a payment that has been captured</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentCredit:withCompletion:" title="paymentCredit:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCredit:withCompletion:">&ndash;&nbsp;paymentCredit:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request a credit to the tender in the request object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)paymentCredit:(WPYPaymentCredit *)<em>request</em> withCompletion:(void ( ^ ) ( WPYPaymentResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Payment</code></th>
+						<td><p>Credit request object containing the tender info needed to apply a credit</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Request a credit to the tender in the request object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTransactionDetails:withCompletion:" title="getTransactionDetails:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTransactionDetails:withCompletion:">&ndash;&nbsp;getTransactionDetails:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get details for a transaction by identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getTransactionDetails:(NSString *)<em>transactionId</em> withCompletion:(void ( ^ ) ( WPYTransactionResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transaction</code></th>
+						<td><p>identifier</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get details for a transaction by identifier</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchTransactions:withCompletion:" title="searchTransactions:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchTransactions:withCompletion:">&ndash;&nbsp;searchTransactions:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Search transactions</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)searchTransactions:(WPYTransactionSearch *)<em>searchParams</em> withCompletion:(void ( ^ ) ( WPYTransactionSearchResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>search</code></th>
+						<td><p>parameters include the start and end date for the search</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Search transactions</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTransactionsInBatch:withCompletion:" title="getTransactionsInBatch:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTransactionsInBatch:withCompletion:">&ndash;&nbsp;getTransactionsInBatch:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get transactions in the current batch</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getTransactionsInBatch:(NSString *)<em>batchId</em> withCompletion:(void ( ^ ) ( WPYBatchResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>batch</code></th>
+						<td><p>identifier for transactions</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get transactions in the current batch</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Worldpay. All rights reserved. Updated: 2016-11-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

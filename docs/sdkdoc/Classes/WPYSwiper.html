@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WPYSwiper Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WorldPaySDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Worldpay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/audioJackSupported">audioJackSupported</option>
+		
+		<option value="//api/name/bluetoothSupported">bluetoothSupported</option>
+		
+		<option value="//api/name/connectionState">connectionState</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/deviceInputType">deviceInputType</option>
+		
+		<option value="//api/name/manualEntrySupported">manualEntrySupported</option>
+		
+		<option value="//api/name/nfcSupported">nfcSupported</option>
+		
+		<option value="//api/name/swiperType">swiperType</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/accountTypeForAID:">- accountTypeForAID:</option>
+		
+		<option value="//api/name/beginEMVTransactionWithRequest:transactionType:">- beginEMVTransactionWithRequest:transactionType:</option>
+		
+		<option value="//api/name/beginManualTransactionWithRequest:">- beginManualTransactionWithRequest:</option>
+		
+		<option value="//api/name/beginNFCTransactionWithRequest:transactionType:">- beginNFCTransactionWithRequest:transactionType:</option>
+		
+		<option value="//api/name/cancelCheckForCard">- cancelCheckForCard</option>
+		
+		<option value="//api/name/cancelTransaction">- cancelTransaction</option>
+		
+		<option value="//api/name/checkForCard">- checkForCard</option>
+		
+		<option value="//api/name/confirmTransaction:">- confirmTransaction:</option>
+		
+		<option value="//api/name/connectSwiperWithInputType:">- connectSwiperWithInputType:</option>
+		
+		<option value="//api/name/disconnectSwiper">- disconnectSwiper</option>
+		
+		<option value="//api/name/displayText:">- displayText:</option>
+		
+		<option value="//api/name/generateOnlineAuthResponseTLV:error:">- generateOnlineAuthResponseTLV:error:</option>
+		
+		<option value="//api/name/getFirmwareVersion">- getFirmwareVersion</option>
+		
+		<option value="//api/name/getSerialNumber">- getSerialNumber</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initWithDelegate:">- initWithDelegate:</option>
+		
+		<option value="//api/name/selectAccountType:">- selectAccountType:</option>
+		
+		<option value="//api/name/selectEMVCardApplication:">- selectEMVCardApplication:</option>
+		
+		<option value="//api/name/swiperCanDisplayText">- swiperCanDisplayText</option>
+		
+		<option value="//api/name/swiperClearDisplay">- swiperClearDisplay</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WPYSwiper Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WPYSwiper.h<br />WPYSwiper.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/swiperType" title="swiperType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiperType">&nbsp;&nbsp;swiperType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is used internally to note the type of encryption used on the SRED data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) WPYSwiperType swiperType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is used internally to note the type of encryption used on the SRED data</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The delegate responsible for handling events from the card terminal</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;WPYSwiperDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The delegate responsible for handling events from the card terminal</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectionState" title="connectionState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectionState">&nbsp;&nbsp;connectionState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current connection status of the device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property WPYSwiperState connectionState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The current connection status of the device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bluetoothSupported" title="bluetoothSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bluetoothSupported">&nbsp;&nbsp;bluetoothSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query to see if bluetooth is supported by the current swiper class</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, getter=isBluetoothSupported) BOOL bluetoothSupported</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Query to see if bluetooth is supported by the current swiper class</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioJackSupported" title="audioJackSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioJackSupported">&nbsp;&nbsp;audioJackSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query to see if audiojack is supported by the current swiper class.  Note that
+you must specify the correct input type for the hardware being used at the time of connection</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, getter=isAudioJackSupported) BOOL audioJackSupported</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Query to see if audiojack is supported by the current swiper class.  Note that
+you must specify the correct input type for the hardware being used at the time of connection</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/nfcSupported" title="nfcSupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/nfcSupported">&nbsp;&nbsp;nfcSupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indication of whether or not the card terminal supports NFC</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, getter=isNFCSupported) BOOL nfcSupported</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indication of whether or not the card terminal supports NFC</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/manualEntrySupported" title="manualEntrySupported"></a>
+	<h3 class="method-title"><code><a href="#//api/name/manualEntrySupported">&nbsp;&nbsp;manualEntrySupported</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indication of whether or not the card terminal allows manual card entry on the terminal</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, getter=isManualEntrySupported) BOOL manualEntrySupported</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indication of whether or not the card terminal allows manual card entry on the terminal</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceInputType" title="deviceInputType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceInputType">&nbsp;&nbsp;deviceInputType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current hardware interface used by the connected device, if any</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) WPYSwiperInputType deviceInputType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The current hardware interface used by the connected device, if any</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithDelegate:" title="initWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDelegate:">&ndash;&nbsp;initWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an instance of a swiper, with a <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a> assigned at instantiation</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithDelegate:(id&lt;WPYSwiperDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>initial <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a> that the swiper will call with events.  This can be changed at any time after instantiation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>an instance of a swiper</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates an instance of a swiper, with a <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a> assigned at instantiation</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unavailable default initializer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Unavailable default initializer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectSwiperWithInputType:" title="connectSwiperWithInputType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectSwiperWithInputType:">&ndash;&nbsp;connectSwiperWithInputType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will connect the current Swiper object to whatever hardware interface is selected at the time of the call</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectSwiperWithInputType:(WPYSwiperInputType)<em>inputType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>type of hardware interface used to communicate with the device - Audio or Bluetooth</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This will connect the current Swiper object to whatever hardware interface is selected at the time of the call</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disconnectSwiper" title="disconnectSwiper"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disconnectSwiper">&ndash;&nbsp;disconnectSwiper</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disconnects the current hardware and closes communication between the mobile device and the card terminal</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disconnectSwiper</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Disconnects the current hardware and closes communication between the mobile device and the card terminal</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkForCard" title="checkForCard"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkForCard">&ndash;&nbsp;checkForCard</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>x
+Check continuously for card events - dips or swipes.  Does not return NFC tap events</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkForCard</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>x
+Check continuously for card events - dips or swipes.  Does not return NFC tap events</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelCheckForCard" title="cancelCheckForCard"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelCheckForCard">&ndash;&nbsp;cancelCheckForCard</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop checking continuously for card events</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelCheckForCard</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stop checking continuously for card events</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelTransaction" title="cancelTransaction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelTransaction">&ndash;&nbsp;cancelTransaction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancels the current transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelTransaction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Cancels the current transaction</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beginManualTransactionWithRequest:" title="beginManualTransactionWithRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beginManualTransactionWithRequest:">&ndash;&nbsp;beginManualTransactionWithRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stat a transaction by requesting that the merchant manually enter the card data into the terminal.  This will only handle manual card events.  Any attempt
+to swipe, tap, or insert a card will do nothing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beginManualTransactionWithRequest:(WPYPaymentRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>pointer to the request object used to complete the payment request.  This must be populated with all required info as the transaction will begin
+immediately if the card entry is successful.  If the card entry is canceled then a fail message will be sent to the <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stat a transaction by requesting that the merchant manually enter the card data into the terminal.  This will only handle manual card events.  Any attempt
+to swipe, tap, or insert a card will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beginEMVTransactionWithRequest:transactionType:" title="beginEMVTransactionWithRequest:transactionType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beginEMVTransactionWithRequest:transactionType:">&ndash;&nbsp;beginEMVTransactionWithRequest:transactionType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Start a contact EMV transaction.  If no EMV card is inserted, the swiper will request that a card be inserted or swiped. This handles swipe events.
+*</li>
+<li>@param a pointer to the request object used to complete the EMV Request.  This must be populated with all required info as any request for online</li>
+<li><pre><code> processing will happen automatically if the terminal requests it.
+</code></pre></li>
+<li>@param the transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
+        cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+        AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction.  Miura devices will enable cashback</li>
+<li><pre><code> only if this is set to type Cashback but will process as a sale if the user declines to enter a cashback amount
+</code></pre></li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beginEMVTransactionWithRequest:(WPYPaymentRequest *)<em>request</em> transactionType:(WPYEMVTransactionType)<em>transactionType</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>Start a contact EMV transaction.  If no EMV card is inserted, the swiper will request that a card be inserted or swiped. This handles swipe events.
+*</li>
+<li>@param a pointer to the request object used to complete the EMV Request.  This must be populated with all required info as any request for online</li>
+<li><pre><code> processing will happen automatically if the terminal requests it.
+</code></pre></li>
+<li>@param the transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
+        cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+        AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction.  Miura devices will enable cashback</li>
+<li><pre><code> only if this is set to type Cashback but will process as a sale if the user declines to enter a cashback amount
+</code></pre></li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beginNFCTransactionWithRequest:transactionType:" title="beginNFCTransactionWithRequest:transactionType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beginNFCTransactionWithRequest:transactionType:">&ndash;&nbsp;beginNFCTransactionWithRequest:transactionType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Start a contactless EMV or MSD transaction.  Some hardware allows card swipes in NFC mode, others do not.  Does nothing if NFC is not supported on</li>
+<li>the current terminal hardware - be sure to check if NFC is available
+*</li>
+<li>@param a pointer to the request object used to complete the EMV Request.  This must be populated with all required info as any request for online</li>
+<li><pre><code> processing will happen automatically if the terminal requests it.
+</code></pre></li>
+<li>@param the transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
+        cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+        AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beginNFCTransactionWithRequest:(WPYPaymentRequest *)<em>request</em> transactionType:(WPYEMVTransactionType)<em>transactionType</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>Start a contactless EMV or MSD transaction.  Some hardware allows card swipes in NFC mode, others do not.  Does nothing if NFC is not supported on</li>
+<li>the current terminal hardware - be sure to check if NFC is available
+*</li>
+<li>@param a pointer to the request object used to complete the EMV Request.  This must be populated with all required info as any request for online</li>
+<li><pre><code> processing will happen automatically if the terminal requests it.
+</code></pre></li>
+<li>@param the transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
+        cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+        AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selectEMVCardApplication:" title="selectEMVCardApplication:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selectEMVCardApplication:">&ndash;&nbsp;selectEMVCardApplication:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If the terminal is configured to pass application selection onto the application layer, this function must be called to select the card application,
+when requested.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)selectEMVCardApplication:(NSInteger)<em>application</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the terminal is configured to pass application selection onto the application layer, this function must be called to select the card application,
+when requested.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmTransaction:" title="confirmTransaction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmTransaction:">&ndash;&nbsp;confirmTransaction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If the terminal is configured to pass final transaction confirmation requests onto the application layer, this function must be called to confirm the
+transaction total prior to online authorization</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)confirmTransaction:(BOOL)<em>confirmed</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>boolean</code></th>
+						<td><p>indicating whether the card holder has accepted the final total</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the terminal is configured to pass final transaction confirmation requests onto the application layer, this function must be called to confirm the
+transaction total prior to online authorization</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiperCanDisplayText" title="swiperCanDisplayText"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiperCanDisplayText">&ndash;&nbsp;swiperCanDisplayText</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function will indicate whether or not the application developer can request to have custom text displayed onto the terminal screen</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)swiperCanDisplayText</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>boolean indicating whether or not the swiper&rsquo;s display can show custom text</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function will indicate whether or not the application developer can request to have custom text displayed onto the terminal screen</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiperClearDisplay" title="swiperClearDisplay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiperClearDisplay">&ndash;&nbsp;swiperClearDisplay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function will clear the display on terminals that allow you to display custom text</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiperClearDisplay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function will clear the display on terminals that allow you to display custom text</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/displayText:" title="displayText:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/displayText:">&ndash;&nbsp;displayText:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If supported by the terminal hardware, this will request that the custom text be displayed on the screen.  The text should be line formatted
+by the developer based on the character width of the display in question.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)displayText:(NSString *)<em>text</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>string of text that will be displayed on the terminal</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If supported by the terminal hardware, this will request that the custom text be displayed on the screen.  The text should be line formatted
+by the developer based on the character width of the display in question.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selectAccountType:" title="selectAccountType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selectAccountType:">&ndash;&nbsp;selectAccountType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If an Application can be run as credit or debit, and the terminal hardware does not support account type selection, then the UI application will
+be asked to select credit or debit.  If the developer does not implement the appropriate <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a> function, then the default of CREDIT will be
+selected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)selectAccountType:(WPYCardAccountType)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>account type that the user has selected.  This must be &lsquo;credit&rsquo; OR &lsquo;debit&rsquo;, any other input will default to credit.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If an Application can be run as credit or debit, and the terminal hardware does not support account type selection, then the UI application will
+be asked to select credit or debit.  If the developer does not implement the appropriate <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a> function, then the default of CREDIT will be
+selected</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSerialNumber" title="getSerialNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSerialNumber">&ndash;&nbsp;getSerialNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function will return the serial number of the credit card terminal.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getSerialNumber</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>credit card terminal serial number</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function will return the serial number of the credit card terminal.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFirmwareVersion" title="getFirmwareVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFirmwareVersion">&ndash;&nbsp;getFirmwareVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function will return the software version number of the credit card terminal.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getFirmwareVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the software version of the terminal&rsquo;s OS</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function will return the software version number of the credit card terminal.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/generateOnlineAuthResponseTLV:error:" title="generateOnlineAuthResponseTLV:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateOnlineAuthResponseTLV:error:">&ndash;&nbsp;generateOnlineAuthResponseTLV:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function should be called automatically to take a response from the processor and generate a TLV string that can be sent to the terminal
+after an online processing request has been completed.  It is is only used internally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)generateOnlineAuthResponseTLV:(WPYPaymentResponse *)<em>response</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>response from the processor, including any EMV data returned by the issuing bank</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>any</code></th>
+						<td><p>server errors that may have been returned during the processing request - this determines whether a request was declined on or offline</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a TLV string containing the appropriate data to be sent to the terminal after online processing</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function should be called automatically to take a response from the processor and generate a TLV string that can be sent to the terminal
+after an online processing request has been completed.  It is is only used internally.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiperPrivate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/accountTypeForAID:" title="accountTypeForAID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accountTypeForAID:">&ndash;&nbsp;accountTypeForAID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function returns an account type of &lsquo;Credit&rsquo; &lsquo;Debit&rsquo; or &lsquo;CreditOrDebit&rsquo; based on the application selected
+This is used internally and should never actually be required to be called externally</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (WPYCardAccountType)accountTypeForAID:(NSString *)<em>aid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>AID that has been selected by the card holder / terminal</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>an enumeration indacting what type of transactions can be run against that AID</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function returns an account type of &lsquo;Credit&rsquo; &lsquo;Debit&rsquo; or &lsquo;CreditOrDebit&rsquo; based on the application selected
+This is used internally and should never actually be required to be called externally</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiperPrivate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Worldpay. All rights reserved. Updated: 2016-11-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

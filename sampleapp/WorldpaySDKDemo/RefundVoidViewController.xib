@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AdelleSans_Regular.otf">
+            <string>AdelleSans-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RefundVoidViewController">
+            <connections>
+                <outlet property="amountTextField" destination="S9e-Nq-FAh" id="Hdw-Xk-zS8"/>
+                <outlet property="startButton" destination="XbT-Op-vSo" id="eET-1y-Fwy"/>
+                <outlet property="transactionIdTextField" destination="6ve-fC-TKt" id="5Lo-T5-pHJ"/>
+                <outlet property="transactionTypeDropDown" destination="d5A-Aw-0N6" id="jru-IO-DgJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbT-Op-vSo">
+                    <rect key="frame" x="234" y="285" width="133" height="35"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <state key="normal" title="Start Transaction"/>
+                    <connections>
+                        <action selector="startTransaction:" destination="-1" eventType="touchUpInside" id="Wi0-PE-d8A"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-fC-TKt" userLabel="Transaction Id" customClass="LabeledTextField">
+                    <rect key="frame" x="20" y="77" width="560" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="GGs-RP-tFR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9e-Nq-FAh" userLabel="Amount" customClass="LabeledTextField">
+                    <rect key="frame" x="20" y="142" width="560" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="UVa-ni-QqB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-Aw-0N6" userLabel="Transaction Type" customClass="LabeledDropDownTextField">
+                    <rect key="frame" x="20" y="207" width="560" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="d2M-fM-T3y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XbT-Op-vSo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0PF-dO-TBS"/>
+                <constraint firstItem="S9e-Nq-FAh" firstAttribute="top" secondItem="6ve-fC-TKt" secondAttribute="bottom" constant="20" id="6KQ-Z1-dH9"/>
+                <constraint firstAttribute="trailing" secondItem="6ve-fC-TKt" secondAttribute="trailing" constant="20" id="CAw-B1-IdB"/>
+                <constraint firstItem="S9e-Nq-FAh" firstAttribute="trailing" secondItem="6ve-fC-TKt" secondAttribute="trailing" id="G72-TK-ehl"/>
+                <constraint firstItem="d5A-Aw-0N6" firstAttribute="top" secondItem="S9e-Nq-FAh" secondAttribute="bottom" constant="20" id="KbN-Mp-R7u"/>
+                <constraint firstItem="XbT-Op-vSo" firstAttribute="top" secondItem="d5A-Aw-0N6" secondAttribute="bottom" constant="33" id="Pvh-QD-Ev1"/>
+                <constraint firstItem="6ve-fC-TKt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="SWu-xA-Gzy"/>
+                <constraint firstItem="6ve-fC-TKt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="Y2C-ww-qRv"/>
+                <constraint firstItem="d5A-Aw-0N6" firstAttribute="trailing" secondItem="S9e-Nq-FAh" secondAttribute="trailing" id="fse-rq-Lft"/>
+                <constraint firstItem="S9e-Nq-FAh" firstAttribute="leading" secondItem="6ve-fC-TKt" secondAttribute="leading" id="iHY-Mc-ftd"/>
+                <constraint firstItem="d5A-Aw-0N6" firstAttribute="leading" secondItem="S9e-Nq-FAh" secondAttribute="leading" id="lPN-3d-lTi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

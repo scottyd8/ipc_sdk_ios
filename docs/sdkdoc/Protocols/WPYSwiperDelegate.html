@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WPYSwiperDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">WorldPaySDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Worldpay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/didConnectSwiper:">- didConnectSwiper:</option>
+		
+		<option value="//api/name/didDisconnectSwiper:">- didDisconnectSwiper:</option>
+		
+		<option value="//api/name/didFailToConnectSwiper:">- didFailToConnectSwiper:</option>
+		
+		<option value="//api/name/selectDevice:forSwiper:completion:">- selectDevice:forSwiper:completion:</option>
+		
+		<option value="//api/name/swiper:didFailRequest:withError:">- swiper:didFailRequest:withError:</option>
+		
+		<option value="//api/name/swiper:didFailWithError:">- swiper:didFailWithError:</option>
+		
+		<option value="//api/name/swiper:didFinishTransactionWithResponse:">- swiper:didFinishTransactionWithResponse:</option>
+		
+		<option value="//api/name/swiper:didKeyInAmount:currencyCode:">- swiper:didKeyInAmount:currencyCode:</option>
+		
+		<option value="//api/name/swiper:didReceiveCardEvent:">- swiper:didReceiveCardEvent:</option>
+		
+		<option value="//api/name/swiper:didRequestAccountTypeSelection:">- swiper:didRequestAccountTypeSelection:</option>
+		
+		<option value="//api/name/swiper:didRequestDevicePromptText:completion:">- swiper:didRequestDevicePromptText:completion:</option>
+		
+		<option value="//api/name/swiper:didRequestSelectEMVApplication:">- swiper:didRequestSelectEMVApplication:</option>
+		
+		<option value="//api/name/swiper:didReturnAmountConfirmation:">- swiper:didReturnAmountConfirmation:</option>
+		
+		<option value="//api/name/swiper:onBatteryLow:">- swiper:onBatteryLow:</option>
+		
+		<option value="//api/name/swiperDidReceiveKeypadInput:">- swiperDidReceiveKeypadInput:</option>
+		
+		<option value="//api/name/swiperDidRequestFinalConfirmation:">- swiperDidRequestFinalConfirmation:</option>
+		
+		<option value="//api/name/willConnectSwiper:">- willConnectSwiper:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WPYSwiperDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WPYSwiper.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Delegate protocol for handling events from the swiper.  Note that not all of these events are used by every hardware device type</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/didConnectSwiper:" title="didConnectSwiper:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didConnectSwiper:">&ndash;&nbsp;didConnectSwiper:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate function is called when a communication channel has been opened with the credit card terminal</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didConnectSwiper:(WPYSwiper *)<em>swiper</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object communicating with the credit card terminal</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate function is called when a communication channel has been opened with the credit card terminal</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didDisconnectSwiper:" title="didDisconnectSwiper:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didDisconnectSwiper:">&ndash;&nbsp;didDisconnectSwiper:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate function is called when the communication channel to the credit card terminal has been closed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didDisconnectSwiper:(WPYSwiper *)<em>swiper</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the swiper that is reporting the end of communication</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate function is called when the communication channel to the credit card terminal has been closed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToConnectSwiper:" title="didFailToConnectSwiper:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToConnectSwiper:">&ndash;&nbsp;didFailToConnectSwiper:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate function is called when the connection to the swiper hardware fails to be created</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToConnectSwiper:(WPYSwiper *)<em>swiper</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object that could not open the hardware communication</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate function is called when the connection to the swiper hardware fails to be created</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/willConnectSwiper:" title="willConnectSwiper:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willConnectSwiper:">&ndash;&nbsp;willConnectSwiper:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate function is called when the communication channel to the credit card terminal could not be opened,
+but will be reattempted</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willConnectSwiper:(WPYSwiper *)<em>swiper</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object that is continuing to attempt communication with the credit card terminal</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate function is called when the communication channel to the credit card terminal could not be opened,
+but will be reattempted</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didFailWithError:" title="swiper:didFailWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didFailWithError:">&ndash;&nbsp;swiper:didFailWithError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate function is called when an error has been detected when performing a requested task</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didFailWithError:(NSString *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object that experienced the error</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>an</code></th>
+						<td><p>error object with information on the error that occurred</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate function is called when an error has been detected when performing a requested task</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didFinishTransactionWithResponse:" title="swiper:didFinishTransactionWithResponse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didFinishTransactionWithResponse:">&ndash;&nbsp;swiper:didFinishTransactionWithResponse:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate function is called after the terminal has generated the Transaction Certificate or Application Authentication Cryptogram
+and no more online requests are pending.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didFinishTransactionWithResponse:(WPYPaymentResponse *)<em>response</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object that generated and processed the EMV request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>authorization response from the online processor, if any.  If there was a reversal, this will be the result of the payment reversal</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate function is called after the terminal has generated the Transaction Certificate or Application Authentication Cryptogram
+and no more online requests are pending.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didFailRequest:withError:" title="swiper:didFailRequest:withError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didFailRequest:withError:">&ndash;&nbsp;swiper:didFailRequest:withError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate function is called when an attempt to make a payment failed with a non-authorization related error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didFailRequest:(WPYPaymentRequest *)<em>request</em> withError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the error that caused the failure so that it can be properly handled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate function is called when an attempt to make a payment failed with a non-authorization related error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didRequestAccountTypeSelection:" title="swiper:didRequestAccountTypeSelection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didRequestAccountTypeSelection:">&ndash;&nbsp;swiper:didRequestAccountTypeSelection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called when the terminal is incapable of presenting the account type selection to the card holder.
+If this method is implemented then the delegate must call back the referencing object or the transaction will timeout</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didRequestAccountTypeSelection:(NSArray&lt;NSNumber*&gt; *)<em>accountTypes</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object making the request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>an</code></th>
+						<td><p>array of account types that the user must pick from (NSNumber -> <a href="../Constants/WPYCardAccountType.html">WPYCardAccountType</a> enumeration)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called when the terminal is incapable of presenting the account type selection to the card holder.
+If this method is implemented then the delegate must call back the referencing object or the transaction will timeout</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didReturnAmountConfirmation:" title="swiper:didReturnAmountConfirmation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didReturnAmountConfirmation:">&ndash;&nbsp;swiper:didReturnAmountConfirmation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called by some devices when the user confirms/rejects the transaction amount on the terminal hardware
+Miura devices do not call this method</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didReturnAmountConfirmation:(BOOL)<em>confirmed</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object making the request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>boolean</code></th>
+						<td><p>indicating whether or not the user accepted the transaction amount</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called by some devices when the user confirms/rejects the transaction amount on the terminal hardware
+Miura devices do not call this method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didKeyInAmount:currencyCode:" title="swiper:didKeyInAmount:currencyCode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didKeyInAmount:currencyCode:">&ndash;&nbsp;swiper:didKeyInAmount:currencyCode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called when the user keys in an amount when requested by the device
+This method is only called by certain devices that can display text and have a keypad</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didKeyInAmount:(NSDecimalNumber *)<em>amount</em> currencyCode:(NSString *)<em>currencyCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>decimal number representing the amount the user keyed in</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>the</code></th>
+						<td><p>currency code of the keyed in amount</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called when the user keys in an amount when requested by the device
+This method is only called by certain devices that can display text and have a keypad</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:onBatteryLow:" title="swiper:onBatteryLow:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:onBatteryLow:">&ndash;&nbsp;swiper:onBatteryLow:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called when the terminal sends a low battery status message</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> onBatteryLow:(WPYSwiperBatteryStatus)<em>batteryStatus</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object making the request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>indicating</code></th>
+						<td><p>the battery status of the device</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called when the terminal sends a low battery status message</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didRequestSelectEMVApplication:" title="swiper:didRequestSelectEMVApplication:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didRequestSelectEMVApplication:">&ndash;&nbsp;swiper:didRequestSelectEMVApplication:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called when the terminal is not configured to present the application options to the card holder directly
+When the hardware supports it, the terminal will manage application selection automatically (Miura for instance)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didRequestSelectEMVApplication:(NSArray *)<em>applications</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>list of the Application Labels for each application in the candidate list</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called when the terminal is not configured to present the application options to the card holder directly
+When the hardware supports it, the terminal will manage application selection automatically (Miura for instance)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiperDidRequestFinalConfirmation:" title="swiperDidRequestFinalConfirmation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiperDidRequestFinalConfirmation:">&ndash;&nbsp;swiperDidRequestFinalConfirmation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called when the terminal is not configured to request final transaction amount confirmation from the card holder directly
+This is typical on audiojack devices or other devices that have no keypad</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiperDidRequestFinalConfirmation:(WPYSwiper *)<em>swiper</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object making the request</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called when the terminal is not configured to request final transaction amount confirmation from the card holder directly
+This is typical on audiojack devices or other devices that have no keypad</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didRequestDevicePromptText:completion:" title="swiper:didRequestDevicePromptText:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didRequestDevicePromptText:completion:">&ndash;&nbsp;swiper:didRequestDevicePromptText:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called when the terminal would like text displayed by the user.  If the terminal is capable of displaying text (swiperCanDisplayText)
+and this method is implemented, then the terminal should be sent a text string to display to the user.  This can be done via the completion handler, with a NIL
+string to have the terminal display default text.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didRequestDevicePromptText:(WPYDevicePrompt)<em>prompt</em> completion:(void ( ^ ) ( NSString *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>completion handler to call if the terminal is capable of displaying text. If not supported, a nil handler will be sent</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>an</code></th>
+						<td><p>enumeration representing the type of information that should be presented to the card holder</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called when the terminal would like text displayed by the user.  If the terminal is capable of displaying text (swiperCanDisplayText)
+and this method is implemented, then the terminal should be sent a text string to display to the user.  This can be done via the completion handler, with a NIL
+string to have the terminal display default text.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiper:didReceiveCardEvent:" title="swiper:didReceiveCardEvent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didReceiveCardEvent:">&ndash;&nbsp;swiper:didReceiveCardEvent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This delegate method is called when the terminal receives a card event.  It does not return the card data and therefore is called in the event that
+the card data is not going to be returned for whatever reason.  For instance, a card swipe does not return data if the card is IC capable and was swiped</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didReceiveCardEvent:(WPYCardEvent)<em>eventType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the object making the request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>an</code></th>
+						<td><p>enumeration representing the type of card event</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is called when the terminal receives a card event.  It does not return the card data and therefore is called in the event that
+the card data is not going to be returned for whatever reason.  For instance, a card swipe does not return data if the card is IC capable and was swiped</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selectDevice:forSwiper:completion:" title="selectDevice:forSwiper:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selectDevice:forSwiper:completion:">&ndash;&nbsp;selectDevice:forSwiper:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called when a bluetooth connection attempt is made and there may be one or more devices that are available to be paired with
+For Anywhere Commerce bluetooth devices this may return all devices within range</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)selectDevice:(NSArray&lt;NSString*&gt; *)<em>devices</em> forSwiper:(WPYSwiper *)<em>swiper</em> completion:(void ( ^ ) ( int ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>completion handler that must be called with the index of the device that was selected by the user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called when a bluetooth connection attempt is made and there may be one or more devices that are available to be paired with
+For Anywhere Commerce bluetooth devices this may return all devices within range</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/swiperDidReceiveKeypadInput:" title="swiperDidReceiveKeypadInput:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiperDidReceiveKeypadInput:">&ndash;&nbsp;swiperDidReceiveKeypadInput:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called when a key is pressed on a supported device (Miura).  For EMV / PIN security, the key press will not be relayed to the
+delegate and therefore this message is only useful if the application cares about keypad presses for whatever reason.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)swiperDidReceiveKeypadInput:(WPYSwiper *)<em>swiper</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>a</code></th>
+						<td><p>reference to the card terminal that is receiving the key press</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called when a key is pressed on a supported device (Miura).  For EMV / PIN security, the key press will not be relayed to the
+delegate and therefore this message is only useful if the application cares about keypad presses for whatever reason.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Worldpay. All rights reserved. Updated: 2016-11-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AdelleSans_Bold.otf">
+            <string>AdelleSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="AdelleSans_Regular.otf">
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="288" id="KGk-i7-Jjw" customClass="BillingAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="702" height="288"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="702" height="287.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Billing Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyP-7r-pOc">
+                        <rect key="frame" x="16" y="8" width="678" height="20"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Bold" family="Adelle Sans" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Street:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNh-oF-15M">
+                        <rect key="frame" x="16" y="47.5" width="51" height="22"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3c-PL-Ac6">
+                        <rect key="frame" x="16" y="89.5" width="35" height="21.5"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6k-e8-zxn">
+                        <rect key="frame" x="16" y="131.5" width="45" height="22"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYI-Bb-s53">
+                        <rect key="frame" x="16" y="173.5" width="73" height="22"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc0-qJ-UCA">
+                        <rect key="frame" x="16" y="215.5" width="77" height="22"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line1 Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvd-eC-3d3">
+                        <rect key="frame" x="137" y="47.5" width="549" height="21"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="754" text="City Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0w-jz-D4Q">
+                        <rect key="frame" x="137" y="89.5" width="549" height="21.5"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePm-rc-Evr">
+                        <rect key="frame" x="137" y="132" width="549" height="21.5"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITZ-Iv-dyY">
+                        <rect key="frame" x="137" y="173.5" width="549" height="21.5"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1k-2u-u0V">
+                        <rect key="frame" x="16" y="257.5" width="54" height="22"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se4-T3-IDh">
+                        <rect key="frame" x="137" y="257.5" width="549" height="21.5"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CompanyValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJI-EJ-OvN">
+                        <rect key="frame" x="137" y="215.5" width="549" height="22"/>
+                        <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qvd-eC-3d3" firstAttribute="centerY" secondItem="UNh-oF-15M" secondAttribute="centerY" id="0DO-bF-cfD"/>
+                    <constraint firstItem="nJI-EJ-OvN" firstAttribute="centerY" secondItem="uc0-qJ-UCA" secondAttribute="centerY" id="0de-VG-cfw"/>
+                    <constraint firstItem="A0w-jz-D4Q" firstAttribute="centerY" secondItem="F3c-PL-Ac6" secondAttribute="centerY" id="3cd-1x-GZp"/>
+                    <constraint firstItem="A0w-jz-D4Q" firstAttribute="trailing" secondItem="Qvd-eC-3d3" secondAttribute="trailing" id="4rb-4G-7jE"/>
+                    <constraint firstItem="F3c-PL-Ac6" firstAttribute="leading" secondItem="UNh-oF-15M" secondAttribute="leading" id="667-Iv-5Rc"/>
+                    <constraint firstItem="F3c-PL-Ac6" firstAttribute="top" secondItem="UNh-oF-15M" secondAttribute="bottom" constant="20" id="8VG-Zo-cmQ"/>
+                    <constraint firstItem="Qvd-eC-3d3" firstAttribute="top" secondItem="oyP-7r-pOc" secondAttribute="bottom" constant="20" id="8zw-MY-H6z"/>
+                    <constraint firstItem="oyP-7r-pOc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="962-Ta-Yiq"/>
+                    <constraint firstItem="Se4-T3-IDh" firstAttribute="centerY" secondItem="g1k-2u-u0V" secondAttribute="centerY" id="9fm-eb-cpE"/>
+                    <constraint firstItem="ePm-rc-Evr" firstAttribute="centerY" secondItem="e6k-e8-zxn" secondAttribute="centerY" id="D22-88-bKq"/>
+                    <constraint firstItem="uc0-qJ-UCA" firstAttribute="top" secondItem="xYI-Bb-s53" secondAttribute="bottom" constant="20" id="I4S-6w-omf"/>
+                    <constraint firstItem="uc0-qJ-UCA" firstAttribute="leading" secondItem="xYI-Bb-s53" secondAttribute="leading" id="JN4-T6-1Lx"/>
+                    <constraint firstItem="ITZ-Iv-dyY" firstAttribute="leading" secondItem="ePm-rc-Evr" secondAttribute="leading" id="L88-5Z-60M"/>
+                    <constraint firstItem="ITZ-Iv-dyY" firstAttribute="centerY" secondItem="xYI-Bb-s53" secondAttribute="centerY" id="LhQ-Uf-ybZ"/>
+                    <constraint firstItem="Se4-T3-IDh" firstAttribute="leading" secondItem="nJI-EJ-OvN" secondAttribute="leading" id="MAg-Yk-eLb"/>
+                    <constraint firstItem="oyP-7r-pOc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="T4M-Uo-hnR"/>
+                    <constraint firstItem="A0w-jz-D4Q" firstAttribute="leading" secondItem="Qvd-eC-3d3" secondAttribute="leading" id="TKS-fv-FtI"/>
+                    <constraint firstItem="ePm-rc-Evr" firstAttribute="trailing" secondItem="A0w-jz-D4Q" secondAttribute="trailing" id="Vp0-NJ-HrH"/>
+                    <constraint firstItem="Qvd-eC-3d3" firstAttribute="leading" secondItem="UNh-oF-15M" secondAttribute="trailing" constant="70" id="W1A-0V-SBL"/>
+                    <constraint firstItem="xYI-Bb-s53" firstAttribute="top" secondItem="e6k-e8-zxn" secondAttribute="bottom" constant="20" id="ZzL-XS-48X"/>
+                    <constraint firstItem="ITZ-Iv-dyY" firstAttribute="trailing" secondItem="ePm-rc-Evr" secondAttribute="trailing" id="cqW-wu-E3F"/>
+                    <constraint firstItem="e6k-e8-zxn" firstAttribute="leading" secondItem="F3c-PL-Ac6" secondAttribute="leading" id="ddm-uy-QIQ"/>
+                    <constraint firstItem="nJI-EJ-OvN" firstAttribute="leading" secondItem="ITZ-Iv-dyY" secondAttribute="leading" id="eDU-Kb-Kev"/>
+                    <constraint firstItem="Se4-T3-IDh" firstAttribute="trailing" secondItem="nJI-EJ-OvN" secondAttribute="trailing" id="evA-FU-qPu"/>
+                    <constraint firstItem="oyP-7r-pOc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="f6z-94-kls"/>
+                    <constraint firstItem="UNh-oF-15M" firstAttribute="top" secondItem="oyP-7r-pOc" secondAttribute="bottom" constant="20" id="gYW-uM-Gs6"/>
+                    <constraint firstItem="oyP-7r-pOc" firstAttribute="leading" secondItem="UNh-oF-15M" secondAttribute="leading" id="m2V-Ym-YnF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Qvd-eC-3d3" secondAttribute="trailing" constant="8" id="mJG-Pe-3Q4"/>
+                    <constraint firstItem="nJI-EJ-OvN" firstAttribute="trailing" secondItem="ITZ-Iv-dyY" secondAttribute="trailing" id="od8-I9-aJu"/>
+                    <constraint firstItem="xYI-Bb-s53" firstAttribute="leading" secondItem="e6k-e8-zxn" secondAttribute="leading" id="pft-nI-DKH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="g1k-2u-u0V" secondAttribute="bottom" id="pgF-tM-Hyr"/>
+                    <constraint firstItem="g1k-2u-u0V" firstAttribute="top" secondItem="uc0-qJ-UCA" secondAttribute="bottom" constant="20" id="r3J-hH-6zr"/>
+                    <constraint firstItem="e6k-e8-zxn" firstAttribute="top" secondItem="F3c-PL-Ac6" secondAttribute="bottom" constant="20" id="uTr-gV-Ugf"/>
+                    <constraint firstItem="g1k-2u-u0V" firstAttribute="leading" secondItem="uc0-qJ-UCA" secondAttribute="leading" id="v6a-QY-TOo"/>
+                    <constraint firstItem="ePm-rc-Evr" firstAttribute="leading" secondItem="A0w-jz-D4Q" secondAttribute="leading" id="yu8-kz-tq1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityValue" destination="A0w-jz-D4Q" id="3ja-gZ-6zp"/>
+                <outlet property="companyValue" destination="nJI-EJ-OvN" id="P0T-Gm-ehY"/>
+                <outlet property="line1Value" destination="Qvd-eC-3d3" id="c52-Lu-VG7"/>
+                <outlet property="phoneValue" destination="Se4-T3-IDh" id="HAf-qG-gNR"/>
+                <outlet property="stateValue" destination="ePm-rc-Evr" id="neX-gV-7IE"/>
+                <outlet property="zipValue" destination="ITZ-Iv-dyY" id="iN6-eH-INY"/>
+                <outletCollection property="formLabels" destination="UNh-oF-15M" id="MPH-xK-OKX"/>
+                <outletCollection property="formLabels" destination="F3c-PL-Ac6" id="KlS-UC-bgF"/>
+                <outletCollection property="formLabels" destination="e6k-e8-zxn" id="Qj7-Oc-0nJ"/>
+                <outletCollection property="formLabels" destination="xYI-Bb-s53" id="HCT-qT-H5J"/>
+                <outletCollection property="formLabels" destination="uc0-qJ-UCA" id="DpB-xe-wYp"/>
+                <outletCollection property="formLabels" destination="g1k-2u-u0V" id="3bK-1u-Jw2"/>
+                <outletCollection property="formLabels" destination="Qvd-eC-3d3" id="YYb-qM-GPO"/>
+                <outletCollection property="formLabels" destination="A0w-jz-D4Q" id="Oya-88-RkI"/>
+                <outletCollection property="formLabels" destination="ePm-rc-Evr" id="WXN-hE-vTY"/>
+                <outletCollection property="formLabels" destination="ITZ-Iv-dyY" id="hYR-Bn-PDE"/>
+                <outletCollection property="formLabels" destination="nJI-EJ-OvN" id="6c4-0S-051"/>
+                <outletCollection property="formLabels" destination="Se4-T3-IDh" id="JHq-Pb-qNC"/>
+            </connections>
+            <point key="canvasLocation" x="831" y="542"/>
+        </tableViewCell>
+    </objects>
+</document>
