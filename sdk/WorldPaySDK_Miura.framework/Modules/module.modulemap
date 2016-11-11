@@ -1,6 +1,0 @@
-framework module WorldPaySDK_Miura {
-  umbrella header "WorldPaySDK_Miura.h"
-
-  export *
-  module * { export * }
-}
