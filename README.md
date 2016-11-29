@@ -17,7 +17,7 @@ You can use the card reader on your iOS device:
 5.  Run the app
 
 ## More Information
-Read the [Getting Started Guide](https://github.com/worldpayus/ipc_sdk_ios/blob/master/docs/Getting%20Started%20with%20the%20Worldpay%20IPC%20SDK%20for%20iOS%20beta%201.pdf) first
+Read the [Getting Started Guide](https://github.com/worldpayus/ipc_sdk_ios/blob/master/docs/Getting%20Started%20with%20the%20Worldpay%20IPC%20SDK%20for%20iOS.pdf) first
 
 ### IPC SDK Class Documentation
 You can find information about the SDK classes here: https://github.com/worldpayus/ipc_sdk_ios/tree/master/docs/sdkdoc
