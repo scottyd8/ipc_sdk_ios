@@ -5,7 +5,7 @@ The quickest way to see the Integrated Payment Client SDK in action is with the 
 
 ### Quick Win
 1.  Get the [sample app](http://github.com/worldpayus/ipc_sdk_ios/tree/master/sampleapp) 
-2.  Open the project in Xcode, build it and run it in the simulator
+2.  Open the project *WorldpaySDKDemo.xcodeproj*  in Xcode, build it and run it in the simulator
 
 You can run the app in the iOS simulator and exercise the functions that don't require a device.
 
