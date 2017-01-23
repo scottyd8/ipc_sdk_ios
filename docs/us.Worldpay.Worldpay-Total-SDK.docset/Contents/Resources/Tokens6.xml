@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NumericData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NumericData</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setInputNumber:</TokenIdentifier>
+			<Abstract type="html">Decimal Number representation of the input value</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *inputNumber</Declaration>
+			
+			
+			<Anchor>//api/name/inputNumber</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/inputNumber</TokenIdentifier>
+			<Abstract type="html">Decimal Number representation of the input value</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *inputNumber</Declaration>
+			
+			
+			<Anchor>//api/name/inputNumber</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NumericData/inputNumber</TokenIdentifier>
+			<Abstract type="html">Decimal Number representation of the input value</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *inputNumber</Declaration>
+			
+			
+			<Anchor>//api/name/inputNumber</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setSredData:</TokenIdentifier>
+			<Abstract type="html">Encrypted Data if the numeric response contained encrypted data</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			
+			
+			<Anchor>//api/name/sredData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/sredData</TokenIdentifier>
+			<Abstract type="html">Encrypted Data if the numeric response contained encrypted data</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			
+			
+			<Anchor>//api/name/sredData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NumericData/sredData</TokenIdentifier>
+			<Abstract type="html">Encrypted Data if the numeric response contained encrypted data</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			
+			
+			<Anchor>//api/name/sredData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setSredKsn:</TokenIdentifier>
+			<Abstract type="html">Key Serial Number of the encrypted data</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
+			
+			
+			<Anchor>//api/name/sredKsn</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/sredKsn</TokenIdentifier>
+			<Abstract type="html">Key Serial Number of the encrypted data</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
+			
+			
+			<Anchor>//api/name/sredKsn</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NumericData/sredKsn</TokenIdentifier>
+			<Abstract type="html">Key Serial Number of the encrypted data</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
+			
+			
+			<Anchor>//api/name/sredKsn</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setInputString:</TokenIdentifier>
+			<Abstract type="html">String representation of the input number above, in the event
+that the number was partially masked and cannot be represented as a
+decimal number</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inputString</Declaration>
+			
+			
+			<Anchor>//api/name/inputString</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NumericData/inputString</TokenIdentifier>
+			<Abstract type="html">String representation of the input number above, in the event
+that the number was partially masked and cannot be represented as a
+decimal number</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inputString</Declaration>
+			
+			
+			<Anchor>//api/name/inputString</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NumericData/inputString</TokenIdentifier>
+			<Abstract type="html">String representation of the input number above, in the event
+that the number was partially masked and cannot be represented as a
+decimal number</Abstract>
+			<DeclaredIn>NumericData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inputString</Declaration>
+			
+			
+			<Anchor>//api/name/inputString</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

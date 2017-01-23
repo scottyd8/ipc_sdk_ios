@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYPaymentToken.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentToken</TokenIdentifier>
+			<Abstract type="html">This object represents a payment token used in place of a payment card or check</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+            
+			
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/setToken:</TokenIdentifier>
+			<Abstract type="html">The ID of the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/token</TokenIdentifier>
+			<Abstract type="html">The ID of the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentToken/token</TokenIdentifier>
+			<Abstract type="html">The ID of the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/setPaymentType:</TokenIdentifier>
+			<Abstract type="html">The payment type associated with the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property WPYPaymentType paymentType</Declaration>
+			
+			
+			<Anchor>//api/name/paymentType</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/paymentType</TokenIdentifier>
+			<Abstract type="html">The payment type associated with the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property WPYPaymentType paymentType</Declaration>
+			
+			
+			<Anchor>//api/name/paymentType</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentToken/paymentType</TokenIdentifier>
+			<Abstract type="html">The payment type associated with the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property WPYPaymentType paymentType</Declaration>
+			
+			
+			<Anchor>//api/name/paymentType</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/setCustomerId:</TokenIdentifier>
+			<Abstract type="html">The ID of the customer associated with the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/customerId</TokenIdentifier>
+			<Abstract type="html">The ID of the customer associated with the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentToken/customerId</TokenIdentifier>
+			<Abstract type="html">The ID of the customer associated with the token</Abstract>
+			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

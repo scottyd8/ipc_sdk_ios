@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PINRequestData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PINRequestData</TokenIdentifier>
+			<Abstract type="html">Class that contains the request data to the attached device.</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/setAmount:</TokenIdentifier>
+			<Abstract type="html">Type of transaction - typically sale, refund or cash back</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/amount</TokenIdentifier>
+			<Abstract type="html">Type of transaction - typically sale, refund or cash back</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PINRequestData/amount</TokenIdentifier>
+			<Abstract type="html">Type of transaction - typically sale, refund or cash back</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/setApplicationLabel:</TokenIdentifier>
+			<Abstract type="html">Predefined card type. This is determined from the card number by the framework</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationLabel</Declaration>
+			
+			
+			<Anchor>//api/name/applicationLabel</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/applicationLabel</TokenIdentifier>
+			<Abstract type="html">Predefined card type. This is determined from the card number by the framework</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationLabel</Declaration>
+			
+			
+			<Anchor>//api/name/applicationLabel</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PINRequestData/applicationLabel</TokenIdentifier>
+			<Abstract type="html">Predefined card type. This is determined from the card number by the framework</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationLabel</Declaration>
+			
+			
+			<Anchor>//api/name/applicationLabel</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/setMsrMaskedTrack2:</TokenIdentifier>
+			<Abstract type="html">Track 2 data fields. See WPYTrackData</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *msrMaskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/msrMaskedTrack2</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/msrMaskedTrack2</TokenIdentifier>
+			<Abstract type="html">Track 2 data fields. See WPYTrackData</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *msrMaskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/msrMaskedTrack2</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PINRequestData/msrMaskedTrack2</TokenIdentifier>
+			<Abstract type="html">Track 2 data fields. See WPYTrackData</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *msrMaskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/msrMaskedTrack2</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/setIccMaskedTrack2:</TokenIdentifier>
+			<Abstract type="html">Unused at this time</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *iccMaskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/iccMaskedTrack2</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/iccMaskedTrack2</TokenIdentifier>
+			<Abstract type="html">Unused at this time</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *iccMaskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/iccMaskedTrack2</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PINRequestData/iccMaskedTrack2</TokenIdentifier>
+			<Abstract type="html">Unused at this time</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *iccMaskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/iccMaskedTrack2</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/setCurrencyCode:</TokenIdentifier>
+			<Abstract type="html">Currently set to &quot;0840&quot; for US</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/currencyCode</TokenIdentifier>
+			<Abstract type="html">Currently set to &quot;0840&quot; for US</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PINRequestData/currencyCode</TokenIdentifier>
+			<Abstract type="html">Currently set to &quot;0840&quot; for US</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/setCurrencyExponent:</TokenIdentifier>
+			<Abstract type="html">Currently Unused</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) uint8_t currencyExponent</Declaration>
+			
+			
+			<Anchor>//api/name/currencyExponent</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PINRequestData/currencyExponent</TokenIdentifier>
+			<Abstract type="html">Currently Unused</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) uint8_t currencyExponent</Declaration>
+			
+			
+			<Anchor>//api/name/currencyExponent</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PINRequestData/currencyExponent</TokenIdentifier>
+			<Abstract type="html">Currently Unused</Abstract>
+			<DeclaredIn>PINRequestData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) uint8_t currencyExponent</Declaration>
+			
+			
+			<Anchor>//api/name/currencyExponent</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

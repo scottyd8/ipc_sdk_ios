@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYPaymentCredit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentCredit</TokenIdentifier>
+			<Abstract type="html">This requests a credit to the tendered check or card.  Inherits the following properties from WPYPaymentRequest:
+amount, amountOther, card, extendedData (for card processing)</Abstract>
+			<DeclaredIn>WPYPaymentCredit.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

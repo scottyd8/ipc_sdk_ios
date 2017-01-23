@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TransactionSettings.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TransactionSettings</TokenIdentifier>
+			<Abstract type="html">Class that establishes the parameters of the transaction</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setAmount:</TokenIdentifier>
+			<Abstract type="html">The total amount of the transaction</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/amount</TokenIdentifier>
+			<Abstract type="html">The total amount of the transaction</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/amount</TokenIdentifier>
+			<Abstract type="html">The total amount of the transaction</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setAmountOther:</TokenIdentifier>
+			<Abstract type="html">Optional - typically cash back</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amountOther</Declaration>
+			
+			
+			<Anchor>//api/name/amountOther</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/amountOther</TokenIdentifier>
+			<Abstract type="html">Optional - typically cash back</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amountOther</Declaration>
+			
+			
+			<Anchor>//api/name/amountOther</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/amountOther</TokenIdentifier>
+			<Abstract type="html">Optional - typically cash back</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amountOther</Declaration>
+			
+			
+			<Anchor>//api/name/amountOther</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setTransactionType:</TokenIdentifier>
+			<Abstract type="html">Transaction type to perform. See WPYEMVTransactionType for the allowed values.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TransactionType transactionType</Declaration>
+			
+			
+			<Anchor>//api/name/transactionType</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/transactionType</TokenIdentifier>
+			<Abstract type="html">Transaction type to perform. See WPYEMVTransactionType for the allowed values.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TransactionType transactionType</Declaration>
+			
+			
+			<Anchor>//api/name/transactionType</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/transactionType</TokenIdentifier>
+			<Abstract type="html">Transaction type to perform. See WPYEMVTransactionType for the allowed values.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TransactionType transactionType</Declaration>
+			
+			
+			<Anchor>//api/name/transactionType</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setEnableSuccessBeep:</TokenIdentifier>
+			<Abstract type="html">Set terminal to provide an audible signal if successful. Cannot be used with &apos;See Phone&apos; prompt
+Cannot be used with &apos;See Phone&apos; prompt</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableSuccessBeep</Declaration>
+			
+			
+			<Anchor>//api/name/enableSuccessBeep</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/enableSuccessBeep</TokenIdentifier>
+			<Abstract type="html">Set terminal to provide an audible signal if successful. Cannot be used with &apos;See Phone&apos; prompt
+Cannot be used with &apos;See Phone&apos; prompt</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableSuccessBeep</Declaration>
+			
+			
+			<Anchor>//api/name/enableSuccessBeep</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/enableSuccessBeep</TokenIdentifier>
+			<Abstract type="html">Set terminal to provide an audible signal if successful. Cannot be used with &apos;See Phone&apos; prompt
+Cannot be used with &apos;See Phone&apos; prompt</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableSuccessBeep</Declaration>
+			
+			
+			<Anchor>//api/name/enableSuccessBeep</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setEnableErrorBeep:</TokenIdentifier>
+			<Abstract type="html">Set terminal to provide an audible signal if an error occurs. Cannot be used with &apos;See Phone&apos; prompt</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableErrorBeep</Declaration>
+			
+			
+			<Anchor>//api/name/enableErrorBeep</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/enableErrorBeep</TokenIdentifier>
+			<Abstract type="html">Set terminal to provide an audible signal if an error occurs. Cannot be used with &apos;See Phone&apos; prompt</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableErrorBeep</Declaration>
+			
+			
+			<Anchor>//api/name/enableErrorBeep</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/enableErrorBeep</TokenIdentifier>
+			<Abstract type="html">Set terminal to provide an audible signal if an error occurs. Cannot be used with &apos;See Phone&apos; prompt</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableErrorBeep</Declaration>
+			
+			
+			<Anchor>//api/name/enableErrorBeep</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setEnableSeePhoneMessage:</TokenIdentifier>
+			<Abstract type="html">Not currently used.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableSeePhoneMessage</Declaration>
+			
+			
+			<Anchor>//api/name/enableSeePhoneMessage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/enableSeePhoneMessage</TokenIdentifier>
+			<Abstract type="html">Not currently used.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableSeePhoneMessage</Declaration>
+			
+			
+			<Anchor>//api/name/enableSeePhoneMessage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/enableSeePhoneMessage</TokenIdentifier>
+			<Abstract type="html">Not currently used.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableSeePhoneMessage</Declaration>
+			
+			
+			<Anchor>//api/name/enableSeePhoneMessage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setEnableTRMStage:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableTRMStage</Declaration>
+			
+			
+			<Anchor>//api/name/enableTRMStage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/enableTRMStage</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableTRMStage</Declaration>
+			
+			
+			<Anchor>//api/name/enableTRMStage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/enableTRMStage</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableTRMStage</Declaration>
+			
+			
+			<Anchor>//api/name/enableTRMStage</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setEnableCashback:</TokenIdentifier>
+			<Abstract type="html">Allow cash back from the transaction</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableCashback</Declaration>
+			
+			
+			<Anchor>//api/name/enableCashback</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/enableCashback</TokenIdentifier>
+			<Abstract type="html">Allow cash back from the transaction</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableCashback</Declaration>
+			
+			
+			<Anchor>//api/name/enableCashback</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/enableCashback</TokenIdentifier>
+			<Abstract type="html">Allow cash back from the transaction</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableCashback</Declaration>
+			
+			
+			<Anchor>//api/name/enableCashback</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setEnableGratuity:</TokenIdentifier>
+			<Abstract type="html">Allow a gratuity to be added</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableGratuity</Declaration>
+			
+			
+			<Anchor>//api/name/enableGratuity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/enableGratuity</TokenIdentifier>
+			<Abstract type="html">Allow a gratuity to be added</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableGratuity</Declaration>
+			
+			
+			<Anchor>//api/name/enableGratuity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/enableGratuity</TokenIdentifier>
+			<Abstract type="html">Allow a gratuity to be added</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL enableGratuity</Declaration>
+			
+			
+			<Anchor>//api/name/enableGratuity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setTerminalSelectsApplication:</TokenIdentifier>
+			<Abstract type="html">Determine if you will allow the user to select the application of more than one aid.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL terminalSelectsApplication</Declaration>
+			
+			
+			<Anchor>//api/name/terminalSelectsApplication</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/terminalSelectsApplication</TokenIdentifier>
+			<Abstract type="html">Determine if you will allow the user to select the application of more than one aid.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL terminalSelectsApplication</Declaration>
+			
+			
+			<Anchor>//api/name/terminalSelectsApplication</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/terminalSelectsApplication</TokenIdentifier>
+			<Abstract type="html">Determine if you will allow the user to select the application of more than one aid.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL terminalSelectsApplication</Declaration>
+			
+			
+			<Anchor>//api/name/terminalSelectsApplication</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setConfirmTransactionAmount:</TokenIdentifier>
+			<Abstract type="html">Prompt the user to confirm the transaction amount.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL confirmTransactionAmount</Declaration>
+			
+			
+			<Anchor>//api/name/confirmTransactionAmount</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/confirmTransactionAmount</TokenIdentifier>
+			<Abstract type="html">Prompt the user to confirm the transaction amount.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL confirmTransactionAmount</Declaration>
+			
+			
+			<Anchor>//api/name/confirmTransactionAmount</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/confirmTransactionAmount</TokenIdentifier>
+			<Abstract type="html">Prompt the user to confirm the transaction amount.</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL confirmTransactionAmount</Declaration>
+			
+			
+			<Anchor>//api/name/confirmTransactionAmount</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setCurrencyCode:</TokenIdentifier>
+			<Abstract type="html">String that determines the currency. Currently only set to &quot;0840&quot; for US dollars</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/currencyCode</TokenIdentifier>
+			<Abstract type="html">String that determines the currency. Currently only set to &quot;0840&quot; for US dollars</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/currencyCode</TokenIdentifier>
+			<Abstract type="html">String that determines the currency. Currently only set to &quot;0840&quot; for US dollars</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setTerminalId:</TokenIdentifier>
+			<Abstract type="html">The designated terminal identification number in hex. The defaults to the device serial number if none provided</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/terminalId</TokenIdentifier>
+			<Abstract type="html">The designated terminal identification number in hex. The defaults to the device serial number if none provided</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/terminalId</TokenIdentifier>
+			<Abstract type="html">The designated terminal identification number in hex. The defaults to the device serial number if none provided</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/setCommonDebitMode:</TokenIdentifier>
+			<Abstract type="html">Determines what type of debit transactions you will allow. See USCommonDebitMode for options</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) USCommonDebitMode commonDebitMode</Declaration>
+			
+			
+			<Anchor>//api/name/commonDebitMode</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TransactionSettings/commonDebitMode</TokenIdentifier>
+			<Abstract type="html">Determines what type of debit transactions you will allow. See USCommonDebitMode for options</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) USCommonDebitMode commonDebitMode</Declaration>
+			
+			
+			<Anchor>//api/name/commonDebitMode</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TransactionSettings/commonDebitMode</TokenIdentifier>
+			<Abstract type="html">Determines what type of debit transactions you will allow. See USCommonDebitMode for options</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) USCommonDebitMode commonDebitMode</Declaration>
+			
+			
+			<Anchor>//api/name/commonDebitMode</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

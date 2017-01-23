@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MiuraDeviceController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MiuraDeviceController</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;MiuraDeviceControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/delegate</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;MiuraDeviceControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MiuraDeviceController/delegate</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;MiuraDeviceControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/setEnabledTracks:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CardTrack enabledTracks</Declaration>
+			
+			
+			<Anchor>//api/name/enabledTracks</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/enabledTracks</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CardTrack enabledTracks</Declaration>
+			
+			
+			<Anchor>//api/name/enabledTracks</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MiuraDeviceController/enabledTracks</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CardTrack enabledTracks</Declaration>
+			
+			
+			<Anchor>//api/name/enabledTracks</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MiuraDeviceController/instance</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>+ (MiuraDeviceController *)instance</Declaration>
+			
+			
+			<Anchor>//api/name/instance</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/startEMVTransaction:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)startEMVTransaction:(TransactionSettings *)settings</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>settings</Name>
+					<Abstract type="html">Completed TransactionSettings object. See TransactionSettings</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startEMVTransaction:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/startContactlessTransaction:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)startContactlessTransaction:(TransactionSettings *)settings</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>settings</Name>
+					<Abstract type="html">Completed TransactionSettings object. See TransactionSettings</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startContactlessTransaction:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/selectApplication:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)selectApplication:(NSInteger)applicationIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationIndex</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/selectApplication:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/sendOnlineProcessResult:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)sendOnlineProcessResult:(NSString *)tlvString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tlvString</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendOnlineProcessResult:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/checkForCard</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)checkForCard</Declaration>
+			
+			
+			<Anchor>//api/name/checkForCard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/cancelCheckForCard</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelCheckForCard</Declaration>
+			
+			
+			<Anchor>//api/name/cancelCheckForCard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/cancelCurrentCommand</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelCurrentCommand</Declaration>
+			
+			
+			<Anchor>//api/name/cancelCurrentCommand</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/startGratuityEntry</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)startGratuityEntry</Declaration>
+			
+			
+			<Anchor>//api/name/startGratuityEntry</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/startManualCardEntry</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)startManualCardEntry</Declaration>
+			
+			
+			<Anchor>//api/name/startManualCardEntry</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/getNumericInput:customPrompt:customNumberFormat:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)getNumericInput:(NumericDataInput)inputType customPrompt:(NSString *)prompt customNumberFormat:(NSString *)numberFormat</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>inputType</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter><Parameter>
+					<Name>prompt</Name>
+					<Abstract type="html">Only required when the inputType is set to custom. CustomPrompt Format: @&quot;000E001B0000&quot; line 1: 00E0 Line 2: 001B Line 3: 0000</Abstract>
+				</Parameter><Parameter>
+					<Name>numberFormat</Name>
+					<Abstract type="html">Only required when the inputType is set to custom. CustomNumberFormat Format: @&quot;0602&quot; - 6 digits, hundredths marker, two digits</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getNumericInput:customPrompt:customNumberFormat:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/displayText:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)displayText:(NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayText:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/displayImage:</TokenIdentifier>
+			<Abstract type="html">To Be documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)displayImage:(NSString *)imageName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageName</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayImage:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/checkForKeypadInput</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)checkForKeypadInput</Declaration>
+			
+			
+			<Anchor>//api/name/checkForKeypadInput</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/cancelCheckForKeypadInput</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelCheckForKeypadInput</Declaration>
+			
+			
+			<Anchor>//api/name/cancelCheckForKeypadInput</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/softResetDevice</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)softResetDevice</Declaration>
+			
+			
+			<Anchor>//api/name/softResetDevice</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/hardResetDevice</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)hardResetDevice</Declaration>
+			
+			
+			<Anchor>//api/name/hardResetDevice</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/connectToDevice:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)connectToDevice:(NSString *)deviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceName</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectToDevice:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/disconnect</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)disconnect</Declaration>
+			
+			
+			<Anchor>//api/name/disconnect</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/setDeviceClock:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)setDeviceClock:(NSDate *)localTime</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>localTime</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDeviceClock:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/getDeviceClock</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)getDeviceClock</Declaration>
+			
+			
+			<Anchor>//api/name/getDeviceClock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/getDeviceInfo</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)getDeviceInfo</Declaration>
+			
+			
+			<Anchor>//api/name/getDeviceInfo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/requestPinData:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)requestPinData:(PINRequestData *)requestData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>requestData</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestPinData:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/getHardwareDetails</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getHardwareDetails</Declaration>
+			
+			
+			<Anchor>//api/name/getHardwareDetails</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/batteryStatus:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)batteryStatus:(BOOL)enableSleepNow</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enableSleepNow</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/batteryStatus:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/continueTransaction:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)continueTransaction:(BOOL)cashbackAllowed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cashbackAllowed</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/continueTransaction:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MiuraDeviceController/getDeviceConfiguration</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)getDeviceConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/getDeviceConfiguration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYVoidType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYVoidType</TokenIdentifier>
+			<Abstract type="html">This enumeration indicates who is requesting the void - the merchant or the terminal / card.  This
+does not ever need to be used by the merchant or developer as WPYVoidTypeMerchant is automatically
+set and overridden by the SDK when an EMV reversal is being performed</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+            
+			
+			<NodeRef refid="98"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYVoidTypeMerchant</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYVoidTypeMerchant</Declaration>
+            
+            <DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYVoidTypeSystem</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYVoidTypeSystem</Declaration>
+            
+            <DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/USCommonDebitMode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/USCommonDebitMode</TokenIdentifier>
+			<Abstract type="html">Determines what type of debit application will be allowed or whether the user can select one</Abstract>
+			<DeclaredIn>TransactionSettings.h</DeclaredIn>
+            
+			
+			<NodeRef refid="74"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/USCommonDebitModeDefault</TokenIdentifier>
+            <Abstract type="html">Default behavior - cardholder selects application</Abstract>
+            <Declaration>USCommonDebitModeDefault</Declaration>
+            
+            <DeclaredIn>TransactionSettings.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/USCommonDebitModePreferCommonDebit</TokenIdentifier>
+            <Abstract type="html">No Application Selection - Use US Common Debit</Abstract>
+            <Declaration>USCommonDebitModePreferCommonDebit</Declaration>
+            
+            <DeclaredIn>TransactionSettings.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/USCommonDebitModePreferGlobalDebit</TokenIdentifier>
+            <Abstract type="html">No Application Selection - Use Global Debit</Abstract>
+            <Declaration>USCommonDebitModePreferGlobalDebit</Declaration>
+            
+            <DeclaredIn>TransactionSettings.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

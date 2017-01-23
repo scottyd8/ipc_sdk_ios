@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CardEntryMode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CardEntryMode</TokenIdentifier>
+			<Abstract type="html">Contact or Contactless transaction</Abstract>
+			<DeclaredIn>TransactionData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CardEntryModeContact</TokenIdentifier>
+            <Abstract type="html">Contact</Abstract>
+            <Declaration>CardEntryModeContact</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CardEntryModeContactlessEMV</TokenIdentifier>
+            <Abstract type="html">Contactless EMV</Abstract>
+            <Declaration>CardEntryModeContactlessEMV</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CardEntryModeContactlessMSR</TokenIdentifier>
+            <Abstract type="html">Contactless Magnetic stripe</Abstract>
+            <Declaration>CardEntryModeContactlessMSR</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

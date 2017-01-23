@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYPaymentAuthorize.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentAuthorize</TokenIdentifier>
+			<Abstract type="html">This requests authorization of the provided token or Tendered Card.  Inherits the following properties from WPYPaymentRequest:
+amount, amountOther, card, extendedData (for card processing)</Abstract>
+			<DeclaredIn>WPYPaymentAuthorize.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

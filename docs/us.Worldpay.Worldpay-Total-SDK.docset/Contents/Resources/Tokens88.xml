@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYManualTenderType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYManualTenderType</TokenIdentifier>
+			<Abstract type="html">Types of manual entry payment methods accepted</Abstract>
+			<DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="88"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCredit</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYManualTenderTypeCredit</Declaration>
+            
+            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            
+            <NodeRef refid="88"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCheck</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYManualTenderTypeCheck</Declaration>
+            
+            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            
+            <NodeRef refid="88"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

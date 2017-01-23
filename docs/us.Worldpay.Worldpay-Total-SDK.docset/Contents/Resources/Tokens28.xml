@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYPaymentCapture.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentCapture</TokenIdentifier>
+			<Abstract type="html">This requests that the previously authorized transaction be captured</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/setAmount:</TokenIdentifier>
+			<Abstract type="html">The amount to capture against the previous authorization</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/amount</TokenIdentifier>
+			<Abstract type="html">The amount to capture against the previous authorization</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentCapture/amount</TokenIdentifier>
+			<Abstract type="html">The amount to capture against the previous authorization</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/setTransactionId:</TokenIdentifier>
+			<Abstract type="html">The transaction ID of the authorization to be captured</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			
+			
+			<Anchor>//api/name/transactionId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/transactionId</TokenIdentifier>
+			<Abstract type="html">The transaction ID of the authorization to be captured</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			
+			
+			<Anchor>//api/name/transactionId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentCapture/transactionId</TokenIdentifier>
+			<Abstract type="html">The transaction ID of the authorization to be captured</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			
+			
+			<Anchor>//api/name/transactionId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/setExtendedInformation:</TokenIdentifier>
+			<Abstract type="html">Additional card data that the merchant may wish to include with the transaction</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Additional card data that the merchant may wish to include with the transaction</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentCapture/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Additional card data that the merchant may wish to include with the transaction</Abstract>
+			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

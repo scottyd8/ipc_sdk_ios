@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/NumericDataInput.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/NumericDataInput</TokenIdentifier>
+			<Abstract type="html">Numeric data required on pinpad</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputGratuity</TokenIdentifier>
+            <Abstract type="html">Prompt for gratuity</Abstract>
+            <Declaration>NumericDataInputGratuity</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputTip</TokenIdentifier>
+            <Abstract type="html">Prompt for tip</Abstract>
+            <Declaration>NumericDataInputTip</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCashback</TokenIdentifier>
+            <Abstract type="html">Prompt for cashback</Abstract>
+            <Declaration>NumericDataInputCashback</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputExpirationDate</TokenIdentifier>
+            <Abstract type="html">Prompt for expiration date</Abstract>
+            <Declaration>NumericDataInputExpirationDate</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCVV2</TokenIdentifier>
+            <Abstract type="html">Prompt for CVV</Abstract>
+            <Declaration>NumericDataInputCVV2</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCardLastFour</TokenIdentifier>
+            <Abstract type="html">Prompt for last four digits of card</Abstract>
+            <Declaration>NumericDataInputCardLastFour</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputAccountType</TokenIdentifier>
+            <Abstract type="html">Prompt for account type</Abstract>
+            <Declaration>NumericDataInputAccountType</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputPostalCode</TokenIdentifier>
+            <Abstract type="html">Prompt for zip code</Abstract>
+            <Declaration>NumericDataInputPostalCode</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCardNumber</TokenIdentifier>
+            <Abstract type="html">prompt for card number</Abstract>
+            <Declaration>NumericDataInputCardNumber</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCustom</TokenIdentifier>
+            <Abstract type="html">Custom prompt (requires customPrompt and numberFormat to be specified)</Abstract>
+            <Declaration>NumericDataInputCustom</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

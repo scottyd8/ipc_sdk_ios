@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYTender.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTender</TokenIdentifier>
+			<Abstract type="html">This is the base class for a tendered payment method</Abstract>
+			<DeclaredIn>WPYTender.h</DeclaredIn>
+            
+			
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WPYTender/cardLuhnCheck:</TokenIdentifier>
+			<Abstract type="html">Perform a Luhn check on the account number provided to make sure that it is a valid PAN (helps catch transpositions
+and other manual card entry errors)</Abstract>
+			<DeclaredIn>WPYTender.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)cardLuhnCheck:(NSString *)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">- The account number to check.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cardLuhnCheck:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WPYTender/cardTypeFromCardNumber:</TokenIdentifier>
+			<Abstract type="html">Returns the expected card type based on the BIN of the card number provided.  Used to validate PAN lengths on manual entries</Abstract>
+			<DeclaredIn>WPYTender.h</DeclaredIn>
+			
+			<Declaration>+ (WPYCardType)cardTypeFromCardNumber:(NSString *)cardNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cardNumber</Name>
+					<Abstract type="html">The account number to validate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cardTypeFromCardNumber:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

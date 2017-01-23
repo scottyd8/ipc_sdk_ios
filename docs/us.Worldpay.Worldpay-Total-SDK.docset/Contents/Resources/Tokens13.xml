@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYBatchResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYBatchResponse</TokenIdentifier>
+			<Abstract type="html">An object that only contains the identifier for the current batch.  Note that the &apos;identifier&apos; property is common to all
+WPYDomainObjects and is therefore visible at the base class level</Abstract>
+			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/setBatchId:</TokenIdentifier>
+			<Abstract type="html">A convenience method to get the WPYBatchResponse.identifier associated with the transaction</Abstract>
+			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=getBatchId) NSString *batchId</Declaration>
+			
+			
+			<Anchor>//api/name/batchId</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/getBatchId</TokenIdentifier>
+			<Abstract type="html">A convenience method to get the WPYBatchResponse.identifier associated with the transaction</Abstract>
+			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=getBatchId) NSString *batchId</Declaration>
+			
+			
+			<Anchor>//api/name/batchId</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYBatchResponse/batchId</TokenIdentifier>
+			<Abstract type="html">A convenience method to get the WPYBatchResponse.identifier associated with the transaction</Abstract>
+			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=getBatchId) NSString *batchId</Declaration>
+			
+			
+			<Anchor>//api/name/batchId</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/setTransactions:</TokenIdentifier>
+			<Abstract type="html">A list of transactions associated with the batch</Abstract>
+			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			
+			
+			<Anchor>//api/name/transactions</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/transactions</TokenIdentifier>
+			<Abstract type="html">A list of transactions associated with the batch</Abstract>
+			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			
+			
+			<Anchor>//api/name/transactions</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYBatchResponse/transactions</TokenIdentifier>
+			<Abstract type="html">A list of transactions associated with the batch</Abstract>
+			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			
+			
+			<Anchor>//api/name/transactions</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

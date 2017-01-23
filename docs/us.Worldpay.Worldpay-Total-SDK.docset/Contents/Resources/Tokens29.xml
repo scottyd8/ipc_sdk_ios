@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYPaymentCharge.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentCharge</TokenIdentifier>
+			<Abstract type="html">This requests immediate authorization and capture of the tendered check or card.  Inherits the following properties from WPYPaymentRequest:
+amount, amountOther, card, extendedData (for card processing)</Abstract>
+			<DeclaredIn>WPYPaymentCharge.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

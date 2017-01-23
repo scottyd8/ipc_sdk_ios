@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYResponseCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYResponseCode</TokenIdentifier>
+			<Abstract type="html">Gateway Response code indicating whether the request was approved, declined, or resulted in a server error.
+The response code is set on all parent response objects being returned from the gateway</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="91"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYResponseCodeApproved</TokenIdentifier>
+            <Abstract type="html">Self-explanatory</Abstract>
+            <Declaration>WPYResponseCodeApproved</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="91"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYResponseCodeDeclined</TokenIdentifier>
+            <Abstract type="html">Self-explanatory</Abstract>
+            <Declaration>WPYResponseCodeDeclined</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="91"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYResponseCodeError</TokenIdentifier>
+            <Abstract type="html">Self-explanatory</Abstract>
+            <Declaration>WPYResponseCodeError</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="91"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYResponseCodeTransactionTerminated</TokenIdentifier>
+            <Abstract type="html">Self-explanatory</Abstract>
+            <Declaration>WPYResponseCodeTransactionTerminated</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="91"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYResponseCodeReversal</TokenIdentifier>
+            <Abstract type="html">Self-explanatory</Abstract>
+            <Declaration>WPYResponseCodeReversal</Declaration>
+            
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+            <NodeRef refid="91"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

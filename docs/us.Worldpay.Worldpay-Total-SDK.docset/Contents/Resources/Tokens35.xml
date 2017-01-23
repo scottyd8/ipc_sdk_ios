@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYPaymentResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentResponse</TokenIdentifier>
+			<Abstract type="html">This object is returned by the server upon completion of a payment request</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentResponse/setTransaction:</TokenIdentifier>
+			<Abstract type="html">This object contains the transaction data from the server</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYTransaction *transaction</Declaration>
+			
+			
+			<Anchor>//api/name/transaction</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentResponse/transaction</TokenIdentifier>
+			<Abstract type="html">This object contains the transaction data from the server</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYTransaction *transaction</Declaration>
+			
+			
+			<Anchor>//api/name/transaction</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentResponse/transaction</TokenIdentifier>
+			<Abstract type="html">This object contains the transaction data from the server</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYTransaction *transaction</Declaration>
+			
+			
+			<Anchor>//api/name/transaction</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentResponse/setReceiptData:</TokenIdentifier>
+			<Abstract type="html">This object contains information to help create a proper receipt. See Worldpay&apos;s receipt
+guide for more information</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYReceiptObject *receiptData</Declaration>
+			
+			
+			<Anchor>//api/name/receiptData</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentResponse/receiptData</TokenIdentifier>
+			<Abstract type="html">This object contains information to help create a proper receipt. See Worldpay&apos;s receipt
+guide for more information</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYReceiptObject *receiptData</Declaration>
+			
+			
+			<Anchor>//api/name/receiptData</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentResponse/receiptData</TokenIdentifier>
+			<Abstract type="html">This object contains information to help create a proper receipt. See Worldpay&apos;s receipt
+guide for more information</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYReceiptObject *receiptData</Declaration>
+			
+			
+			<Anchor>//api/name/receiptData</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentResponse/setEmvResponse:</TokenIdentifier>
+			<Abstract type="html">This object contains the EMV data from the server</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYEMVData *emvResponse</Declaration>
+			
+			
+			<Anchor>//api/name/emvResponse</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentResponse/emvResponse</TokenIdentifier>
+			<Abstract type="html">This object contains the EMV data from the server</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYEMVData *emvResponse</Declaration>
+			
+			
+			<Anchor>//api/name/emvResponse</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentResponse/emvResponse</TokenIdentifier>
+			<Abstract type="html">This object contains the EMV data from the server</Abstract>
+			<DeclaredIn>WPYPaymentResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYEMVData *emvResponse</Declaration>
+			
+			
+			<Anchor>//api/name/emvResponse</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentResponse/setResponseCode:</TokenIdentifier>
+			<Abstract type="html">Gateway response code for the current request</Abstract>
+			<DeclaredIn>WPYResponseObjectPrivate.h</DeclaredIn>
+			
+			<Declaration>- (void)setResponseCode:(WPYResponseCode)responseCode</Declaration>
+			
+			
+			<Anchor>//api/name/setResponseCode:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

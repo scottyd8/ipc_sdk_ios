@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/BatteryStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/BatteryStatus</TokenIdentifier>
+			<Abstract type="html">Battery status</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/BatteryStatusNotPluggedIn</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>BatteryStatusNotPluggedIn</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="58"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/BatteryStatusCharging</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>BatteryStatusCharging</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="58"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/BatteryStatusFullyChargedPluggedIn</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>BatteryStatusFullyChargedPluggedIn</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="58"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

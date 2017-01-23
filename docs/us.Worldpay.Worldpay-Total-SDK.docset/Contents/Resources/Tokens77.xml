@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYCVMethod.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCVMethod</TokenIdentifier>
+			<Abstract type="html">This data indicates the type of cardholder verification that was performed on the transaction.
+The type of CVM that is used to help determine what information will be on the receipt</Abstract>
+			<DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="77"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodNoCVM</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCVMethodNoCVM</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="77"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodPlaintextPIN</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCVMethodPlaintextPIN</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="77"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodOnlinePIN</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCVMethodOnlinePIN</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="77"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodMobileConfirmCode</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCVMethodMobileConfirmCode</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="77"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodOfflineEncipheredPIN</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCVMethodOfflineEncipheredPIN</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="77"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodSignature</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCVMethodSignature</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="77"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

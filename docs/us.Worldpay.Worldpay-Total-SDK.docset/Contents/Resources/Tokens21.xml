@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYGetPaymentToken.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYGetPaymentToken</TokenIdentifier>
+			<Abstract type="html">This request will generate a payment token that represents the presented card or check.  The customer ID must be provided</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setCard:</TokenIdentifier>
+			<Abstract type="html">The card data that is to be tokenized</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/card</TokenIdentifier>
+			<Abstract type="html">The card data that is to be tokenized</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/card</TokenIdentifier>
+			<Abstract type="html">The card data that is to be tokenized</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setCheck:</TokenIdentifier>
+			<Abstract type="html">The check data that is to be tokenized</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/check</TokenIdentifier>
+			<Abstract type="html">The check data that is to be tokenized</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/check</TokenIdentifier>
+			<Abstract type="html">The check data that is to be tokenized</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setCustomerId:</TokenIdentifier>
+			<Abstract type="html">The Customer ID that this payment token will be associated with</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/customerId</TokenIdentifier>
+			<Abstract type="html">The Customer ID that this payment token will be associated with</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/customerId</TokenIdentifier>
+			<Abstract type="html">The Customer ID that this payment token will be associated with</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setAddToVault:</TokenIdentifier>
+			<Abstract type="html">A flag indicating whether or not this payment method should be saved in the payment vault</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property BOOL addToVault</Declaration>
+			
+			
+			<Anchor>//api/name/addToVault</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/addToVault</TokenIdentifier>
+			<Abstract type="html">A flag indicating whether or not this payment method should be saved in the payment vault</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property BOOL addToVault</Declaration>
+			
+			
+			<Anchor>//api/name/addToVault</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/addToVault</TokenIdentifier>
+			<Abstract type="html">A flag indicating whether or not this payment method should be saved in the payment vault</Abstract>
+			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			
+			<Declaration>@property BOOL addToVault</Declaration>
+			
+			
+			<Anchor>//api/name/addToVault</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

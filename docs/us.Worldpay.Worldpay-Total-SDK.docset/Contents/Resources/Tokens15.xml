@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYCheckTransactionData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYCheckTransactionData</TokenIdentifier>
+			<Abstract type="html">Check Transaction Data returned from the payment gateway</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/setAccountNumber:</TokenIdentifier>
+			<Abstract type="html">Redacted account number for the check</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *accountNumber</Declaration>
+			
+			
+			<Anchor>//api/name/accountNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/accountNumber</TokenIdentifier>
+			<Abstract type="html">Redacted account number for the check</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *accountNumber</Declaration>
+			
+			
+			<Anchor>//api/name/accountNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCheckTransactionData/accountNumber</TokenIdentifier>
+			<Abstract type="html">Redacted account number for the check</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *accountNumber</Declaration>
+			
+			
+			<Anchor>//api/name/accountNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/setTraceNumber:</TokenIdentifier>
+			<Abstract type="html">Trace Number for the transaction</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *traceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/traceNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/traceNumber</TokenIdentifier>
+			<Abstract type="html">Trace Number for the transaction</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *traceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/traceNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCheckTransactionData/traceNumber</TokenIdentifier>
+			<Abstract type="html">Trace Number for the transaction</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *traceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/traceNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/setCheckNumber:</TokenIdentifier>
+			<Abstract type="html">Check number used in the payment request</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *checkNumber</Declaration>
+			
+			
+			<Anchor>//api/name/checkNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/checkNumber</TokenIdentifier>
+			<Abstract type="html">Check number used in the payment request</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *checkNumber</Declaration>
+			
+			
+			<Anchor>//api/name/checkNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCheckTransactionData/checkNumber</TokenIdentifier>
+			<Abstract type="html">Check number used in the payment request</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *checkNumber</Declaration>
+			
+			
+			<Anchor>//api/name/checkNumber</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/setBank:</TokenIdentifier>
+			<Abstract type="html">Name of bank associated with the account</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *bank</Declaration>
+			
+			
+			<Anchor>//api/name/bank</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/bank</TokenIdentifier>
+			<Abstract type="html">Name of bank associated with the account</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *bank</Declaration>
+			
+			
+			<Anchor>//api/name/bank</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCheckTransactionData/bank</TokenIdentifier>
+			<Abstract type="html">Name of bank associated with the account</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *bank</Declaration>
+			
+			
+			<Anchor>//api/name/bank</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/setAccountType:</TokenIdentifier>
+			<Abstract type="html">The type of account associated with the check</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property WPYCheckAccountType accountType</Declaration>
+			
+			
+			<Anchor>//api/name/accountType</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCheckTransactionData/accountType</TokenIdentifier>
+			<Abstract type="html">The type of account associated with the check</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property WPYCheckAccountType accountType</Declaration>
+			
+			
+			<Anchor>//api/name/accountType</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCheckTransactionData/accountType</TokenIdentifier>
+			<Abstract type="html">The type of account associated with the check</Abstract>
+			<DeclaredIn>WPYCheckTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property WPYCheckAccountType accountType</Declaration>
+			
+			
+			<Anchor>//api/name/accountType</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
