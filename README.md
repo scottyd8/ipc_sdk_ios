@@ -17,10 +17,7 @@ You can use the card reader on your iOS device:
 5.  Run the app
 
 ## More Information
-Read the [Getting Started Guide](https://github.com/worldpayus/ipc_sdk_ios/blob/master/docs/Getting%20Started%20with%20the%20Worldpay%20IPC%20SDK%20for%20iOS.pdf) first
-
-### IPC SDK Class Documentation
-You can find information about the SDK classes here: https://github.com/worldpayus/ipc_sdk_ios/tree/master/docs/sdkdoc
+You can find the Getting Started Guide, full documentation of the SDK object library, as well as Application Notes on our [iOS documentation library](https://worldpayus.github.io/ipc_sdk_ios).
 
 ### Worldpay Total Developer Resources
 For information about getting your sandbox account, and comprehensive information about the Integrated Payment Hub REST API, see our developer resources at http://worldpay.us/developer
