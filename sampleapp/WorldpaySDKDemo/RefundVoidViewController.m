@@ -65,8 +65,7 @@
         [self removeFocusFromTextField:nil];
     }];
     
-    self.startButton.backgroundColor = [UIColor worldpayEmerald];
-    [self.startButton setTitleColor:[UIColor worldpayWhite] forState:UIControlStateNormal];
+    [Helper styleButtonPrimary:self.startButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -165,23 +164,25 @@
         
         NSLog(@"Response: %@", [response jsonDictionary]);
         
-        switch (response.resultCode)
+        switch (response.responseCode)
         {
-            case WPYTransactionResultApproved:
+            case WPYResponseCodeApproved:
                 transactionStatus = @"Approved";
                 break;
-            case WPYTransactionResultDeclined:
+            case WPYResponseCodeDeclined:
                 transactionStatus = @"Declined";
                 break;
-            case WPYTransactionResultTerminated:
+            case WPYResponseCodeError:
+                transactionStatus = @"Error";
+                break;
+            case WPYResponseCodeTransactionTerminated:
                 transactionStatus = @"Terminated";
                 break;
-            case WPYTransactionResultCardBlocked:
-                transactionStatus = @"Card Blocked";
+            case WPYResponseCodeReversal:
+                transactionStatus = @"Decline - Reversal";
                 break;
             default:
                 transactionStatus = @"Other - see logs";
-                break;
         }
         
         if(response.transaction != nil)

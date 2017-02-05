@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="docs/guides/Developer-Guide.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/doc/Developer Guide</TokenIdentifier>
+			<Abstract type="html"># Introduction
+The Worldpay Total Integrated Payment Client Software Development Kit
+(IPC SDK) is a wonderful way for you to develop rich mobile applications
+in the native language of the mobile device. We currently have SDKs for
+iOS, Android, and Windows. Besides allowing you to develop native
+applications, there are two other compelling reasons to choose this
+platform:</Abstract>
+			<DeclaredIn>Developer Guide-template.md</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

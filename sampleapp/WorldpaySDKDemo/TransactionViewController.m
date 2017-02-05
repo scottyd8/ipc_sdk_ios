@@ -145,8 +145,6 @@
     [recognizer2 setNumberOfTouchesRequired:1];
     [self.extendedInfoView addGestureRecognizer:recognizer2];
     
-    [self.cardPresentSegmented setTitleTextAttributes:[UIFont worldpayPrimaryAttributesWithSize: TEXTFIELDSIZE] forState:UIControlStateNormal];
-    [self.addToVaultSegmented setTitleTextAttributes:[UIFont worldpayPrimaryAttributesWithSize: TEXTFIELDSIZE] forState:UIControlStateNormal];
     [self.startButton.titleLabel setFont:[UIFont worldpayPrimaryWithSize: BUTTONTEXTSIZE]];
     
     for(UILabel * label in self.formLabels)
@@ -154,13 +152,12 @@
         [label setFont:[UIFont worldpayPrimaryWithSize: LABELTEXTSIZE]];
     }
     
-    [self.transactionTypeDropDown setSelectionCallback:^(NSUInteger __unused index)
+    [self.transactionTypeDropDown setEditingCallback:^
     {
         [self removeFocusFromTextField:nil];
     }];
     
-    self.startButton.backgroundColor = [UIColor worldpayEmerald];
-    [self.startButton setTitleColor:[UIColor worldpayWhite] forState:UIControlStateNormal];
+    [Helper styleButtonPrimary:self.startButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -224,10 +221,18 @@
     if([self.cardPresentSegmented selectedSegmentIndex] == VAULTINDEX)
     {
         [self toggleVaultInfo:true];
+        [self.extendedInfoView setMobileGrautity];
+        
     }
-    else
+    else if([self.cardPresentSegmented selectedSegmentIndex] == NOINDEX)
     {
         [self toggleVaultInfo:false];
+        [self.extendedInfoView setMobileGrautity];
+    }
+    else if([self.cardPresentSegmented selectedSegmentIndex] == YESINDEX)
+    {
+        [self toggleVaultInfo:false];
+        [self.extendedInfoView setTerminalGratuity];
     }
 }
 
@@ -248,9 +253,22 @@
         return;
     }
     
-    if(!(self.amountTextField.text.doubleValue > 0))
+    NSMutableCharacterSet* notDigits = [[[NSCharacterSet decimalDigitCharacterSet] invertedSet] mutableCopy];
+    
+    [notDigits removeCharactersInString:@"."];
+    
+    if(!([self.amountTextField.text rangeOfCharacterFromSet:notDigits].location == NSNotFound))
     {
         UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please enter a numeric amount greater than 0." preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+        return;
+    }
+    
+    if(self.extendedInfoView.gratuityAmount.text.length > 0 && !([self.extendedInfoView.gratuityAmount.text rangeOfCharacterFromSet:notDigits].location == NSNotFound))
+    {
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please enter a numeric gratuity amount greater than 0." preferredStyle:UIAlertControllerStyleAlert];
         
         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
         [self presentViewController:alert animated:YES completion:nil];
@@ -299,7 +317,7 @@
             request = [WPYPaymentAuthorize new];
     }
     
-    WPYEMVTransactionType transactionType = WPYEMVTransactionTypeGoods;
+    WPYEMVTransactionType transactionType = WPYEMVTransactionTypeCashback;
     
     request.amount = [NSDecimalNumber decimalNumberWithString:self.amountTextField.text];
     
@@ -333,25 +351,32 @@
         
             level2.orderDate = date;
         }
-        level2.purchaseOrderNumber = self.extendedInfoView.purchaseOrder.text;
+        level2.purchaseOrder = self.extendedInfoView.purchaseOrder.text;
         
         extendedData.levelTwoData = level2;
     }
     
-    if(self.extendedInfoView.gratuityAmount.text.doubleValue > 0 || ![self.extendedInfoView.serverName.text  isEqualToString: @""])
+    if(self.extendedInfoView.gratuityAmount.text.doubleValue > 0 || ![self.extendedInfoView.serverName.text isEqualToString: @""])
     {
         WPYTenderServiceData * serviceData = [[WPYTenderServiceData alloc] init];
         
-        serviceData.gratuityAmount = [NSDecimalNumber decimalNumberWithString:self.extendedInfoView.gratuityAmount.text];
-        request.amount = [request.amount decimalNumberByAdding:serviceData.gratuityAmount];
+        if(self.extendedInfoView.gratuityAmount.text.doubleValue > 0)
+        {
+            serviceData.gratuityAmount = [NSDecimalNumber decimalNumberWithString:self.extendedInfoView.gratuityAmount.text];
+            request.amount = [request.amount decimalNumberByAdding:serviceData.gratuityAmount];
+        }
+        
         serviceData.server = self.extendedInfoView.serverName.text;
         
         extendedData.serviceData = serviceData;
-        
+    }
+    
+    if(self.extendedInfoView.terminalGratuity.selectedSegmentIndex != 0)
+    {
         transactionType = WPYEMVTransactionTypeServices;
     }
     
-    request.extendedData = extendedData;
+    request.extendedInformation = extendedData;
     
     if([self.cardPresentSegmented selectedSegmentIndex] == NOINDEX)
     {
@@ -622,6 +647,37 @@
 
 #pragma mark - WPYSwiperDelegate
 
+- (void)swiper:(WPYSwiper *)swiper didReceiveCardEvent:(WPYCardEvent)eventType
+{
+    NSString * type;
+    
+    switch(eventType)
+    {
+        case WPYCardEventSwiped:
+            type = @"swiped";
+            break;
+        case WPYCardEventInserted:
+            type = @"inserted";
+            break;
+        case WPYCardEventRemoved:
+            type = @"removed";
+            break;
+        case WPYCardEventNonICCInserted:
+            type = @"non-icc inserted";
+            break;
+        case WPYCardEventBadSwipe:
+            type = @"bad swipe";
+            break;
+        case WPYCardEventIccCardSwiped:
+            type = @"icc swiped";
+            break;
+        default:
+            break;
+    }
+    
+    NSLog(@"Card event received: %@", type);
+}
+
 - (void)didConnectSwiper:(WPYSwiper *)swiper
 {
     NSLog(@"%@", @"Swiper connected");
@@ -671,27 +727,30 @@
     
     NSString *transactionStatus;
     
-    BOOL approved = response.responseCode == WPYResponseCodeApproved;
+    BOOL approved = NO;
     
     NSString * signatureNeeded = @"";
     
-    switch (response.resultCode)
+    switch (response.responseCode)
     {
-        case WPYTransactionResultApproved:
+        case WPYResponseCodeApproved:
             transactionStatus = @"Approved";
+            approved = YES;
             break;
-        case WPYTransactionResultDeclined:
+        case WPYResponseCodeDeclined:
             transactionStatus = @"Declined";
             break;
-        case WPYTransactionResultTerminated:
+        case WPYResponseCodeError:
+            transactionStatus = @"Error";
+            break;
+        case WPYResponseCodeTransactionTerminated:
             transactionStatus = @"Terminated";
             break;
-        case WPYTransactionResultCardBlocked:
-            transactionStatus = @"Card Blocked";
+        case WPYResponseCodeReversal:
+            transactionStatus = @"Decline - Reversal";
             break;
         default:
             transactionStatus = @"Other - see logs";
-            break;
     }
     
     if(response == nil)
@@ -713,7 +772,7 @@
             responseMessage = response.transaction.responseText;
         }
         
-        if(response.resultCode == WPYTransactionResultReversal)
+        if(response.responseCode == WPYResponseCodeReversal)
         {
             // TODO: In demo, this result had its own message, wondering if response.transaction.responseText is fine?
             
@@ -735,7 +794,7 @@
         }
     }
     
-    alert = [UIAlertController alertControllerWithTitle:@"Response" message:[NSString stringWithFormat:@"Status: %@\r\n%@Message: %@\r\n%@", transactionStatus, (response.transaction.transactionId.integerValue > 0 ? [NSString stringWithFormat:@"Transaction Id: %@\r\n", response.transaction.transactionId]: @""),responseMessage ?: @"No Message", signatureNeeded] preferredStyle:UIAlertControllerStyleAlert];
+    alert = [UIAlertController alertControllerWithTitle:@"Response" message:[NSString stringWithFormat:@"Status: %@\r\n%@Message: %@\r\n%@", transactionStatus, (response.transaction.transactionIdentifier.integerValue > 0 ? [NSString stringWithFormat:@"Transaction Id: %@\r\n", response.transaction.transactionIdentifier]: @""),responseMessage ?: @"No Message", signatureNeeded] preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self cleanAlertUserAction:YES];
     }]];
@@ -753,7 +812,12 @@
     NSLog(@"%@: %@", @"Swiper failed request with error", error);
 }
 
-- (void)swiper:(WPYSwiper *)swiper didRequestDevicePromptText:(WPYDevicePrompt)prompt completion:(void (^)(NSString *))completion
+- (void) swiper:(WPYSwiper *)swiper didRequestAccountTypeSelection:(NSArray<NSNumber *> *)accountTypes
+{
+    
+}
+
+- (void) swiper:(WPYSwiper *)swiper didRequestDevicePromptText:(WPYDevicePrompt)prompt defaultText:(NSString *) defaultText completion:(void (^)(NSString *))completion
 {
     if(!self.transactionInProgress)
     {
@@ -897,7 +961,7 @@
             defaultPrompt = @"Tap Card";
             break;
         default:
-            defaultPrompt = nil;
+            defaultPrompt = defaultText;
             break;
     }
     
@@ -928,12 +992,12 @@
     NSLog(@"%@: %@", @"Manual entry failed with error", error);
     
     // Delay necessary to ensure manual entry controller is off screen
-    [self performSelector:@selector(manualErrorAlert) withObject:nil afterDelay:.1];
+    [self performSelector:@selector(manualErrorAlert:) withObject:error.localizedDescription afterDelay:.1];
 }
 
-- (void) manualErrorAlert
+- (void) manualErrorAlert: (NSString *) errorMessage
 {
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Manual entry failed with an error" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat:@"Manual entry failed with an error%@", (errorMessage.length > 0 ? [NSString stringWithFormat:@": %@", errorMessage] : @"")] preferredStyle:UIAlertControllerStyleAlert];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
     {
@@ -959,6 +1023,28 @@
 - (void) manualResponseAlert: (WPYPaymentResponse *) tender
 {
     [self swiper:nil didFinishTransactionWithResponse:tender];
+}
+
+- (void)manualTenderEntryController:(WPYManualTenderEntryViewController *)controller didReceivePaymentMethod:(WPYPaymentMethod *)method withError:(NSError *)error
+{
+    NSLog(@"%@: %@", @"Manual entry received payment method", method.identifier);
+    
+    if(!method || error)
+    {
+    
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat: @"Manual entry failed to create payment method%@", (error ? [NSString stringWithFormat:@"with an error: %@", [error localizedDescription]] : @"")] preferredStyle:UIAlertControllerStyleAlert];
+    
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
+        {
+            [self cleanAlertUserAction:YES];
+        }]];
+    
+        [self displayAlert:alert];
+    }
+    else
+    {
+        // Do something with payment method
+    }
 }
 
 @end

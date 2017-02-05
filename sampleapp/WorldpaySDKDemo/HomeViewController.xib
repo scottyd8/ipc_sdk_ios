@@ -11,6 +11,7 @@
             <string>AdelleSans-Regular</string>
             <string>AdelleSans-Regular</string>
             <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -20,6 +21,7 @@
                 <outletCollection property="buttons" destination="jXS-Cr-EBS" id="7ln-gn-vgZ"/>
                 <outletCollection property="buttons" destination="KJ2-TG-uyF" id="2ri-U4-xDe"/>
                 <outletCollection property="buttons" destination="GRU-Io-ego" id="zGQ-St-tmP"/>
+                <outletCollection property="buttons" destination="aNn-Fk-IJO" id="RhS-qW-g05"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -28,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXS-Cr-EBS">
-                    <rect key="frame" x="75.5" y="194" width="450" height="50"/>
+                    <rect key="frame" x="75" y="194" width="450" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="OBN-Lk-4DO"/>
                     </constraints>
@@ -45,7 +47,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ2-TG-uyF">
-                    <rect key="frame" x="75.5" y="288" width="450" height="50"/>
+                    <rect key="frame" x="75" y="288" width="450" height="50"/>
                     <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
                     <state key="normal" title="Refund/Void"/>
                     <connections>
@@ -53,7 +55,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRU-Io-ego">
-                    <rect key="frame" x="75.5" y="382" width="450" height="50"/>
+                    <rect key="frame" x="75" y="382" width="450" height="50"/>
                     <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
                     <state key="normal" title="Settlement"/>
                     <connections>
@@ -61,7 +63,7 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6O-69-Zlw" userLabel="Spacer 1">
-                    <rect key="frame" x="300.5" y="244" width="0.0" height="44"/>
+                    <rect key="frame" x="300" y="244" width="0.0" height="44"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" id="3rK-NP-7zM"/>
@@ -69,11 +71,11 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-uT-oGX" userLabel="Spacer 2">
-                    <rect key="frame" x="300.5" y="338" width="0.0" height="44"/>
+                    <rect key="frame" x="300" y="338" width="0.0" height="44"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldpay_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Ic-cov">
-                    <rect key="frame" x="175.5" y="100" width="250" height="50"/>
+                    <rect key="frame" x="175" y="100" width="250" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="tCy-Ic-cov" secondAttribute="height" multiplier="55:11" id="Gfo-rR-5DE"/>
                         <constraint firstAttribute="height" constant="50" id="nP4-EJ-heo"/>
@@ -91,19 +93,48 @@
                         <constraint firstAttribute="width" secondItem="11n-XZ-1Na" secondAttribute="height" multiplier="1:1" id="rPv-rI-56U"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cra-U3-C5g" userLabel="Spacer 3">
+                    <rect key="frame" x="300" y="432" width="0.0" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="HbH-Xh-iqU"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNn-Fk-IJO">
+                    <rect key="frame" x="75" y="476" width="450" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sOj-Jt-MzV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
+                    <state key="normal" title="Vault"/>
+                    <connections>
+                        <action selector="vault:" destination="-1" eventType="touchUpInside" id="myB-FF-y1y"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vault_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NqV-Fi-9Jx">
+                    <rect key="frame" x="100" y="481" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NqV-Fi-9Jx" secondAttribute="height" multiplier="1:1" id="zjL-pg-Hmx"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="jXS-Cr-EBS" firstAttribute="leading" secondItem="bAs-Fp-UR8" secondAttribute="trailing" constant="-64.5" id="0Tk-1o-GPc"/>
                 <constraint firstItem="bAs-Fp-UR8" firstAttribute="height" secondItem="jXS-Cr-EBS" secondAttribute="height" multiplier="4:5" id="1WZ-kd-Igf"/>
                 <constraint firstItem="GRU-Io-ego" firstAttribute="leading" secondItem="KJ2-TG-uyF" secondAttribute="leading" id="3zv-YJ-Yba"/>
+                <constraint firstItem="NqV-Fi-9Jx" firstAttribute="width" secondItem="NqV-Fi-9Jx" secondAttribute="height" multiplier="1:1" id="4Nm-kL-LVo"/>
                 <constraint firstItem="w6O-69-Zlw" firstAttribute="top" secondItem="jXS-Cr-EBS" secondAttribute="bottom" id="9J6-Wo-aDy"/>
+                <constraint firstItem="NqV-Fi-9Jx" firstAttribute="trailing" secondItem="11n-XZ-1Na" secondAttribute="trailing" id="9pu-Or-wr4"/>
                 <constraint firstItem="jXS-Cr-EBS" firstAttribute="top" secondItem="tCy-Ic-cov" secondAttribute="bottom" constant="44" id="AQ4-Dj-ptG"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="height" secondItem="w6O-69-Zlw" secondAttribute="height" id="CRd-ll-E2i"/>
+                <constraint firstItem="NqV-Fi-9Jx" firstAttribute="centerY" secondItem="aNn-Fk-IJO" secondAttribute="centerY" id="DGd-vB-fL8"/>
+                <constraint firstItem="cra-U3-C5g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EQ7-Jm-Vl6"/>
                 <constraint firstItem="jXS-Cr-EBS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LSh-tl-H2K"/>
                 <constraint firstItem="kHC-0b-tsK" firstAttribute="leading" secondItem="bAs-Fp-UR8" secondAttribute="leading" id="PKg-Lm-LHC"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="top" secondItem="KJ2-TG-uyF" secondAttribute="bottom" id="TLp-vY-t8c"/>
                 <constraint firstItem="tCy-Ic-cov" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UYe-QW-uMK"/>
+                <constraint firstItem="aNn-Fk-IJO" firstAttribute="trailing" secondItem="GRU-Io-ego" secondAttribute="trailing" id="Ung-jJ-bFg"/>
                 <constraint firstItem="GRU-Io-ego" firstAttribute="trailing" secondItem="KJ2-TG-uyF" secondAttribute="trailing" id="V6E-GS-wQ3"/>
                 <constraint firstItem="tCy-Ic-cov" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="VaC-gz-qex"/>
                 <constraint firstItem="KJ2-TG-uyF" firstAttribute="trailing" secondItem="jXS-Cr-EBS" secondAttribute="trailing" id="X7d-Up-aC2"/>
@@ -112,11 +143,16 @@
                 <constraint firstItem="jXS-Cr-EBS" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="3/4" id="aIq-1U-32G"/>
                 <constraint firstItem="kHC-0b-tsK" firstAttribute="trailing" secondItem="bAs-Fp-UR8" secondAttribute="trailing" id="bPB-Zv-Hha"/>
                 <constraint firstItem="kHC-0b-tsK" firstAttribute="centerY" secondItem="KJ2-TG-uyF" secondAttribute="centerY" id="g1U-8u-iez"/>
+                <constraint firstItem="cra-U3-C5g" firstAttribute="top" secondItem="GRU-Io-ego" secondAttribute="bottom" id="gG5-kz-cUV"/>
+                <constraint firstItem="NqV-Fi-9Jx" firstAttribute="leading" secondItem="11n-XZ-1Na" secondAttribute="leading" id="htY-IV-5Jz"/>
+                <constraint firstItem="aNn-Fk-IJO" firstAttribute="top" secondItem="cra-U3-C5g" secondAttribute="bottom" id="j5a-Gh-QLZ"/>
                 <constraint firstItem="GRU-Io-ego" firstAttribute="height" secondItem="jXS-Cr-EBS" secondAttribute="height" id="lFv-6D-vNM"/>
                 <constraint firstItem="w6O-69-Zlw" firstAttribute="centerX" secondItem="GRU-Io-ego" secondAttribute="centerX" id="lYJ-JJ-Kgp"/>
                 <constraint firstItem="KJ2-TG-uyF" firstAttribute="leading" secondItem="jXS-Cr-EBS" secondAttribute="leading" id="mCa-P0-o8V"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="leading" secondItem="w6O-69-Zlw" secondAttribute="leading" id="mUl-cg-7MC"/>
+                <constraint firstItem="aNn-Fk-IJO" firstAttribute="leading" secondItem="GRU-Io-ego" secondAttribute="leading" id="nFx-ed-yaz"/>
                 <constraint firstItem="11n-XZ-1Na" firstAttribute="centerY" secondItem="GRU-Io-ego" secondAttribute="centerY" id="oO5-Ii-YtN"/>
+                <constraint firstItem="cra-U3-C5g" firstAttribute="height" secondItem="w6O-69-Zlw" secondAttribute="height" id="ocq-5r-H82"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="width" secondItem="w6O-69-Zlw" secondAttribute="width" id="pmi-Jp-gOG"/>
                 <constraint firstItem="bAs-Fp-UR8" firstAttribute="centerY" secondItem="jXS-Cr-EBS" secondAttribute="centerY" id="rD5-xy-KQK"/>
                 <constraint firstItem="11n-XZ-1Na" firstAttribute="leading" secondItem="bAs-Fp-UR8" secondAttribute="leading" id="rcp-PY-33J"/>
@@ -131,6 +167,7 @@
         <image name="credit_card_icon" width="249" height="175"/>
         <image name="refund_void_icon" width="119" height="229"/>
         <image name="settlement" width="40" height="40"/>
+        <image name="vault_icon" width="220" height="279"/>
         <image name="worldpay_logo" width="2936" height="558"/>
     </resources>
 </document>

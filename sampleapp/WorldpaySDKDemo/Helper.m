@@ -52,4 +52,10 @@
     [view addConstraint:[NSLayoutConstraint constraintWithItem:secondView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeRight multiplier:1.0 constant:0]];
 }
 
++ (void) styleButtonPrimary: (UIButton *) button
+{
+    button.backgroundColor = [UIColor worldpayEmerald];
+    [button setTitleColor:[UIColor worldpayWhite] forState:UIControlStateNormal];
+}
+
 @end

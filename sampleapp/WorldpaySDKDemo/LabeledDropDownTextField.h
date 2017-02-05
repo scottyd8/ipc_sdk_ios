@@ -15,8 +15,12 @@
 - (NSString *) selectedTitle;
 - (NSUInteger) selectedIndex;
 - (NSDictionary *) selectedValue;
+- (void) setEditingCallback: (void (^) (void)) callback;
 - (void) setSelectionCallback: (void (^) (NSUInteger)) callback;
-
 - (void) setLabelText: (NSString *) string;
+- (void) setEnabled: (BOOL) enabled;
+- (void) setSelectedIndex: (NSUInteger) selectedIndex;
+- (void) setDisplayMode;
+- (void) setEditMode;
 
 @end

@@ -16,6 +16,7 @@
 
 @interface CustomerPaymentViewController : UIViewController
 
-- (instancetype) initWithPaymentMethod:(WPYPaymentMethod *) method;
+- (void) setRESTMode: (RESTMode) mode;
+- (BOOL) setEditablePaymentMethod: (WPYPaymentMethod *) method;
 
 @end

@@ -36,10 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.getBatchButton.backgroundColor = [UIColor worldpayEmerald];
-    [self.getBatchButton setTitleColor:[UIColor worldpayWhite] forState:UIControlStateNormal];
-    self.closeBatchButton.backgroundColor = [UIColor worldpayEmerald];
-    [self.closeBatchButton setTitleColor:[UIColor worldpayWhite] forState:UIControlStateNormal];
+    [Helper styleButtonPrimary:self.getBatchButton];
+    [Helper styleButtonPrimary:self.closeBatchButton];
     
     self.batchIdTextField.delegate = self;
     
@@ -136,19 +134,11 @@
     
     [[WorldpayAPI instance] closeCurrentBatchWithCompletion:^(WPYBatchResponse * response, NSError * error)
     {
-        if(error != nil)
+        if(error != nil || !response.success)
         {
             NSLog(@"%@",error);
             
-            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"An error occurred." preferredStyle:UIAlertControllerStyleAlert];
-            
-            [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-            
-            [self presentViewController:alert animated:true completion:nil];
-        }
-        else if([response.identifier isEqualToString:@"0"])
-        {
-            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"No transactions in current batch." preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat: @"An error occurred%@", (![response.responseMessage isEqualToString: @""] ? [NSString stringWithFormat:@": %@",response.responseMessage] : @".")] preferredStyle:UIAlertControllerStyleAlert];
             
             [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
             

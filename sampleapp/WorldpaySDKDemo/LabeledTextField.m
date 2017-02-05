@@ -52,4 +52,21 @@
     self.textField.keyboardType = UIKeyboardTypeDecimalPad;
 }
 
+- (void) setEnabled:(BOOL)enabled
+{
+    self.textField.enabled = enabled;
+}
+
+- (void) setDisplayMode
+{
+    self.textField.borderStyle = UITextBorderStyleNone;
+    [self setEnabled:false];
+}
+
+- (void) setEditMode
+{
+    self.textField.borderStyle = UITextBorderStyleRoundedRect;
+    [self setEnabled:true];
+}
+
 @end

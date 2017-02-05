@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "WorldpayAPI.h"
 #import "WPYAuthTokenRequest.h"
+#import "WPYAuthTokenResponse.h"
 #import "WPYCustomerRequestData.h"
 #import "WPYCustomerResponseData.h"
 #import "WPYSwiper.h"
@@ -21,6 +22,7 @@
 #import "WPYPaymentVoid.h"
 #import "WPYPaymentRefund.h"
 #import "WPYPaymentCredit.h"
+#import "WPYPaymentVerify.h"
 #import "WPYGetPaymentToken.h"
 #import "WPYBatchResponse.h"
 #import "WPYExtendedCardData.h"
@@ -43,6 +45,7 @@
 #import "WPYTransactionSearch.h"
 #import "WPYTransactionSearchResponse.h"
 #import "WPYTransaction.h"
+#import "WPYMailOrTelephoneOrderData.h"
 
 //! Project version number for WorldpaySDK.
 FOUNDATION_EXPORT double WorldpaySDKVersionNumber;

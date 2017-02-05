@@ -8,7 +8,6 @@
 
 #import "CustomerListViewController.h"
 #import "BillingAddressCell.h"
-#import "CustomerPaymentViewController.h"
 
 #define BILLINGADDRESSHEIGHT 288
 #define DEFAULTCELLHEIGHT 50
@@ -35,6 +34,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"Retrieve Customer";
+    
+    // TODO: Move a lot of this logic over to customer details view controller, correct logic for new customer list view (even though we assume only 1 customer can be in list for now)
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,22 +59,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if([self isPaymentMethodCell:indexPath])
-    {
-        return YES;
-    }
-    
     return NO;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if([self isPaymentMethodCell:indexPath])
-    {
-        CustomerPaymentViewController * paymentVC = [[CustomerPaymentViewController alloc] initWithPaymentMethod:[(WPYCustomerResponseData *)self.list[indexPath.section] paymentMethods][indexPath.row-3]];
-        
-        [self.navigationController pushViewController:paymentVC animated:YES];
-    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

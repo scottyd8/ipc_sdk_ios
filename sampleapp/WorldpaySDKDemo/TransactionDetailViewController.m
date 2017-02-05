@@ -23,7 +23,7 @@
 #define BILLINGADDRESSSECTION 2
 #define CUSTOMERSECTION 3
 
-#define TRANSACTIONHEIGHT 290
+#define TRANSACTIONHEIGHT 332
 #define CARDHEIGHT 208
 #define BILLINGADDRESSHEIGHT 288
 #define CUSTOMERHEIGHT 121
@@ -152,16 +152,5 @@
 {
     return [[UIView alloc] initWithFrame:CGRectZero];
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

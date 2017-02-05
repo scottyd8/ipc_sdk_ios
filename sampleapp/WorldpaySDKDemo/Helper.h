@@ -26,11 +26,17 @@ if(![(AppDelegate *)[[UIApplication sharedApplication] delegate] authTokenAvaila
     return; \
 }
 
+typedef NS_ENUM(NSUInteger, RESTMode) {
+    RESTModeCreate,
+    RESTModeEdit,
+    RESTModeGet
+};
+
 @interface Helper: NSObject
 
-+(NSString *)getPaymentType: (WPYPaymentType)paymentType;
-+ (void) constrainView:(UIView *)view toSecondView:(UIView *) secondView;
-
++ (NSString *) getPaymentType: (WPYPaymentType) paymentType;
++ (void) constrainView: (UIView *) view toSecondView: (UIView *) secondView;
++ (void) styleButtonPrimary: (UIButton *) button;
 
 @end
 

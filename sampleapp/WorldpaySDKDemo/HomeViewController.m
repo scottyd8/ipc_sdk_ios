@@ -29,8 +29,7 @@
     
     for(UIButton * button in self.buttons)
     {
-        button.backgroundColor = [UIColor worldpayEmerald];
-        [button setTitleColor:[UIColor worldpayWhite] forState:UIControlStateNormal];
+        [Helper styleButtonPrimary:button];
     }
 }
 

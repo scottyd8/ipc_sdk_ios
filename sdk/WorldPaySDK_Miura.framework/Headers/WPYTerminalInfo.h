@@ -36,11 +36,11 @@
  */
 @property (nonatomic, strong) NSString *storeNumber;
 /**
- * If not provided, this parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.
+ * This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.
  */
 @property (nonatomic, strong) NSString *kernelVersionNo;
 /**
- * If not provided, this parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.
+ *This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.
  */
 @property (nonatomic, strong) NSString *pOSTerminalInputCapabilityInd;
 @end

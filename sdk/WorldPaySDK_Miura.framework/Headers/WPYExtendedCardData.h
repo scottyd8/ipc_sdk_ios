@@ -10,6 +10,7 @@
 @class WPYTerminalInfo;
 @class WPYLevelTwoData;
 @class WPYTenderServiceData;
+@class WPYMailOrTelephoneOrderData;
 
 /**
  * This object contains extended information that is, in general, optional when making a payment request.  This will automatically
@@ -75,7 +76,7 @@
 /**
  * An optional parameter indicating the type of duplicate check used for a check transaction
  */
-@property (nonatomic) WPYPaymentMethodDuplicateCheckType duplicateCheckType;
+@property (nonatomic) WPYTransactionDuplicateCheckType transactionDuplicateCheckIndicator;
 /**
  * An optional parameter corresponding to the order ID the merchant has assigned to this transaction
  */
@@ -89,4 +90,13 @@
  * A dictionary of user defined key/value pairs of custom data provided about the customer
  */
 @property (nonatomic, strong) NSDictionary *userDefinedFields;
+/**
+ * Type of goods that are being purchased. Valid values are DIGITAL or PHYSICAL.
+ */
+@property (nonatomic, strong) NSString * typeOfGoods;
+/**
+ * Additional data for remote orders. Required in the case of a mail, phone, or ecommerce transaction.
+ */
+@property (nonatomic, strong) WPYMailOrTelephoneOrderData * mailOrTelephoneOrderData;
+
 @end

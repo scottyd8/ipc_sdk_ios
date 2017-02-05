@@ -10,6 +10,7 @@
 
 @protocol WPYSwiperDelegate;
 @class WPYAuthTokenRequest;
+@class WPYAuthTokenResponse;
 @class WPYTender;
 @class WPYCustomerRequestData;
 @class WPYCustomerResponseData;
@@ -19,6 +20,7 @@
 @class WPYPaymentAuthorize;
 @class WPYPaymentCapture;
 @class WPYPaymentCharge;
+@class WPYPaymentVerify;
 @class WPYPaymentVoid;
 @class WPYPaymentRefund;
 @class WPYPaymentCredit;
@@ -39,18 +41,24 @@ extern NSString *const WorldpaySDKErrorDomain;
  */
 typedef NS_ENUM(NSInteger, WorldpaySDKError)
 {
+    /// No auth token provided
     WorldpaySDKErrorNoAuthToken = 10001,
-    WorldpaySDKErrorInvalidRequestTypeForTender = 100002, // Returned if you try to run an auth on a manually entered check, for instance
+    /// Returned if you try to run an auth on a manually entered check, for instance
+    WorldpaySDKErrorInvalidRequestTypeForTender = 100002,
+    /// self-explanatory
     WorldpaySDKErrorTerminalConnectionLost = 100003
 };
 
 
-@interface WorldpayAPI : NSObject
+/**
+ * This is a singleton object that contains the base of the Worldpay Total calling methods.
+ */
+@interface WorldpayAPI : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate>
 
 /**
  * Tells the WorldpayAPI object to send messages to the test host configured at compile time
  */
-@property (nonatomic) BOOL enableTestHost;
+@property (nonatomic, readonly) BOOL enableTestHost;
 
 /**
  * When enabled, and TestHost is enabled, the debugDelegate will be sent HTTP request and response bodies for logging purposes.
@@ -80,7 +88,7 @@ typedef NS_ENUM(NSInteger, WorldpaySDKError)
 extern NSString *const WorldpayServerErrorDomain;
 
 /**
- * Class instance init unavailable.  Use [WorldpayApi instance] to get class instance
+ * Class instance init unavailable.  Use WorldpayAPI instance to get class instance
  *
  * @return instance of class
  */
@@ -89,7 +97,7 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Returns a pointer to a credit card swiper object
  *
- * @param delegate that will listen to swiper events
+ * @param delegate Delegate that will listen to swiper events
  *
  * @return WPYSwiper object
  */
@@ -100,12 +108,12 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Authenticates user credentials against the World Pay server. The token
  * will automatically be saved in the application keychain by the SDK and
- * can be removed by calling: - (void)clearSDKKeychain
+ * can be removed by calling: - clearSDKKeychain
  *
- * @param Auth Token Request object containing user credentials
- * @param completion handler used to notify the caller of any server results or errors
+ * @param authTokenRequest Auth Token Request object containing user credentials
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
-- (void)generateAuthToken:(WPYAuthTokenRequest *)authTokenRequest withCompletion:(void(^)(NSString *, NSError *))completion;
+- (void)generateAuthToken:(WPYAuthTokenRequest *)authTokenRequest withCompletion:(void(^)(WPYAuthTokenResponse *, NSError *))completion;
 
 /**
  * Clears the keychain data out of the application. Completely resets the auth token information
@@ -118,14 +126,14 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Gets the current batch identifier
  *
- * @param completion handler used to notify the caller of any server results or errors
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)getCurrentBatchWithCompletion:(void(^)(WPYBatchResponse *, NSError *))completion;
 
 /**
  * Closes the current batch
  *
- * @param completion handler used to notify the caller of any server results or errors
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)closeCurrentBatchWithCompletion:(void(^)(WPYBatchResponse *, NSError *))completion;
 
@@ -134,25 +142,25 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Gets customer data from the server
  *
- * @param Customer ID that reqpresents the desired customer
- * @param completion handler used to notify the caller of any server results or errors
+ * @param customerId Customer ID that reqpresents the desired customer
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)getCustomerDataForCustomerId:(NSString *)customerId withCompletion:(void(^)(WPYCustomerResponseData *, NSError *))completion;
 
 /**
  * Creates a new customer object to be stored on the server
  *
- * @param the customer data that should be saved on the server
- * @param completion handler used to notify the caller of any server results or errors
+ * @param customerData The customer data that should be saved on the server
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)createCustomer:(WPYCustomerRequestData *)customerData withCompletion:(void(^)(WPYCustomerResponseData *, NSError *))completion;
 
 /**
  * Updates an existing customer on the server
  *
- * @param customerId corresponding to the customer being updated
- * @param the customer data that should be updated
- * @param completion handler used to notify the caller of any server results or errors
+ * @param customerId Customer id corresponding to the customer being updated
+ * @param customerData The customer data that should be updated
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)updateCustomer:(NSString *)customerId withData:(WPYCustomerRequestData *)customerData andCompletion:(void(^)(WPYCustomerResponseData *, NSError *))completion;
 
@@ -160,24 +168,24 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Get Gift Card from server
  *
- * @param identifier for gift card
- * @param completion handler used to notify the caller of any server results or errors
+ * @param identifier Gift card id
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)getGiftCard:(NSString *)identifier withCompletion:(void(^)(WPYGiftCardResponse *, NSError *))completion;
 
 /**
  * Update gift card stored on the server
  *
- * param identifier for the card to be updated
- * @param completion handler used to notify the caller of any server results or errors
+ * @param identifier Identifier for the card to be updated
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
-- (void)updateGiftCard:(NSString *)identifer withCompletion:(void(^)(WPYGiftCardResponse *, NSError *))completion;
+- (void)updateGiftCard:(NSString *)identifier withCompletion:(void(^)(WPYGiftCardResponse *, NSError *))completion;
 
 /**
  * Create a new gift card to be stored on the serfver
  *
- * @param identifier of the card to be stored on the server
- * @param completion handler used to notify the caller of any server results or errors
+ * @param identifier Identifier of the card to be stored on the server
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)createGiftCard:(NSString *)identifier withCompletion:(void(^)(WPYGiftCardResponse *, NSError *))completion;
 
@@ -185,83 +193,89 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Delete a payment method being stored on the server
  *
- * @param payment method to be deleted on the server
- * @param completion handler used to notify the caller of any server results or errors
+ * @param paymentMethod Payment method to be deleted on the server
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)deletePaymentMethod:(WPYPaymentMethod *)paymentMethod withCompletion:(void(^)(NSError *))completion;
 
 /**
  * Get payment method from the server
  *
- * @param identifier of the payment method stored on the server
- * @param completion handler used to notify the caller of any server results or errors
+ * @param methodId Identifier of the payment method stored on the server
+ * @param customerId Identifier of the customer associated with the payment method
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
-- (void)getPaymentMethod:(NSString *)identifier withCompletion:(void(^)(WPYPaymentMethod *, NSError *))completion;
+- (void)getPaymentMethod:(NSString *)methodId withCustomerId:(NSString *)customerId completion:(void(^)(WPYPaymentMethod *, NSError *))completion;
 
 /**
  * Update an existing payment method on the server
  *
- * @param Request object containing the new payment method information
- * @param the existing payment method that is to be updated
- * @param completion handler used to notify the caller of any server results or errors
+ * @param paymentMethod The updated payment method
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
-- (void)updatePaymentMethod:(WPYPaymentMethodRequest *)request paymentMethod:(WPYPaymentMethod *)paymentMethod withCompletion:(void(^)(WPYPaymentMethod *, NSError *))completion;
+- (void)updatePaymentMethod:(WPYPaymentMethod *)paymentMethod withCompletion:(void(^)(WPYPaymentMethod *, NSError *))completion;
 
 /**
  * Create a new payment method on the server
  *
- * @param Request object containing the payment method information
- * @param The customer ID for the new payment method
- * @param completion handler used to notify the caller of any server results or errors
+ * @param request Request object containing the payment method information
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
-- (void)createPaymentMethod:(WPYPaymentMethodRequest *)request customerId:(NSString *)customerId withCompletion:(void(^)(WPYPaymentMethod *, NSError *))completion;
+- (void)createPaymentMethod:(WPYPaymentMethodRequest *)request withCompletion:(void(^)(WPYPaymentMethod *, NSError *))completion;
 
 #pragma mark payment processing
 /**
  * Request Authorization of a payment
  *
- * @param payment authorize request object with the appropriate payment information
- * @param completion handler used to notify the caller of any server results or errors
+ * @param request Payment authorize request object with the appropriate payment information
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)paymentAuthorize:(WPYPaymentAuthorize *)request withCompletion:(void(^)(WPYPaymentResponse *, NSError *))completion;
 
 /**
  * Capture an authorized payment
  *
- * @param payment capture request object with the information about the authorized request
- * @param completion handler used to notify the caller of any server results or errors
+ * @param request Payment capture request object with the information about the authorized request
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)paymentCapture:(WPYPaymentCapture *)request withCompletion:(void(^)(WPYPaymentResponse *, NSError *))completion;
 
 /**
  * Immediately charge payment using the requested payment type
  *
- * @param payment charge request object containing all of the information needed to charge a payment
- * @param completion handler used to notify the caller of any server results or errors
+ * @param request Payment charge request object containing all of the information needed to charge a payment
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)paymentCharge:(WPYPaymentCharge *)request withCompletion:(void(^)(WPYPaymentResponse *, NSError *))completion;
 
 /**
+ * Card verification allows merchants to verify the cardholder account number, address, or security code.
+ *
+ * @param request Payment verify request object containing all of the information needed to verify the payment card
+ * @param completion Completion handler used to notify the caller of any server results or errors
+ */
+- (void)paymentVerify:(WPYPaymentVerify *)request withCompletion:(void(^)(WPYPaymentResponse *, NSError *))completion;
+/**
  * Void an authorized payment
  *
- * @param Payment Void request object that contains the needed information to void an authorized transaction
- * @param completion handler used to notify the caller of any server results or errors
+ * @param request Payment Void request object that contains the needed information to void an authorized transaction
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)paymentVoid:(WPYPaymentVoid *)request withCompletion:(void(^)(WPYPaymentResponse *, NSError *))completion;
 
 /**
  * Refund a payment that has been captured
  *
- * @param PaymentRefund request object needed to refund a captured payment
- * @param completion handler used to notify the caller of any server results or errors
+ * @param request PaymentRefund request object needed to refund a captured payment
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)paymentRefund:(WPYPaymentRefund *)request withCompletion:(void(^)(WPYPaymentResponse *, NSError *))completion;
 
 /**
  * Request a credit to the tender in the request object
  *
- * @param Payment Credit request object containing the tender info needed to apply a credit
- * @param completion handler used to notify the caller of any server results or errors
+ * @param request Payment Credit request object containing the tender info needed to apply a credit
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)paymentCredit:(WPYPaymentCredit *)request withCompletion:(void(^)(WPYPaymentResponse *, NSError *))completion;
 
@@ -269,45 +283,55 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Get details for a transaction by identifier
  *
- * @param transaction identifier
- * @param completion handler used to notify the caller of any server results or errors
+ * @param transactionId transaction identifier
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)getTransactionDetails:(NSString *)transactionId withCompletion:(void(^)(WPYTransactionResponse *, NSError *))completion;
 
 /**
  * Search transactions
  *
- * @param search parameters include the start and end date for the search
- * @param completion handler used to notify the caller of any server results or errors
+ * @param searchParams Search parameters include the start and end date for the search
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)searchTransactions:(WPYTransactionSearch *)searchParams withCompletion:(void(^)(WPYTransactionSearchResponse *, NSError *))completion;
 
 /**
  * Get transactions in the current batch
  *
- * @param batch identifier for transactions
- * @param completion handler used to notify the caller of any server results or errors
+ * @param batchId Batch identifier for transactions
+ * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)getTransactionsInBatch:(NSString *)batchId withCompletion:(void(^)(WPYBatchResponse *, NSError *))completion;
 @end
 
+/**
+ * Delegate protocol for use with debugging request and response logs
+*/
 @protocol WPYDebugDelegate <NSObject>
+
 /**
  * This method is used to convey the request headers and body to be sent to the server
  *
- * @param request string containing the pertinent information
+ * @param request Request string containing the pertinent information
  */
 - (void)willSendRequest:(NSString *)request;
 
 /**
  * This method is used to convey the response body that was sent from the server
  *
- * @param response string containing the pertinent response info
+ * @param response Response string containing the pertinent response info
  */
 - (void)didReceiveResponse:(NSString *)response;
 
 @end
 
+/**
+ * This class is used to write to the log
+ * @param message Message to write to the file
+ *
+ * @param response Response string containing the pertinent response info
+ */
 @interface WPYLogger : NSObject
 + (void)logMessage:(NSString *)message, ...;
 @end

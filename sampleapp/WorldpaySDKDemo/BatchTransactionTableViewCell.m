@@ -45,7 +45,7 @@
 
 - (void) configureCell
 {
-    self.transactionIdLabel.text = self.transaction.transactionId;
+    self.transactionIdLabel.text = self.transaction.transactionIdentifier;
 }
 
 @end

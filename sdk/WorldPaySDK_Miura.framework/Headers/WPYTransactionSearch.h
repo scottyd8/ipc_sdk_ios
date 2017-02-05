@@ -7,6 +7,7 @@
 
 #import "WPYDomainObject.h"
 
+/// Request object used to search for transactions
 @interface WPYTransactionSearch : WPYDomainObject
 /**
  * This corresponds to the start date of the requested search

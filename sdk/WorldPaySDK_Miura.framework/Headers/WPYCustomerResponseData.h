@@ -5,7 +5,7 @@
 //  Copyright © 2015 Worldpay. All rights reserved.
 //
 
-#import "WPYDomainObject.h"
+#import "WPYResponseObject.h"
 
 @class WPYAddressInfo;
 @class WPYPaymentMethod;
@@ -13,7 +13,7 @@
 /**
  * This object contains data pertaining to the Customer APIs
  */
-@interface WPYCustomerResponseData : WPYDomainObject
+@interface WPYCustomerResponseData : WPYResponseObject
 /**
  * Customer First Name
  */
@@ -37,7 +37,7 @@
 /**
  * Phone number associated with customer
  */
-@property (nonatomic, strong) NSString *phone;
+@property (nonatomic, strong) NSString *phoneNumber;
 /**
  * Name of the company the customer works for
  */

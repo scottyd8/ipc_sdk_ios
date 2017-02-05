@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UIAlertController * _actionSheet;
 @property (nonatomic, weak) UIViewController * _parentViewController;
 @property (nonatomic, copy) void (^_callback)(NSUInteger);
+@property (nonatomic, copy) void (^_editCallback)(void);
 
 @end
 
@@ -91,6 +92,11 @@
     return self;
 }
 
+- (void) setEditingCallback:(void (^)(void))callback
+{
+    self._editCallback = callback;
+}
+
 - (void) setSelectionCallback: (void (^) (NSUInteger)) callback
 {
     self._callback = callback;
@@ -129,10 +135,27 @@
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
+    if(self._editCallback)
+    {
+        self._editCallback();
+    }
+    
     self._actionSheet.popoverPresentationController.sourceView = self;
     [self showDropDown];
     
     return NO;
+}
+
+- (void) setDisplayMode
+{
+    self.borderStyle = UITextBorderStyleNone;
+    [self setEnabled:false];
+}
+
+- (void) setEditMode
+{
+    self.borderStyle = UITextBorderStyleRoundedRect;
+    [self setEnabled:true];
 }
 
 @end

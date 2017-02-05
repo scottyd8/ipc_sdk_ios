@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *responseTextValue;
 @property (weak, nonatomic) IBOutlet UILabel *responseMessageValue;
 @property (weak, nonatomic) IBOutlet UILabel *gratuityValue;
+@property (weak, nonatomic) IBOutlet UILabel *cashbackValue;
 
 @end
 
@@ -56,12 +57,13 @@
 
 -(void)assignValues: (WPYTransaction *)response
 {
-    self.transactionIdValue.text = response.transactionId;
+    self.transactionIdValue.text = response.transactionIdentifier;
     self.amountValue.text = [NSString stringWithFormat:@"%@", response.amount ?: @""];
     self.paymentTypeValue.text = [Helper getPaymentType:response.paymentType];
     self.responseTextValue.text = response.responseText;
     self.responseMessageValue.text = response.responseText;
-    self.gratuityValue.text = [response.gratuityAmount stringValue];
+    self.gratuityValue.text = [NSString stringWithFormat:@"%@", response.gratuity ?: @""];
+    self.cashbackValue.text = [NSString stringWithFormat:@"%@", response.cashbackAmount ?: @""];
 }
 
 @end

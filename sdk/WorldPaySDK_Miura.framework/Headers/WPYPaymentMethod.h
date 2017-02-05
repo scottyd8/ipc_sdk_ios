@@ -5,7 +5,7 @@
 //  Copyright © 2015 Worldpay. All rights reserved.
 //
 
-#import "WPYDomainObject.h"
+#import "WPYResponseObject.h"
 
 @class WPYStoredCheck;
 @class WPYStoredCard;
@@ -13,7 +13,7 @@
 /** 
  * This object contains information about a stored payment method for a customer
  */
-@interface WPYPaymentMethod : WPYDomainObject
+@interface WPYPaymentMethod : WPYResponseObject
 /**
  * The customer ID associated with the payment method
  */

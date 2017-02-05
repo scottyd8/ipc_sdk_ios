@@ -5,7 +5,7 @@
 //  Copyright © 2015 Worldpay. All rights reserved.
 //
 
-#import "WPYDomainObject.h"
+#import "WPYResponseObject.h"
 #import "WPYSwiper.h"
 
 @class WPYEMVData;
@@ -15,7 +15,8 @@
 /**
  * This object is returned by the server upon completion of a payment request
  */
-@interface WPYPaymentResponse : WPYDomainObject
+@interface WPYPaymentResponse : WPYResponseObject
+
 /**
  * This object contains the transaction data from the server
  */
@@ -26,8 +27,8 @@
  */
 @property (nonatomic, strong) WPYReceiptObject *receiptData;
 /**
- * This contains information about the result of the transaction, based on the terminal response or
- * gateway response depending on whether it was an EMV or a magnetic stripe transaction
+ * This object contains the EMV data from the server
  */
-@property (nonatomic) WPYTransactionResult resultCode;
+@property (nonatomic, strong) WPYEMVData *emvResponse;
+
 @end

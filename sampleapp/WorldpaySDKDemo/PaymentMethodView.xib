@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AdelleSans_Regular.otf">
+            <string>AdelleSans-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentMethodView">
+            <connections>
+                <outlet property="accountNumberField" destination="0IG-FW-po1" id="0U3-Vy-Rwb"/>
+                <outlet property="accountTypeField" destination="AOZ-Pw-VfG" id="wfG-jp-hPx"/>
+                <outlet property="cardNumberField" destination="Ol3-pC-PzW" id="dcU-bq-T8N"/>
+                <outlet property="cardTypeField" destination="3C8-DH-85I" id="APb-HS-tBa"/>
+                <outlet property="checkNumberField" destination="A2e-IW-W2K" id="1Yl-7J-X79"/>
+                <outlet property="checkTypeField" destination="Ob5-Ph-b2s" id="CNX-6i-7YK"/>
+                <outlet property="checkView" destination="qbG-X8-rIE" id="R8Z-53-fld"/>
+                <outlet property="checkViewHeightConstraint" destination="muY-GJ-KU0" id="3hU-sh-J9q"/>
+                <outlet property="creditCardView" destination="NEG-ca-vGP" id="B3F-EL-wco"/>
+                <outlet property="creditCardViewHeightConstraint" destination="HAh-ta-kbv" id="pst-A9-gXU"/>
+                <outlet property="customerIdField" destination="9bl-H8-8nm" id="oGg-cC-71N"/>
+                <outlet property="cvvField" destination="zeB-If-XG2" id="ccK-Ed-Hbn"/>
+                <outlet property="deleteButton" destination="2aa-4z-Enh" id="tBi-by-NnI"/>
+                <outlet property="editButton" destination="bTb-PO-Dxx" id="X9R-Rp-x3e"/>
+                <outlet property="editDeleteButtonsView" destination="cly-RJ-soP" id="qGf-Jr-oZB"/>
+                <outlet property="editDeleteViewWidthConstraint" destination="yiG-Tz-GGF" id="M0a-6L-QCC"/>
+                <outlet property="expMonthField" destination="1v0-zP-FwU" id="8JX-Ph-Q6I"/>
+                <outlet property="expYearField" destination="sK1-HL-aD5" id="IEW-pq-jYE"/>
+                <outlet property="paymentIdField" destination="gS9-Xt-cZQ" id="e4j-4s-gdD"/>
+                <outlet property="paymentTypeField" destination="6FN-Ta-gj8" id="Ql7-aB-WH0"/>
+                <outlet property="pinBlockField" destination="0KY-eQ-v0o" id="0kL-pa-Fje"/>
+                <outlet property="routingNumberField" destination="6LD-iV-Cpo" id="hzm-bq-cOC"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cwx-rx-VUz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="583"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bl-H8-8nm" userLabel="Customer Id" customClass="LabeledTextField">
+                    <rect key="frame" x="0.0" y="0.0" width="570" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="7At-oR-4cS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gS9-Xt-cZQ" userLabel="Payment Id" customClass="LabeledTextField">
+                    <rect key="frame" x="0.0" y="53" width="459" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="zr6-fL-Nxa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cly-RJ-soP" userLabel="Edit Delete Buttons">
+                    <rect key="frame" x="459" y="53" width="111" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTb-PO-Dxx">
+                            <rect key="frame" x="8" y="7" width="30" height="30"/>
+                            <state key="normal" title="Edit"/>
+                            <connections>
+                                <action selector="edit:" destination="-1" eventType="touchUpInside" id="NLP-Gd-XNg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aa-4z-Enh">
+                            <rect key="frame" x="46" y="7" width="45" height="30"/>
+                            <state key="normal" title="Delete"/>
+                            <connections>
+                                <action selector="delete:" destination="-1" eventType="touchUpInside" id="XJd-cC-DkM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bTb-PO-Dxx" firstAttribute="leading" secondItem="cly-RJ-soP" secondAttribute="leading" priority="750" constant="8" id="35n-eW-kT9"/>
+                        <constraint firstItem="2aa-4z-Enh" firstAttribute="leading" secondItem="bTb-PO-Dxx" secondAttribute="trailing" priority="750" constant="8" id="OrX-dF-b5p"/>
+                        <constraint firstItem="2aa-4z-Enh" firstAttribute="centerY" secondItem="cly-RJ-soP" secondAttribute="centerY" id="d20-g6-AZh"/>
+                        <constraint firstItem="bTb-PO-Dxx" firstAttribute="centerY" secondItem="2aa-4z-Enh" secondAttribute="centerY" id="rPE-Wt-S1i"/>
+                        <constraint firstAttribute="height" constant="45" id="rdE-Yt-lMF"/>
+                        <constraint firstAttribute="trailing" secondItem="2aa-4z-Enh" secondAttribute="trailing" priority="750" constant="20" id="sqD-qb-e33"/>
+                        <constraint firstAttribute="width" constant="111" id="yiG-Tz-GGF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FN-Ta-gj8" userLabel="Payment Type" customClass="LabeledSegmentedControl">
+                    <rect key="frame" x="0.0" y="106" width="570" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="27E-BJ-Pia"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEG-ca-vGP" userLabel="Credit Card View">
+                    <rect key="frame" x="0.0" y="159" width="570" height="159"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3C8-DH-85I" userLabel="Card Type" customClass="LabeledDropDownTextField">
+                            <rect key="frame" x="0.0" y="0.0" width="570" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="OZ3-4R-H0m"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ol3-pC-PzW" userLabel="Card Number" customClass="LabeledTextField">
+                            <rect key="frame" x="0.0" y="53" width="421.5" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="7Bg-hR-b9C"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeB-If-XG2" userLabel="CVV" customClass="LabeledTextField">
+                            <rect key="frame" x="429.5" y="53" width="140.5" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="BsT-HB-7ge"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1v0-zP-FwU" userLabel="Expiration Month" customClass="LabeledTextField">
+                            <rect key="frame" x="0.0" y="106" width="55" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="qL6-Vh-KMo"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sK1-HL-aD5" userLabel="Expiration Year" customClass="LabeledTextField">
+                            <rect key="frame" x="63" y="106" width="110.5" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="Ydk-Ky-QQm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KY-eQ-v0o" userLabel="Pin Block" customClass="LabeledTextField">
+                            <rect key="frame" x="184" y="106" width="385.5" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="9cR-ds-t1D"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnj-6x-1eo">
+                            <rect key="frame" x="56" y="121" width="6" height="18"/>
+                            <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3C8-DH-85I" firstAttribute="top" secondItem="NEG-ca-vGP" secondAttribute="top" id="0QT-aC-DK9"/>
+                        <constraint firstItem="sK1-HL-aD5" firstAttribute="width" secondItem="1v0-zP-FwU" secondAttribute="width" multiplier="2" id="1lQ-hE-dub"/>
+                        <constraint firstItem="Ol3-pC-PzW" firstAttribute="top" secondItem="3C8-DH-85I" secondAttribute="bottom" priority="750" constant="8" id="3D3-eN-hwd"/>
+                        <constraint firstItem="sK1-HL-aD5" firstAttribute="centerY" secondItem="1v0-zP-FwU" secondAttribute="centerY" id="3NT-GO-nZf"/>
+                        <constraint firstItem="lnj-6x-1eo" firstAttribute="top" secondItem="1v0-zP-FwU" secondAttribute="top" constant="15" id="4XT-aF-aXR"/>
+                        <constraint firstItem="Ol3-pC-PzW" firstAttribute="width" secondItem="zeB-If-XG2" secondAttribute="width" multiplier="3:1" id="6ej-Aj-RZL"/>
+                        <constraint firstAttribute="trailing" secondItem="0KY-eQ-v0o" secondAttribute="trailing" id="7Uq-hD-5X4"/>
+                        <constraint firstItem="0KY-eQ-v0o" firstAttribute="centerY" secondItem="sK1-HL-aD5" secondAttribute="centerY" id="8K0-dB-9au"/>
+                        <constraint firstItem="zeB-If-XG2" firstAttribute="leading" secondItem="Ol3-pC-PzW" secondAttribute="trailing" constant="8" id="Emo-wR-n2K"/>
+                        <constraint firstItem="0KY-eQ-v0o" firstAttribute="width" secondItem="Ol3-pC-PzW" secondAttribute="width" multiplier="386:421.5" id="H8y-GA-58h"/>
+                        <constraint firstAttribute="height" constant="159" id="HAh-ta-kbv"/>
+                        <constraint firstAttribute="trailing" secondItem="zeB-If-XG2" secondAttribute="trailing" id="JjP-Vh-f3m"/>
+                        <constraint firstItem="lnj-6x-1eo" firstAttribute="leading" secondItem="1v0-zP-FwU" secondAttribute="trailing" constant="1" id="MVh-uP-G7R"/>
+                        <constraint firstItem="1v0-zP-FwU" firstAttribute="top" secondItem="Ol3-pC-PzW" secondAttribute="bottom" priority="750" constant="8" id="NSg-G7-b4f"/>
+                        <constraint firstAttribute="trailing" secondItem="3C8-DH-85I" secondAttribute="trailing" id="OTo-GT-dAs"/>
+                        <constraint firstAttribute="bottom" secondItem="1v0-zP-FwU" secondAttribute="bottom" priority="750" constant="8" id="Oi6-UM-ZIw"/>
+                        <constraint firstItem="1v0-zP-FwU" firstAttribute="leading" secondItem="NEG-ca-vGP" secondAttribute="leading" id="WpW-y5-Ovu"/>
+                        <constraint firstItem="3C8-DH-85I" firstAttribute="leading" secondItem="NEG-ca-vGP" secondAttribute="leading" id="cC8-Cf-VFa"/>
+                        <constraint firstItem="zeB-If-XG2" firstAttribute="centerY" secondItem="Ol3-pC-PzW" secondAttribute="centerY" id="fe7-RG-4Ye"/>
+                        <constraint firstItem="Ol3-pC-PzW" firstAttribute="leading" secondItem="NEG-ca-vGP" secondAttribute="leading" id="ghE-px-NDk"/>
+                        <constraint firstItem="sK1-HL-aD5" firstAttribute="width" secondItem="0KY-eQ-v0o" secondAttribute="width" multiplier="1:3.5" id="qsK-pv-SDH"/>
+                        <constraint firstItem="sK1-HL-aD5" firstAttribute="leading" secondItem="1v0-zP-FwU" secondAttribute="trailing" constant="8" id="tok-nr-dxc"/>
+                        <constraint firstItem="0KY-eQ-v0o" firstAttribute="leading" secondItem="sK1-HL-aD5" secondAttribute="trailing" constant="10.5" id="xnH-oE-sTr"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbG-X8-rIE" userLabel="Check View">
+                    <rect key="frame" x="0.0" y="318" width="570" height="265"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOZ-Pw-VfG" userLabel="Account Type" customClass="LabeledSegmentedControl">
+                            <rect key="frame" x="0.0" y="0.0" width="570" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="zbW-1G-LEa"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob5-Ph-b2s" userLabel="Check Type" customClass="LabeledTextField">
+                            <rect key="frame" x="0.0" y="53" width="570" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="GI3-Jo-cJE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IG-FW-po1" userLabel="Account Number" customClass="LabeledTextField">
+                            <rect key="frame" x="0.0" y="106" width="570" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="VDe-sL-UGg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2e-IW-W2K" userLabel="Check Number" customClass="LabeledTextField">
+                            <rect key="frame" x="0.0" y="212" width="570" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="77d-q2-rxp"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LD-iV-Cpo" userLabel="Routing Number" customClass="LabeledTextField">
+                            <rect key="frame" x="0.0" y="159" width="570" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="45" id="c4z-K5-igk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="A2e-IW-W2K" firstAttribute="top" secondItem="6LD-iV-Cpo" secondAttribute="bottom" priority="750" constant="8" id="0DL-wq-GEh"/>
+                        <constraint firstItem="Ob5-Ph-b2s" firstAttribute="leading" secondItem="qbG-X8-rIE" secondAttribute="leading" id="2cP-cn-9C2"/>
+                        <constraint firstItem="0IG-FW-po1" firstAttribute="top" secondItem="Ob5-Ph-b2s" secondAttribute="bottom" priority="750" constant="8" id="8PH-XR-e2C"/>
+                        <constraint firstAttribute="trailing" secondItem="0IG-FW-po1" secondAttribute="trailing" id="Bf1-Kb-Epp"/>
+                        <constraint firstItem="6LD-iV-Cpo" firstAttribute="leading" secondItem="qbG-X8-rIE" secondAttribute="leading" id="F2m-Cm-lfJ"/>
+                        <constraint firstItem="AOZ-Pw-VfG" firstAttribute="top" secondItem="qbG-X8-rIE" secondAttribute="top" id="G0k-vs-EmN"/>
+                        <constraint firstAttribute="trailing" secondItem="AOZ-Pw-VfG" secondAttribute="trailing" id="GW9-o3-VuY"/>
+                        <constraint firstItem="6LD-iV-Cpo" firstAttribute="top" secondItem="0IG-FW-po1" secondAttribute="bottom" priority="750" constant="8" id="HLj-Zy-A5n"/>
+                        <constraint firstAttribute="bottom" secondItem="A2e-IW-W2K" secondAttribute="bottom" priority="750" constant="8" id="IRH-gK-za9"/>
+                        <constraint firstItem="0IG-FW-po1" firstAttribute="leading" secondItem="qbG-X8-rIE" secondAttribute="leading" id="Lh1-rp-QBu"/>
+                        <constraint firstItem="A2e-IW-W2K" firstAttribute="leading" secondItem="qbG-X8-rIE" secondAttribute="leading" id="Mt8-5J-gGL"/>
+                        <constraint firstAttribute="trailing" secondItem="Ob5-Ph-b2s" secondAttribute="trailing" id="bnU-as-oZ1"/>
+                        <constraint firstAttribute="trailing" secondItem="6LD-iV-Cpo" secondAttribute="trailing" id="cEr-ed-ia2"/>
+                        <constraint firstAttribute="trailing" secondItem="A2e-IW-W2K" secondAttribute="trailing" id="fmy-Yh-BxN"/>
+                        <constraint firstItem="AOZ-Pw-VfG" firstAttribute="leading" secondItem="qbG-X8-rIE" secondAttribute="leading" id="j7m-qf-8vv"/>
+                        <constraint firstAttribute="height" constant="265" id="muY-GJ-KU0"/>
+                        <constraint firstItem="Ob5-Ph-b2s" firstAttribute="top" secondItem="AOZ-Pw-VfG" secondAttribute="bottom" priority="750" constant="8" id="vFZ-hf-ZIM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NEG-ca-vGP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="46T-Si-Plc"/>
+                <constraint firstAttribute="bottom" secondItem="qbG-X8-rIE" secondAttribute="bottom" id="4EE-Xx-GlZ"/>
+                <constraint firstItem="NEG-ca-vGP" firstAttribute="top" secondItem="6FN-Ta-gj8" secondAttribute="bottom" constant="8" id="6sw-X3-wqo"/>
+                <constraint firstItem="qbG-X8-rIE" firstAttribute="top" secondItem="NEG-ca-vGP" secondAttribute="bottom" id="BsD-dQ-5aH"/>
+                <constraint firstAttribute="trailing" secondItem="qbG-X8-rIE" secondAttribute="trailing" id="DPX-Hi-h68"/>
+                <constraint firstItem="6FN-Ta-gj8" firstAttribute="top" secondItem="gS9-Xt-cZQ" secondAttribute="bottom" constant="8" id="JcA-cZ-o1D"/>
+                <constraint firstItem="qbG-X8-rIE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Q9H-E2-WZx"/>
+                <constraint firstAttribute="trailing" secondItem="NEG-ca-vGP" secondAttribute="trailing" id="TH2-eQ-GMf"/>
+                <constraint firstAttribute="trailing" secondItem="cly-RJ-soP" secondAttribute="trailing" id="WRN-bc-XPh"/>
+                <constraint firstAttribute="trailing" secondItem="6FN-Ta-gj8" secondAttribute="trailing" id="bpf-es-pAQ"/>
+                <constraint firstItem="gS9-Xt-cZQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cMd-OW-aXS"/>
+                <constraint firstItem="cly-RJ-soP" firstAttribute="leading" secondItem="gS9-Xt-cZQ" secondAttribute="trailing" id="dei-uQ-IoD"/>
+                <constraint firstItem="gS9-Xt-cZQ" firstAttribute="top" secondItem="9bl-H8-8nm" secondAttribute="bottom" constant="8" id="h2h-dY-lhy"/>
+                <constraint firstItem="9bl-H8-8nm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jLu-BU-9WD"/>
+                <constraint firstAttribute="trailing" secondItem="9bl-H8-8nm" secondAttribute="trailing" id="jqu-ap-5Qf"/>
+                <constraint firstItem="6FN-Ta-gj8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="srN-yP-h0b"/>
+                <constraint firstItem="cly-RJ-soP" firstAttribute="centerY" secondItem="gS9-Xt-cZQ" secondAttribute="centerY" id="v2t-w5-TqM"/>
+                <constraint firstItem="9bl-H8-8nm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vbA-kF-5e4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="305" y="224.5"/>
+        </view>
+    </objects>
+</document>

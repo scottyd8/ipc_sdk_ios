@@ -15,9 +15,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *gratuityAmount;
 @property (weak, nonatomic) IBOutlet UITextField *serverName;
 @property (weak, nonatomic) IBOutlet UITextField *notes;
+@property (weak, nonatomic) IBOutlet UISegmentedControl * terminalGratuity;
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *textFields;
 
 + (CGFloat) expectedHeight;
 - (void)setTextFieldDelegate:(id<UITextFieldDelegate>)textFieldDelegate;
+- (void) setTerminalGratuity;
+- (void) setMobileGrautity;
 
 @end

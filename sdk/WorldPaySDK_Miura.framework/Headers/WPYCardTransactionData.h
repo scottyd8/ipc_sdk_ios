@@ -7,10 +7,17 @@
 
 #import "WPYDomainObject.h"
 
+/**
+ * The Address Verification Service result indicates whether or not the 
+ * billing address was verified and, if so, what the result was
+ */
 typedef NS_ENUM(NSInteger, WPYAvsResultType)
 {
+    /// self-explanatory
     WPYAvsResultTypeMatch = 0,
+    /// self-explanatory
     WPYAvsResultTypeNotMatched = 1,
+    /// self-explanatory
     WPYAvsResultTypeNotChecked = 2
 };
 

@@ -9,9 +9,16 @@
 
 @class WPYAddressInfo;
 
+/**
+ * Request object used in customer vault transactions.
+ */
 @interface WPYCustomerRequestData : WPYDomainObject
 /**
- * Customer First Name
+ * Optional on create requests: Customer ID is set by the server if not provided.
+*/
+@property (nonatomic, strong) NSString *customerId;
+/**
+* Customer First Name
  */
 @property (nonatomic, strong) NSString *firstName;
 /**
@@ -33,7 +40,7 @@
 /**
  * Phone number associated with customer
  */
-@property (nonatomic, strong) NSString *phone;
+@property (nonatomic, strong) NSString *phoneNumber;
 /**
  * Name of the company the customer works for
  */

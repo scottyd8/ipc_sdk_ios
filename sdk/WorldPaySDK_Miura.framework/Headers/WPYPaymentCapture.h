@@ -24,5 +24,6 @@
 /**
  * Additional card data that the merchant may wish to include with the transaction
  */
-@property (nonatomic, strong) WPYExtendedCardData *extendedData;
+@property (nonatomic, strong) WPYExtendedCardData *extendedInformation;
+
 @end

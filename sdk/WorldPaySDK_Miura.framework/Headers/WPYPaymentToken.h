@@ -24,4 +24,9 @@
  * The ID of the customer associated with the token
  */
 @property (nonatomic, strong) NSString *customerId;
+/**
+ * Public Key used to identify the merchant.
+ */
+@property (nonatomic, strong) NSString *publicKey;
+
 @end

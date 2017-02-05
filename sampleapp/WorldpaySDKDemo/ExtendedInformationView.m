@@ -37,6 +37,8 @@
     {
         [self hideGratuity];
     }
+    
+    [self setTerminalGratuity];
 }
 
 - (instancetype) initWithFrame:(CGRect)frame
@@ -56,10 +58,33 @@
     [self sharedInit];
 }
 
+- (void) setTerminalGratuity
+{
+    if(!GRATUITYHIDDEN)
+    {
+        [self.gratuityAmount setHidden:true];
+        [self.gratuityAmount setEnabled:false];
+        [self.gratuityAmount setText:nil];
+        [self.terminalGratuity setHidden:false];
+    }
+}
+
+- (void) setMobileGrautity
+{
+    if(!GRATUITYHIDDEN)
+    {
+        [self.terminalGratuity setHidden:true];
+        [self.terminalGratuity setSelectedSegmentIndex:0];
+        [self.gratuityAmount setEnabled:true];
+        [self.gratuityAmount setHidden:false];
+    }
+}
+
 - (void) hideGratuity
 {
     for(NSLayoutConstraint * constraint in self.gratuityConstraints)
     {
+        [(UIView *)constraint.firstItem setHidden:YES];
         self.gratuityConstraintTotal += constraint.constant;
         constraint.constant = 0;
     }

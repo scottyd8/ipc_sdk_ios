@@ -15,6 +15,14 @@
  */
 @interface WPYPaymentMethodRequest : WPYDomainObject
 /**
+ * Customer ID associated with the payment request
+ */
+@property (nonatomic, strong) NSString *customerId;
+/**
+ * Optional payment ID associated with the new payment method.  The server will provide an ID if necessary
+ */
+@property (nonatomic, setter=setPaymentId:) NSString *paymentId;
+/**
  * The card associated with the payment method
  */
 @property (nonatomic, strong) WPYTenderedCard *card;
@@ -37,7 +45,7 @@
 /**
  * If a check is presented, this is the duplicate check type to be used
  */
-@property WPYPaymentMethodDuplicateCheckType duplicateCheckType;
+@property WPYPaymentMethodDuplicateCheckType accountDuplicateCheckIndicator;
 /**
  * A custom mapping of name/value pairs provided by the merchant
  */

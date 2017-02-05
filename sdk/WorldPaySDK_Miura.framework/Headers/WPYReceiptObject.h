@@ -13,11 +13,17 @@
  */
 typedef NS_ENUM (uint8_t, WPYCVMethod)
 {
+    /// self-explanatory
     WPYCVMethodNoCVM = 0x00,
+    /// self-explanatory
     WPYCVMethodPlaintextPIN = 0x01,
+    /// self-explanatory
     WPYCVMethodOnlinePIN = 0x02,
+    /// self-explanatory
     WPYCVMethodMobileConfirmCode = 0x03,
+    /// self-explanatory
     WPYCVMethodOfflineEncipheredPIN = 0x04,
+    /// self-explanatory
     WPYCVMethodSignature = 0x05
 };
 
@@ -27,10 +33,15 @@ typedef NS_ENUM (uint8_t, WPYCVMethod)
  */
 typedef NS_ENUM(uint8_t, WPYCardEntryMode)
 {
+    /// Card was a contact card
     WPYCardEntryModeContact = 0x05,
+    /// Card was a contactless EMV
     WPYCardEntryModeContactlessEMV = 0x07,
+    /// Card was a contactless magnetic stripe
     WPYCardEntryModeContactlessMSR = 0x91,
+    /// Card was a magnetic stripe
     WPYCardEntryModeMSR = 0x90,
+    /// Data was entered by hand
     WPYCardEntryModeManual = 0xFF
 };
 
@@ -41,8 +52,10 @@ typedef NS_ENUM(uint8_t, WPYCardEntryMode)
  */
 typedef NS_ENUM(uint8_t, WPYAuthMode)
 {
-    WPYAuthModeIssuer = 0x00, // Transaction result was determined by the card issuer / gateway
-    WPYAuthModeCard = 0x01 // Transactio result was determined by the card / terminal
+    /// Transaction result was determined by the card issuer/gateway
+    WPYAuthModeIssuer = 0x00,
+    /// Transaction result was determined by the card / terminal
+    WPYAuthModeCard = 0x01
 };
 
 /**

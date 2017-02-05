@@ -5,11 +5,11 @@
 //  Copyright © 2015 Worldpay. All rights reserved.
 //
 
-#import "WPYDomainObject.h"
+#import "WPYResponseObject.h"
 
 @class WPYTenderedCard;
 
-@interface WPYGiftCardResponse : WPYDomainObject
+@interface WPYGiftCardResponse : WPYResponseObject
 @property (nonatomic, strong) NSDecimalNumber *amount;
 @property (nonatomic, strong) WPYTenderedCard *card;
 @end

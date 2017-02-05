@@ -14,11 +14,17 @@
  */
 typedef NS_ENUM(NSInteger, WPYCheckAccountType)
 {
+    /// If this is set, the transaction will not be sent to the servoer
     WPYCheckAccountTypeUnknown = -1,
+    /// self-explanatory
     WPYCheckAccountTypeChecking = 0,
+    /// self-explanatory
     WPYCheckAccountTypeSavings = 1,
+    /// self-explanatory
     WPYCheckAccountTypeBusinessChecking = 2,
+    /// self-explanatory
     WPYCheckAccountTypeBusinessSavings = 3,
+    /// Used to determine end of presentation list
     WPYCheckAccountTypeEND
 };
 
@@ -28,17 +34,29 @@ typedef NS_ENUM(NSInteger, WPYCheckAccountType)
  */
 typedef NS_ENUM(NSInteger, WPYCheckType)
 {
+    /// If this is set, the transaction will not be sent to the servoer
     WPYCheckTypeUnknown = -1,
+    /// self-explanatory
     WPYCheckTypeCorporateCashDispursement = 0,
+    /// self-explanatory
     WPYCheckTypePointOfSale = 1,
+    /// self-explanatory
     WPYCheckTypePrearrangedPaymentOrDeposit = 2,
+    /// self-explanatory
     WPYCheckTypeTelephoneInitiated = 3,
+    /// self-explanatory
     WPYCheckTypeWebInitiated = 4,
+    /// Point-of-Purchase. Paper checks that are converted (scanned) into electronic format at the point of sale. The original paper check is voided and returned to the customer. Point of Sale is authorization.
     WPYCheckTypePOP = 5,
+    /// Accounts Receivable Conversion. Used for payments being made against a bill such as a utility. Signed Authorization by Customer required.
     WPYCheckTypeARC = 6,
+    /// Check-21 transaction
     WPYCheckTypeICL = 7,
+    /// Re-Presentation Check. After a check has been return for insufficient funds it may be attempted again using this format. RCK may only be retried once. Customer notification “Returned Checks are Electronically Re-Processed” required at Point of Sale.
     WPYCheckTypeRCK = 8,
+    /// Back Office Conversion. Paper checks that are collected in a retail environment and then scanned and batched electronically. Customer notification “Checks are Electronically Processed” required at Point of Sale.
     WPYCheckTypeBOC = 9,
+    /// Used to determine the end of the check presentation option list
     WPYCheckTypeEND
 };
 
@@ -47,8 +65,11 @@ typedef NS_ENUM(NSInteger, WPYCheckType)
  */
 typedef NS_ENUM(NSInteger, WPYVerificationType)
 {
+    /// self-explanatory
     WPYVerificationTypeNone = 0,
+    /// self-explanatory
     WPYVerificationTypeACHProvider = 1,
+    /// self-explanatory
     WPYVerificationTypeCertegy = 2
 };
 

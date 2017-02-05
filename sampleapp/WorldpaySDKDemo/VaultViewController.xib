@@ -9,13 +9,15 @@
         <mutableArray key="AdelleSans_Regular.otf">
             <string>AdelleSans-Regular</string>
             <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VaultViewController">
             <connections>
-                <outlet property="createButton" destination="faZ-Pb-i9V" id="SVU-d2-YfH"/>
-                <outlet property="retrieveButton" destination="ePs-gl-s6z" id="t5s-Ih-yzV"/>
+                <outlet property="createCustomerButton" destination="ePs-gl-s6z" id="3yr-hx-pfq"/>
+                <outlet property="createPaymentButton" destination="gpT-GJ-F1U" id="Onb-EK-chH"/>
+                <outlet property="retrieveCustomerButton" destination="faZ-Pb-i9V" id="2D2-pq-Gel"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,31 +27,46 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePs-gl-s6z">
-                    <rect key="frame" x="216" y="77" width="167" height="38"/>
-                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
-                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                    <state key="normal" title="Retrieve Customers"/>
-                    <connections>
-                        <action selector="retrieveCustomers:" destination="-1" eventType="touchUpInside" id="5Qv-pC-W1f"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faZ-Pb-i9V">
-                    <rect key="frame" x="216.5" y="123" width="167" height="38"/>
+                    <rect key="frame" x="20" y="97" width="560" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pUa-Ev-vnl"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
                     <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                     <state key="normal" title="Create Customer"/>
                     <connections>
-                        <action selector="createCustomer:" destination="-1" eventType="touchUpInside" id="ULn-ln-ojQ"/>
+                        <action selector="createCustomer:" destination="-1" eventType="touchUpInside" id="k2M-fw-oIk"/>
                     </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faZ-Pb-i9V">
+                    <rect key="frame" x="20" y="191" width="560" height="50"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <state key="normal" title="Retrieve Customer"/>
+                    <connections>
+                        <action selector="retrieveCustomers:" destination="-1" eventType="touchUpInside" id="63J-3z-yLa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpT-GJ-F1U">
+                    <rect key="frame" x="20" y="285" width="560" height="50"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="17"/>
+                    <state key="normal" title="Create Payment Method"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="gpT-GJ-F1U" firstAttribute="leading" secondItem="faZ-Pb-i9V" secondAttribute="leading" id="0in-E0-SZi"/>
                 <constraint firstItem="faZ-Pb-i9V" firstAttribute="trailing" secondItem="ePs-gl-s6z" secondAttribute="trailing" id="H95-vz-BhI"/>
-                <constraint firstItem="ePs-gl-s6z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="HAy-ps-ZvV"/>
-                <constraint firstItem="faZ-Pb-i9V" firstAttribute="top" secondItem="ePs-gl-s6z" secondAttribute="bottom" constant="8" id="YAm-IQ-feC"/>
+                <constraint firstItem="ePs-gl-s6z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="HAy-ps-ZvV"/>
+                <constraint firstItem="ePs-gl-s6z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Hni-lM-Lt7"/>
+                <constraint firstItem="faZ-Pb-i9V" firstAttribute="top" secondItem="ePs-gl-s6z" secondAttribute="bottom" constant="44" id="YAm-IQ-feC"/>
+                <constraint firstAttribute="trailing" secondItem="ePs-gl-s6z" secondAttribute="trailing" constant="20" id="d3p-Kh-VfR"/>
+                <constraint firstItem="gpT-GJ-F1U" firstAttribute="height" secondItem="ePs-gl-s6z" secondAttribute="height" id="iTJ-5U-0oa"/>
                 <constraint firstItem="ePs-gl-s6z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l0p-Ag-cmd"/>
+                <constraint firstItem="faZ-Pb-i9V" firstAttribute="height" secondItem="ePs-gl-s6z" secondAttribute="height" id="qk1-oI-OAG"/>
+                <constraint firstItem="gpT-GJ-F1U" firstAttribute="top" secondItem="faZ-Pb-i9V" secondAttribute="bottom" constant="44" id="vB3-9R-fMg"/>
                 <constraint firstItem="faZ-Pb-i9V" firstAttribute="leading" secondItem="ePs-gl-s6z" secondAttribute="leading" id="vjj-rT-uuc"/>
+                <constraint firstItem="gpT-GJ-F1U" firstAttribute="trailing" secondItem="faZ-Pb-i9V" secondAttribute="trailing" id="zgP-Jq-JHH"/>
             </constraints>
         </view>
     </objects>

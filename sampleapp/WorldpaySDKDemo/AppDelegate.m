@@ -7,7 +7,6 @@
 
 #import "AppDelegate.h"
 #import "TransactionViewController.h"
-#import "Index.h"
 #import "RefundVoidViewController.h"
 #import "SettlementViewController.h"
 #import "VaultViewController.h"
@@ -20,13 +19,13 @@
 #endif
 
 #define TABSIZE 10
+#define TEXTFIELDSIZE 14
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -40,9 +39,9 @@
     authTokenRequest.terminalId = @"445";
     authTokenRequest.terminalVendor = @"4554";
     
-    [[WorldpayAPI instance] generateAuthToken:authTokenRequest withCompletion:^(NSString *result, NSError *error)
+    [[WorldpayAPI instance] generateAuthToken:authTokenRequest withCompletion:^(WPYAuthTokenResponse *result, NSError *error)
     {
-        if(!result || error)
+        if(!result || !result.success || error)
         {
             NSLog(@"Error generating AUTH Token: %@", error);
              
@@ -72,6 +71,7 @@
     [[UINavigationBar appearance] setTintColor: [UIColor worldpayWhite]];
     [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName : [UIColor worldpayWhite]}];
     [[UISegmentedControl appearance] setTintColor: [UIColor worldpayEmerald]];
+    [[UISegmentedControl appearance] setTitleTextAttributes:[UIFont worldpayPrimaryAttributesWithSize: TEXTFIELDSIZE] forState:UIControlStateNormal];
     [self.window setTintColor: [UIColor worldpayEmerald]];
     
     // Tab bar controller
@@ -102,7 +102,7 @@
     // 5th tab for Vault (Placeholder, not fully implemented yet)
     VaultViewController * vaultViewController = [[VaultViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController * vaultNav = [[UINavigationController alloc] initWithRootViewController: vaultViewController];
-    vaultNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[((UIViewController *)[[vaultNav viewControllers] firstObject]) title] image:nil tag:[index current]];
+    vaultNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[((UIViewController *)[[vaultNav viewControllers] firstObject]) title] image:[self imageWithImage:[UIImage imageNamed:@"vault_icon"]] tag:[index current]];
     
     tabController.viewControllers = @[homeNav, transactionNav, refundVoidNav, settlementNav];
     

@@ -38,9 +38,19 @@
     return [self.textField sharedInitWithOptionList:optionList initialIndex:initialIndex parentViewController:parentViewController title:title];
 }
 
+- (void)setEditingCallback:(void (^)(void))callback
+{
+    [self.textField setEditingCallback:callback];
+}
+
 - (void)setSelectionCallback:(void (^)(NSUInteger))callback
 {
     [self.textField setSelectionCallback:callback];
+}
+
+- (void) setSelectedIndex: (NSUInteger) selectedIndex
+{
+    [self.textField setSelectedIndex:selectedIndex];
 }
 
 - (NSString *)selectedTitle
@@ -56,6 +66,21 @@
 - (NSDictionary *)selectedValue
 {
     return [self.textField selectedValue];
+}
+
+- (void) setEnabled: (BOOL) enabled
+{
+    [self.textField setEnabled:enabled];
+}
+
+- (void) setDisplayMode
+{
+    [self.textField setDisplayMode];
+}
+
+- (void) setEditMode
+{
+    [self.textField setEditMode];
 }
 
 @end

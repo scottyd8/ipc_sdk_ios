@@ -16,5 +16,7 @@
 #import "Helper.h"
 #import "UIColor+Worldpay.h"
 #import "UIFont+Worldpay.h"
+#import "NSDictionary+Worldpay.h"
+#import "Index.h"
 
 #endif /* PrefixHeader_pch */

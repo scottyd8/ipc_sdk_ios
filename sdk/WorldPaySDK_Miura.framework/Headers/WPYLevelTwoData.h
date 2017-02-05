@@ -22,7 +22,7 @@
 /**
  * The cost of freight associated with the order
  */
-@property (nonatomic, strong) NSDecimalNumber *freight;
+@property (nonatomic, strong) NSDecimalNumber *freightAmount;
 /**
  * The retail lane or register associated with the transaction
  */
@@ -33,10 +33,14 @@
 @property (nonatomic, strong) NSDecimalNumber *taxAmount;
 /**
  * Tax Status of the order
+ * 
+ * 0 - NotIncluded
+ * 1 - Included
+ * 2 - Exempt
  */
-@property (nonatomic, strong) NSNumber *taxStatus;
+@property (nonatomic, strong) NSNumber *status;
 /**
  * THe purchase order number associated with the order
  */
-@property (nonatomic, strong) NSString *purchaseOrderNumber;
+@property (nonatomic, strong) NSString *purchaseOrder;
 @end

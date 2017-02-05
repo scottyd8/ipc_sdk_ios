@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="docs/guides/AppNote--Introducing-the-Vault.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/doc/AppNote- Introducing the Vault</TokenIdentifier>
+			<Abstract type="html"># Introduction</Abstract>
+			<DeclaredIn>AppNote- Introducing the Vault-template.md</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

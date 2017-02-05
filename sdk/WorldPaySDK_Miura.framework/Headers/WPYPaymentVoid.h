@@ -7,6 +7,8 @@
 
 #import "WPYDomainObject.h"
 
+@class WPYExtendedCardData;
+
 /** 
  * This enumeration indicates who is requesting the void - the merchant or the terminal / card.  This
  * does not ever need to be used by the merchant or developer as WPYVoidTypeMerchant is automatically
@@ -14,7 +16,9 @@
  */
 typedef NS_ENUM(uint8_t, WPYVoidType)
 {
+    /// self-explanatory
     WPYVoidTypeMerchant = 1,
+    /// self-explanatory
     WPYVoidTypeSystem = 2
 };
 
@@ -45,4 +49,20 @@ typedef NS_ENUM(uint8_t, WPYVoidType)
  * with this parameter
  */
 @property (nonatomic) WPYVoidType voidType;
+/**
+ * Client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate
+ * transactions. The orderId must be unique to the merchant's SecureNet ID; however, uniqueness is only
+ * evaluated for APPROVED transactions and only for the last 30 days. If a transaction is declined, the
+ * corresponding orderId may be used again.
+ *
+ * The orderId is limited to 25 characters; e.g., “CUSTOMERID MMddyyyyHHmmss”.
+ */
+@property (nonatomic, strong) NSString * orderId;
+/**
+ * Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+ * card terminal information, including "Terminal ID".  If a custom terminal ID is required, this object should be included or the terminal ID should
+ * be set via the request Auth token method
+ */
+@property (nonatomic, strong) WPYExtendedCardData *extendedInformation;
+
 @end
