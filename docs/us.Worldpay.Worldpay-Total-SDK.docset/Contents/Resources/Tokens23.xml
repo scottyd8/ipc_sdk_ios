@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYLogger.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYLogger</TokenIdentifier>
+			<Abstract type="html">This class is used to write to the log</Abstract>
+			<DeclaredIn>WorldPayAPI.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

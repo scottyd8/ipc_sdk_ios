@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYTenderServiceData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTenderServiceData</TokenIdentifier>
+			<Abstract type="html">This optional object contains information pertaining to the service industry and a payment transaction</Abstract>
+			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/setGratuityAmount:</TokenIdentifier>
+			<Abstract type="html">An optional parameter is the gratiuty amount being added to the transaction. It does not modify data
+sent to the terminal in an EMV transaction</Abstract>
+			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *gratuityAmount</Declaration>
+			
+			
+			<Anchor>//api/name/gratuityAmount</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/gratuityAmount</TokenIdentifier>
+			<Abstract type="html">An optional parameter is the gratiuty amount being added to the transaction. It does not modify data
+sent to the terminal in an EMV transaction</Abstract>
+			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *gratuityAmount</Declaration>
+			
+			
+			<Anchor>//api/name/gratuityAmount</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderServiceData/gratuityAmount</TokenIdentifier>
+			<Abstract type="html">An optional parameter is the gratiuty amount being added to the transaction. It does not modify data
+sent to the terminal in an EMV transaction</Abstract>
+			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *gratuityAmount</Declaration>
+			
+			
+			<Anchor>//api/name/gratuityAmount</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/setServer:</TokenIdentifier>
+			<Abstract type="html">An optional parameter specifying the server who is entitled to the gratuity</Abstract>
+			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/server</TokenIdentifier>
+			<Abstract type="html">An optional parameter specifying the server who is entitled to the gratuity</Abstract>
+			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderServiceData/server</TokenIdentifier>
+			<Abstract type="html">An optional parameter specifying the server who is entitled to the gratuity</Abstract>
+			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

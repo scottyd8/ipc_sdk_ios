@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYSwiperType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYSwiperType</TokenIdentifier>
+			<Abstract type="html">The type of encryption used to secure the SRED data for a card read from a terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="95"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeNotSet</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYSwiperTypeNotSet</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeNone</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYSwiperTypeNone</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeIDTech</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYSwiperTypeIDTech</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeMagTek</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYSwiperTypeMagTek</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeMiura</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYSwiperTypeMiura</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

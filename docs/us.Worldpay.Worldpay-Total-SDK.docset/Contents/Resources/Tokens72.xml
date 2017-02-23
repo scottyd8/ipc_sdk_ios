@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TransactionState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TransactionState</TokenIdentifier>
+			<Abstract type="html">Where we are in the device interaction cycle</Abstract>
+			<DeclaredIn>TransactionData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="72"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TransactionStateDecisionRequired</TokenIdentifier>
+            <Abstract type="html">Need more information</Abstract>
+            <Declaration>TransactionStateDecisionRequired</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TransactionStateApproved</TokenIdentifier>
+            <Abstract type="html">Approved</Abstract>
+            <Declaration>TransactionStateApproved</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TransactionStateOnlineAuthRequired</TokenIdentifier>
+            <Abstract type="html">Online authorization required</Abstract>
+            <Declaration>TransactionStateOnlineAuthRequired</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TransactionStateDeclined</TokenIdentifier>
+            <Abstract type="html">Declined</Abstract>
+            <Declaration>TransactionStateDeclined</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TransactionStateReversalRequired</TokenIdentifier>
+            <Abstract type="html">Reversal requested</Abstract>
+            <Declaration>TransactionStateReversalRequired</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

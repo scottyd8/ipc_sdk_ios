@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYTenderedCard.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTenderedCard</TokenIdentifier>
+			<Abstract type="html">This class is used when the customer tendered a credit card.</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setFirstName:</TokenIdentifier>
+			<Abstract type="html">The cardholder&apos;s first name</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/firstName</TokenIdentifier>
+			<Abstract type="html">The cardholder&apos;s first name</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/firstName</TokenIdentifier>
+			<Abstract type="html">The cardholder&apos;s first name</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setLastName:</TokenIdentifier>
+			<Abstract type="html">The cardholder&apos;s last name</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/lastName</TokenIdentifier>
+			<Abstract type="html">The cardholder&apos;s last name</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/lastName</TokenIdentifier>
+			<Abstract type="html">The cardholder&apos;s last name</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setExpirationMonth:</TokenIdentifier>
+			<Abstract type="html">Card expiration month</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expirationMonth</Declaration>
+			
+			
+			<Anchor>//api/name/expirationMonth</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/expirationMonth</TokenIdentifier>
+			<Abstract type="html">Card expiration month</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expirationMonth</Declaration>
+			
+			
+			<Anchor>//api/name/expirationMonth</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/expirationMonth</TokenIdentifier>
+			<Abstract type="html">Card expiration month</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expirationMonth</Declaration>
+			
+			
+			<Anchor>//api/name/expirationMonth</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setExpirationYear:</TokenIdentifier>
+			<Abstract type="html">Card expiration year</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expirationYear</Declaration>
+			
+			
+			<Anchor>//api/name/expirationYear</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/expirationYear</TokenIdentifier>
+			<Abstract type="html">Card expiration year</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expirationYear</Declaration>
+			
+			
+			<Anchor>//api/name/expirationYear</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/expirationYear</TokenIdentifier>
+			<Abstract type="html">Card expiration year</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expirationYear</Declaration>
+			
+			
+			<Anchor>//api/name/expirationYear</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setLastFourDigits:</TokenIdentifier>
+			<Abstract type="html">Last four digits of the card number</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastFourDigits</Declaration>
+			
+			
+			<Anchor>//api/name/lastFourDigits</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/lastFourDigits</TokenIdentifier>
+			<Abstract type="html">Last four digits of the card number</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastFourDigits</Declaration>
+			
+			
+			<Anchor>//api/name/lastFourDigits</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/lastFourDigits</TokenIdentifier>
+			<Abstract type="html">Last four digits of the card number</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastFourDigits</Declaration>
+			
+			
+			<Anchor>//api/name/lastFourDigits</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setFirstSixDigits:</TokenIdentifier>
+			<Abstract type="html">The first six digits of the card number, if available</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *firstSixDigits</Declaration>
+			
+			
+			<Anchor>//api/name/firstSixDigits</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/firstSixDigits</TokenIdentifier>
+			<Abstract type="html">The first six digits of the card number, if available</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *firstSixDigits</Declaration>
+			
+			
+			<Anchor>//api/name/firstSixDigits</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/firstSixDigits</TokenIdentifier>
+			<Abstract type="html">The first six digits of the card number, if available</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *firstSixDigits</Declaration>
+			
+			
+			<Anchor>//api/name/firstSixDigits</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setIccCardSwiped:</TokenIdentifier>
+			<Abstract type="html">Flag indicating that the card is a chip card that was read through the magnetic stripe interface</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL iccCardSwiped</Declaration>
+			
+			
+			<Anchor>//api/name/iccCardSwiped</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/iccCardSwiped</TokenIdentifier>
+			<Abstract type="html">Flag indicating that the card is a chip card that was read through the magnetic stripe interface</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL iccCardSwiped</Declaration>
+			
+			
+			<Anchor>//api/name/iccCardSwiped</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/iccCardSwiped</TokenIdentifier>
+			<Abstract type="html">Flag indicating that the card is a chip card that was read through the magnetic stripe interface</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL iccCardSwiped</Declaration>
+			
+			
+			<Anchor>//api/name/iccCardSwiped</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setFallbackIndicator:</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not a chip card is being read by MSR due to a technical fallback. If
+not, then the card was read as MSR because there were no supported applications on the terminal</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL fallbackIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/fallbackIndicator</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/fallbackIndicator</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not a chip card is being read by MSR due to a technical fallback. If
+not, then the card was read as MSR because there were no supported applications on the terminal</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL fallbackIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/fallbackIndicator</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/fallbackIndicator</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not a chip card is being read by MSR due to a technical fallback. If
+not, then the card was read as MSR because there were no supported applications on the terminal</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL fallbackIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/fallbackIndicator</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setIsDebit:</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not the transaction is to be processed as debit</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isDebit</Declaration>
+			
+			
+			<Anchor>//api/name/isDebit</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/isDebit</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not the transaction is to be processed as debit</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isDebit</Declaration>
+			
+			
+			<Anchor>//api/name/isDebit</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/isDebit</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not the transaction is to be processed as debit</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isDebit</Declaration>
+			
+			
+			<Anchor>//api/name/isDebit</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setSignature:</TokenIdentifier>
+			<Abstract type="html">A byte string containing the captured digital signature, if applicable</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *signature</Declaration>
+			
+			
+			<Anchor>//api/name/signature</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/signature</TokenIdentifier>
+			<Abstract type="html">A byte string containing the captured digital signature, if applicable</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *signature</Declaration>
+			
+			
+			<Anchor>//api/name/signature</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/signature</TokenIdentifier>
+			<Abstract type="html">A byte string containing the captured digital signature, if applicable</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *signature</Declaration>
+			
+			
+			<Anchor>//api/name/signature</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setEmail:</TokenIdentifier>
+			<Abstract type="html">Email address associated with the cardholder</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/email</TokenIdentifier>
+			<Abstract type="html">Email address associated with the cardholder</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/email</TokenIdentifier>
+			<Abstract type="html">Email address associated with the cardholder</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setAddress:</TokenIdentifier>
+			<Abstract type="html">Address for the account holder</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/address</TokenIdentifier>
+			<Abstract type="html">Address for the account holder</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/address</TokenIdentifier>
+			<Abstract type="html">Address for the account holder</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setSignatureRequired:</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not a successful transaction should include a signature</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
+			
+			
+			<Anchor>//api/name/signatureRequired</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/signatureRequired</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not a successful transaction should include a signature</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
+			
+			
+			<Anchor>//api/name/signatureRequired</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/signatureRequired</TokenIdentifier>
+			<Abstract type="html">Flag indicating whether or not a successful transaction should include a signature</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
+			
+			
+			<Anchor>//api/name/signatureRequired</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setApplicationId:</TokenIdentifier>
+			<Abstract type="html">The Application ID associated with an EMV transaction</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/applicationId</TokenIdentifier>
+			<Abstract type="html">The Application ID associated with an EMV transaction</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/applicationId</TokenIdentifier>
+			<Abstract type="html">The Application ID associated with an EMV transaction</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setSourceType:</TokenIdentifier>
+			<Abstract type="html">This property indicates what the source type of the card is - debit, msr, emv, etc</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) WPYCardSource sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/sourceType</TokenIdentifier>
+			<Abstract type="html">This property indicates what the source type of the card is - debit, msr, emv, etc</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) WPYCardSource sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/sourceType</TokenIdentifier>
+			<Abstract type="html">This property indicates what the source type of the card is - debit, msr, emv, etc</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) WPYCardSource sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/setSwiperType:</TokenIdentifier>
+			<Abstract type="html">This property indicates what encryption method is used to secure the SRED data on
+from the terminal</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property WPYSwiperType swiperType</Declaration>
+			
+			
+			<Anchor>//api/name/swiperType</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/swiperType</TokenIdentifier>
+			<Abstract type="html">This property indicates what encryption method is used to secure the SRED data on
+from the terminal</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property WPYSwiperType swiperType</Declaration>
+			
+			
+			<Anchor>//api/name/swiperType</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderedCard/swiperType</TokenIdentifier>
+			<Abstract type="html">This property indicates what encryption method is used to secure the SRED data on
+from the terminal</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>@property WPYSwiperType swiperType</Declaration>
+			
+			
+			<Anchor>//api/name/swiperType</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/initSwipedCardWithCardHolderName:expirationDate:maskedPan:trackData:cvv:ksn:pinBlock:pinKSN:isICCCapable:withSwiperType:fallback:</TokenIdentifier>
+			<Abstract type="html">Returns a pointer to a read only credit card object</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initSwipedCardWithCardHolderName:(NSString *)cardHolder expirationDate:(NSDate *)expiration maskedPan:(NSString *)maskedPan trackData:(NSDictionary *)trackDict cvv:(NSString *)cvv ksn:(NSString *)ksn pinBlock:(NSString *)pinBlock pinKSN:(NSString *)pinKsn isICCCapable:(BOOL)iccCard withSwiperType:(WPYSwiperType)swiperType fallback:(BOOL)fallbackIndicator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cardHolder</Name>
+					<Abstract type="html">Full card holder name, as seen on the card</Abstract>
+				</Parameter><Parameter>
+					<Name>expiration</Name>
+					<Abstract type="html">Expiration date of the card</Abstract>
+				</Parameter><Parameter>
+					<Name>maskedPan</Name>
+					<Abstract type="html">Masked Primary Account Number for the card</Abstract>
+				</Parameter><Parameter>
+					<Name>trackDict</Name>
+					<Abstract type="html">Dictionary containing track1, track2, track3, track1Length, track2Length, track3Length data.</Abstract>
+				</Parameter><Parameter>
+					<Name>cvv</Name>
+					<Abstract type="html">CVV number from the back of the card</Abstract>
+				</Parameter><Parameter>
+					<Name>ksn</Name>
+					<Abstract type="html">Key Serial Number used to encrypt the card data</Abstract>
+				</Parameter><Parameter>
+					<Name>pinBlock</Name>
+					<Abstract type="html">Encrypted PIN data</Abstract>
+				</Parameter><Parameter>
+					<Name>pinKsn</Name>
+					<Abstract type="html">Key Serial Number used to encrypt the PIN data</Abstract>
+				</Parameter><Parameter>
+					<Name>iccCard</Name>
+					<Abstract type="html">BOOL indicating whether or not the card has a chip, based on track service code</Abstract>
+				</Parameter><Parameter>
+					<Name>swiperType</Name>
+					<Abstract type="html">Type of the swiper used to encrypt the card data</Abstract>
+				</Parameter><Parameter>
+					<Name>fallbackIndicator</Name>
+					<Abstract type="html">A boolean that indicates this was a fallback transaction</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">WPYSwiper object</Abstract></ReturnValue>
+			<Anchor>//api/name/initSwipedCardWithCardHolderName:expirationDate:maskedPan:trackData:cvv:ksn:pinBlock:pinKSN:isICCCapable:withSwiperType:fallback:</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/initCardWithTLV:withSwiperType:pinBlock:pinKSN:andKSN:requireSignature:applicationId:cardSource:</TokenIdentifier>
+			<Abstract type="html">Returns a pointer to a read only credit card object</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initCardWithTLV:(NSString *)tlv withSwiperType:(WPYSwiperType)swiperType pinBlock:(NSString *)pinBlock pinKSN:(NSString *)pinKsn andKSN:(NSString *)ksn requireSignature:(BOOL)signatureRequired applicationId:(NSString *)aid cardSource:(WPYCardSource)cardSource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tlv</Name>
+					<Abstract type="html">Tag, Length, Value string of the card data from the terminal</Abstract>
+				</Parameter><Parameter>
+					<Name>swiperType</Name>
+					<Abstract type="html">Type of the swiper used to encrypt the card data</Abstract>
+				</Parameter><Parameter>
+					<Name>pinBlock</Name>
+					<Abstract type="html">encrypted PIN data</Abstract>
+				</Parameter><Parameter>
+					<Name>pinKsn</Name>
+					<Abstract type="html">Key Serial Number used to encrypt the PIN data</Abstract>
+				</Parameter><Parameter>
+					<Name>ksn</Name>
+					<Abstract type="html">Key Serial Number used to encrypt the card data</Abstract>
+				</Parameter><Parameter>
+					<Name>signatureRequired</Name>
+					<Abstract type="html">A BOOL indicating whether or not the CVM Results indicate that a signature is required</Abstract>
+				</Parameter><Parameter>
+					<Name>aid</Name>
+					<Abstract type="html">String containing the Application ID that represents the card being used</Abstract>
+				</Parameter><Parameter>
+					<Name>cardSource</Name>
+					<Abstract type="html">The input method and account type for the selected card (Contact Debit versus Contacless Debit, etc0.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">WPYSwiper object</Abstract></ReturnValue>
+			<Anchor>//api/name/initCardWithTLV:withSwiperType:pinBlock:pinKSN:andKSN:requireSignature:applicationId:cardSource:</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderedCard/cardHasPinData</TokenIdentifier>
+			<Abstract type="html">Flag indicating that the card has an associated PIN</Abstract>
+			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)cardHasPinData</Declaration>
+			
+			
+			<Anchor>//api/name/cardHasPinData</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

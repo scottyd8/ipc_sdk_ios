@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/MiuraDeviceControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/MiuraDeviceControllerDelegate</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onRequestDevicePromptText:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onRequestDevicePromptText:(DevicePrompt)prompt</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>prompt</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onRequestDevicePromptText:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onDeviceConnect</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onDeviceConnect</Declaration>
+			
+			
+			<Anchor>//api/name/onDeviceConnect</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onDeviceDisconnect</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onDeviceDisconnect</Declaration>
+			
+			
+			<Anchor>//api/name/onDeviceDisconnect</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onDeviceDidFailToConnect</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onDeviceDidFailToConnect</Declaration>
+			
+			
+			<Anchor>//api/name/onDeviceDidFailToConnect</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnAvailableDevices:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnAvailableDevices:(NSArray&lt;NSString*&gt; *)devices</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>devices</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnAvailableDevices:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onRequestSelectApplication:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onRequestSelectApplication:(NSArray&lt;NSString*&gt; *)applications</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applications</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onRequestSelectApplication:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onRequestOnlineProcessing:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onRequestOnlineProcessing:(TransactionData *)transactionData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transactionData</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onRequestOnlineProcessing:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onRequestReversal:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onRequestReversal:(TransactionData *)transactionData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transactionData</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onRequestReversal:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnTransactionResult:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnTransactionResult:(TransactionData *)transactionData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transactionData</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnTransactionResult:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onCardEvent:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onCardEvent:(CardEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>event</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onCardEvent:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onKeypadInput</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onKeypadInput</Declaration>
+			
+			
+			<Anchor>//api/name/onKeypadInput</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnNumericInput:inputType:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnNumericInput:(NumericData *)input inputType:(NumericDataInput)inputType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>input</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter><Parameter>
+					<Name>inputType</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnNumericInput:inputType:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnDeviceClock:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnDeviceClock:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnDeviceClock:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnDeviceError:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnDeviceError:(DeviceError)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnDeviceError:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnICCError:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnICCError:(ICCError)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnICCError:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnNFCError:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnNFCError:(NFCError)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnNFCError:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnPinError:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnPinError:(PinError)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnPinError:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnPrinterError:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnPrinterError:(PrinterError)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnPrinterError:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnManualEntryError:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnManualEntryError:(ManualEntryError)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnManualEntryError:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnDeviceInfo:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnDeviceInfo:(NSDictionary *)deviceInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceInfo</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnDeviceInfo:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onTerminalStatusChange:statusText:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onTerminalStatusChange:(uint8_t)statusCode statusText:(NSString *)statusText</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>statusCode</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter><Parameter>
+					<Name>statusText</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onTerminalStatusChange:statusText:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnBatteryPercent:chargeStatus:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnBatteryPercent:(NSInteger)percentCharged chargeStatus:(BatteryStatus)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>percentCharged</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter><Parameter>
+					<Name>status</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnBatteryPercent:chargeStatus:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnPINBlock:withKsn:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnPINBlock:(NSString *)pinBlock withKsn:(NSString *)pinKsn</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pinBlock</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter><Parameter>
+					<Name>pinKsn</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnPINBlock:withKsn:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onRequestAccountTypeSelection:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onRequestAccountTypeSelection:(TransactionData *)transactionData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transactionData</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onRequestAccountTypeSelection:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onDevicePromptCanceled</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onDevicePromptCanceled</Declaration>
+			
+			
+			<Anchor>//api/name/onDevicePromptCanceled</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/MiuraDeviceControllerDelegate/onReturnDeviceConfig:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			
+			<Declaration>- (void)onReturnDeviceConfig:(NSDictionary *)configDict</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configDict</Name>
+					<Abstract type="html">To Be Documented</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onReturnDeviceConfig:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CVMethod.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CVMethod</TokenIdentifier>
+			<Abstract type="html">Type of CVV utilized</Abstract>
+			<DeclaredIn>TransactionData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CVMethodContactlessNoCVM</TokenIdentifier>
+            <Abstract type="html">No CVM (contactless)</Abstract>
+            <Declaration>CVMethodContactlessNoCVM</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CVMethodPlaintextPIN</TokenIdentifier>
+            <Abstract type="html">Plaintext PIN</Abstract>
+            <Declaration>CVMethodPlaintextPIN</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CVMethodOnlinePIN</TokenIdentifier>
+            <Abstract type="html">Online PIN</Abstract>
+            <Declaration>CVMethodOnlinePIN</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CVMethodMobileConfirmCode</TokenIdentifier>
+            <Abstract type="html">Confirmation from mobile device required</Abstract>
+            <Declaration>CVMethodMobileConfirmCode</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CVMethodOfflineEncipheredPIN</TokenIdentifier>
+            <Abstract type="html">Offline PIN</Abstract>
+            <Declaration>CVMethodOfflineEncipheredPIN</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CVMethodNoCVM</TokenIdentifier>
+            <Abstract type="html">No CVM (non-contactless)</Abstract>
+            <Declaration>CVMethodNoCVM</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CVMethodSignature</TokenIdentifier>
+            <Abstract type="html">Signature required</Abstract>
+            <Declaration>CVMethodSignature</Declaration>
+            
+            <DeclaredIn>TransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

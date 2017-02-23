@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYAddressInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYAddressInfo</TokenIdentifier>
+			<Abstract type="html">This object allows the merchant to specify address information for the card holder</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/setLine1:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the first line of the cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *line1</Declaration>
+			
+			
+			<Anchor>//api/name/line1</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/line1</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the first line of the cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *line1</Declaration>
+			
+			
+			<Anchor>//api/name/line1</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAddressInfo/line1</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the first line of the cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *line1</Declaration>
+			
+			
+			<Anchor>//api/name/line1</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/setCity:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the city associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/city</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the city associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAddressInfo/city</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the city associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/setState:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the state associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/state</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the state associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAddressInfo/state</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the state associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/setZip:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the postal code associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *zip</Declaration>
+			
+			
+			<Anchor>//api/name/zip</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/zip</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the postal code associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *zip</Declaration>
+			
+			
+			<Anchor>//api/name/zip</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAddressInfo/zip</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the postal code associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *zip</Declaration>
+			
+			
+			<Anchor>//api/name/zip</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/setCountry:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the country associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *country</Declaration>
+			
+			
+			<Anchor>//api/name/country</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/country</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the country associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *country</Declaration>
+			
+			
+			<Anchor>//api/name/country</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAddressInfo/country</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the country associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *country</Declaration>
+			
+			
+			<Anchor>//api/name/country</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/setCompany:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the company associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
+			
+			
+			<Anchor>//api/name/company</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/company</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the company associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
+			
+			
+			<Anchor>//api/name/company</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAddressInfo/company</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the company associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
+			
+			
+			<Anchor>//api/name/company</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/setPhone:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the phone number associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAddressInfo/phone</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the phone number associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAddressInfo/phone</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the phone number associated with he cardholder&apos;s address</Abstract>
+			<DeclaredIn>WPYAddressInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

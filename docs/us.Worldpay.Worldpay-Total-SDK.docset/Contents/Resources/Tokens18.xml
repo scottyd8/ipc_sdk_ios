@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYDomainObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYDomainObject</TokenIdentifier>
+			<Abstract type="html">Base class for most of the objects within Worldpay Total</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYDomainObject/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">The server returns object ID&apos;s as &quot;id&quot;, which is a protected word in Objective-C.  This property
+contains the id returned by the server for any object returned by the server</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYDomainObject/identifier</TokenIdentifier>
+			<Abstract type="html">The server returns object ID&apos;s as &quot;id&quot;, which is a protected word in Objective-C.  This property
+contains the id returned by the server for any object returned by the server</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYDomainObject/identifier</TokenIdentifier>
+			<Abstract type="html">The server returns object ID&apos;s as &quot;id&quot;, which is a protected word in Objective-C.  This property
+contains the id returned by the server for any object returned by the server</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYDomainObject/jsonDictionary</TokenIdentifier>
+			<Abstract type="html">The json string used in interacting with the server</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+			
+			<Declaration>- (NSMutableDictionary *)jsonDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/jsonDictionary</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYDomainObject/initWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Initiatilize the internal jsonDictionary with a provided json string</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDictionary:(NSDictionary *)jsonDictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>jsonDictionary</Name>
+					<Abstract type="html">Json string used to initialize the object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithDictionary:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

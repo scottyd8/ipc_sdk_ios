@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CardEvent.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CardEvent</TokenIdentifier>
+			<Abstract type="html">This class is used whenever a card event (swipe, etc) occurs. It makes available basic card data.</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setStatus:</TokenIdentifier>
+			<Abstract type="html">Indicates the status of the physical part of the transaction (swipe, dip, etc.) See CardStatus for available states</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CardStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/status</TokenIdentifier>
+			<Abstract type="html">Indicates the status of the physical part of the transaction (swipe, dip, etc.) See CardStatus for available states</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CardStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/status</TokenIdentifier>
+			<Abstract type="html">Indicates the status of the physical part of the transaction (swipe, dip, etc.) See CardStatus for available states</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CardStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setCardEmvCapable:</TokenIdentifier>
+			<Abstract type="html">Indicates whether the card can accomodate EMV transactions</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isCardEmvCapable) BOOL cardEmvCapable</Declaration>
+			
+			
+			<Anchor>//api/name/cardEmvCapable</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/isCardEmvCapable</TokenIdentifier>
+			<Abstract type="html">Indicates whether the card can accomodate EMV transactions</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isCardEmvCapable) BOOL cardEmvCapable</Declaration>
+			
+			
+			<Anchor>//api/name/cardEmvCapable</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/cardEmvCapable</TokenIdentifier>
+			<Abstract type="html">Indicates whether the card can accomodate EMV transactions</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isCardEmvCapable) BOOL cardEmvCapable</Declaration>
+			
+			
+			<Anchor>//api/name/cardEmvCapable</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setMaskedPAN:</TokenIdentifier>
+			<Abstract type="html">The masked card number</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *maskedPAN</Declaration>
+			
+			
+			<Anchor>//api/name/maskedPAN</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/maskedPAN</TokenIdentifier>
+			<Abstract type="html">The masked card number</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *maskedPAN</Declaration>
+			
+			
+			<Anchor>//api/name/maskedPAN</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/maskedPAN</TokenIdentifier>
+			<Abstract type="html">The masked card number</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *maskedPAN</Declaration>
+			
+			
+			<Anchor>//api/name/maskedPAN</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setExpiration:</TokenIdentifier>
+			<Abstract type="html">The expiration date of the card</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *expiration</Declaration>
+			
+			
+			<Anchor>//api/name/expiration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/expiration</TokenIdentifier>
+			<Abstract type="html">The expiration date of the card</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *expiration</Declaration>
+			
+			
+			<Anchor>//api/name/expiration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/expiration</TokenIdentifier>
+			<Abstract type="html">The expiration date of the card</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *expiration</Declaration>
+			
+			
+			<Anchor>//api/name/expiration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setStatusCode:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/statusCode</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/statusCode</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setMaskedTrack2:</TokenIdentifier>
+			<Abstract type="html">Masked track 2 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *maskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/maskedTrack2</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/maskedTrack2</TokenIdentifier>
+			<Abstract type="html">Masked track 2 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *maskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/maskedTrack2</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/maskedTrack2</TokenIdentifier>
+			<Abstract type="html">Masked track 2 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *maskedTrack2</Declaration>
+			
+			
+			<Anchor>//api/name/maskedTrack2</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setSredData:</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			
+			
+			<Anchor>//api/name/sredData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/sredData</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			
+			
+			<Anchor>//api/name/sredData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/sredData</TokenIdentifier>
+			<Abstract type="html">To Be Documented</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			
+			
+			<Anchor>//api/name/sredData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setSredKSN:</TokenIdentifier>
+			<Abstract type="html">Key Serial Number</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredKSN</Declaration>
+			
+			
+			<Anchor>//api/name/sredKSN</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/sredKSN</TokenIdentifier>
+			<Abstract type="html">Key Serial Number</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredKSN</Declaration>
+			
+			
+			<Anchor>//api/name/sredKSN</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/sredKSN</TokenIdentifier>
+			<Abstract type="html">Key Serial Number</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sredKSN</Declaration>
+			
+			
+			<Anchor>//api/name/sredKSN</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setTrack2Length:</TokenIdentifier>
+			<Abstract type="html">Length of track 2</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track2Length</Declaration>
+			
+			
+			<Anchor>//api/name/track2Length</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/track2Length</TokenIdentifier>
+			<Abstract type="html">Length of track 2</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track2Length</Declaration>
+			
+			
+			<Anchor>//api/name/track2Length</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/track2Length</TokenIdentifier>
+			<Abstract type="html">Length of track 2</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track2Length</Declaration>
+			
+			
+			<Anchor>//api/name/track2Length</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setTrack1:</TokenIdentifier>
+			<Abstract type="html">Track 1 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track1</Declaration>
+			
+			
+			<Anchor>//api/name/track1</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/track1</TokenIdentifier>
+			<Abstract type="html">Track 1 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track1</Declaration>
+			
+			
+			<Anchor>//api/name/track1</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/track1</TokenIdentifier>
+			<Abstract type="html">Track 1 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track1</Declaration>
+			
+			
+			<Anchor>//api/name/track1</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/setTrack2:</TokenIdentifier>
+			<Abstract type="html">Track 2 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track2</Declaration>
+			
+			
+			<Anchor>//api/name/track2</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/track2</TokenIdentifier>
+			<Abstract type="html">Track 2 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track2</Declaration>
+			
+			
+			<Anchor>//api/name/track2</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CardEvent/track2</TokenIdentifier>
+			<Abstract type="html">Track 2 data</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *track2</Declaration>
+			
+			
+			<Anchor>//api/name/track2</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CardEvent/initWithDict:</TokenIdentifier>
+			<Abstract type="html">Initialize CardEvent from dictionary of values.</Abstract>
+			<DeclaredIn>CardEvent.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDict:(NSDictionary *)dict</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dict</Name>
+					<Abstract type="html">Source dictionary to initialize from.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithDict:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

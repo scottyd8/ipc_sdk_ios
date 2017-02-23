@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYEMVTransactionType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYEMVTransactionType</TokenIdentifier>
+			<Abstract type="html">Type of transaction that the merchant would like to perform.
+A transaction with type Goods is debit/credit only with no gratuity or cash back allowed
+A transaction with type Cashback is a sale w/ cash back allowed if supported by the card type
+A transaction with type Services is a sale w/ inline tip adjustment allowed</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="87"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYEMVTransactionTypeGoods</TokenIdentifier>
+            <Abstract type="html">Debit/credit only with no gratuity or cash back allowed</Abstract>
+            <Declaration>WPYEMVTransactionTypeGoods</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYEMVTransactionTypeCashback</TokenIdentifier>
+            <Abstract type="html">A sale w/ cash back allowed if supported by the card type</Abstract>
+            <Declaration>WPYEMVTransactionTypeCashback</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYEMVTransactionTypeServices</TokenIdentifier>
+            <Abstract type="html">A sale w/ inline tip adjustment allowed</Abstract>
+            <Declaration>WPYEMVTransactionTypeServices</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYEMVTransactionTypeRefund</TokenIdentifier>
+            <Abstract type="html">A refund transaction</Abstract>
+            <Declaration>WPYEMVTransactionTypeRefund</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="87"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

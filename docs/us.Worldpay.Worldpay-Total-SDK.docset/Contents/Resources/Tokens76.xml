@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WPYAvsResultType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYAvsResultType</TokenIdentifier>
+			<Abstract type="html">The Address Verification Service result indicates whether or not the
+billing address was verified and, if so, what the result was</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="76"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYAvsResultTypeMatch</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYAvsResultTypeMatch</Declaration>
+            
+            <DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYAvsResultTypeNotMatched</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYAvsResultTypeNotMatched</Declaration>
+            
+            <DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYAvsResultTypeNotChecked</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYAvsResultTypeNotChecked</Declaration>
+            
+            <DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
+            
+            <NodeRef refid="76"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

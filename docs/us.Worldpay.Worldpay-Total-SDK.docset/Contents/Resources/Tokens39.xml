@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYResponseObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYResponseObject</TokenIdentifier>
+			<Abstract type="html">This is the objet that contains the results from any server transaction.</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setResponseCode:</TokenIdentifier>
+			<Abstract type="html">Gateway response code for the current request</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYResponseCode responseCode</Declaration>
+			
+			
+			<Anchor>//api/name/responseCode</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/responseCode</TokenIdentifier>
+			<Abstract type="html">Gateway response code for the current request</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYResponseCode responseCode</Declaration>
+			
+			
+			<Anchor>//api/name/responseCode</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/responseCode</TokenIdentifier>
+			<Abstract type="html">Gateway response code for the current request</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYResponseCode responseCode</Declaration>
+			
+			
+			<Anchor>//api/name/responseCode</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setResponseMessage:</TokenIdentifier>
+			<Abstract type="html">Response Message containing a detailed message for the merchant, such as why a transaction was declined</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *responseMessage</Declaration>
+			
+			
+			<Anchor>//api/name/responseMessage</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/responseMessage</TokenIdentifier>
+			<Abstract type="html">Response Message containing a detailed message for the merchant, such as why a transaction was declined</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *responseMessage</Declaration>
+			
+			
+			<Anchor>//api/name/responseMessage</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/responseMessage</TokenIdentifier>
+			<Abstract type="html">Response Message containing a detailed message for the merchant, such as why a transaction was declined</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *responseMessage</Declaration>
+			
+			
+			<Anchor>//api/name/responseMessage</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setSuccess:</TokenIdentifier>
+			<Abstract type="html">Indicates whether or not the current request was successfully processed</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL success</Declaration>
+			
+			
+			<Anchor>//api/name/success</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/success</TokenIdentifier>
+			<Abstract type="html">Indicates whether or not the current request was successfully processed</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL success</Declaration>
+			
+			
+			<Anchor>//api/name/success</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/success</TokenIdentifier>
+			<Abstract type="html">Indicates whether or not the current request was successfully processed</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL success</Declaration>
+			
+			
+			<Anchor>//api/name/success</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setResult:</TokenIdentifier>
+			<Abstract type="html">Short message indicating the result of processing. Suitable to display to the card holder</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/result</TokenIdentifier>
+			<Abstract type="html">Short message indicating the result of processing. Suitable to display to the card holder</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/result</TokenIdentifier>
+			<Abstract type="html">Short message indicating the result of processing. Suitable to display to the card holder</Abstract>
+			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

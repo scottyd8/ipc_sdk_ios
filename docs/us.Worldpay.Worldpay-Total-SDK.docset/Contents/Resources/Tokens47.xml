@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYTerminalInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTerminalInfo</TokenIdentifier>
+			<Abstract type="html">This object contains information about the terminal used to capture a card read.  This can be set on a request prior to starting
+a card transaction.  If it is not set, or if certain fields are left unpopulated, the SDK will automatically add this object to
+the request and populate any missing fields.</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+            
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/setTerminalId:</TokenIdentifier>
+			<Abstract type="html">This parameter corresponds to the identifier associated with the terminal used to capture the transaction.  If the terminal ID was
+not set at the time an authorization token was requested and is not provided through this object, then the SDK will automatically
+use the terminal serial number as the ID</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/terminalId</TokenIdentifier>
+			<Abstract type="html">This parameter corresponds to the identifier associated with the terminal used to capture the transaction.  If the terminal ID was
+not set at the time an authorization token was requested and is not provided through this object, then the SDK will automatically
+use the terminal serial number as the ID</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTerminalInfo/terminalId</TokenIdentifier>
+			<Abstract type="html">This parameter corresponds to the identifier associated with the terminal used to capture the transaction.  If the terminal ID was
+not set at the time an authorization token was requested and is not provided through this object, then the SDK will automatically
+use the terminal serial number as the ID</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/setCity:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the city that the terminal is located in</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/city</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the city that the terminal is located in</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTerminalInfo/city</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the city that the terminal is located in</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/setState:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the state that the terminal is located in</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/state</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the state that the terminal is located in</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTerminalInfo/state</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the state that the terminal is located in</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/setLocation:</TokenIdentifier>
+			<Abstract type="html">An optional parameter that is indicates the location that the terminal is associated with</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/location</TokenIdentifier>
+			<Abstract type="html">An optional parameter that is indicates the location that the terminal is associated with</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTerminalInfo/location</TokenIdentifier>
+			<Abstract type="html">An optional parameter that is indicates the location that the terminal is associated with</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/setStoreNumber:</TokenIdentifier>
+			<Abstract type="html">An optional parameter corresponding to the store number that the terminal is associated with</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *storeNumber</Declaration>
+			
+			
+			<Anchor>//api/name/storeNumber</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/storeNumber</TokenIdentifier>
+			<Abstract type="html">An optional parameter corresponding to the store number that the terminal is associated with</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *storeNumber</Declaration>
+			
+			
+			<Anchor>//api/name/storeNumber</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTerminalInfo/storeNumber</TokenIdentifier>
+			<Abstract type="html">An optional parameter corresponding to the store number that the terminal is associated with</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *storeNumber</Declaration>
+			
+			
+			<Anchor>//api/name/storeNumber</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/setKernelVersionNo:</TokenIdentifier>
+			<Abstract type="html">This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *kernelVersionNo</Declaration>
+			
+			
+			<Anchor>//api/name/kernelVersionNo</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/kernelVersionNo</TokenIdentifier>
+			<Abstract type="html">This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *kernelVersionNo</Declaration>
+			
+			
+			<Anchor>//api/name/kernelVersionNo</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTerminalInfo/kernelVersionNo</TokenIdentifier>
+			<Abstract type="html">This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *kernelVersionNo</Declaration>
+			
+			
+			<Anchor>//api/name/kernelVersionNo</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/setPOSTerminalInputCapabilityInd:</TokenIdentifier>
+			<Abstract type="html">This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *pOSTerminalInputCapabilityInd</Declaration>
+			
+			
+			<Anchor>//api/name/pOSTerminalInputCapabilityInd</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTerminalInfo/pOSTerminalInputCapabilityInd</TokenIdentifier>
+			<Abstract type="html">This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *pOSTerminalInputCapabilityInd</Declaration>
+			
+			
+			<Anchor>//api/name/pOSTerminalInputCapabilityInd</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTerminalInfo/pOSTerminalInputCapabilityInd</TokenIdentifier>
+			<Abstract type="html">This parameter is automatically provided by the SDK when a card terminal is used to capture credit card data.</Abstract>
+			<DeclaredIn>WPYTerminalInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *pOSTerminalInputCapabilityInd</Declaration>
+			
+			
+			<Anchor>//api/name/pOSTerminalInputCapabilityInd</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

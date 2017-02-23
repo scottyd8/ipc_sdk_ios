@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYTransactionSearchResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTransactionSearchResponse</TokenIdentifier>
+			<Abstract type="html">Response object used for transaction that searches for customer transactions</Abstract>
+			<DeclaredIn>WPYTransactionSearchResponse.h</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearchResponse/setTransactions:</TokenIdentifier>
+			<Abstract type="html">The list of transactions that matches the parameters in the initial search</Abstract>
+			<DeclaredIn>WPYTransactionSearchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			
+			
+			<Anchor>//api/name/transactions</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearchResponse/transactions</TokenIdentifier>
+			<Abstract type="html">The list of transactions that matches the parameters in the initial search</Abstract>
+			<DeclaredIn>WPYTransactionSearchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			
+			
+			<Anchor>//api/name/transactions</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearchResponse/transactions</TokenIdentifier>
+			<Abstract type="html">The list of transactions that matches the parameters in the initial search</Abstract>
+			<DeclaredIn>WPYTransactionSearchResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			
+			
+			<Anchor>//api/name/transactions</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

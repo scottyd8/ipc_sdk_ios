@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WPYAuthTokenResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYAuthTokenResponse</TokenIdentifier>
+			<Abstract type="html">This class defines the data fields returned back from a WPYAuthTokenRequest transaction. You typically
+don&apos;t need to access the token as it is also kept in the device keychain, however you will likely need
+other data from the super calss WPYResponseObject</Abstract>
+			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenResponse/setAuthToken:</TokenIdentifier>
+			<Abstract type="html">The authorization token issued by the server.</Abstract>
+			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=authToken) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenResponse/authToken</TokenIdentifier>
+			<Abstract type="html">The authorization token issued by the server.</Abstract>
+			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=authToken) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenResponse/authToken</TokenIdentifier>
+			<Abstract type="html">The authorization token issued by the server.</Abstract>
+			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=authToken) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
