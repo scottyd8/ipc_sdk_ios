@@ -14,6 +14,7 @@
 
 #define REFUNDINDEX 0
 #define VOIDINDEX 1
+#define CAPTUREINDEX 2
 
 @interface RefundVoidViewController ()
 
@@ -42,7 +43,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    if(![self.transactionTypeDropDown sharedInitWithOptionList:@[@"Refund", @"Void"] initialIndex:0 parentViewController:self title:@"Transaction Type"])
+    if(![self.transactionTypeDropDown sharedInitWithOptionList:@[@"Refund", @"Void", @"Capture"] initialIndex:0 parentViewController:self title:@"Transaction Type"])
     {
         NSAssert(FALSE, @"%@", @"Drop down failed to initialized properly");
     }
@@ -138,6 +139,22 @@
         ((WPYPaymentRefund *)request).transactionId = self.transactionIdTextField.text;
         
         [[WorldpayAPI instance] paymentRefund:(WPYPaymentRefund *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+        {
+            [self handleResponse:response withError:error];
+        }];
+    }
+    else if([self.transactionTypeDropDown selectedIndex] == CAPTUREINDEX)
+    {
+        request = [WPYPaymentCapture new];
+        
+        if(includeAmount)
+        {
+            ((WPYPaymentCapture *)request).amount = [NSDecimalNumber decimalNumberWithString:self.amountTextField.text];
+        }
+        
+        ((WPYPaymentCapture *)request).transactionId = self.transactionIdTextField.text;
+        
+        [[WorldpayAPI instance] paymentCapture:(WPYPaymentCapture *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
         {
             [self handleResponse:response withError:error];
         }];

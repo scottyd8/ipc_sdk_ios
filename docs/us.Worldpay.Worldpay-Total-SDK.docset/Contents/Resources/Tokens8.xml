@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TransactionData.html">
+	<File path="Classes/WPYAuthTokenRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TransactionData</TokenIdentifier>
-			<Abstract type="html">Class that is used to transport card and card holder data</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYAuthTokenRequest</TokenIdentifier>
+			<Abstract type="html">This object is sent when requesting an authorization token from the server so that other APIs can be used.
+The SDK automatically stores the token in the device keychain, but returns a copy of the token just in case
+the developer needs it for some reason.  Only one ID and Key/PIN should be set, based on the processing
+gateway the application is to use</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,515 +16,155 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setState:</TokenIdentifier>
-			<Abstract type="html">Where we are in the transaction life-cycle with the device. See TransactionState for acceptable values.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetId:</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) TransactionState state</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/secureNetId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/state</TokenIdentifier>
-			<Abstract type="html">Where we are in the transaction life-cycle with the device. See TransactionState for acceptable values.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) TransactionState state</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/secureNetId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/state</TokenIdentifier>
-			<Abstract type="html">Where we are in the transaction life-cycle with the device. See TransactionState for acceptable values.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) TransactionState state</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/secureNetId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setTransactionType:</TokenIdentifier>
-			<Abstract type="html">The transaction type requested. See TransactionType for acceptable values.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetKey:</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) TransactionType transactionType</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
 			
 			
-			<Anchor>//api/name/transactionType</Anchor>
+			<Anchor>//api/name/secureNetKey</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/transactionType</TokenIdentifier>
-			<Abstract type="html">The transaction type requested. See TransactionType for acceptable values.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) TransactionType transactionType</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
 			
 			
-			<Anchor>//api/name/transactionType</Anchor>
+			<Anchor>//api/name/secureNetKey</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/transactionType</TokenIdentifier>
-			<Abstract type="html">The transaction type requested. See TransactionType for acceptable values.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) TransactionType transactionType</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
 			
 			
-			<Anchor>//api/name/transactionType</Anchor>
+			<Anchor>//api/name/secureNetKey</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setCardEntryMode:</TokenIdentifier>
-			<Abstract type="html">This field indicates how the terminal acquired the card data</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersId:</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) CardEntryMode cardEntryMode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
 			
 			
-			<Anchor>//api/name/cardEntryMode</Anchor>
+			<Anchor>//api/name/merchantPartnersId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/cardEntryMode</TokenIdentifier>
-			<Abstract type="html">This field indicates how the terminal acquired the card data</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) CardEntryMode cardEntryMode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
 			
 			
-			<Anchor>//api/name/cardEntryMode</Anchor>
+			<Anchor>//api/name/merchantPartnersId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/cardEntryMode</TokenIdentifier>
-			<Abstract type="html">This field indicates how the terminal acquired the card data</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) CardEntryMode cardEntryMode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
 			
 			
-			<Anchor>//api/name/cardEntryMode</Anchor>
+			<Anchor>//api/name/merchantPartnersId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setTlvString:</TokenIdentifier>
-			<Abstract type="html">Encrypted EMV tag string</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersPin:</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *tlvString</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
 			
 			
-			<Anchor>//api/name/tlvString</Anchor>
+			<Anchor>//api/name/merchantPartnersPin</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/tlvString</TokenIdentifier>
-			<Abstract type="html">Encrypted EMV tag string</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *tlvString</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
 			
 			
-			<Anchor>//api/name/tlvString</Anchor>
+			<Anchor>//api/name/merchantPartnersPin</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/tlvString</TokenIdentifier>
-			<Abstract type="html">Encrypted EMV tag string</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *tlvString</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
 			
 			
-			<Anchor>//api/name/tlvString</Anchor>
+			<Anchor>//api/name/merchantPartnersPin</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setCardHolderName:</TokenIdentifier>
-			<Abstract type="html">The cardholder&apos;s name.  It may be &quot;Last Name / First Name&quot; or just &quot;Last Name&quot; depending on how the data was acquired</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *cardHolderName</Declaration>
-			
-			
-			<Anchor>//api/name/cardHolderName</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/cardHolderName</TokenIdentifier>
-			<Abstract type="html">The cardholder&apos;s name.  It may be &quot;Last Name / First Name&quot; or just &quot;Last Name&quot; depending on how the data was acquired</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *cardHolderName</Declaration>
-			
-			
-			<Anchor>//api/name/cardHolderName</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/cardHolderName</TokenIdentifier>
-			<Abstract type="html">The cardholder&apos;s name.  It may be &quot;Last Name / First Name&quot; or just &quot;Last Name&quot; depending on how the data was acquired</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *cardHolderName</Declaration>
-			
-			
-			<Anchor>//api/name/cardHolderName</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setMaskedPan:</TokenIdentifier>
-			<Abstract type="html">Masked card number</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *maskedPan</Declaration>
-			
-			
-			<Anchor>//api/name/maskedPan</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/maskedPan</TokenIdentifier>
-			<Abstract type="html">Masked card number</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *maskedPan</Declaration>
-			
-			
-			<Anchor>//api/name/maskedPan</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/maskedPan</TokenIdentifier>
-			<Abstract type="html">Masked card number</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *maskedPan</Declaration>
-			
-			
-			<Anchor>//api/name/maskedPan</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setExpiration:</TokenIdentifier>
-			<Abstract type="html">Expiration date of card</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *expiration</Declaration>
-			
-			
-			<Anchor>//api/name/expiration</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/expiration</TokenIdentifier>
-			<Abstract type="html">Expiration date of card</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *expiration</Declaration>
-			
-			
-			<Anchor>//api/name/expiration</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/expiration</TokenIdentifier>
-			<Abstract type="html">Expiration date of card</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *expiration</Declaration>
-			
-			
-			<Anchor>//api/name/expiration</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setSredKsn:</TokenIdentifier>
-			<Abstract type="html">Key Serial Number used for encryption</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
-			
-			
-			<Anchor>//api/name/sredKsn</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/sredKsn</TokenIdentifier>
-			<Abstract type="html">Key Serial Number used for encryption</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
-			
-			
-			<Anchor>//api/name/sredKsn</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/sredKsn</TokenIdentifier>
-			<Abstract type="html">Key Serial Number used for encryption</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
-			
-			
-			<Anchor>//api/name/sredKsn</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setPinKsn:</TokenIdentifier>
-			<Abstract type="html">Key Serial Number used for PIN</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pinKsn</Declaration>
-			
-			
-			<Anchor>//api/name/pinKsn</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/pinKsn</TokenIdentifier>
-			<Abstract type="html">Key Serial Number used for PIN</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pinKsn</Declaration>
-			
-			
-			<Anchor>//api/name/pinKsn</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/pinKsn</TokenIdentifier>
-			<Abstract type="html">Key Serial Number used for PIN</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pinKsn</Declaration>
-			
-			
-			<Anchor>//api/name/pinKsn</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setPinData:</TokenIdentifier>
-			<Abstract type="html">PIN Data</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pinData</Declaration>
-			
-			
-			<Anchor>//api/name/pinData</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/pinData</TokenIdentifier>
-			<Abstract type="html">PIN Data</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pinData</Declaration>
-			
-			
-			<Anchor>//api/name/pinData</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/pinData</TokenIdentifier>
-			<Abstract type="html">PIN Data</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pinData</Declaration>
-			
-			
-			<Anchor>//api/name/pinData</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setAmount:</TokenIdentifier>
-			<Abstract type="html">Total amount of transaction</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amount</Declaration>
-			
-			
-			<Anchor>//api/name/amount</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/amount</TokenIdentifier>
-			<Abstract type="html">Total amount of transaction</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amount</Declaration>
-			
-			
-			<Anchor>//api/name/amount</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/amount</TokenIdentifier>
-			<Abstract type="html">Total amount of transaction</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amount</Declaration>
-			
-			
-			<Anchor>//api/name/amount</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setAmountOther:</TokenIdentifier>
-			<Abstract type="html">Typically used for cashback transaction</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amountOther</Declaration>
-			
-			
-			<Anchor>//api/name/amountOther</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/amountOther</TokenIdentifier>
-			<Abstract type="html">Typically used for cashback transaction</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amountOther</Declaration>
-			
-			
-			<Anchor>//api/name/amountOther</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/amountOther</TokenIdentifier>
-			<Abstract type="html">Typically used for cashback transaction</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amountOther</Declaration>
-			
-			
-			<Anchor>//api/name/amountOther</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setSignatureRequired:</TokenIdentifier>
-			<Abstract type="html">Indicates a signature is required by this card</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
-			
-			
-			<Anchor>//api/name/signatureRequired</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/signatureRequired</TokenIdentifier>
-			<Abstract type="html">Indicates a signature is required by this card</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
-			
-			
-			<Anchor>//api/name/signatureRequired</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/signatureRequired</TokenIdentifier>
-			<Abstract type="html">Indicates a signature is required by this card</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
-			
-			
-			<Anchor>//api/name/signatureRequired</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setCashbackAllowed:</TokenIdentifier>
-			<Abstract type="html">Whether cashback transactions are supported</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL cashbackAllowed</Declaration>
-			
-			
-			<Anchor>//api/name/cashbackAllowed</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/cashbackAllowed</TokenIdentifier>
-			<Abstract type="html">Whether cashback transactions are supported</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL cashbackAllowed</Declaration>
-			
-			
-			<Anchor>//api/name/cashbackAllowed</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/cashbackAllowed</TokenIdentifier>
-			<Abstract type="html">Whether cashback transactions are supported</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL cashbackAllowed</Declaration>
-			
-			
-			<Anchor>//api/name/cashbackAllowed</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setApplicationId:</TokenIdentifier>
-			<Abstract type="html">or EMV transactions only: This lists the Application ID that was used in the card transaction.  This data must be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationId</Declaration>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setApplicationId:</TokenIdentifier>
+			<Abstract type="html">All applications must set their ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
 			
 			
 			<Anchor>//api/name/applicationId</Anchor>
@@ -529,23 +172,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/applicationId</TokenIdentifier>
-			<Abstract type="html">or EMV transactions only: This lists the Application ID that was used in the card transaction.  This data must be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/applicationId</TokenIdentifier>
+			<Abstract type="html">All applications must set their ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationId</Declaration>
-			
-			
-			<Anchor>//api/name/applicationId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/applicationId</TokenIdentifier>
-			<Abstract type="html">or EMV transactions only: This lists the Application ID that was used in the card transaction.  This data must be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
 			
 			
 			<Anchor>//api/name/applicationId</Anchor>
@@ -553,223 +184,86 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setApplicationPreferredName:</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This is &apos;Brand Name&apos; of the Card as supplied by the issuer and is required to be displayed on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/applicationId</TokenIdentifier>
+			<Abstract type="html">All applications must set their ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationPreferredName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
 			
 			
-			<Anchor>//api/name/applicationPreferredName</Anchor>
+			<Anchor>//api/name/applicationId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/applicationPreferredName</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This is &apos;Brand Name&apos; of the Card as supplied by the issuer and is required to be displayed on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalId:</TokenIdentifier>
+			<Abstract type="html">All applications must present a terminal ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationPreferredName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
 			
 			
-			<Anchor>//api/name/applicationPreferredName</Anchor>
+			<Anchor>//api/name/terminalId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/applicationPreferredName</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This is &apos;Brand Name&apos; of the Card as supplied by the issuer and is required to be displayed on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalId</TokenIdentifier>
+			<Abstract type="html">All applications must present a terminal ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationPreferredName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
 			
 			
-			<Anchor>//api/name/applicationPreferredName</Anchor>
+			<Anchor>//api/name/terminalId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setTerminalVerificationResults:</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This is the TVR code that indicates what actions were performed between the terminal and the card to validate the authenticity of the card and the cardholder.  This information should be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalId</TokenIdentifier>
+			<Abstract type="html">All applications must present a terminal ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *terminalVerificationResults</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
 			
 			
-			<Anchor>//api/name/terminalVerificationResults</Anchor>
+			<Anchor>//api/name/terminalId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/terminalVerificationResults</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This is the TVR code that indicates what actions were performed between the terminal and the card to validate the authenticity of the card and the cardholder.  This information should be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalVendor:</TokenIdentifier>
+			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *terminalVerificationResults</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
 			
 			
-			<Anchor>//api/name/terminalVerificationResults</Anchor>
+			<Anchor>//api/name/terminalVendor</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/terminalVerificationResults</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This is the TVR code that indicates what actions were performed between the terminal and the card to validate the authenticity of the card and the cardholder.  This information should be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
+			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *terminalVerificationResults</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
 			
 			
-			<Anchor>//api/name/terminalVerificationResults</Anchor>
+			<Anchor>//api/name/terminalVendor</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setTransactionStatusInformation:</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This contains information about the functions that were performed throughout the transaction. This should be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
+			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *transactionStatusInformation</Declaration>
-			
-			
-			<Anchor>//api/name/transactionStatusInformation</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/transactionStatusInformation</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This contains information about the functions that were performed throughout the transaction. This should be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *transactionStatusInformation</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
 			
 			
-			<Anchor>//api/name/transactionStatusInformation</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/transactionStatusInformation</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This contains information about the functions that were performed throughout the transaction. This should be included on all receipts, if available</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *transactionStatusInformation</Declaration>
-			
-			
-			<Anchor>//api/name/transactionStatusInformation</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setApplicationCryptogram:</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This contains the application cryptogram supplied by the terminal</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationCryptogram</Declaration>
-			
-			
-			<Anchor>//api/name/applicationCryptogram</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/applicationCryptogram</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This contains the application cryptogram supplied by the terminal</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationCryptogram</Declaration>
-			
-			
-			<Anchor>//api/name/applicationCryptogram</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/applicationCryptogram</TokenIdentifier>
-			<Abstract type="html">For EMV transactions only: This contains the application cryptogram supplied by the terminal</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *applicationCryptogram</Declaration>
-			
-			
-			<Anchor>//api/name/applicationCryptogram</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/setCardHolderVerificationMethod:</TokenIdentifier>
-			<Abstract type="html">This property contains the cardholder verification method that was used to validate that a valid user presented the card. You can use this information to help determine whether or not a signature should be captured, and the receipt should indicate what method was used to validate the transaction, if any.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) CVMethod cardHolderVerificationMethod</Declaration>
-			
-			
-			<Anchor>//api/name/cardHolderVerificationMethod</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/cardHolderVerificationMethod</TokenIdentifier>
-			<Abstract type="html">This property contains the cardholder verification method that was used to validate that a valid user presented the card. You can use this information to help determine whether or not a signature should be captured, and the receipt should indicate what method was used to validate the transaction, if any.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) CVMethod cardHolderVerificationMethod</Declaration>
-			
-			
-			<Anchor>//api/name/cardHolderVerificationMethod</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TransactionData/cardHolderVerificationMethod</TokenIdentifier>
-			<Abstract type="html">This property contains the cardholder verification method that was used to validate that a valid user presented the card. You can use this information to help determine whether or not a signature should be captured, and the receipt should indicate what method was used to validate the transaction, if any.</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) CVMethod cardHolderVerificationMethod</Declaration>
-			
-			
-			<Anchor>//api/name/cardHolderVerificationMethod</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TransactionData/initWithState:tlvString:cardHolderName:maskedPan:expiration:sredKsn:amount:amountOther:type:</TokenIdentifier>
-			<Abstract type="html">Initialize the TransactionData class</Abstract>
-			<DeclaredIn>TransactionData.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)initWithState:(TransactionState)state tlvString:(NSString *)tlvString cardHolderName:(NSString *)cardholder maskedPan:(NSString *)pan expiration:(NSString *)expiration sredKsn:(NSString *)ksn amount:(NSDecimalNumber *)amount amountOther:(NSDecimalNumber *)amountOther type:(NSString *)type</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>state</Name>
-					<Abstract type="html">The state of the current transaction as reported by the device. See TransactionState enum for acceptable states.</Abstract>
-				</Parameter><Parameter>
-					<Name>tlvString</Name>
-					<Abstract type="html">The EMV Tag string for this transaction</Abstract>
-				</Parameter><Parameter>
-					<Name>cardholder</Name>
-					<Abstract type="html">Name of the card holder</Abstract>
-				</Parameter><Parameter>
-					<Name>pan</Name>
-					<Abstract type="html">Masked card number</Abstract>
-				</Parameter><Parameter>
-					<Name>expiration</Name>
-					<Abstract type="html">Expiration date of card</Abstract>
-				</Parameter><Parameter>
-					<Name>ksn</Name>
-					<Abstract type="html">Key The key serial number returned from device</Abstract>
-				</Parameter><Parameter>
-					<Name>amount</Name>
-					<Abstract type="html">Total amount of the transaction</Abstract>
-				</Parameter><Parameter>
-					<Name>amountOther</Name>
-					<Abstract type="html">To Be Documented</Abstract>
-				</Parameter><Parameter>
-					<Name>type</Name>
-					<Abstract type="html">To Be Documented</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithState:tlvString:cardHolderName:maskedPan:expiration:sredKsn:amount:amountOther:type:</Anchor>
+			<Anchor>//api/name/terminalVendor</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

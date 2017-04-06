@@ -6,6 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#import "TransactionSettings.h"
+
 @class WPYTenderedCard;
 @class WPYPaymentRequest;
 @class WPYPaymentResponse;
@@ -304,8 +307,10 @@ typedef NS_ENUM(NSInteger, WPYEMVTransactionType)
  *        cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
  *        AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction.  Miura devices will enable cashback
  *        only if this is set to type Cashback but will process as a sale if the user declines to enter a cashback amount
+ * @param terminalSelectsApplication This is recommended to be set to false, for better user experience. If this is set to true, then application selection will immediately happen if necessary after reading the card, handled by the terminal. If set to false, application selection will be handled by the SDK defaulting to US Common Debit if needed, which can optionally be overridden with a delegate method didRequestSelectEMVApplication in WPYSwiperDelegate.
+ * @param commonDebitMode This uses the USCommonDebitMode enum, which allows values for default multi-application identifier selection, prefer US Common Debit application identifiers, or prefer Global Debit application identifiers.
  */
-- (void) beginEMVTransactionWithRequest:(WPYPaymentRequest *)request transactionType:(WPYEMVTransactionType)transactionType;
+- (void) beginEMVTransactionWithRequest:(WPYPaymentRequest *)request transactionType:(WPYEMVTransactionType)transactionType terminalSelectsApplication: (BOOL) terminalSelectsApplication commonDebitMode: (USCommonDebitMode) commonDebitMode;
 
 /**
  * Start a contactless EMV or MSD transaction.  Some hardware allows card swipes in NFC mode, others do not.  Does nothing if NFC is not supported on
@@ -331,7 +336,7 @@ typedef NS_ENUM(NSInteger, WPYEMVTransactionType)
  * when requested.
  * @param application Application to select
  */
-- (void) selectEMVCardApplication:(NSInteger)application;
+- (void) selectEMVCardApplication:(NSUInteger)application;
 
 /**
  * If the terminal is configured to pass final transaction confirmation requests onto the application layer, this function must be called to confirm the
@@ -508,13 +513,14 @@ typedef NS_ENUM(NSInteger, WPYEMVTransactionType)
 - (void) swiper:(WPYSwiper *)swiper onBatteryLow:(WPYSwiperBatteryStatus)batteryStatus;
 
 /**
- * This delegate method is called when the terminal is not configured to present the application options to the card holder directly
+ * This delegate method is called when the terminal is not configured to present the application options to the card holder directly, selectEMVCardApplication: on swiper must be called afterwards to continue.
  * When the hardware supports it, the terminal will manage application selection automatically (Miura for instance)
  *
  * @param swiper A reference to the object making the request
- * @param applications A list of the Application Labels for each application in the candidate list
+ * @param applications A list of the Application dictionaries for each application in the candidate list
+ * @param accountTypes Indicates if credit, debit, or both are available based on application list
  */
-- (void) swiper:(WPYSwiper *)swiper didRequestSelectEMVApplication:(NSArray *)applications;
+- (void) swiper:(WPYSwiper *)swiper didRequestSelectEMVApplication:(NSArray *)applications accountTypes: (WPYCardAccountType) accountTypes;
 
 /**
  * This delegate method is called when the terminal is not configured to request final transaction amount confirmation from the card holder directly

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYTransactionResponse.html">
+	<File path="Classes/WPYTransactionUpdate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYTransactionResponse</TokenIdentifier>
-			<Abstract type="html">This object contains transaction response information returned from the gateway after sending a payment request
-to the server</Abstract>
-			<DeclaredIn>WPYTransactionResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTransactionUpdate</TokenIdentifier>
+			<Abstract type="html">Request object used to update transaction</Abstract>
+			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
             
 			
 			<NodeRef refid="50"/>
@@ -14,38 +13,74 @@ to the server</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionResponse/setTransaction:</TokenIdentifier>
-			<Abstract type="html">An object containing all of the details for the transaction</Abstract>
-			<DeclaredIn>WPYTransactionResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/setTransactionId:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) WPYTransaction *transaction</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/transaction</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionResponse/transaction</TokenIdentifier>
-			<Abstract type="html">An object containing all of the details for the transaction</Abstract>
-			<DeclaredIn>WPYTransactionResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/transactionId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) WPYTransaction *transaction</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/transaction</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionResponse/transaction</TokenIdentifier>
-			<Abstract type="html">An object containing all of the details for the transaction</Abstract>
-			<DeclaredIn>WPYTransactionResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionUpdate/transactionId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) WPYTransaction *transaction</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/transaction</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/setLevelTwoData:</TokenIdentifier>
+			<Abstract type="html">This parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			
+			
+			<Anchor>//api/name/levelTwoData</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/levelTwoData</TokenIdentifier>
+			<Abstract type="html">This parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			
+			
+			<Anchor>//api/name/levelTwoData</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionUpdate/levelTwoData</TokenIdentifier>
+			<Abstract type="html">This parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			
+			
+			<Anchor>//api/name/levelTwoData</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		

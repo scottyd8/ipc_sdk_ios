@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>NumericData Class Reference</title>
+	<title>WPYTransactionUpdate Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,13 +56,9 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/inputNumber">inputNumber</option>
+		<option value="//api/name/levelTwoData">levelTwoData</option>
 		
-		<option value="//api/name/inputString">inputString</option>
-		
-		<option value="//api/name/sredData">sredData</option>
-		
-		<option value="//api/name/sredKsn">sredKsn</option>
+		<option value="//api/name/transactionId">transactionId</option>
 		
 	</optgroup>
 	
@@ -85,16 +81,16 @@
 				<main role="main">
 					<img src="../img/worldpaylogo.png" alt="Worldpay Logo"  align="right" style="margin:20px 0px 0px 0px" >
 					<br/>
-					<h1 class="title">NumericData Class Reference</h1>
+					<h1 class="title">WPYTransactionUpdate Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td>NSObject</td>
+	<td><a href="../Classes/WPYDomainObject.html">WPYDomainObject</a> : NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>NumericData.h</td>
+	<td>WPYTransactionUpdate.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -104,7 +100,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>To Be Documented</p>
+						<p>Request object used to update transaction</p>
 					</div>
 					
 					
@@ -120,8 +116,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/inputNumber" title="inputNumber"></a>
-	<h3 class="method-title"><code><a href="#//api/name/inputNumber">&nbsp;&nbsp;inputNumber</a></code>
+	<a name="//api/name/transactionId" title="transactionId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionId">&nbsp;&nbsp;transactionId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -131,12 +127,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Decimal Number representation of the input value</p>
+				<p>Self-explanatory</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDecimalNumber *inputNumber</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *transactionId</code></div>
 
 		    
 			
@@ -154,15 +150,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">NumericData.h</code></p>
+				<p><code class="declared-in-ref">WPYTransactionUpdate.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sredData" title="sredData"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sredData">&nbsp;&nbsp;sredData</a></code>
+	<a name="//api/name/levelTwoData" title="levelTwoData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/levelTwoData">&nbsp;&nbsp;levelTwoData</a></code>
 </h3>
 
 	<div class="method-info">
@@ -172,12 +168,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Encrypted Data if the numeric response contained encrypted data</p>
+				<p>This parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *sredData</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</code></div>
 
 		    
 			
@@ -195,91 +191,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">NumericData.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sredKsn" title="sredKsn"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sredKsn">&nbsp;&nbsp;sredKsn</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Key Serial Number of the encrypted data</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *sredKsn</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">NumericData.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/inputString" title="inputString"></a>
-	<h3 class="method-title"><code><a href="#//api/name/inputString">&nbsp;&nbsp;inputString</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>String representation of the input number above, in the event
-that the number was partially masked and cannot be represented as a
-decimal number</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *inputString</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">NumericData.h</code></p>
+				<p><code class="declared-in-ref">WPYTransactionUpdate.h</code></p>
 			</div>
 			
 			
@@ -300,7 +212,7 @@ decimal number</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-02-23</p>
+						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-04-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -56,6 +56,7 @@
 @property (assign, atomic) BOOL transition;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *addToVaultConstraints;
 @property (assign, atomic) BOOL transactionInProgress;
+@property (strong, nonatomic) WPYPaymentRequest * currRequest;
 
 @end
 
@@ -191,6 +192,7 @@
 
 - (void) stopTransactionProgress
 {
+    self.currRequest = nil;
     self.transactionInProgress = false;
 }
 
@@ -317,6 +319,8 @@
             request = [WPYPaymentAuthorize new];
     }
     
+    self.currRequest = request;
+    
     WPYEMVTransactionType transactionType = WPYEMVTransactionTypeCashback;
     
     request.amount = [NSDecimalNumber decimalNumberWithString:self.amountTextField.text];
@@ -363,7 +367,6 @@
         if(self.extendedInfoView.gratuityAmount.text.doubleValue > 0)
         {
             serviceData.gratuityAmount = [NSDecimalNumber decimalNumberWithString:self.extendedInfoView.gratuityAmount.text];
-            request.amount = [request.amount decimalNumberByAdding:serviceData.gratuityAmount];
         }
         
         serviceData.server = self.extendedInfoView.serverName.text;
@@ -393,7 +396,7 @@
         // Swiper transaction started
         [self startTransactionProgress];
         
-        [self.swiper beginEMVTransactionWithRequest:request transactionType:transactionType];
+        [self.swiper beginEMVTransactionWithRequest:request transactionType:transactionType terminalSelectsApplication: false commonDebitMode: USCommonDebitModeDefault];
     }
     else if([self.cardPresentSegmented selectedSegmentIndex] == VAULTINDEX)
     {
@@ -686,6 +689,19 @@
 - (void)didDisconnectSwiper:(WPYSwiper *)swiper
 {
     NSLog(@"%@", @"Swiper disconnected");
+    
+    if(self.transactionInProgress)
+    {
+        self.transactionInProgress = NO;
+        
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Swiper device disconnected, transaction canceled." preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self cleanAlertUserAction:YES];
+        }]];
+        
+        [self displayAlert:alert];
+    }
 }
 
 - (void)didFailToConnectSwiper:(WPYSwiper *)swiper
@@ -819,11 +835,6 @@
 
 - (void) swiper:(WPYSwiper *)swiper didRequestDevicePromptText:(WPYDevicePrompt)prompt defaultText:(NSString *) defaultText completion:(void (^)(NSString *))completion
 {
-    if(!self.transactionInProgress)
-    {
-        return;
-    }
-    
     BOOL force = NO;
     
     UIAlertController * alert;
@@ -854,12 +865,12 @@
             break;
         case WPYDevicePromptConfirmAmount:
 #ifdef ANYWHERE_NOMAD
-            defaultPrompt = [NSString stringWithFormat:@"Confirm Total: %@", self.amountTextField.text];
+            defaultPrompt = [NSString stringWithFormat:@"Confirm Total: %@", self.currRequest.amount.stringValue];
 #else
         {
             NSNumberFormatter *currencyFormatter = [NSNumberFormatter new];
             currencyFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-            NSNumber *number = [currencyFormatter numberFromString:self.amountTextField.text];
+            NSNumber *number = [currencyFormatter numberFromString:self.currRequest.amount.stringValue];
             currencyFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
             defaultPrompt = [NSString stringWithFormat:@"Confirm Total: \n%@", [currencyFormatter stringFromNumber:number]];
         }
@@ -877,7 +888,16 @@
         case WPYDevicePromptCanceled:
             [self stopTransactionProgress];
             force = YES;
-            defaultPrompt = @"Transaction Canceled\nPlease Remove Card";
+            
+            if([self.swiper cardInserted])
+            {
+                defaultPrompt = @"Transaction Canceled\nPlease Remove Card";
+            }
+            else
+            {
+                defaultPrompt = @"Transaction Canceled";
+            }
+            
             break;
         case WPYDevicePromptRetry:
 #ifdef ANYWHERE_NOMAD
@@ -969,14 +989,14 @@
     
     [alert addAction: action];
     
-    if(force || self.transactionInProgress)
-    {
-        [self displayAlert:alert];
-    }
-
     if(completion != nil)
     {
         completion(defaultPrompt);
+    }
+    
+    if(force || self.transactionInProgress)
+    {
+        [self displayAlert:alert];
     }
 }
 
@@ -984,7 +1004,7 @@
 
 - (void)manualTenderEntryControllerDidCancelRequest:(WPYManualTenderEntryViewController *)controller
 {
-    NSLog(@"%@", @"Manual entry cancelled");
+    NSLog(@"%@", @"Manual entry canceled");
 }
 
 - (void)manualTenderEntryController:(WPYManualTenderEntryViewController *)controller didFailWithError:(NSError *)error

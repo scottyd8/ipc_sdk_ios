@@ -9,7 +9,7 @@
 #import "ExtendedInformationView.h"
 
 #define VIEWHEIGHTWITHGRATUITY 272
-#define GRATUITYHIDDEN YES
+#define GRATUITYHIDDEN NO
 #define GRATUITYHEIGHT 106
 
 #if GRATUITYHIDDEN

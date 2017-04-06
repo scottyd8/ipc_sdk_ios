@@ -120,6 +120,8 @@
 		
 		<option value="//api/name/paymentVoid:withCompletion:">- paymentVoid:withCompletion:</option>
 		
+		<option value="//api/name/registerEnvironment:">- registerEnvironment:</option>
+		
 		<option value="//api/name/searchTransactions:withCompletion:">- searchTransactions:withCompletion:</option>
 		
 		<option value="//api/name/swiperWithDelegate:">- swiperWithDelegate:</option>
@@ -129,6 +131,8 @@
 		<option value="//api/name/updateGiftCard:withCompletion:">- updateGiftCard:withCompletion:</option>
 		
 		<option value="//api/name/updatePaymentMethod:withCompletion:">- updatePaymentMethod:withCompletion:</option>
+		
+		<option value="//api/name/updateTransaction:withCompletion:">- updateTransaction:withCompletion:</option>
 		
 	</optgroup>
 	
@@ -201,7 +205,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL enableTestHost</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL enableTestHost</code></div>
 
 		    
 			
@@ -513,7 +517,7 @@ These bodies may contain PCI or PII data and may only be used with test cards on
 			<div class="method-subsection brief-description">
 				<p>Authenticates user credentials against the World Pay server. The token
 will automatically be saved in the application keychain by the SDK and
-can be removed by calling: - <a href="#//api/name/clearSDKKeychain">clearSDKKeychain</a></p>
+can be removed by calling: - <a href="#//api/name/clearSDKKeychain">clearSDKKeychain</a>.</p>
 			</div>
 			
 		    
@@ -534,6 +538,61 @@ can be removed by calling: - <a href="#//api/name/clearSDKKeychain">clearSDKKeyc
 					<tr>
 						<th scope="row" class="argument-name"><code>completion</code></th>
 						<td><p>Completion handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerEnvironment:" title="registerEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerEnvironment:">&ndash;&nbsp;registerEnvironment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will choose the environment to be used to run API calls in. It can only be called once
+per application run, subsequent calls attempting to change it will be ignored. This method must be called
+before running any API calls and ideally should be called in AppDelegate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerEnvironment:(WPYEnvironment)<em>environment</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environment</code></th>
+						<td><p>enumerated value for environment (e.g. demo, prod)</p></td>
 					</tr>
 				
 				</table>
@@ -1821,6 +1880,64 @@ to make calls to the web APIs after this is executed</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/updateTransaction:withCompletion:" title="updateTransaction:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTransaction:withCompletion:">&ndash;&nbsp;updateTransaction:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update transactions</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTransaction:(WPYTransactionUpdate *)<em>request</em> withCompletion:(void ( ^ ) ( WPYTransactionResponse *, NSError *))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>request object which contains info of the transaction which needs to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion handler used to notify the caller of any server results or errors</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WorldPayAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/getTransactionsInBatch:withCompletion:" title="getTransactionsInBatch:withCompletion:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/getTransactionsInBatch:withCompletion:">&ndash;&nbsp;getTransactionsInBatch:withCompletion:</a></code>
 </h3>
@@ -1893,7 +2010,7 @@ to make calls to the web APIs after this is executed</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-02-23</p>
+						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-04-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

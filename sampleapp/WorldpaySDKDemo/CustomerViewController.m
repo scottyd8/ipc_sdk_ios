@@ -15,6 +15,8 @@
 
 #define YESINDEX 0
 #define NOINDEX 1
+#define ERRORINDEX 0
+#define CONTINUEINDEX 1
 
 @interface CustomerViewController ()
 
@@ -32,6 +34,7 @@
 @property (nonatomic, weak) IBOutlet LabeledTextField * phoneField;
 @property (nonatomic, weak) IBOutlet LabeledTextField * emailIdField;
 @property (nonatomic, weak) IBOutlet LabeledSegmentedControl * sendEmailReceiptsField;
+@property (nonatomic, weak) IBOutlet LabeledSegmentedControl * duplicateIndicatorField;
 @property (nonatomic, weak) IBOutlet LabeledTextView * notesField;
 @property (nonatomic, weak) IBOutlet LabeledTextField * streetAddressField;
 @property (nonatomic, weak) IBOutlet LabeledTextField * cityField;
@@ -42,11 +45,13 @@
 @property (nonatomic, weak) IBOutlet LabeledTextField * udfValueField1;
 @property (nonatomic, weak) IBOutlet LabeledTextField * udfValueField2;
 @property (nonatomic, weak) IBOutlet LabeledTextField * udfValueField3;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *detailsButtonsHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint * detailsButtonsHeightConstraint;
 @property (assign, nonatomic) CGFloat originalDetailsHeightConstant;
-@property (weak, nonatomic) IBOutlet UIButton *editButton;
-@property (weak, nonatomic) IBOutlet UIButton *deleteButton;
-@property (weak, nonatomic) IBOutlet UIView *detailButtonsView;
+@property (weak, nonatomic) IBOutlet UIButton * editButton;
+@property (weak, nonatomic) IBOutlet UIButton * deleteButton;
+@property (weak, nonatomic) IBOutlet UIView * detailButtonsView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint * duplicateIndicatorHeightConstraint;
+@property (assign, nonatomic) CGFloat originalDuplicateIndicatorHeightConstant;
 
 @end
 
@@ -65,6 +70,7 @@
     [Helper styleButtonPrimary:self.deleteButton];
     
     self.originalDetailsHeightConstant = self.detailsButtonsHeightConstraint.constant;
+    self.originalDuplicateIndicatorHeightConstant = self.duplicateIndicatorHeightConstraint.constant;
 
     if(self.mode == RESTModeCreate)
     {
@@ -73,6 +79,7 @@
         [self.submitButton addTarget:self action:@selector(createCustomer) forControlEvents:UIControlEventTouchUpInside];
         [self.customerIdField setEnabled:true];
         self.detailsButtonsHeightConstraint.constant = 0;
+        self.duplicateIndicatorHeightConstraint.constant = self.originalDuplicateIndicatorHeightConstant;
         [self.detailButtonsView layoutIfNeeded];
     }
     else if(self.mode == RESTModeEdit)
@@ -86,11 +93,13 @@
         [self.udfValueField2 setEnabled:false];
         [self.udfValueField3 setEnabled:false];
         self.detailsButtonsHeightConstraint.constant = 0;
+        self.duplicateIndicatorHeightConstraint.constant = self.originalDuplicateIndicatorHeightConstant;
         [self.detailButtonsView layoutIfNeeded];
     }
     else if(self.mode == RESTModeGet)
     {
         self.title = @"Customer Details";
+        self.duplicateIndicatorHeightConstraint.constant = 0;
         [self syncUIToCustomer];
         [self.submitButton setTitle:@"Payment Methods" forState:UIControlStateNormal];
         [self.submitButton addTarget:self action:@selector(paymentMethods) forControlEvents:UIControlEventTouchUpInside];
@@ -132,6 +141,12 @@
     {
         [self removeFocusFromTextField:nil];
     }];
+    
+    [self.duplicateIndicatorField sharedInitWithOptionList:@[@"Error", @"Continue"] initialIndex:0 parentViewController:self title:@"Duplicate Indicator"];
+    [self.duplicateIndicatorField setSegmentedTouchedBlock:^
+     {
+         [self removeFocusFromTextField:nil];
+     }];
     
     [self.notesField setLabelText:@"Notes"];
     [self.notesField setTextViewDelegate:self];
@@ -254,8 +269,11 @@
 {
     if(self.mode == RESTModeCreate)
     {
-        // TODO: Customer ID cannot be set for create because of SDK limitation
-        // self.customer.identifier = self.customerIdField.text;
+        self.customer.identifier = self.customerIdField.text;
+    }
+    else
+    {
+        self.customer.customerDuplicateCheckIndicator = ([self.duplicateIndicatorField getSelectedIndex] == ERRORINDEX ? WPYCustomerDuplicateCheckTypeError : WPYCustomerDuplicateCheckTypeContinue);
     }
     
     self.customer.firstName = self.firstNameField.text;
@@ -372,6 +390,7 @@
     [self.udfValueField3 setDisplayMode];
     
     self.detailsButtonsHeightConstraint.constant = self.originalDetailsHeightConstant;
+    self.duplicateIndicatorHeightConstraint.constant = 0;
     [self.detailButtonsView layoutIfNeeded];
 }
 
@@ -403,6 +422,7 @@
     [self.submitButton removeTarget:self action:nil forControlEvents:UIControlEventAllEvents];
     [self.submitButton addTarget:self action:@selector(saveCustomer) forControlEvents:UIControlEventTouchUpInside];
     self.detailsButtonsHeightConstraint.constant = 0;
+    self.duplicateIndicatorHeightConstraint.constant = self.originalDuplicateIndicatorHeightConstant;
     [self.detailButtonsView layoutIfNeeded];
 }
 

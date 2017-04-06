@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>CVMethod Constants Reference</title>
+	<title>WPYEnvironment Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -61,13 +61,13 @@
 				<main role="main">
 					<img src="../img/worldpaylogo.png" alt="Worldpay Logo"  align="right" style="margin:20px 0px 0px 0px" >
 					<br/>
-					<h1 class="title">CVMethod Constants Reference</h1>
+					<h1 class="title">WPYEnvironment Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>TransactionData.h</td>
+	<td>WorldPayAPI.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -77,11 +77,11 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">CVMethod</h3>
+                    <h3 class="subsubtitle method-title">WPYEnvironment</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>Type of CVV utilized</p>
+                        <p>Enum for environments</p>
 					</div>
 					
 					
@@ -89,21 +89,15 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(uint8_t, CVMethod ) {<br>
+                        <code>typedef NS_ENUM(NSInteger, WPYEnvironment ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">CVMethodContactlessNoCVM</a> = 0 x00,<br>
+                            &nbsp;&nbsp; <a href="">WPYEnvironmentDemo</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">CVMethodPlaintextPIN</a> = 0 x01,<br>
+                            &nbsp;&nbsp; <a href="">WPYEnvironmentProd</a> = 1,<br>
                             
-                            &nbsp;&nbsp; <a href="">CVMethodOnlinePIN</a> = 0 x02,<br>
+                            &nbsp;&nbsp; <a href="">WPYEnvironmentQA</a> = 67,<br>
                             
-                            &nbsp;&nbsp; <a href="">CVMethodMobileConfirmCode</a> = 0 x03,<br>
-                            
-                            &nbsp;&nbsp; <a href="">CVMethodOfflineEncipheredPIN</a> = 0 x04,<br>
-                            
-                            &nbsp;&nbsp; <a href="">CVMethodNoCVM</a> = 0 x1F,<br>
-                            
-                            &nbsp;&nbsp; <a href="">CVMethodSignature</a> = 0 xAA,<br>
+                            &nbsp;&nbsp; <a href="">WPYEnvironmentDev</a> = 93,<br>
                             
                             };</code>
                     
@@ -113,11 +107,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="CVMethodContactlessNoCVM"></a><code>CVMethodContactlessNoCVM</code></dt>
+                            <dt><a name="" title="WPYEnvironmentDemo"></a><code>WPYEnvironmentDemo</code></dt>
 <dd>
 
 
-<p>No CVM (contactless)</p>
+<p>self-explanatory</p>
 
 
 
@@ -125,16 +119,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
+		Declared In <code class="declared-in-ref">WorldPayAPI.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CVMethodPlaintextPIN"></a><code>CVMethodPlaintextPIN</code></dt>
+                            <dt><a name="" title="WPYEnvironmentProd"></a><code>WPYEnvironmentProd</code></dt>
 <dd>
 
 
-<p>Plaintext PIN</p>
+<p>self-explanatory</p>
 
 
 
@@ -142,16 +136,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
+		Declared In <code class="declared-in-ref">WorldPayAPI.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CVMethodOnlinePIN"></a><code>CVMethodOnlinePIN</code></dt>
+                            <dt><a name="" title="WPYEnvironmentQA"></a><code>WPYEnvironmentQA</code></dt>
 <dd>
 
 
-<p>Online PIN</p>
+<p>self-explanatory, remove these when building release version and generating docs</p>
 
 
 
@@ -159,16 +153,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
+		Declared In <code class="declared-in-ref">WorldPayAPI.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CVMethodMobileConfirmCode"></a><code>CVMethodMobileConfirmCode</code></dt>
+                            <dt><a name="" title="WPYEnvironmentDev"></a><code>WPYEnvironmentDev</code></dt>
 <dd>
 
 
-<p>Confirmation from mobile device required</p>
+<p>self-explanatory, remove these when building release version and generating docs</p>
 
 
 
@@ -176,58 +170,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="CVMethodOfflineEncipheredPIN"></a><code>CVMethodOfflineEncipheredPIN</code></dt>
-<dd>
-
-
-<p>Offline PIN</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="CVMethodNoCVM"></a><code>CVMethodNoCVM</code></dt>
-<dd>
-
-
-<p>No CVM (non-contactless)</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="CVMethodSignature"></a><code>CVMethodSignature</code></dt>
-<dd>
-
-
-<p>Signature required</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
+		Declared In <code class="declared-in-ref">WorldPayAPI.h</code>.
 	</p>
 	
 </dd>
@@ -244,7 +187,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">TransactionData.h</code></p>
+                        <p><code class="declared-in-ref">WorldPayAPI.h</code></p>
                     </div>
                     
                     
@@ -256,7 +199,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-02-23</p>
+						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-04-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

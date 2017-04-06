@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYSwiperInputType.html">
+	<File path="Constants/WPYVerificationType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYSwiperInputType</TokenIdentifier>
-			<Abstract type="html">Hardware interface used to connect to the terminal.  You can query the WPYSwiper to see if it supports
-bluetooth or audio jack capabilities.  For instance, the Anywhere Commerce version of the SDK supports
-both types of connections.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYVerificationType</TokenIdentifier>
+			<Abstract type="html">These values correspond to the types of check verification that can be performed</Abstract>
+			<DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
 			
 			<NodeRef refid="93"/>
@@ -16,31 +14,31 @@ both types of connections.</Abstract>
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperInputTypeUnknown</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYVerificationTypeNone</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperInputTypeUnknown</Declaration>
+            <Declaration>WPYVerificationTypeNone</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="93"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperInputTypeAudio</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYVerificationTypeACHProvider</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperInputTypeAudio</Declaration>
+            <Declaration>WPYVerificationTypeACHProvider</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="93"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperInputTypeBluetooth</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYVerificationTypeCertegy</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperInputTypeBluetooth</Declaration>
+            <Declaration>WPYVerificationTypeCertegy</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="93"/>
         </Token>

@@ -39,6 +39,9 @@
     authTokenRequest.terminalId = @"445";
     authTokenRequest.terminalVendor = @"4554";
     
+    // This must be called prior to any API calls being made or the SDK will assert and exit()
+    [[WorldpayAPI instance] registerEnvironment: WPYEnvironmentDemo];
+    
     [[WorldpayAPI instance] generateAuthToken:authTokenRequest withCompletion:^(WPYAuthTokenResponse *result, NSError *error)
     {
         if(!result || !result.success || error)
@@ -99,7 +102,7 @@
     UINavigationController * settlementNav = [[UINavigationController alloc] initWithRootViewController: settlementViewController];
     settlementNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[((UIViewController *)[[settlementNav viewControllers] firstObject]) title] image:[self imageWithImage:[UIImage imageNamed:@"settlement"]] tag:[index current]];
     
-    // 5th tab for Vault (Placeholder, not fully implemented yet)
+    // 5th tab for Vault (Placeholder, not implemented yet)
     VaultViewController * vaultViewController = [[VaultViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController * vaultNav = [[UINavigationController alloc] initWithRootViewController: vaultViewController];
     vaultNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[((UIViewController *)[[vaultNav viewControllers] firstObject]) title] image:[self imageWithImage:[UIImage imageNamed:@"vault_icon"]] tag:[index current]];

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>TransactionState Constants Reference</title>
+	<title>WPYCustomerDuplicateCheckType Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -61,13 +61,13 @@
 				<main role="main">
 					<img src="../img/worldpaylogo.png" alt="Worldpay Logo"  align="right" style="margin:20px 0px 0px 0px" >
 					<br/>
-					<h1 class="title">TransactionState Constants Reference</h1>
+					<h1 class="title">WPYCustomerDuplicateCheckType Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>TransactionData.h</td>
+	<td>WPYDomainObject.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -77,11 +77,14 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">TransactionState</h3>
+                    <h3 class="subsubtitle method-title">WPYCustomerDuplicateCheckType</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>Where we are in the device interaction cycle</p>
+                        <p>indicates how the method should behave if the Customer ID already exists. Default is 0.</p>
+
+<p>0 - If Customer ID exists then return an Error.
+1 - If Customer ID exists then do not add account but continue with transaction.</p>
 					</div>
 					
 					
@@ -89,17 +92,13 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, TransactionState ) {<br>
+                        <code>typedef NS_ENUM(NSInteger, WPYCustomerDuplicateCheckType ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">TransactionStateDecisionRequired</a> = 0 x00,<br>
+                            &nbsp;&nbsp; <a href="">WPYCustomerDuplicateCheckTypeUnset</a> = -1,<br>
                             
-                            &nbsp;&nbsp; <a href="">TransactionStateApproved</a>,<br>
+                            &nbsp;&nbsp; <a href="">WPYCustomerDuplicateCheckTypeError</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">TransactionStateOnlineAuthRequired</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">TransactionStateDeclined</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">TransactionStateReversalRequired</a>,<br>
+                            &nbsp;&nbsp; <a href="">WPYCustomerDuplicateCheckTypeContinue</a> = 1,<br>
                             
                             };</code>
                     
@@ -109,11 +108,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="TransactionStateDecisionRequired"></a><code>TransactionStateDecisionRequired</code></dt>
+                            <dt><a name="" title="WPYCustomerDuplicateCheckTypeUnset"></a><code>WPYCustomerDuplicateCheckTypeUnset</code></dt>
 <dd>
 
 
-<p>Need more information</p>
+<p>Unset</p>
 
 
 
@@ -121,16 +120,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
+		Declared In <code class="declared-in-ref">WPYDomainObject.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="TransactionStateApproved"></a><code>TransactionStateApproved</code></dt>
+                            <dt><a name="" title="WPYCustomerDuplicateCheckTypeError"></a><code>WPYCustomerDuplicateCheckTypeError</code></dt>
 <dd>
 
 
-<p>Approved</p>
+<p>If Customer ID exists then return an Error.</p>
 
 
 
@@ -138,16 +137,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
+		Declared In <code class="declared-in-ref">WPYDomainObject.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="TransactionStateOnlineAuthRequired"></a><code>TransactionStateOnlineAuthRequired</code></dt>
+                            <dt><a name="" title="WPYCustomerDuplicateCheckTypeContinue"></a><code>WPYCustomerDuplicateCheckTypeContinue</code></dt>
 <dd>
 
 
-<p>Online authorization required</p>
+<p>If Customer ID exists then do not add account but continue with transaction.</p>
 
 
 
@@ -155,41 +154,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="TransactionStateDeclined"></a><code>TransactionStateDeclined</code></dt>
-<dd>
-
-
-<p>Declined</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="TransactionStateReversalRequired"></a><code>TransactionStateReversalRequired</code></dt>
-<dd>
-
-
-<p>Reversal requested</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">TransactionData.h</code>.
+		Declared In <code class="declared-in-ref">WPYDomainObject.h</code>.
 	</p>
 	
 </dd>
@@ -206,7 +171,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">TransactionData.h</code></p>
+                        <p><code class="declared-in-ref">WPYDomainObject.h</code></p>
                     </div>
                     
                     
@@ -218,7 +183,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-02-23</p>
+						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-04-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

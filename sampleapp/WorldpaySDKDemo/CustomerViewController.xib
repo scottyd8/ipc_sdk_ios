@@ -25,6 +25,8 @@
                 <outlet property="deleteButton" destination="Auk-rX-NFv" id="TcA-4T-mkd"/>
                 <outlet property="detailButtonsView" destination="VcK-RK-xLv" id="E0I-SP-O0K"/>
                 <outlet property="detailsButtonsHeightConstraint" destination="ufg-mz-hph" id="NTW-Rr-eSR"/>
+                <outlet property="duplicateIndicatorField" destination="sAl-0l-uzA" id="t5B-Ba-OV2"/>
+                <outlet property="duplicateIndicatorHeightConstraint" destination="3do-c5-sxP" id="OQT-a5-C97"/>
                 <outlet property="editButton" destination="Uvl-Ez-h8m" id="0sl-yB-3Un"/>
                 <outlet property="emailIdField" destination="b2Q-fO-r1G" id="sR1-sf-t1K"/>
                 <outlet property="firstNameField" destination="inO-Pq-sPA" id="ypU-9L-87x"/>
@@ -94,80 +96,99 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faT-yC-abj" userLabel="Notes" customClass="LabeledTextView">
-                            <rect key="frame" x="20" y="328" width="560" height="75"/>
+                            <rect key="frame" x="20" y="381" width="560" height="75"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="Dik-id-uub"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sc-nz-q9e" userLabel="Street Address" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="411" width="560" height="45"/>
+                            <rect key="frame" x="20" y="464" width="560" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="qTd-eh-VtU"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-bq-72n" userLabel="City" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="464" width="560" height="45"/>
+                            <rect key="frame" x="20" y="517" width="560" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="cW6-9t-Xek"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sir-EM-AgP" userLabel="State" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="517" width="276" height="45"/>
+                            <rect key="frame" x="20" y="570" width="276" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="ekc-JI-jXO"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBB-mT-hFX" userLabel="Zip" customClass="LabeledTextField">
-                            <rect key="frame" x="304" y="517" width="276" height="45"/>
+                            <rect key="frame" x="304" y="570" width="276" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="IVE-qh-Dft"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96D-iF-rnx" userLabel="Company" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="623" width="560" height="45"/>
+                            <rect key="frame" x="20" y="676" width="560" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="rWn-Ur-ztS"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-Wy-sDy" userLabel="UDF Value 1" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="676" width="560" height="45"/>
+                            <rect key="frame" x="20" y="729" width="560" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="G5x-pf-6wQ"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jc-UD-NiK" userLabel="UDF Value 2" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="729" width="560" height="45"/>
+                            <rect key="frame" x="20" y="782" width="560" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="vx6-Qw-4Vn"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sy1-W3-gHt" userLabel="UDF Value 3" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="782" width="560" height="45"/>
+                            <rect key="frame" x="20" y="835" width="560" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="Lvq-r5-M0L"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VW4-fI-ldc" userLabel="Country" customClass="LabeledTextField">
-                            <rect key="frame" x="20" y="570" width="560" height="45"/>
+                            <rect key="frame" x="20" y="623" width="560" height="45"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="0Hx-o6-BL4"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9S-gu-0YQ" userLabel="Duplicate Indicator Container">
+                            <rect key="frame" x="20" y="328" width="560" height="53"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAl-0l-uzA" userLabel="Duplicate Indicator" customClass="LabeledSegmentedControl">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="45"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="J4D-sc-G8M"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="3do-c5-sxP"/>
+                                <constraint firstItem="sAl-0l-uzA" firstAttribute="leading" secondItem="Q9S-gu-0YQ" secondAttribute="leading" id="Dep-2U-1Yk"/>
+                                <constraint firstAttribute="trailing" secondItem="sAl-0l-uzA" secondAttribute="trailing" id="IVh-2n-hE5"/>
+                                <constraint firstItem="sAl-0l-uzA" firstAttribute="top" secondItem="Q9S-gu-0YQ" secondAttribute="top" id="YXX-aC-2f5"/>
+                                <constraint firstAttribute="bottom" secondItem="sAl-0l-uzA" secondAttribute="bottom" priority="750" constant="8" id="rNj-Mk-rj9"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <constraints>
                         <constraint firstItem="5jc-UD-NiK" firstAttribute="leading" secondItem="AtO-Wy-sDy" secondAttribute="leading" id="0wo-69-f0T"/>
-                        <constraint firstItem="faT-yC-abj" firstAttribute="leading" secondItem="0hG-N8-85t" secondAttribute="leading" id="1Pr-l0-vtf"/>
                         <constraint firstItem="b2Q-fO-r1G" firstAttribute="top" secondItem="blM-Aa-gMW" secondAttribute="bottom" constant="8" id="3e6-bj-o0j"/>
+                        <constraint firstItem="faT-yC-abj" firstAttribute="trailing" secondItem="Q9S-gu-0YQ" secondAttribute="trailing" id="3xa-0F-GGf"/>
                         <constraint firstItem="CBB-mT-hFX" firstAttribute="trailing" secondItem="Frl-bq-72n" secondAttribute="trailing" id="4bA-DK-2u8"/>
                         <constraint firstItem="0hG-N8-85t" firstAttribute="top" secondItem="b2Q-fO-r1G" secondAttribute="bottom" constant="8" id="4xs-pm-mtI"/>
                         <constraint firstItem="AtO-Wy-sDy" firstAttribute="top" secondItem="96D-iF-rnx" secondAttribute="bottom" constant="8" id="6pp-RA-HwG"/>
@@ -179,13 +200,14 @@
                         <constraint firstItem="AtO-Wy-sDy" firstAttribute="leading" secondItem="96D-iF-rnx" secondAttribute="leading" id="B45-gA-H3H"/>
                         <constraint firstItem="8sc-nz-q9e" firstAttribute="leading" secondItem="faT-yC-abj" secondAttribute="leading" id="CfP-bc-CKj"/>
                         <constraint firstAttribute="bottom" secondItem="sy1-W3-gHt" secondAttribute="bottom" constant="8" id="DlD-HZ-avl"/>
-                        <constraint firstItem="faT-yC-abj" firstAttribute="trailing" secondItem="0hG-N8-85t" secondAttribute="trailing" id="EMO-Zl-06l"/>
-                        <constraint firstItem="faT-yC-abj" firstAttribute="top" secondItem="0hG-N8-85t" secondAttribute="bottom" constant="8" id="HRJ-IJ-H0a"/>
+                        <constraint firstItem="Q9S-gu-0YQ" firstAttribute="trailing" secondItem="0hG-N8-85t" secondAttribute="trailing" id="FFc-Sr-hRE"/>
+                        <constraint firstItem="faT-yC-abj" firstAttribute="top" secondItem="Q9S-gu-0YQ" secondAttribute="bottom" id="HtI-fW-VH5"/>
                         <constraint firstItem="blM-Aa-gMW" firstAttribute="top" secondItem="SS9-rt-uZM" secondAttribute="bottom" constant="8" id="KRh-YX-7Qs"/>
                         <constraint firstItem="b2Q-fO-r1G" firstAttribute="trailing" secondItem="blM-Aa-gMW" secondAttribute="trailing" id="Ka8-v3-KUR"/>
                         <constraint firstItem="sy1-W3-gHt" firstAttribute="leading" secondItem="5jc-UD-NiK" secondAttribute="leading" id="Mwu-YV-u6G"/>
                         <constraint firstItem="Frl-bq-72n" firstAttribute="leading" secondItem="8sc-nz-q9e" secondAttribute="leading" id="OZ9-wM-lad"/>
                         <constraint firstItem="inO-Pq-sPA" firstAttribute="leading" secondItem="RZ6-q3-mxd" secondAttribute="leading" id="Pfd-hg-8ln"/>
+                        <constraint firstItem="faT-yC-abj" firstAttribute="leading" secondItem="Q9S-gu-0YQ" secondAttribute="leading" id="SLp-gb-Be8"/>
                         <constraint firstItem="VW4-fI-ldc" firstAttribute="leading" secondItem="sir-EM-AgP" secondAttribute="leading" id="T4l-xb-Jbu"/>
                         <constraint firstItem="inO-Pq-sPA" firstAttribute="trailing" secondItem="RZ6-q3-mxd" secondAttribute="trailing" id="UCD-Zr-2gh"/>
                         <constraint firstItem="0hG-N8-85t" firstAttribute="leading" secondItem="b2Q-fO-r1G" secondAttribute="leading" id="UNB-kc-2YQ"/>
@@ -194,6 +216,8 @@
                         <constraint firstItem="sy1-W3-gHt" firstAttribute="top" secondItem="5jc-UD-NiK" secondAttribute="bottom" constant="8" id="XM9-iQ-Piu"/>
                         <constraint firstItem="RZ6-q3-mxd" firstAttribute="leading" secondItem="cww-lL-2iB" secondAttribute="leading" constant="20" id="YMo-Wp-4zh"/>
                         <constraint firstItem="VW4-fI-ldc" firstAttribute="trailing" secondItem="CBB-mT-hFX" secondAttribute="trailing" id="a8Z-j2-S27"/>
+                        <constraint firstItem="Q9S-gu-0YQ" firstAttribute="leading" secondItem="0hG-N8-85t" secondAttribute="leading" id="aBo-tV-G18"/>
+                        <constraint firstItem="Q9S-gu-0YQ" firstAttribute="top" secondItem="0hG-N8-85t" secondAttribute="bottom" constant="8" id="bC2-UO-Vf9"/>
                         <constraint firstItem="VW4-fI-ldc" firstAttribute="top" secondItem="sir-EM-AgP" secondAttribute="bottom" constant="8" id="cvl-ma-Ab8"/>
                         <constraint firstItem="inO-Pq-sPA" firstAttribute="top" secondItem="RZ6-q3-mxd" secondAttribute="bottom" constant="8" id="fB5-GF-i3e"/>
                         <constraint firstItem="8sc-nz-q9e" firstAttribute="top" secondItem="faT-yC-abj" secondAttribute="bottom" constant="8" id="fJZ-xo-3mp"/>

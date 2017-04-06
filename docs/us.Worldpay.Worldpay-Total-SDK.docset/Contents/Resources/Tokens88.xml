@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYManualTenderType.html">
+	<File path="Constants/WPYSwiperBatteryStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYManualTenderType</TokenIdentifier>
-			<Abstract type="html">Types of manual entry payment methods accepted</Abstract>
-			<DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYSwiperBatteryStatus</TokenIdentifier>
+			<Abstract type="html">Indication of when the terminal is reporting low battery status</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
             
 			
 			<NodeRef refid="88"/>
@@ -14,21 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCredit</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperBatteryStatusCriticallyLow</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYManualTenderTypeCredit</Declaration>
+            <Declaration>WPYSwiperBatteryStatusCriticallyLow</Declaration>
             
-            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="88"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCheck</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperBatteryStatusLow</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYManualTenderTypeCheck</Declaration>
+            <Declaration>WPYSwiperBatteryStatusLow</Declaration>
             
-            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="88"/>
         </Token>

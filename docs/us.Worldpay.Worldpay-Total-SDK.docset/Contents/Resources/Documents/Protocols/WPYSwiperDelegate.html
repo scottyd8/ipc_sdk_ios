@@ -82,9 +82,9 @@
 		
 		<option value="//api/name/swiper:didRequestAccountTypeSelection:">- swiper:didRequestAccountTypeSelection:</option>
 		
-		<option value="//api/name/swiper:didRequestDevicePromptText:completion:">- swiper:didRequestDevicePromptText:completion:</option>
+		<option value="//api/name/swiper:didRequestDevicePromptText:defaultText:completion:">- swiper:didRequestDevicePromptText:defaultText:completion:</option>
 		
-		<option value="//api/name/swiper:didRequestSelectEMVApplication:">- swiper:didRequestSelectEMVApplication:</option>
+		<option value="//api/name/swiper:didRequestSelectEMVApplication:accountTypes:">- swiper:didRequestSelectEMVApplication:accountTypes:</option>
 		
 		<option value="//api/name/swiper:didReturnAmountConfirmation:">- swiper:didReturnAmountConfirmation:</option>
 		
@@ -781,8 +781,8 @@ This method is only called by certain devices that can display text and have a k
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/swiper:didRequestSelectEMVApplication:" title="swiper:didRequestSelectEMVApplication:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/swiper:didRequestSelectEMVApplication:">&ndash;&nbsp;swiper:didRequestSelectEMVApplication:</a></code>
+	<a name="//api/name/swiper:didRequestSelectEMVApplication:accountTypes:" title="swiper:didRequestSelectEMVApplication:accountTypes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didRequestSelectEMVApplication:accountTypes:">&ndash;&nbsp;swiper:didRequestSelectEMVApplication:accountTypes:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -792,13 +792,13 @@ This method is only called by certain devices that can display text and have a k
 			
 			
 			<div class="method-subsection brief-description">
-				<p>This delegate method is called when the terminal is not configured to present the application options to the card holder directly
+				<p>This delegate method is called when the terminal is not configured to present the application options to the card holder directly, selectEMVCardApplication: on swiper must be called afterwards to continue.
 When the hardware supports it, the terminal will manage application selection automatically (Miura for instance)</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didRequestSelectEMVApplication:(NSArray *)<em>applications</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didRequestSelectEMVApplication:(NSArray *)<em>applications</em> accountTypes:(WPYCardAccountType)<em>accountTypes</em></code></div>
 
 		    
 			
@@ -813,7 +813,12 @@ When the hardware supports it, the terminal will manage application selection au
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>applications</code></th>
-						<td><p>A list of the Application Labels for each application in the candidate list</p></td>
+						<td><p>A list of the Application dictionaries for each application in the candidate list</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accountTypes</code></th>
+						<td><p>Indicates if credit, debit, or both are available based on application list</p></td>
 					</tr>
 				
 				</table>
@@ -894,8 +899,8 @@ This is typical on audiojack devices or other devices that have no keypad</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/swiper:didRequestDevicePromptText:completion:" title="swiper:didRequestDevicePromptText:completion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/swiper:didRequestDevicePromptText:completion:">&ndash;&nbsp;swiper:didRequestDevicePromptText:completion:</a></code>
+	<a name="//api/name/swiper:didRequestDevicePromptText:defaultText:completion:" title="swiper:didRequestDevicePromptText:defaultText:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/swiper:didRequestDevicePromptText:defaultText:completion:">&ndash;&nbsp;swiper:didRequestDevicePromptText:defaultText:completion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -912,7 +917,7 @@ string to have the terminal display default text.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didRequestDevicePromptText:(WPYDevicePrompt)<em>prompt</em> completion:(void ( ^ ) ( NSString *))<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)swiper:(WPYSwiper *)<em>swiper</em> didRequestDevicePromptText:(WPYDevicePrompt)<em>prompt</em> defaultText:(NSString *)<em>defaultText</em> completion:(void ( ^ ) ( NSString *))<em>completion</em></code></div>
 
 		    
 			
@@ -928,6 +933,11 @@ string to have the terminal display default text.</p>
 					<tr>
 						<th scope="row" class="argument-name"><code>prompt</code></th>
 						<td><p>An enumeration representing the type of information that should be presented to the card holder</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>defaultText</code></th>
+						<td><p>The default text prompt the SDK will display</p></td>
 					</tr>
 				
 					<tr>
@@ -1213,7 +1223,7 @@ delegate and therefore this message is only useful if the application cares abou
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-02-23</p>
+						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-04-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

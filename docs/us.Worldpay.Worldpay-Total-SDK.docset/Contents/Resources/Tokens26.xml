@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYMiura.html">
+	<File path="Classes/WPYPaymentCharge.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYMiura</TokenIdentifier>
-			<Abstract type="html">Swiper type is a Miura</Abstract>
-			<DeclaredIn>WPYMiura.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentCharge</TokenIdentifier>
+			<Abstract type="html">This requests immediate authorization and capture of the tendered check or card.  Inherits the following properties from WPYPaymentRequest:
+amount, amountOther, card, extendedData (for card processing)</Abstract>
+			<DeclaredIn>WPYPaymentCharge.h</DeclaredIn>
             
 			
 			<NodeRef refid="26"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYMiura/initWithDelegate:</TokenIdentifier>
-			<Abstract type="html">Initiailize swiper object</Abstract>
-			<DeclaredIn>WPYMiura.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)initWithDelegate:(id&lt;WPYSwiperDelegate&gt;)delegate</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">Delegate that will be associated with the Miura reader</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithDelegate:</Anchor>
-            <NodeRef refid="26"/>
-		</Token>
 		
         
         

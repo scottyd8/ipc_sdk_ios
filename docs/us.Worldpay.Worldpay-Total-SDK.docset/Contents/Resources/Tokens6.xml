@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/NumericData.html">
+	<File path="Classes/VaultData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/NumericData</TokenIdentifier>
-			<Abstract type="html">To Be Documented</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/VaultData</TokenIdentifier>
+			<Abstract type="html">VaultData object</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,152 +13,218 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setInputNumber:</TokenIdentifier>
-			<Abstract type="html">Decimal Number representation of the input value</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/setToken:</TokenIdentifier>
+			<Abstract type="html">vault token</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *inputNumber</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYPaymentToken *token</Declaration>
 			
 			
-			<Anchor>//api/name/inputNumber</Anchor>
+			<Anchor>//api/name/token</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/inputNumber</TokenIdentifier>
-			<Abstract type="html">Decimal Number representation of the input value</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/token</TokenIdentifier>
+			<Abstract type="html">vault token</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *inputNumber</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYPaymentToken *token</Declaration>
 			
 			
-			<Anchor>//api/name/inputNumber</Anchor>
+			<Anchor>//api/name/token</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NumericData/inputNumber</TokenIdentifier>
-			<Abstract type="html">Decimal Number representation of the input value</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/VaultData/token</TokenIdentifier>
+			<Abstract type="html">vault token</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *inputNumber</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYPaymentToken *token</Declaration>
 			
 			
-			<Anchor>//api/name/inputNumber</Anchor>
+			<Anchor>//api/name/token</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setSredData:</TokenIdentifier>
-			<Abstract type="html">Encrypted Data if the numeric response contained encrypted data</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/setCompany:</TokenIdentifier>
+			<Abstract type="html">company of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
 			
 			
-			<Anchor>//api/name/sredData</Anchor>
+			<Anchor>//api/name/company</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/sredData</TokenIdentifier>
-			<Abstract type="html">Encrypted Data if the numeric response contained encrypted data</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/company</TokenIdentifier>
+			<Abstract type="html">company of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
 			
 			
-			<Anchor>//api/name/sredData</Anchor>
+			<Anchor>//api/name/company</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NumericData/sredData</TokenIdentifier>
-			<Abstract type="html">Encrypted Data if the numeric response contained encrypted data</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/VaultData/company</TokenIdentifier>
+			<Abstract type="html">company of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sredData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
 			
 			
-			<Anchor>//api/name/sredData</Anchor>
+			<Anchor>//api/name/company</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setSredKsn:</TokenIdentifier>
-			<Abstract type="html">Key Serial Number of the encrypted data</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/setFirstName:</TokenIdentifier>
+			<Abstract type="html">first name of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/sredKsn</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/sredKsn</TokenIdentifier>
-			<Abstract type="html">Key Serial Number of the encrypted data</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/firstName</TokenIdentifier>
+			<Abstract type="html">first name of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/sredKsn</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NumericData/sredKsn</TokenIdentifier>
-			<Abstract type="html">Key Serial Number of the encrypted data</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/VaultData/firstName</TokenIdentifier>
+			<Abstract type="html">first name of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sredKsn</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/sredKsn</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/setInputString:</TokenIdentifier>
-			<Abstract type="html">String representation of the input number above, in the event
-that the number was partially masked and cannot be represented as a
-decimal number</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/setLastName:</TokenIdentifier>
+			<Abstract type="html">last name of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *inputString</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/inputString</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NumericData/inputString</TokenIdentifier>
-			<Abstract type="html">String representation of the input number above, in the event
-that the number was partially masked and cannot be represented as a
-decimal number</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/lastName</TokenIdentifier>
+			<Abstract type="html">last name of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *inputString</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/inputString</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NumericData/inputString</TokenIdentifier>
-			<Abstract type="html">String representation of the input number above, in the event
-that the number was partially masked and cannot be represented as a
-decimal number</Abstract>
-			<DeclaredIn>NumericData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/VaultData/lastName</TokenIdentifier>
+			<Abstract type="html">last name of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *inputString</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/inputString</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/setEmail:</TokenIdentifier>
+			<Abstract type="html">email address of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/email</TokenIdentifier>
+			<Abstract type="html">email address of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VaultData/email</TokenIdentifier>
+			<Abstract type="html">email address of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/setPhone:</TokenIdentifier>
+			<Abstract type="html">phone number of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VaultData/phone</TokenIdentifier>
+			<Abstract type="html">phone number of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VaultData/phone</TokenIdentifier>
+			<Abstract type="html">phone number of the customer.</Abstract>
+			<DeclaredIn>VaultData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

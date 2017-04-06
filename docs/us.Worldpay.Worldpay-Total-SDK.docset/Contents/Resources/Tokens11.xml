@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYAuthTokenRequest.html">
+	<File path="Classes/WPYCardTransactionData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYAuthTokenRequest</TokenIdentifier>
-			<Abstract type="html">This object is sent when requesting an authorization token from the server so that other APIs can be used.
-The SDK automatically stores the token in the device keychain, but returns a copy of the token just in case
-the developer needs it for some reason.  Only one ID and Key/PIN should be set, based on the processing
-gateway the application is to use</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYCardTransactionData</TokenIdentifier>
+			<Abstract type="html">Information about the credit card that was received from the payment gateway</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -16,254 +13,290 @@ gateway the application is to use</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetId:</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setNumber:</TokenIdentifier>
+			<Abstract type="html">Redacted card number</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *number</Declaration>
 			
 			
-			<Anchor>//api/name/secureNetId</Anchor>
+			<Anchor>//api/name/number</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/number</TokenIdentifier>
+			<Abstract type="html">Redacted card number</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *number</Declaration>
 			
 			
-			<Anchor>//api/name/secureNetId</Anchor>
+			<Anchor>//api/name/number</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/number</TokenIdentifier>
+			<Abstract type="html">Redacted card number</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *number</Declaration>
 			
 			
-			<Anchor>//api/name/secureNetId</Anchor>
+			<Anchor>//api/name/number</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetKey:</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setFirstName:</TokenIdentifier>
+			<Abstract type="html">Cardholder first name</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/secureNetKey</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/firstName</TokenIdentifier>
+			<Abstract type="html">Cardholder first name</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/secureNetKey</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/firstName</TokenIdentifier>
+			<Abstract type="html">Cardholder first name</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/secureNetKey</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersId:</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setLastName:</TokenIdentifier>
+			<Abstract type="html">Cardholder last name</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/merchantPartnersId</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/lastName</TokenIdentifier>
+			<Abstract type="html">Cardholder last name</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/merchantPartnersId</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/lastName</TokenIdentifier>
+			<Abstract type="html">Cardholder last name</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/merchantPartnersId</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersPin:</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setBrand:</TokenIdentifier>
+			<Abstract type="html">Brand associated with the card</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *brand</Declaration>
 			
 			
-			<Anchor>//api/name/merchantPartnersPin</Anchor>
+			<Anchor>//api/name/brand</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/brand</TokenIdentifier>
+			<Abstract type="html">Brand associated with the card</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *brand</Declaration>
 			
 			
-			<Anchor>//api/name/merchantPartnersPin</Anchor>
+			<Anchor>//api/name/brand</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/brand</TokenIdentifier>
+			<Abstract type="html">Brand associated with the card</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *brand</Declaration>
 			
 			
-			<Anchor>//api/name/merchantPartnersPin</Anchor>
+			<Anchor>//api/name/brand</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setApplicationId:</TokenIdentifier>
-			<Abstract type="html">All applications must set their ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setExpirationMonth:</TokenIdentifier>
+			<Abstract type="html">Card expiration month</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
+			<Declaration>@property NSInteger expirationMonth</Declaration>
 			
 			
-			<Anchor>//api/name/applicationId</Anchor>
+			<Anchor>//api/name/expirationMonth</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/applicationId</TokenIdentifier>
-			<Abstract type="html">All applications must set their ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/expirationMonth</TokenIdentifier>
+			<Abstract type="html">Card expiration month</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
+			<Declaration>@property NSInteger expirationMonth</Declaration>
 			
 			
-			<Anchor>//api/name/applicationId</Anchor>
+			<Anchor>//api/name/expirationMonth</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/applicationId</TokenIdentifier>
-			<Abstract type="html">All applications must set their ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/expirationMonth</TokenIdentifier>
+			<Abstract type="html">Card expiration month</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
+			<Declaration>@property NSInteger expirationMonth</Declaration>
 			
 			
-			<Anchor>//api/name/applicationId</Anchor>
+			<Anchor>//api/name/expirationMonth</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalId:</TokenIdentifier>
-			<Abstract type="html">All applications must present a terminal ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setExpirationYear:</TokenIdentifier>
+			<Abstract type="html">Card expiration year</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			<Declaration>@property NSInteger expirationYear</Declaration>
 			
 			
-			<Anchor>//api/name/terminalId</Anchor>
+			<Anchor>//api/name/expirationYear</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalId</TokenIdentifier>
-			<Abstract type="html">All applications must present a terminal ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/expirationYear</TokenIdentifier>
+			<Abstract type="html">Card expiration year</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			<Declaration>@property NSInteger expirationYear</Declaration>
 			
 			
-			<Anchor>//api/name/terminalId</Anchor>
+			<Anchor>//api/name/expirationYear</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalId</TokenIdentifier>
-			<Abstract type="html">All applications must present a terminal ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/expirationYear</TokenIdentifier>
+			<Abstract type="html">Card expiration year</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			<Declaration>@property NSInteger expirationYear</Declaration>
 			
 			
-			<Anchor>//api/name/terminalId</Anchor>
+			<Anchor>//api/name/expirationYear</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalVendor:</TokenIdentifier>
-			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setAvsCode:</TokenIdentifier>
+			<Abstract type="html">AVS Code sent from gateway</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *avsCode</Declaration>
 			
 			
-			<Anchor>//api/name/terminalVendor</Anchor>
+			<Anchor>//api/name/avsCode</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
-			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/avsCode</TokenIdentifier>
+			<Abstract type="html">AVS Code sent from gateway</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *avsCode</Declaration>
 			
 			
-			<Anchor>//api/name/terminalVendor</Anchor>
+			<Anchor>//api/name/avsCode</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
-			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/avsCode</TokenIdentifier>
+			<Abstract type="html">AVS Code sent from gateway</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *avsCode</Declaration>
 			
 			
-			<Anchor>//api/name/terminalVendor</Anchor>
+			<Anchor>//api/name/avsCode</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/setAvsResult:</TokenIdentifier>
+			<Abstract type="html">Type of the AVS Result received</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property WPYAvsResultType avsResult</Declaration>
+			
+			
+			<Anchor>//api/name/avsResult</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYCardTransactionData/avsResult</TokenIdentifier>
+			<Abstract type="html">Type of the AVS Result received</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property WPYAvsResultType avsResult</Declaration>
+			
+			
+			<Anchor>//api/name/avsResult</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYCardTransactionData/avsResult</TokenIdentifier>
+			<Abstract type="html">Type of the AVS Result received</Abstract>
+			<DeclaredIn>WPYCardTransactionData.h</DeclaredIn>
+			
+			<Declaration>@property WPYAvsResultType avsResult</Declaration>
+			
+			
+			<Anchor>//api/name/avsResult</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		

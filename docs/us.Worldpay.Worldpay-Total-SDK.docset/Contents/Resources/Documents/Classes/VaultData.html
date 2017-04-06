@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PINRequestData Class Reference</title>
+	<title>VaultData Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,17 +56,17 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/amount">amount</option>
+		<option value="//api/name/company">company</option>
 		
-		<option value="//api/name/applicationLabel">applicationLabel</option>
+		<option value="//api/name/email">email</option>
 		
-		<option value="//api/name/currencyCode">currencyCode</option>
+		<option value="//api/name/firstName">firstName</option>
 		
-		<option value="//api/name/currencyExponent">currencyExponent</option>
+		<option value="//api/name/lastName">lastName</option>
 		
-		<option value="//api/name/iccMaskedTrack2">iccMaskedTrack2</option>
+		<option value="//api/name/phone">phone</option>
 		
-		<option value="//api/name/msrMaskedTrack2">msrMaskedTrack2</option>
+		<option value="//api/name/token">token</option>
 		
 	</optgroup>
 	
@@ -89,16 +89,16 @@
 				<main role="main">
 					<img src="../img/worldpaylogo.png" alt="Worldpay Logo"  align="right" style="margin:20px 0px 0px 0px" >
 					<br/>
-					<h1 class="title">PINRequestData Class Reference</h1>
+					<h1 class="title">VaultData Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td>NSObject</td>
+	<td><a href="../Classes/WPYDomainObject.html">WPYDomainObject</a> : NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>PINRequestData.h</td>
+	<td>VaultData.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -108,7 +108,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Class that contains the request data to the attached device.</p>
+						<p>VaultData object</p>
 					</div>
 					
 					
@@ -124,8 +124,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/amount" title="amount"></a>
-	<h3 class="method-title"><code><a href="#//api/name/amount">&nbsp;&nbsp;amount</a></code>
+	<a name="//api/name/token" title="token"></a>
+	<h3 class="method-title"><code><a href="#//api/name/token">&nbsp;&nbsp;token</a></code>
 </h3>
 
 	<div class="method-info">
@@ -135,12 +135,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Type of transaction - typically sale, refund or cash back</p>
+				<p>vault token</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDecimalNumber *amount</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WPYPaymentToken *token</code></div>
 
 		    
 			
@@ -158,15 +158,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PINRequestData.h</code></p>
+				<p><code class="declared-in-ref">VaultData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/applicationLabel" title="applicationLabel"></a>
-	<h3 class="method-title"><code><a href="#//api/name/applicationLabel">&nbsp;&nbsp;applicationLabel</a></code>
+	<a name="//api/name/company" title="company"></a>
+	<h3 class="method-title"><code><a href="#//api/name/company">&nbsp;&nbsp;company</a></code>
 </h3>
 
 	<div class="method-info">
@@ -176,12 +176,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Predefined card type. This is determined from the card number by the framework</p>
+				<p>company of the customer.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *applicationLabel</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *company</code></div>
 
 		    
 			
@@ -199,15 +199,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PINRequestData.h</code></p>
+				<p><code class="declared-in-ref">VaultData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/msrMaskedTrack2" title="msrMaskedTrack2"></a>
-	<h3 class="method-title"><code><a href="#//api/name/msrMaskedTrack2">&nbsp;&nbsp;msrMaskedTrack2</a></code>
+	<a name="//api/name/firstName" title="firstName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/firstName">&nbsp;&nbsp;firstName</a></code>
 </h3>
 
 	<div class="method-info">
@@ -217,12 +217,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Track 2 data fields. See <a href="../Classes/WPYTrackData.html">WPYTrackData</a></p>
+				<p>first name of the customer.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *msrMaskedTrack2</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *firstName</code></div>
 
 		    
 			
@@ -240,15 +240,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PINRequestData.h</code></p>
+				<p><code class="declared-in-ref">VaultData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/iccMaskedTrack2" title="iccMaskedTrack2"></a>
-	<h3 class="method-title"><code><a href="#//api/name/iccMaskedTrack2">&nbsp;&nbsp;iccMaskedTrack2</a></code>
+	<a name="//api/name/lastName" title="lastName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastName">&nbsp;&nbsp;lastName</a></code>
 </h3>
 
 	<div class="method-info">
@@ -258,12 +258,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Unused at this time</p>
+				<p>last name of the customer.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *iccMaskedTrack2</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *lastName</code></div>
 
 		    
 			
@@ -281,15 +281,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PINRequestData.h</code></p>
+				<p><code class="declared-in-ref">VaultData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currencyCode" title="currencyCode"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currencyCode">&nbsp;&nbsp;currencyCode</a></code>
+	<a name="//api/name/email" title="email"></a>
+	<h3 class="method-title"><code><a href="#//api/name/email">&nbsp;&nbsp;email</a></code>
 </h3>
 
 	<div class="method-info">
@@ -299,12 +299,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Currently set to &ldquo;0840&rdquo; for US</p>
+				<p>email address of the customer.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *currencyCode</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *email</code></div>
 
 		    
 			
@@ -322,15 +322,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PINRequestData.h</code></p>
+				<p><code class="declared-in-ref">VaultData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currencyExponent" title="currencyExponent"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currencyExponent">&nbsp;&nbsp;currencyExponent</a></code>
+	<a name="//api/name/phone" title="phone"></a>
+	<h3 class="method-title"><code><a href="#//api/name/phone">&nbsp;&nbsp;phone</a></code>
 </h3>
 
 	<div class="method-info">
@@ -340,12 +340,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Currently Unused</p>
+				<p>phone number of the customer.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) uint8_t currencyExponent</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *phone</code></div>
 
 		    
 			
@@ -363,7 +363,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PINRequestData.h</code></p>
+				<p><code class="declared-in-ref">VaultData.h</code></p>
 			</div>
 			
 			
@@ -384,7 +384,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-02-23</p>
+						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-04-04</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

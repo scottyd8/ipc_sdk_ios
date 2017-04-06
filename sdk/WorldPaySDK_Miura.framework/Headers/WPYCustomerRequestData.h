@@ -53,4 +53,9 @@
  * A dictionary of user defined key/value pairs of custom data provided about the customer
  */
 @property (nonatomic, strong) NSDictionary *userDefinedFields;
+/**
+ * If a check is presented, this is the duplicate check type to be used
+ */
+@property WPYCustomerDuplicateCheckType customerDuplicateCheckIndicator;
+
 @end

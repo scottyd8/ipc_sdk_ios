@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYTrackData.html">
+	<File path="Classes/WPYTransactionSearch.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYTrackData</TokenIdentifier>
-			<Abstract type="html">This private object contains track information from a MSR event on a credit card terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTransactionSearch</TokenIdentifier>
+			<Abstract type="html">Request object used to search for transactions</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
             
 			
 			<NodeRef refid="48"/>
@@ -13,326 +13,218 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setTrack1:</TokenIdentifier>
-			<Abstract type="html">The masked track 1 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setStartDate:</TokenIdentifier>
+			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
 			
 			
-			<Anchor>//api/name/track1</Anchor>
+			<Anchor>//api/name/startDate</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/track1</TokenIdentifier>
-			<Abstract type="html">The masked track 1 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/startDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
 			
 			
-			<Anchor>//api/name/track1</Anchor>
+			<Anchor>//api/name/startDate</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/track1</TokenIdentifier>
-			<Abstract type="html">The masked track 1 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/startDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
 			
 			
-			<Anchor>//api/name/track1</Anchor>
+			<Anchor>//api/name/startDate</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setTrack2:</TokenIdentifier>
-			<Abstract type="html">The masked track 2 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setEndDate:</TokenIdentifier>
+			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
 			
 			
-			<Anchor>//api/name/track2</Anchor>
+			<Anchor>//api/name/endDate</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/track2</TokenIdentifier>
-			<Abstract type="html">The masked track 2 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/endDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
 			
 			
-			<Anchor>//api/name/track2</Anchor>
+			<Anchor>//api/name/endDate</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/track2</TokenIdentifier>
-			<Abstract type="html">The masked track 2 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/endDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
 			
 			
-			<Anchor>//api/name/track2</Anchor>
+			<Anchor>//api/name/endDate</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setTrack3:</TokenIdentifier>
-			<Abstract type="html">The masked track 3 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setTransactionId:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track3</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/track3</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/track3</TokenIdentifier>
-			<Abstract type="html">The masked track 3 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/transactionId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track3</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/track3</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/track3</TokenIdentifier>
-			<Abstract type="html">The masked track 3 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/transactionId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *track3</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/track3</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setEncryptedTrack1:</TokenIdentifier>
-			<Abstract type="html">The encrypted track 1 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setOrderId:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack1</Anchor>
+			<Anchor>//api/name/orderId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/encryptedTrack1</TokenIdentifier>
-			<Abstract type="html">The encrypted track 1 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/orderId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack1</Anchor>
+			<Anchor>//api/name/orderId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/encryptedTrack1</TokenIdentifier>
-			<Abstract type="html">The encrypted track 1 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/orderId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack1</Anchor>
+			<Anchor>//api/name/orderId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setEncryptedTrack2:</TokenIdentifier>
-			<Abstract type="html">The encrypted track 2 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setAmount:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack2</Anchor>
+			<Anchor>//api/name/amount</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/encryptedTrack2</TokenIdentifier>
-			<Abstract type="html">The encrypted track 2 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/amount</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack2</Anchor>
+			<Anchor>//api/name/amount</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/encryptedTrack2</TokenIdentifier>
-			<Abstract type="html">The encrypted track 2 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/amount</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack2</Anchor>
+			<Anchor>//api/name/amount</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setEncryptedTrack3:</TokenIdentifier>
-			<Abstract type="html">The encrypted track 3 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setCustomerId:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack3</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack3</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/encryptedTrack3</TokenIdentifier>
-			<Abstract type="html">The encrypted track 3 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/customerId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack3</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/encryptedTrack3</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/encryptedTrack3</TokenIdentifier>
-			<Abstract type="html">The encrypted track 3 data, if available</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/customerId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *encryptedTrack3</Declaration>
-			
-			
-			<Anchor>//api/name/encryptedTrack3</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setTrack1Length:</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 1 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track1Length</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/track1Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/track1Length</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 1 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track1Length</Declaration>
-			
-			
-			<Anchor>//api/name/track1Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/track1Length</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 1 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track1Length</Declaration>
-			
-			
-			<Anchor>//api/name/track1Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setTrack2Length:</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 2 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track2Length</Declaration>
-			
-			
-			<Anchor>//api/name/track2Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/track2Length</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 2 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track2Length</Declaration>
-			
-			
-			<Anchor>//api/name/track2Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/track2Length</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 2 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track2Length</Declaration>
-			
-			
-			<Anchor>//api/name/track2Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/setTrack3Length:</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 3 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track3Length</Declaration>
-			
-			
-			<Anchor>//api/name/track3Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTrackData/track3Length</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 3 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track3Length</Declaration>
-			
-			
-			<Anchor>//api/name/track3Length</Anchor>
-            <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTrackData/track3Length</TokenIdentifier>
-			<Abstract type="html">The length of the unencrypted track 3 data, as reported by the terminal</Abstract>
-			<DeclaredIn>WPYTrackData.h</DeclaredIn>
-			
-			<Declaration>@property NSInteger track3Length</Declaration>
-			
-			
-			<Anchor>//api/name/track3Length</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		

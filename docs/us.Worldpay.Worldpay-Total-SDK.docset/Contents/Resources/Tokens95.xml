@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYSwiperType.html">
+	<File path="Constants/WorldpaySDKError.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYSwiperType</TokenIdentifier>
-			<Abstract type="html">The type of encryption used to secure the SRED data for a card read from a terminal</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WorldpaySDKError</TokenIdentifier>
+			<Abstract type="html">This is the error code returned when an NSError is generated due to a missing authentication token.
+No web service calls can complete (except for the token request) without a valid authorization token</Abstract>
+			<DeclaredIn>WorldPayAPI.h</DeclaredIn>
             
 			
 			<NodeRef refid="95"/>
@@ -14,51 +15,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeNotSet</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeNotSet</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WorldpaySDKErrorNoAuthToken</TokenIdentifier>
+            <Abstract type="html">No auth token provided</Abstract>
+            <Declaration>WorldpaySDKErrorNoAuthToken</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="95"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeNone</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeNone</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
             
             <NodeRef refid="95"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeIDTech</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeIDTech</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WorldpaySDKErrorInvalidRequestTypeForTender</TokenIdentifier>
+            <Abstract type="html">Returned if you try to run an auth on a manually entered check, for instance</Abstract>
+            <Declaration>WorldpaySDKErrorInvalidRequestTypeForTender</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="95"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeMagTek</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeMagTek</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
             
             <NodeRef refid="95"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeMiura</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WorldpaySDKErrorTerminalConnectionLost</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeMiura</Declaration>
+            <Declaration>WorldpaySDKErrorTerminalConnectionLost</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
             
             <NodeRef refid="95"/>
         </Token>

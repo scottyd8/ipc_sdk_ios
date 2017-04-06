@@ -1,17 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYPaymentCredit.html">
+	<File path="Classes/WPYPaymentRefund.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentCredit</TokenIdentifier>
-			<Abstract type="html">This requests a credit to the tendered check or card.  Inherits the following properties from WPYPaymentRequest:
-amount, amountOther, card, extendedData (for card processing)</Abstract>
-			<DeclaredIn>WPYPaymentCredit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentRefund</TokenIdentifier>
+			<Abstract type="html">This requests that the specified transaction be refunded to the account holder</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
             
 			
 			<NodeRef refid="30"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/setAmount:</TokenIdentifier>
+			<Abstract type="html">The amount of the refund being requested</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/amount</TokenIdentifier>
+			<Abstract type="html">The amount of the refund being requested</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRefund/amount</TokenIdentifier>
+			<Abstract type="html">The amount of the refund being requested</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/setTransactionId:</TokenIdentifier>
+			<Abstract type="html">The transaction ID that the refund will be applied against</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			
+			
+			<Anchor>//api/name/transactionId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/transactionId</TokenIdentifier>
+			<Abstract type="html">The transaction ID that the refund will be applied against</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			
+			
+			<Anchor>//api/name/transactionId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRefund/transactionId</TokenIdentifier>
+			<Abstract type="html">The transaction ID that the refund will be applied against</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			
+			
+			<Anchor>//api/name/transactionId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/setOrderId:</TokenIdentifier>
+			<Abstract type="html">Client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate
+transactions. The orderId must be unique to the merchant&apos;s SecureNet ID; however, uniqueness is only
+evaluated for APPROVED transactions and only for the last 30 days. If a transaction is declined, the
+corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/orderId</TokenIdentifier>
+			<Abstract type="html">Client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate
+transactions. The orderId must be unique to the merchant&apos;s SecureNet ID; however, uniqueness is only
+evaluated for APPROVED transactions and only for the last 30 days. If a transaction is declined, the
+corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRefund/orderId</TokenIdentifier>
+			<Abstract type="html">Client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate
+transactions. The orderId must be unique to the merchant&apos;s SecureNet ID; however, uniqueness is only
+evaluated for APPROVED transactions and only for the last 30 days. If a transaction is declined, the
+corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/setExtendedInformation:</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRefund/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRefund/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
 		
         
         

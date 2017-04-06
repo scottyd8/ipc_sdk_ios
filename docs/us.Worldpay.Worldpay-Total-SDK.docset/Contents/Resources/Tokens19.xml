@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYEMVData.html">
+	<File path="Classes/WPYLevelTwoData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYEMVData</TokenIdentifier>
-			<Abstract type="html">Private object that contains information that the SDK will pass down to the credit card terminal</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYLevelTwoData</TokenIdentifier>
+			<Abstract type="html">This optional data gets passed up to the payment gateway with a payment request</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
             
 			
 			<NodeRef refid="19"/>
@@ -13,209 +13,254 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setEMVAuthResponseCode:</TokenIdentifier>
-			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setOrderDate:</TokenIdentifier>
+			<Abstract type="html">Date that the order was placed</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *EMVAuthResponseCode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
 			
 			
-			<Anchor>//api/name/EMVAuthResponseCode</Anchor>
+			<Anchor>//api/name/orderDate</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/EMVAuthResponseCode</TokenIdentifier>
-			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/orderDate</TokenIdentifier>
+			<Abstract type="html">Date that the order was placed</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *EMVAuthResponseCode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
 			
 			
-			<Anchor>//api/name/EMVAuthResponseCode</Anchor>
+			<Anchor>//api/name/orderDate</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/EMVAuthResponseCode</TokenIdentifier>
-			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/orderDate</TokenIdentifier>
+			<Abstract type="html">Date that the order was placed</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *EMVAuthResponseCode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
 			
 			
-			<Anchor>//api/name/EMVAuthResponseCode</Anchor>
+			<Anchor>//api/name/orderDate</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerAuthenticationData:</TokenIdentifier>
-			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
-and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setDutyAmount:</TokenIdentifier>
+			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerAuthenticationData</Anchor>
+			<Anchor>//api/name/dutyAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerAuthenticationData</TokenIdentifier>
-			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
-and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/dutyAmount</TokenIdentifier>
+			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerAuthenticationData</Anchor>
+			<Anchor>//api/name/dutyAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerAuthenticationData</TokenIdentifier>
-			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
-and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/dutyAmount</TokenIdentifier>
+			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerAuthenticationData</Anchor>
+			<Anchor>//api/name/dutyAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptResult:</TokenIdentifier>
-			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setFreightAmount:</TokenIdentifier>
+			<Abstract type="html">The cost of freight associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptResult</Anchor>
+			<Anchor>//api/name/freightAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptResult</TokenIdentifier>
-			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/freightAmount</TokenIdentifier>
+			<Abstract type="html">The cost of freight associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptResult</Anchor>
+			<Anchor>//api/name/freightAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptResult</TokenIdentifier>
-			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/freightAmount</TokenIdentifier>
+			<Abstract type="html">The cost of freight associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptResult</Anchor>
+			<Anchor>//api/name/freightAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptTemplate1:</TokenIdentifier>
-			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
-should be included in the 2nd AC upon completion</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setRetailLaneNumber:</TokenIdentifier>
+			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
+			<Anchor>//api/name/retailLaneNumber</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptTemplate1</TokenIdentifier>
-			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
-should be included in the 2nd AC upon completion</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/retailLaneNumber</TokenIdentifier>
+			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
+			<Anchor>//api/name/retailLaneNumber</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptTemplate1</TokenIdentifier>
-			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
-should be included in the 2nd AC upon completion</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/retailLaneNumber</TokenIdentifier>
+			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
+			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
+			<Anchor>//api/name/retailLaneNumber</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptTemplate2:</TokenIdentifier>
-			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
-be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setTaxAmount:</TokenIdentifier>
+			<Abstract type="html">The amount of tax charged on the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
+			<Anchor>//api/name/taxAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptTemplate2</TokenIdentifier>
-			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
-be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/taxAmount</TokenIdentifier>
+			<Abstract type="html">The amount of tax charged on the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
+			<Anchor>//api/name/taxAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptTemplate2</TokenIdentifier>
-			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
-be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/taxAmount</TokenIdentifier>
+			<Abstract type="html">The amount of tax charged on the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
 			
 			
-			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
+			<Anchor>//api/name/taxAmount</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/encodeEMVDataWithAuthCode:</TokenIdentifier>
-			<Abstract type="html">This method will take the object and, based on the auth code and response message from the gateway, will
-create the EMV result TLV to send down to the terminal for 2nd AC generation</Abstract>
-			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setStatus:</TokenIdentifier>
+			<Abstract type="html">Tax Status of the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)encodeEMVDataWithAuthCode:(WPYResponseCode)responseCode</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>responseCode</Name>
-					<Abstract type="html">The response code returned on the Payment Response</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The &quot;Response Text&quot; returned by the server, which may contain information about a declined transaction.</Abstract></ReturnValue>
-			<Anchor>//api/name/encodeEMVDataWithAuthCode:</Anchor>
+			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/status</TokenIdentifier>
+			<Abstract type="html">Tax Status of the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/status</TokenIdentifier>
+			<Abstract type="html">Tax Status of the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setPurchaseOrder:</TokenIdentifier>
+			<Abstract type="html">THe purchase order number associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			
+			
+			<Anchor>//api/name/purchaseOrder</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/purchaseOrder</TokenIdentifier>
+			<Abstract type="html">THe purchase order number associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			
+			
+			<Anchor>//api/name/purchaseOrder</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/purchaseOrder</TokenIdentifier>
+			<Abstract type="html">THe purchase order number associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			
+			
+			<Anchor>//api/name/purchaseOrder</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		

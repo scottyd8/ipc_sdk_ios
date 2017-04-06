@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardAccountType.html">
+	<File path="Constants/WPYCheckAccountType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardAccountType</TokenIdentifier>
-			<Abstract type="html">This is an indication of the type of transactions that a specific card application can support
-On devices where the terminal is capable of handling application support, it will automatically
-prompt for credit or debit when appropriate.  On non-capable devices, the application will
-be notified when the user must choose credit or debit</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCheckAccountType</TokenIdentifier>
+			<Abstract type="html">This enumeration defines the types of checking accounts that can be associated with a check.  Please note that any value
+set to &quot;Unknown&quot; will NOT be sent to the server.</Abstract>
+			<DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
 			
 			<NodeRef refid="78"/>
@@ -17,41 +15,61 @@ be notified when the user must choose credit or debit</Abstract>
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeCredit</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeCredit</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeUnknown</TokenIdentifier>
+            <Abstract type="html">If this is set, the transaction will not be sent to the servoer</Abstract>
+            <Declaration>WPYCheckAccountTypeUnknown</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="78"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeDebit</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeDebit</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeCreditOrDebit</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeChecking</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeCreditOrDebit</Declaration>
+            <Declaration>WPYCheckAccountTypeChecking</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeUnknown</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeSavings</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeUnknown</Declaration>
+            <Declaration>WPYCheckAccountTypeSavings</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            
+            <NodeRef refid="78"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeBusinessChecking</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCheckAccountTypeBusinessChecking</Declaration>
+            
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            
+            <NodeRef refid="78"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeBusinessSavings</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCheckAccountTypeBusinessSavings</Declaration>
+            
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            
+            <NodeRef refid="78"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeEND</TokenIdentifier>
+            <Abstract type="html">Used to determine end of presentation list</Abstract>
+            <Declaration>WPYCheckAccountTypeEND</Declaration>
+            
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYCustomerRequestData.html">
+	<File path="Classes/WPYEMVData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYCustomerRequestData</TokenIdentifier>
-			<Abstract type="html">Request object used in customer vault transactions.</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYEMVData</TokenIdentifier>
+			<Abstract type="html">Private object that contains information that the SDK will pass down to the credit card terminal</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
             
 			
 			<NodeRef refid="16"/>
@@ -13,362 +13,209 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setCustomerId:</TokenIdentifier>
-			<Abstract type="html">Optional on create requests: Customer ID is set by the server if not provided.</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setEmvAuthResponseCode:</TokenIdentifier>
+			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *emvAuthResponseCode</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/emvAuthResponseCode</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/customerId</TokenIdentifier>
-			<Abstract type="html">Optional on create requests: Customer ID is set by the server if not provided.</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/emvAuthResponseCode</TokenIdentifier>
+			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *emvAuthResponseCode</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/emvAuthResponseCode</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/customerId</TokenIdentifier>
-			<Abstract type="html">Optional on create requests: Customer ID is set by the server if not provided.</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/emvAuthResponseCode</TokenIdentifier>
+			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *emvAuthResponseCode</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/emvAuthResponseCode</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setFirstName:</TokenIdentifier>
-			<Abstract type="html">Customer First Name</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerAuthenticationData:</TokenIdentifier>
+			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
+and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
 			
 			
-			<Anchor>//api/name/firstName</Anchor>
+			<Anchor>//api/name/issuerAuthenticationData</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/firstName</TokenIdentifier>
-			<Abstract type="html">Customer First Name</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerAuthenticationData</TokenIdentifier>
+			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
+and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
 			
 			
-			<Anchor>//api/name/firstName</Anchor>
+			<Anchor>//api/name/issuerAuthenticationData</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/firstName</TokenIdentifier>
-			<Abstract type="html">Customer First Name</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerAuthenticationData</TokenIdentifier>
+			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
+and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
 			
 			
-			<Anchor>//api/name/firstName</Anchor>
+			<Anchor>//api/name/issuerAuthenticationData</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setLastName:</TokenIdentifier>
-			<Abstract type="html">Customer Last Name</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptResult:</TokenIdentifier>
+			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
 			
 			
-			<Anchor>//api/name/lastName</Anchor>
+			<Anchor>//api/name/issuerScriptResult</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/lastName</TokenIdentifier>
-			<Abstract type="html">Customer Last Name</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptResult</TokenIdentifier>
+			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
 			
 			
-			<Anchor>//api/name/lastName</Anchor>
+			<Anchor>//api/name/issuerScriptResult</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/lastName</TokenIdentifier>
-			<Abstract type="html">Customer Last Name</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptResult</TokenIdentifier>
+			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
 			
 			
-			<Anchor>//api/name/lastName</Anchor>
+			<Anchor>//api/name/issuerScriptResult</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setAddress:</TokenIdentifier>
-			<Abstract type="html">An object representing the customer address information</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptTemplate1:</TokenIdentifier>
+			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
+should be included in the 2nd AC upon completion</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
 			
 			
-			<Anchor>//api/name/address</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/address</TokenIdentifier>
-			<Abstract type="html">An object representing the customer address information</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptTemplate1</TokenIdentifier>
+			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
+should be included in the 2nd AC upon completion</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
 			
 			
-			<Anchor>//api/name/address</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/address</TokenIdentifier>
-			<Abstract type="html">An object representing the customer address information</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptTemplate1</TokenIdentifier>
+			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
+should be included in the 2nd AC upon completion</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
 			
 			
-			<Anchor>//api/name/address</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setEmail:</TokenIdentifier>
-			<Abstract type="html">Customer email address</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptTemplate2:</TokenIdentifier>
+			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
+be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
 			
 			
-			<Anchor>//api/name/email</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/email</TokenIdentifier>
-			<Abstract type="html">Customer email address</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptTemplate2</TokenIdentifier>
+			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
+be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
 			
 			
-			<Anchor>//api/name/email</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/email</TokenIdentifier>
-			<Abstract type="html">Customer email address</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptTemplate2</TokenIdentifier>
+			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
+be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
 			
 			
-			<Anchor>//api/name/email</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setSendEmailReceipts:</TokenIdentifier>
-			<Abstract type="html">Indicator on whether to email receipts to the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/encodeEMVDataWithAuthCode:</TokenIdentifier>
+			<Abstract type="html">This method will take the object and, based on the auth code and response message from the gateway, will
+create the EMV result TLV to send down to the terminal for 2nd AC generation</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property BOOL sendEmailReceipts</Declaration>
-			
-			
-			<Anchor>//api/name/sendEmailReceipts</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/sendEmailReceipts</TokenIdentifier>
-			<Abstract type="html">Indicator on whether to email receipts to the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property BOOL sendEmailReceipts</Declaration>
-			
-			
-			<Anchor>//api/name/sendEmailReceipts</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/sendEmailReceipts</TokenIdentifier>
-			<Abstract type="html">Indicator on whether to email receipts to the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property BOOL sendEmailReceipts</Declaration>
-			
-			
-			<Anchor>//api/name/sendEmailReceipts</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setPhoneNumber:</TokenIdentifier>
-			<Abstract type="html">Phone number associated with customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *phoneNumber</Declaration>
-			
-			
-			<Anchor>//api/name/phoneNumber</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/phoneNumber</TokenIdentifier>
-			<Abstract type="html">Phone number associated with customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *phoneNumber</Declaration>
-			
-			
-			<Anchor>//api/name/phoneNumber</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/phoneNumber</TokenIdentifier>
-			<Abstract type="html">Phone number associated with customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *phoneNumber</Declaration>
-			
-			
-			<Anchor>//api/name/phoneNumber</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setCompany:</TokenIdentifier>
-			<Abstract type="html">Name of the company the customer works for</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
-			
-			
-			<Anchor>//api/name/company</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/company</TokenIdentifier>
-			<Abstract type="html">Name of the company the customer works for</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
-			
-			
-			<Anchor>//api/name/company</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/company</TokenIdentifier>
-			<Abstract type="html">Name of the company the customer works for</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *company</Declaration>
-			
-			
-			<Anchor>//api/name/company</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setNotes:</TokenIdentifier>
-			<Abstract type="html">Notes associated with the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
-			
-			
-			<Anchor>//api/name/notes</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/notes</TokenIdentifier>
-			<Abstract type="html">Notes associated with the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
-			
-			
-			<Anchor>//api/name/notes</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/notes</TokenIdentifier>
-			<Abstract type="html">Notes associated with the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
-			
-			
-			<Anchor>//api/name/notes</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/setUserDefinedFields:</TokenIdentifier>
-			<Abstract type="html">A dictionary of user defined key/value pairs of custom data provided about the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
-			
-			
-			<Anchor>//api/name/userDefinedFields</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYCustomerRequestData/userDefinedFields</TokenIdentifier>
-			<Abstract type="html">A dictionary of user defined key/value pairs of custom data provided about the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
-			
-			
-			<Anchor>//api/name/userDefinedFields</Anchor>
-            <NodeRef refid="16"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYCustomerRequestData/userDefinedFields</TokenIdentifier>
-			<Abstract type="html">A dictionary of user defined key/value pairs of custom data provided about the customer</Abstract>
-			<DeclaredIn>WPYCustomerRequestData.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
-			
-			
-			<Anchor>//api/name/userDefinedFields</Anchor>
+			<Declaration>- (NSString *)encodeEMVDataWithAuthCode:(WPYResponseCode)responseCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>responseCode</Name>
+					<Abstract type="html">The response code returned on the Payment Response</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The &quot;Response Text&quot; returned by the server, which may contain information about a declined transaction.</Abstract></ReturnValue>
+			<Anchor>//api/name/encodeEMVDataWithAuthCode:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		

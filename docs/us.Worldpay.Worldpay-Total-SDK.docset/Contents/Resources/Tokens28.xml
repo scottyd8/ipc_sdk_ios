@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYPaymentCapture.html">
+	<File path="Classes/WPYPaymentMethod.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentCapture</TokenIdentifier>
-			<Abstract type="html">This requests that the previously authorized transaction be captured</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentMethod</TokenIdentifier>
+			<Abstract type="html">This object contains information about a stored payment method for a customer</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
             
 			
 			<NodeRef refid="28"/>
@@ -13,110 +13,254 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/setAmount:</TokenIdentifier>
-			<Abstract type="html">The amount to capture against the previous authorization</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/setCustomerId:</TokenIdentifier>
+			<Abstract type="html">The customer ID associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/amount</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/amount</TokenIdentifier>
-			<Abstract type="html">The amount to capture against the previous authorization</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/customerId</TokenIdentifier>
+			<Abstract type="html">The customer ID associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/amount</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentCapture/amount</TokenIdentifier>
-			<Abstract type="html">The amount to capture against the previous authorization</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentMethod/customerId</TokenIdentifier>
+			<Abstract type="html">The customer ID associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/amount</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/setTransactionId:</TokenIdentifier>
-			<Abstract type="html">The transaction ID of the authorization to be captured</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/setCard:</TokenIdentifier>
+			<Abstract type="html">The stored card, if any, associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYStoredCard *card</Declaration>
 			
 			
-			<Anchor>//api/name/transactionId</Anchor>
+			<Anchor>//api/name/card</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/transactionId</TokenIdentifier>
-			<Abstract type="html">The transaction ID of the authorization to be captured</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/card</TokenIdentifier>
+			<Abstract type="html">The stored card, if any, associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYStoredCard *card</Declaration>
 			
 			
-			<Anchor>//api/name/transactionId</Anchor>
+			<Anchor>//api/name/card</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentCapture/transactionId</TokenIdentifier>
-			<Abstract type="html">The transaction ID of the authorization to be captured</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentMethod/card</TokenIdentifier>
+			<Abstract type="html">The stored card, if any, associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYStoredCard *card</Declaration>
 			
 			
-			<Anchor>//api/name/transactionId</Anchor>
+			<Anchor>//api/name/card</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/setExtendedInformation:</TokenIdentifier>
-			<Abstract type="html">Additional card data that the merchant may wish to include with the transaction</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/setCheck:</TokenIdentifier>
+			<Abstract type="html">The stored check, if any, associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYStoredCheck *check</Declaration>
 			
 			
-			<Anchor>//api/name/extendedInformation</Anchor>
+			<Anchor>//api/name/check</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentCapture/extendedInformation</TokenIdentifier>
-			<Abstract type="html">Additional card data that the merchant may wish to include with the transaction</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/check</TokenIdentifier>
+			<Abstract type="html">The stored check, if any, associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYStoredCheck *check</Declaration>
 			
 			
-			<Anchor>//api/name/extendedInformation</Anchor>
+			<Anchor>//api/name/check</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentCapture/extendedInformation</TokenIdentifier>
-			<Abstract type="html">Additional card data that the merchant may wish to include with the transaction</Abstract>
-			<DeclaredIn>WPYPaymentCapture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentMethod/check</TokenIdentifier>
+			<Abstract type="html">The stored check, if any, associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYStoredCheck *check</Declaration>
 			
 			
-			<Anchor>//api/name/extendedInformation</Anchor>
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/setNotes:</TokenIdentifier>
+			<Abstract type="html">Notes associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
+			
+			
+			<Anchor>//api/name/notes</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/notes</TokenIdentifier>
+			<Abstract type="html">Notes associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
+			
+			
+			<Anchor>//api/name/notes</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentMethod/notes</TokenIdentifier>
+			<Abstract type="html">Notes associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
+			
+			
+			<Anchor>//api/name/notes</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/setPrimary:</TokenIdentifier>
+			<Abstract type="html">A flag indicating whether the payment method is the primary method associated with the customer</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/primary</TokenIdentifier>
+			<Abstract type="html">A flag indicating whether the payment method is the primary method associated with the customer</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentMethod/primary</TokenIdentifier>
+			<Abstract type="html">A flag indicating whether the payment method is the primary method associated with the customer</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/setLastAccessDate:</TokenIdentifier>
+			<Abstract type="html">Date that the payment method was last used</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastAccessDate</Declaration>
+			
+			
+			<Anchor>//api/name/lastAccessDate</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/lastAccessDate</TokenIdentifier>
+			<Abstract type="html">Date that the payment method was last used</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastAccessDate</Declaration>
+			
+			
+			<Anchor>//api/name/lastAccessDate</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentMethod/lastAccessDate</TokenIdentifier>
+			<Abstract type="html">Date that the payment method was last used</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastAccessDate</Declaration>
+			
+			
+			<Anchor>//api/name/lastAccessDate</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/setUserDefinedFields:</TokenIdentifier>
+			<Abstract type="html">Customer definied data associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedFields</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentMethod/userDefinedFields</TokenIdentifier>
+			<Abstract type="html">Customer definied data associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedFields</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentMethod/userDefinedFields</TokenIdentifier>
+			<Abstract type="html">Customer definied data associated with the payment method</Abstract>
+			<DeclaredIn>WPYPaymentMethod.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedFields</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		

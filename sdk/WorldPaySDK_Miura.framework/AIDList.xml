@@ -61,5 +61,7 @@
       <add key="A0000000152010" value="Credit"/>
       <!-- INTERAC -->
       <add key="A0000000277010" value="Credit"/>
+      <!-- JCB -->
+      <add key="A0000000651010" value="CreditDebit"/>
   </Applications>
 </configuration>

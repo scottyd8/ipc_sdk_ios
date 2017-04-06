@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WPYSwiper.h"
+#import "WPYTransactionUpdate.h"
 
 @protocol WPYSwiperDelegate;
 @class WPYAuthTokenRequest;
@@ -47,6 +48,21 @@ typedef NS_ENUM(NSInteger, WorldpaySDKError)
     WorldpaySDKErrorInvalidRequestTypeForTender = 100002,
     /// self-explanatory
     WorldpaySDKErrorTerminalConnectionLost = 100003
+};
+
+/**
+ * Enum for environments
+ */
+typedef NS_ENUM(NSInteger, WPYEnvironment)
+{
+    /// self-explanatory
+    WPYEnvironmentDemo = 0,
+    /// self-explanatory
+    WPYEnvironmentProd = 1,
+    /// self-explanatory, remove these when building release version and generating docs
+    WPYEnvironmentQA = 67,
+    /// self-explanatory, remove these when building release version and generating docs
+    WPYEnvironmentDev = 93
 };
 
 
@@ -108,12 +124,21 @@ extern NSString *const WorldpayServerErrorDomain;
 /**
  * Authenticates user credentials against the World Pay server. The token
  * will automatically be saved in the application keychain by the SDK and
- * can be removed by calling: - clearSDKKeychain
+ * can be removed by calling: - clearSDKKeychain.
  *
  * @param authTokenRequest Auth Token Request object containing user credentials
  * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)generateAuthToken:(WPYAuthTokenRequest *)authTokenRequest withCompletion:(void(^)(WPYAuthTokenResponse *, NSError *))completion;
+
+/**
+ * This will choose the environment to be used to run API calls in. It can only be called once
+ * per application run, subsequent calls attempting to change it will be ignored. This method must be called
+ * before running any API calls and ideally should be called in AppDelegate.
+ *
+ * @param environment enumerated value for environment (e.g. demo, prod)
+ */
+- (void)registerEnvironment: (WPYEnvironment)environment;
 
 /**
  * Clears the keychain data out of the application. Completely resets the auth token information
@@ -297,12 +322,26 @@ extern NSString *const WorldpayServerErrorDomain;
 - (void)searchTransactions:(WPYTransactionSearch *)searchParams withCompletion:(void(^)(WPYTransactionSearchResponse *, NSError *))completion;
 
 /**
+ * Update transactions
+ *
+ * @param request request object which contains info of the transaction which needs to be updated
+ * @param completion Completion handler used to notify the caller of any server results or errors
+ */
+
+
+- (void)updateTransaction:(WPYTransactionUpdate *)request withCompletion:(void(^)(WPYTransactionResponse *, NSError *))completion;
+
+/**
  * Get transactions in the current batch
  *
  * @param batchId Batch identifier for transactions
  * @param completion Completion handler used to notify the caller of any server results or errors
  */
 - (void)getTransactionsInBatch:(NSString *)batchId withCompletion:(void(^)(WPYBatchResponse *, NSError *))completion;
+
+
+
+
 @end
 
 /**

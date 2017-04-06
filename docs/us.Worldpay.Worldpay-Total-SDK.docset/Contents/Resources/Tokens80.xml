@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardEvent.html">
+	<File path="Constants/WPYCustomerDuplicateCheckType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardEvent</TokenIdentifier>
-			<Abstract type="html">This notifies the application developer when certain types of events have occurred.  Some of the events may not be
-supported on all hardware.  For instance, not all terminals notify the SDK when a card has been remved from the chip
-reader</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCustomerDuplicateCheckType</TokenIdentifier>
+			<Abstract type="html">indicates how the method should behave if the Customer ID already exists. Default is 0.</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
 			
 			<NodeRef refid="80"/>
@@ -16,61 +14,31 @@ reader</Abstract>
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventSwiped</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventSwiped</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeUnset</TokenIdentifier>
+            <Abstract type="html">Unset</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeUnset</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="80"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventInserted</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventInserted</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
             <NodeRef refid="80"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventRemoved</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventRemoved</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeError</TokenIdentifier>
+            <Abstract type="html">If Customer ID exists then return an Error.</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeError</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="80"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventNonICCInserted</TokenIdentifier>
-            <Abstract type="html">Card inserted backwards or a non-chip card was inserted</Abstract>
-            <Declaration>WPYCardEventNonICCInserted</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
             <NodeRef refid="80"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventBadSwipe</TokenIdentifier>
-            <Abstract type="html">Partial or no track data received</Abstract>
-            <Declaration>WPYCardEventBadSwipe</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeContinue</TokenIdentifier>
+            <Abstract type="html">If Customer ID exists then do not add account but continue with transaction.</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeContinue</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="80"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventIccCardSwiped</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventIccCardSwiped</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
             <NodeRef refid="80"/>
         </Token>
