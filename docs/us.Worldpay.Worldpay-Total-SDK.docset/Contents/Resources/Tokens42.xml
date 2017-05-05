@@ -17,7 +17,7 @@
 			<Abstract type="html">The cardholder&apos;s first name</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
 			<Anchor>//api/name/firstName</Anchor>
@@ -29,7 +29,7 @@
 			<Abstract type="html">The cardholder&apos;s first name</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
 			<Anchor>//api/name/firstName</Anchor>
@@ -41,7 +41,7 @@
 			<Abstract type="html">The cardholder&apos;s first name</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
 			
 			
 			<Anchor>//api/name/firstName</Anchor>
@@ -53,7 +53,7 @@
 			<Abstract type="html">The cardholder&apos;s last name</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
 			<Anchor>//api/name/lastName</Anchor>
@@ -65,7 +65,7 @@
 			<Abstract type="html">The cardholder&apos;s last name</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
 			<Anchor>//api/name/lastName</Anchor>
@@ -77,7 +77,7 @@
 			<Abstract type="html">The cardholder&apos;s last name</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
 			
 			
 			<Anchor>//api/name/lastName</Anchor>
@@ -452,7 +452,7 @@ not, then the card was read as MSR because there were no supported applications 
 			<Abstract type="html">Flag indicating whether or not a successful transaction should include a signature</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL signatureRequired</Declaration>
 			
 			
 			<Anchor>//api/name/signatureRequired</Anchor>
@@ -464,7 +464,7 @@ not, then the card was read as MSR because there were no supported applications 
 			<Abstract type="html">Flag indicating whether or not a successful transaction should include a signature</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL signatureRequired</Declaration>
 			
 			
 			<Anchor>//api/name/signatureRequired</Anchor>
@@ -476,7 +476,7 @@ not, then the card was read as MSR because there were no supported applications 
 			<Abstract type="html">Flag indicating whether or not a successful transaction should include a signature</Abstract>
 			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL signatureRequired</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL signatureRequired</Declaration>
 			
 			
 			<Anchor>//api/name/signatureRequired</Anchor>
