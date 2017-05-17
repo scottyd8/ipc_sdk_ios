@@ -47,11 +47,11 @@ typedef NS_ENUM(NSInteger, WPYCardSource)
 /**
  * The cardholder's first name
  */
-@property (nonatomic, readonly) NSString *firstName;
+@property (nonatomic, strong) NSString *firstName;
 /**
  * The cardholder's last name
  */
-@property (nonatomic, readonly) NSString *lastName;
+@property (nonatomic, strong) NSString *lastName;
 /**
  * Card expiration month
  */
@@ -96,7 +96,7 @@ typedef NS_ENUM(NSInteger, WPYCardSource)
 /**
  * Flag indicating whether or not a successful transaction should include a signature
  */
-@property (nonatomic, readonly) BOOL signatureRequired;
+@property (nonatomic, assign) BOOL signatureRequired;
 /**
  * The Application ID associated with an EMV transaction
  */

@@ -10,7 +10,7 @@
 
 @interface LabeledTextField ()
 
-@property (nonatomic, weak) IBOutlet UITextField * textField;
+
 @property (nonatomic, weak) IBOutlet UILabel * label;
 @property (nonatomic, strong) IBOutlet UIView * view;
 

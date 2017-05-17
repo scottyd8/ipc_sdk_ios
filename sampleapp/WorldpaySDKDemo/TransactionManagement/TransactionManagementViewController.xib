@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AdelleSans_Regular.otf">
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionManagementViewController">
+            <connections>
+                <outlet property="getTransactionDataButton" destination="gzU-yY-Y5D" id="z6d-q0-njo"/>
+                <outlet property="transactionSearchButton" destination="h8L-oT-8c6" id="eOZ-Fa-Gz3"/>
+                <outlet property="transactionUpdateButton" destination="OIs-Og-d49" id="9hP-gq-nc0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-oT-8c6">
+                    <rect key="frame" x="50" y="225" width="500" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.53757482767105103" blue="0.47982865571975708" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="hLt-B7-Gi4"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yAf-uH-2lw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
+                    <state key="normal" title="Transaction Search">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="transactionSearch:" destination="-1" eventType="touchUpInside" id="vf9-VC-FDy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIs-Og-d49">
+                    <rect key="frame" x="50" y="300" width="500" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.53757482767105103" blue="0.47982865571975708" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vPs-gw-53V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
+                    <state key="normal" title="Transaction Update">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="transactionUpdate:" destination="-1" eventType="touchUpInside" id="Cvr-Uk-AOK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzU-yY-Y5D">
+                    <rect key="frame" x="50" y="150" width="500" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.53757482767105103" blue="0.47982865571975708" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="rpB-W3-Bt5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
+                    <state key="normal" title="Get Transaction Data">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="getTransactionData:" destination="-1" eventType="touchUpInside" id="Tkf-PL-7ZO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="OIs-Og-d49" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="31T-zV-FW6"/>
+                <constraint firstItem="h8L-oT-8c6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Yg-RY-x5R"/>
+                <constraint firstItem="OIs-Og-d49" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8cC-c8-8YD"/>
+                <constraint firstItem="h8L-oT-8c6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="APW-4a-bh9"/>
+                <constraint firstItem="h8L-oT-8c6" firstAttribute="top" secondItem="gzU-yY-Y5D" secondAttribute="bottom" constant="25" id="Ak6-V0-hml"/>
+                <constraint firstItem="gzU-yY-Y5D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Tfg-7Q-ELz"/>
+                <constraint firstAttribute="trailing" secondItem="h8L-oT-8c6" secondAttribute="trailing" constant="50" id="Vkh-en-UNd"/>
+                <constraint firstItem="gzU-yY-Y5D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="Xvp-CI-kSr"/>
+                <constraint firstItem="gzU-yY-Y5D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a3H-jc-DOB"/>
+                <constraint firstItem="OIs-Og-d49" firstAttribute="top" secondItem="h8L-oT-8c6" secondAttribute="bottom" constant="25" id="dWe-1I-m9N"/>
+                <constraint firstAttribute="trailing" secondItem="OIs-Og-d49" secondAttribute="trailing" constant="50" id="lMS-me-o0c"/>
+                <constraint firstAttribute="trailing" secondItem="gzU-yY-Y5D" secondAttribute="trailing" constant="50" id="wOk-df-h8X"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="70.5"/>
+        </view>
+    </objects>
+</document>

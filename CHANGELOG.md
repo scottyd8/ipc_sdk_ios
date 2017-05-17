@@ -1,9 +1,29 @@
-## [1.0.32] – 2017 – 05 -05
+## [1.0.33] - 2017-05-17
+
+### Added 
+-   iOS  Demo App Enhancements
+-   New transactions flows added
+-   Retrieve transaction
+-   Search transactions
+-   Update Transactions
+-   Capture functionality
+-   Manual card entry on PED
+
+### Fixed 
+-   Unsettled debit transactions now correctly fall back to void
+-   When this void occurs, the entire transaction will be voided, including cashback amounts
+-   This must be taken into account by the merchant when processing a void on debit
+-   Assorted bug fixes
+
+
+
+
+## [1.0.32] - 2017-05-05
 ### Added
 -	iOS SDK Documentation Update
 
 
-## [1.0.32] – 2017 – 04 -24
+## [1.0.32] - 2017-04-24
 ### Added 
 -	Tip functionality on Pin-pad
 -	Debit cashback support 

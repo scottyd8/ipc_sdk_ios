@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LabeledTextField : UIView
-
+@property (nonatomic, weak) IBOutlet UITextField * textField;
 - (void) setTextFieldDelegate: (id <UITextFieldDelegate>) delegate;
 - (void) setLabelText: (NSString *) string;
 - (NSString *) text;

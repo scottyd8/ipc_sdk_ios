@@ -244,7 +244,9 @@
     
     CHECKAUTHTOKEN();
     
-    if([self.cardPresentSegmented selectedSegmentIndex] == YESINDEX && [self.swiper connectionState] != WPYSwiperConnected)
+    // As we are using the terminal for manual card entry, we must check if the terminal is connected. Manual card entry through the mobile device does not require a connection to the terminal
+    
+    if(([self.cardPresentSegmented selectedSegmentIndex] == YESINDEX || [self.cardPresentSegmented selectedSegmentIndex] == NOINDEX) && [self.swiper connectionState] != WPYSwiperConnected)
     {
         [self.swiper connectSwiperWithInputType:WPYSwiperInputTypeBluetooth];
         
@@ -383,13 +385,26 @@
     
     if([self.cardPresentSegmented selectedSegmentIndex] == NOINDEX)
     {
-        WPYManualTenderEntryViewController *tenderViewController = [[WPYManualTenderEntryViewController alloc] initWithDelegate:self tenderType:WPYManualTenderTypeCredit request:request];
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tenderViewController];
+//        // This method can be used if card data can not be entered over terminal
+//        WPYManualTenderEntryViewController *tenderViewController = [[WPYManualTenderEntryViewController alloc] initWithDelegate:self tenderType:WPYManualTenderTypeCredit request:request];
+//        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tenderViewController];
+//        
+//        navigationController.modalPresentationStyle = tenderViewController.modalPresentationStyle;
+//        navigationController.navigationBar.translucent = NO;
+//        navigationController.navigationBar.barStyle = UIBarStyleDefault;
+//        [self presentViewController:navigationController animated:YES completion:nil];
         
-        navigationController.modalPresentationStyle = tenderViewController.modalPresentationStyle;
-        navigationController.navigationBar.translucent = NO;
-        navigationController.navigationBar.barStyle = UIBarStyleDefault;
-        [self presentViewController:navigationController animated:YES completion:nil];
+        [self startTransactionProgress];
+        
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"" message:@"Enter card details on terminal" preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self cleanAlertUserAction:YES];
+        }]];
+        
+        [self displayAlert:alert];
+        
+        [self.swiper beginManualTransactionWithRequest:request];
     }
     else if([self.cardPresentSegmented selectedSegmentIndex] == YESINDEX)
     {

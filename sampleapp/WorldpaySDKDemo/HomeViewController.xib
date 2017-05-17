@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -41,7 +42,7 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit_card_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-Fp-UR8">
-                    <rect key="frame" x="100" y="199" width="40" height="40"/>
+                    <rect key="frame" x="99" y="199" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="bAs-Fp-UR8" secondAttribute="height" multiplier="1:1" id="3ph-z3-PbB"/>
                     </constraints>
@@ -64,7 +65,7 @@
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6O-69-Zlw" userLabel="Spacer 1">
                     <rect key="frame" x="300" y="244" width="0.0" height="44"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" id="3rK-NP-7zM"/>
                         <constraint firstAttribute="height" constant="44" id="9Yk-eT-P90"/>
@@ -72,7 +73,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-uT-oGX" userLabel="Spacer 2">
                     <rect key="frame" x="300" y="338" width="0.0" height="44"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldpay_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Ic-cov">
                     <rect key="frame" x="175" y="100" width="250" height="50"/>
@@ -82,43 +83,43 @@
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refund_void_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kHC-0b-tsK">
-                    <rect key="frame" x="100" y="293" width="40" height="40"/>
+                    <rect key="frame" x="99" y="293" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="kHC-0b-tsK" secondAttribute="height" multiplier="1:1" id="4iu-c9-Sjm"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settlement" translatesAutoresizingMaskIntoConstraints="NO" id="11n-XZ-1Na">
-                    <rect key="frame" x="100" y="387" width="40" height="40"/>
+                    <rect key="frame" x="99" y="387" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="11n-XZ-1Na" secondAttribute="height" multiplier="1:1" id="rPv-rI-56U"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cra-U3-C5g" userLabel="Spacer 3">
                     <rect key="frame" x="300" y="432" width="0.0" height="44"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" id="HbH-Xh-iqU"/>
                     </constraints>
                 </view>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNn-Fk-IJO">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNn-Fk-IJO">
                     <rect key="frame" x="75" y="476" width="450" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="sOj-Jt-MzV"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="15"/>
-                    <state key="normal" title="Vault"/>
+                    <state key="normal" title="Manage Transactions"/>
                     <connections>
                         <action selector="vault:" destination="-1" eventType="touchUpInside" id="myB-FF-y1y"/>
                     </connections>
                 </button>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vault_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NqV-Fi-9Jx">
-                    <rect key="frame" x="100" y="481" width="40" height="40"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vault_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NqV-Fi-9Jx">
+                    <rect key="frame" x="99" y="481" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="NqV-Fi-9Jx" secondAttribute="height" multiplier="1:1" id="zjL-pg-Hmx"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="jXS-Cr-EBS" firstAttribute="leading" secondItem="bAs-Fp-UR8" secondAttribute="trailing" constant="-64.5" id="0Tk-1o-GPc"/>
                 <constraint firstItem="bAs-Fp-UR8" firstAttribute="height" secondItem="jXS-Cr-EBS" secondAttribute="height" multiplier="4:5" id="1WZ-kd-Igf"/>
@@ -160,7 +161,7 @@
                 <constraint firstItem="w6O-69-Zlw" firstAttribute="centerX" secondItem="jXS-Cr-EBS" secondAttribute="centerX" id="ueU-ox-IfI"/>
                 <constraint firstItem="KJ2-TG-uyF" firstAttribute="top" secondItem="w6O-69-Zlw" secondAttribute="bottom" id="v9j-BM-iSN"/>
             </constraints>
-            <point key="canvasLocation" x="318" y="343"/>
+            <point key="canvasLocation" x="318" y="384"/>
         </view>
     </objects>
     <resources>

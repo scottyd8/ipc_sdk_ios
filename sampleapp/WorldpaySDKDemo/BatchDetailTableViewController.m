@@ -22,7 +22,13 @@
 
 - (instancetype)initWithTransactions:(NSArray<WPYTransaction *> *) transactions batchId: (NSString *) batchId
 {
-    if((self = [super initWithStyle:UITableViewStylePlain]))
+    if((batchId == nil) && (self = [super initWithStyle:UITableViewStylePlain]))
+    {
+        self.transactions = transactions;
+        
+        self.title = [NSString stringWithFormat:@"Results"];
+    }
+    else if((self = [super initWithStyle:UITableViewStylePlain]))
     {
         self.transactions = transactions;
         self.title = [NSString stringWithFormat:@"Batch %@", batchId];

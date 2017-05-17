@@ -46,8 +46,6 @@
 		859D8EB41DB01D9E006BD88E /* CustomerPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 859D8EB01DB01D9E006BD88E /* CustomerPaymentViewController.xib */; };
 		85A5A98A1DB939390000513B /* WorldPaySDK_AC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5A9891DB939390000513B /* WorldPaySDK_AC.framework */; };
 		85A5A98B1DB939390000513B /* WorldPaySDK_AC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5A9891DB939390000513B /* WorldPaySDK_AC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		85A5A98E1DB939530000513B /* WorldPaySDK_Miura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5A98D1DB939530000513B /* WorldPaySDK_Miura.framework */; };
-		85A5A98F1DB939530000513B /* WorldPaySDK_Miura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5A98D1DB939530000513B /* WorldPaySDK_Miura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85E7B8CD1DDE39F00075B78B /* CustomerPaymentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E7B8CB1DDE39F00075B78B /* CustomerPaymentDetailViewController.m */; };
 		85E7B8CE1DDE39F00075B78B /* CustomerPaymentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E7B8CB1DDE39F00075B78B /* CustomerPaymentDetailViewController.m */; };
 		85E7B8CF1DDE39F00075B78B /* CustomerPaymentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E7B8CC1DDE39F00075B78B /* CustomerPaymentDetailViewController.xib */; };
@@ -134,6 +132,16 @@
 		8CDEB6C41DA8105100F81B63 /* ExtendedInformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEB6C21DA8105100F81B63 /* ExtendedInformationView.m */; };
 		8CDEB6C61DA8106600F81B63 /* ExtendedInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEB6C51DA8106600F81B63 /* ExtendedInformationView.xib */; };
 		8CDEB6C71DA8106600F81B63 /* ExtendedInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEB6C51DA8106600F81B63 /* ExtendedInformationView.xib */; };
+		E78868E11E8D64400007FCC2 /* GetTransactionDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78868DF1E8D64400007FCC2 /* GetTransactionDataViewController.m */; };
+		E78868E21E8D64400007FCC2 /* GetTransactionDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78868E01E8D64400007FCC2 /* GetTransactionDataViewController.xib */; };
+		E78BB1E51E8B4E4100E8C7E2 /* WorldPaySDK_Miura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5A98D1DB939530000513B /* WorldPaySDK_Miura.framework */; };
+		E78BB1E61E8B4E4100E8C7E2 /* WorldPaySDK_Miura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5A98D1DB939530000513B /* WorldPaySDK_Miura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E79F47171E8C4C9000256CBD /* TransactionManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79F47151E8C4C9000256CBD /* TransactionManagementViewController.m */; };
+		E79F47181E8C4C9000256CBD /* TransactionManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79F47161E8C4C9000256CBD /* TransactionManagementViewController.xib */; };
+		E7B021901E8EDD0D005445D0 /* TransactionUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0218E1E8EDD0D005445D0 /* TransactionUpdateViewController.m */; };
+		E7B021911E8EDD0D005445D0 /* TransactionUpdateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B0218F1E8EDD0D005445D0 /* TransactionUpdateViewController.xib */; };
+		E7D87CB91E8DB44300C3B1EC /* TransactionSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D87CB71E8DB44300C3B1EC /* TransactionSearchViewController.m */; };
+		E7D87CBA1E8DB44300C3B1EC /* TransactionSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D87CB81E8DB44300C3B1EC /* TransactionSearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,13 +173,13 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85B368071DB933DA00358F86 /* Embed Frameworks */ = {
+		E78BB1E71E8B4E4200E8C7E2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				85A5A98F1DB939530000513B /* WorldPaySDK_Miura.framework in Embed Frameworks */,
+				E78BB1E61E8B4E4100E8C7E2 /* WorldPaySDK_Miura.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +289,18 @@
 		8CDEB6C11DA8105100F81B63 /* ExtendedInformationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedInformationView.h; sourceTree = "<group>"; };
 		8CDEB6C21DA8105100F81B63 /* ExtendedInformationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedInformationView.m; sourceTree = "<group>"; };
 		8CDEB6C51DA8106600F81B63 /* ExtendedInformationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtendedInformationView.xib; sourceTree = "<group>"; };
+		E78868DE1E8D64400007FCC2 /* GetTransactionDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTransactionDataViewController.h; sourceTree = "<group>"; };
+		E78868DF1E8D64400007FCC2 /* GetTransactionDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTransactionDataViewController.m; sourceTree = "<group>"; };
+		E78868E01E8D64400007FCC2 /* GetTransactionDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetTransactionDataViewController.xib; sourceTree = "<group>"; };
+		E79F47141E8C4C9000256CBD /* TransactionManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionManagementViewController.h; sourceTree = "<group>"; };
+		E79F47151E8C4C9000256CBD /* TransactionManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionManagementViewController.m; sourceTree = "<group>"; };
+		E79F47161E8C4C9000256CBD /* TransactionManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionManagementViewController.xib; sourceTree = "<group>"; };
+		E7B0218D1E8EDD0D005445D0 /* TransactionUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionUpdateViewController.h; sourceTree = "<group>"; };
+		E7B0218E1E8EDD0D005445D0 /* TransactionUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionUpdateViewController.m; sourceTree = "<group>"; };
+		E7B0218F1E8EDD0D005445D0 /* TransactionUpdateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionUpdateViewController.xib; sourceTree = "<group>"; };
+		E7D87CB61E8DB44300C3B1EC /* TransactionSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionSearchViewController.h; sourceTree = "<group>"; };
+		E7D87CB71E8DB44300C3B1EC /* TransactionSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionSearchViewController.m; sourceTree = "<group>"; };
+		E7D87CB81E8DB44300C3B1EC /* TransactionSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionSearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,7 +323,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A5A98E1DB939530000513B /* WorldPaySDK_Miura.framework in Frameworks */,
+				E78BB1E51E8B4E4100E8C7E2 /* WorldPaySDK_Miura.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +467,7 @@
 				85E7B8CA1DDE39F00075B78B /* CustomerPaymentDetailViewController.h */,
 				85E7B8CB1DDE39F00075B78B /* CustomerPaymentDetailViewController.m */,
 				85E7B8CC1DDE39F00075B78B /* CustomerPaymentDetailViewController.xib */,
+				E732E0011E8C0128009A771A /* TransactionManagement */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -514,6 +535,25 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		E732E0011E8C0128009A771A /* TransactionManagement */ = {
+			isa = PBXGroup;
+			children = (
+				E79F47141E8C4C9000256CBD /* TransactionManagementViewController.h */,
+				E79F47151E8C4C9000256CBD /* TransactionManagementViewController.m */,
+				E79F47161E8C4C9000256CBD /* TransactionManagementViewController.xib */,
+				E78868DE1E8D64400007FCC2 /* GetTransactionDataViewController.h */,
+				E78868DF1E8D64400007FCC2 /* GetTransactionDataViewController.m */,
+				E78868E01E8D64400007FCC2 /* GetTransactionDataViewController.xib */,
+				E7D87CB61E8DB44300C3B1EC /* TransactionSearchViewController.h */,
+				E7D87CB71E8DB44300C3B1EC /* TransactionSearchViewController.m */,
+				E7D87CB81E8DB44300C3B1EC /* TransactionSearchViewController.xib */,
+				E7B0218D1E8EDD0D005445D0 /* TransactionUpdateViewController.h */,
+				E7B0218E1E8EDD0D005445D0 /* TransactionUpdateViewController.m */,
+				E7B0218F1E8EDD0D005445D0 /* TransactionUpdateViewController.xib */,
+			);
+			path = TransactionManagement;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,7 +601,7 @@
 				814EDBF51C69636E0010877C /* Sources */,
 				814EDBFA1C69636E0010877C /* Frameworks */,
 				814EDBFD1C69636E0010877C /* Resources */,
-				85B368071DB933DA00358F86 /* Embed Frameworks */,
+				E78BB1E71E8B4E4200E8C7E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -583,10 +623,14 @@
 				TargetAttributes = {
 					811A0D5B1BB2F20100B73C09 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9ZCF6P76B8;
 					};
 					811A0D771BB2F20100B73C09 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 814EDBF41C69636E0010877C;
+					};
+					814EDBF41C69636E0010877C = {
+						DevelopmentTeam = L9BL2S98Z6;
 					};
 				};
 			};
@@ -661,6 +705,7 @@
 				814EDBFF1C69636E0010877C /* LaunchScreen.xib in Resources */,
 				859D8E981DB0163F006BD88E /* VaultViewController.xib in Resources */,
 				89D200081DAEB6DC0090C9AE /* SettlementViewController.xib in Resources */,
+				E78868E21E8D64400007FCC2 /* GetTransactionDataViewController.xib in Resources */,
 				85E7B8EC1DEDDF900075B78B /* PaymentMethodView.xib in Resources */,
 				85824BD31DC923B000CD6052 /* LabeledDropDownTextField.xib in Resources */,
 				896A6ED21DAC095600FD8F77 /* CardDataCell.xib in Resources */,
@@ -679,9 +724,12 @@
 				896A6ED01DAC094D00FD8F77 /* TransactionDetailCell.xib in Resources */,
 				8C068D021DA4147F00578C9D /* Main.storyboard in Resources */,
 				896A6ED71DAC137600FD8F77 /* TransactionDetailViewController.xib in Resources */,
+				E79F47181E8C4C9000256CBD /* TransactionManagementViewController.xib in Resources */,
+				E7D87CBA1E8DB44300C3B1EC /* TransactionSearchViewController.xib in Resources */,
 				859D8EB41DB01D9E006BD88E /* CustomerPaymentViewController.xib in Resources */,
 				850C57591DCA53E300B1F6B0 /* HomeViewController.xib in Resources */,
 				896A6ED61DAC096900FD8F77 /* CustomerCell.xib in Resources */,
+				E7B021911E8EDD0D005445D0 /* TransactionUpdateViewController.xib in Resources */,
 				85E7B8CF1DDE39F00075B78B /* CustomerPaymentDetailViewController.xib in Resources */,
 				896A6EE01DAC267800FD8F77 /* SignatureViewController.xib in Resources */,
 				85E7B8DA1DE366620075B78B /* LabeledSegmentedControl.xib in Resources */,
@@ -761,13 +809,17 @@
 				8CDEB6C41DA8105100F81B63 /* ExtendedInformationView.m in Sources */,
 				896A6ECF1DAC094600FD8F77 /* TransactionDetailCell.m in Sources */,
 				896A6EE41DAC321B00FD8F77 /* LandscapeNavigationController.m in Sources */,
+				E7B021901E8EDD0D005445D0 /* TransactionUpdateViewController.m in Sources */,
 				8C2B20B31DA3F23500643EEB /* TransactionViewController.m in Sources */,
 				89D2000C1DAEC9780090C9AE /* BatchDetailTableViewController.m in Sources */,
+				E79F47171E8C4C9000256CBD /* TransactionManagementViewController.m in Sources */,
+				E7D87CB91E8DB44300C3B1EC /* TransactionSearchViewController.m in Sources */,
 				85824BC61DC9175700CD6052 /* LabeledTextField.m in Sources */,
 				85E7B8E51DE3A3BD0075B78B /* NSDictionary+Worldpay.m in Sources */,
 				8CAE8A831DA6A26A006DBC36 /* UIFont+Worldpay.m in Sources */,
 				896A6ED51DAC096500FD8F77 /* CustomerCell.m in Sources */,
 				859D8E9D1DB01D59006BD88E /* CustomerViewController.m in Sources */,
+				E78868E11E8D64400007FCC2 /* GetTransactionDataViewController.m in Sources */,
 				859D8E961DB0163F006BD88E /* VaultViewController.m in Sources */,
 				85E7B8D71DE3664E0075B78B /* LabeledSegmentedControl.m in Sources */,
 				896A6ED31DAC095D00FD8F77 /* BillingAddressCell.m in Sources */,
@@ -989,15 +1041,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = L9BL2S98Z6;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					../sdk,
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/WorldpaySDKDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1005,6 +1061,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.worldpay.ipc.miurademo;
 				PRODUCT_NAME = WorldpaySDKDemo;
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -1012,6 +1069,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = L9BL2S98Z6;
@@ -1021,6 +1080,7 @@
 					"$(PROJECT_DIR)",
 					../sdk,
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/WorldpaySDKDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

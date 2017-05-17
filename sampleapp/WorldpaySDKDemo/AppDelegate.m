@@ -11,6 +11,7 @@
 #import "SettlementViewController.h"
 #import "VaultViewController.h"
 #import "HomeViewController.h"
+#import "TransactionManagementViewController.h"
 
 #ifdef ANYWHERE_NOMAD
 #import <WorldPaySDK_AC/WorldPaySDK.h>
@@ -21,11 +22,12 @@
 #define TABSIZE 10
 #define TEXTFIELDSIZE 14
 
-@interface AppDelegate () <UISplitViewControllerDelegate>
+@interface AppDelegate () <UISplitViewControllerDelegate, WPYDebugDelegate>
 
 @end
 
 @implementation AppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -33,11 +35,14 @@
     
     WPYAuthTokenRequest *authTokenRequest = [[WPYAuthTokenRequest alloc] init];
     
-    authTokenRequest.secureNetId = @""; // SET ME
-    authTokenRequest.secureNetKey = @""; // SET ME
+    authTokenRequest.secureNetId = @"8005812";
+    authTokenRequest.secureNetKey = @"tcfOg/GvPNm8";
     authTokenRequest.applicationId = @"applicationId";
     authTokenRequest.terminalId = @"445";
     authTokenRequest.terminalVendor = @"4554";
+    
+    [WorldpayAPI instance].enableTestHostDebug = YES;
+    [WorldpayAPI instance].debugDelegate = self;
     
     // This must be called prior to any API calls being made or the SDK will assert and exit()
     [[WorldpayAPI instance] registerEnvironment: WPYEnvironmentDemo];
@@ -107,7 +112,12 @@
     UINavigationController * vaultNav = [[UINavigationController alloc] initWithRootViewController: vaultViewController];
     vaultNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[((UIViewController *)[[vaultNav viewControllers] firstObject]) title] image:[self imageWithImage:[UIImage imageNamed:@"vault_icon"]] tag:[index current]];
     
-    tabController.viewControllers = @[homeNav, transactionNav, refundVoidNav, settlementNav];
+    // 6th tab for Transaction Management
+    TransactionManagementViewController * transactionMgmtViewController = [[TransactionManagementViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController * transactionMgmtNav = [[UINavigationController alloc] initWithRootViewController: transactionMgmtViewController];
+    transactionMgmtNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[((UIViewController *)[[transactionMgmtNav viewControllers] firstObject]) title] image:[self imageWithImage:[UIImage imageNamed:@"vault_icon"]] tag:[index current]];
+    
+    tabController.viewControllers = @[homeNav, transactionNav, refundVoidNav, settlementNav, transactionMgmtNav];
     
     return YES;
 }
@@ -148,6 +158,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)didReceiveResponse:(NSString *)response
+{
+    NSLog(@"Response: %@", response);
+}
+
+- (void)willSendRequest:(NSString *)request
+{
+    NSLog(@"Request: %@", request);
 }
 
 @end
