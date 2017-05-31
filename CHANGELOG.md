@@ -1,3 +1,11 @@
+## [1.0.33] - 2017-05-24
+
+### Changed 
+-   The framework has been split into 2 separate binaries to support simulator or device builds
+-   The device framework is located in the root sdk folder
+-   The simulator framework is located at sdk/simulator-support
+-   Simulator frameworks cannot be submitted to the App Store and are for testing only
+
 ## [1.0.33] - 2017-05-17
 
 ### Added 
