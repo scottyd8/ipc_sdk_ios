@@ -1,9 +1,9 @@
 //
 //  WPYMailOrTelephoneOrderData.h
-//  WorldPaySDK
+//  WorldpaySDK
 //
 //  Created by Jonas Whidden on 12/28/16.
-//  Copyright © 2016 WorldPay. All rights reserved.
+//  Copyright © 2016 Worldpay. All rights reserved.
 //
 
 #import "WPYDomainObject.h"

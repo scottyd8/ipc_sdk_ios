@@ -1,9 +1,9 @@
 //
 //  WPYMiuraPrivate.h
-//  WorldPaySDK
+//  WorldpaySDK
 //
 //  Created by Jonas Whidden on 3/7/17.
-//  Copyright © 2017 WorldPay. All rights reserved.
+//  Copyright © 2017 Worldpay. All rights reserved.
 //
 
 #import "WPYSwiperPrivate.h"
@@ -22,6 +22,7 @@
 
 
 typedef enum : NSUInteger {
+    IdleState,
     InitialState,
     ApplicationSelectionState,
     DebitCreditState,
@@ -29,6 +30,7 @@ typedef enum : NSUInteger {
     ConfirmAmountState,
     CashbackState,
     PinState,
+    PinRetryState,
     FinalState
 } TransactionFlowState;
 
@@ -36,37 +38,40 @@ typedef enum : NSUInteger {
 
 @interface WPYMiura () <MiuraDeviceControllerDelegate>
 
-@property (strong, nonatomic) NSDateFormatter *expirationDateFormatter;
-@property (strong, nonatomic) NSDateFormatter *terminalTimeFormatter;
-@property (strong, nonatomic) NSNumberFormatter *currencyFormatter;
-@property (strong, nonatomic) NSNumberFormatter *decimalFormatter;
+@property (strong, nonatomic) NSDateFormatter * _Nullable expirationDateFormatter;
+@property (strong, nonatomic) NSDateFormatter * _Nullable terminalTimeFormatter;
+@property (strong, nonatomic) NSNumberFormatter * _Nullable currencyFormatter;
+@property (strong, nonatomic) NSNumberFormatter * _Nullable decimalFormatter;
 @property (nonatomic) WPYCardInputType cardInputType;
-@property (nonatomic, strong) WPYTenderedCard *pendingCard;
-@property (nonatomic, strong) WPYPaymentRequest *currRequest;
-@property (nonatomic, strong) WPYPaymentResponse *currentResponse;
-@property (nonatomic, strong) TransactionData *currTransactionData;
+@property (nonatomic, strong) WPYTenderedCard * _Nullable pendingCard;
+@property (nonatomic, strong) WPYPaymentRequest * _Nullable currRequest;
+@property (nonatomic, strong) WPYPaymentResponse * _Nullable currentResponse;
+@property (nonatomic, strong) TransactionData * _Nullable currTransactionData;
 @property (nonatomic) BOOL enableCashback;
 @property (nonatomic) BOOL enableGratuity;
 @property (nonatomic) NSUInteger iccRetryCount;
 @property (nonatomic) BOOL cardNotSupported;
 @property (nonatomic) BOOL requireEMVFallback;
 @property (nonatomic) BOOL cancelPendingRequest;
-@property (nonatomic, strong) NSString *firmwareVersion;
-@property (nonatomic, strong) NSString *serialNumber;
+@property (nonatomic, strong) NSString * _Nullable firmwareVersion;
+@property (nonatomic, strong) NSString * _Nullable serialNumber;
 @property (nonatomic) CardStatus cardStatus;
 @property (nonatomic) NSInteger connectRetryAttempts;
-@property (nonatomic, strong) WPYPaymentMethodRequest *createMethodRequest;
+@property (nonatomic, strong) WPYPaymentMethodRequest * _Nullable createMethodRequest;
 @property (nonatomic) BOOL allowDebit;
 @property (nonatomic) BOOL allowCredit;
 @property (nonatomic) BOOL allowCashback;
 @property (nonatomic) BOOL allowDebitOriginal;
 @property (nonatomic) BOOL allowCreditOriginal;
 @property (nonatomic) BOOL allowCashbackOriginal;
-@property (nonatomic, strong) NSMutableDictionary *manualCardDict;
-@property (nonatomic, weak) MiuraDeviceController * deviceController;
+@property (nonatomic, strong) NSMutableDictionary * _Nullable manualCardDict;
+@property (nonatomic, weak) MiuraDeviceController * _Nullable deviceController;
 @property (nonatomic, assign) TransactionFlowState transactionFlowState;
 @property (nonatomic, assign) BOOL applicationSelectionRequired;
-@property (nonatomic, strong) NSArray * applications;
+@property (nonatomic, strong) NSArray * _Nullable applications;
+@property (nonatomic) BOOL delegateDidCheckCard;
+@property (nonatomic, strong) TransactionSettings * _Nullable currSettings;
+@property (nonatomic) BOOL pinRetryInProgress;
 
 - (void) promptGratuityIfNecessary;
 - (void) promptCashbackIfNecessary;

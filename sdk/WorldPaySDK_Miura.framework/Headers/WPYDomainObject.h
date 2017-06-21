@@ -90,6 +90,10 @@ typedef NS_ENUM(NSInteger, WPYResponseCode)
     WPYResponseCodeTransactionTerminated,
     /// Self-explanatory
     WPYResponseCodeReversal,
+    /// Self-explanatory
+    WPYResponseCodeOnlinePinError,
+    /// Self-explanatory
+    WPYResponseCodeOnlinePinCounterExceeded
 };
 
 /// Base class for most of the objects within Worldpay Total

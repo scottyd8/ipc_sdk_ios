@@ -1,9 +1,9 @@
 //
 //  WPYTransactionUpdate.h
-//  WorldPaySDK
+//  WorldpaySDK
 //
 //  Created by Rakesh Ravva on 3/13/17.
-//  Copyright © 2017 WorldPay. All rights reserved.
+//  Copyright © 2017 Worldpay. All rights reserved.
 //
 
 
