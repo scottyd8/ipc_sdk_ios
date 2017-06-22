@@ -127,7 +127,11 @@ typedef NS_ENUM(uint8_t, WPYDevicePrompt)
     /// self-explanatory
     WPYDevicePromptMultipleCardsDetected,
     /// self-explanatory
-    WPYDevicePromptTapCard
+    WPYDevicePromptTapCard,
+    /// self-explanatory
+    WPYDevicePromptOnlinePinError,
+    /// self-explanatory
+    WPYDevicePromptOnlinePinCounterExceeded
 };
 
 /**

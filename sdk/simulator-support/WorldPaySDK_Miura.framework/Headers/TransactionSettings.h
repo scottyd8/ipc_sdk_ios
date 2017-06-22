@@ -2,7 +2,7 @@
 //  TransactionSettings.h
 //  MiuraBluetooth
 //
-//  Copyright © 2016 WorldPay. All rights reserved.
+//  Copyright © 2016 Worldpay. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

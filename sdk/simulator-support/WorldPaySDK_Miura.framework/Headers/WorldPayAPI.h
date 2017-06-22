@@ -47,7 +47,9 @@ typedef NS_ENUM(NSInteger, WorldpaySDKError)
     /// Returned if you try to run an auth on a manually entered check, for instance
     WorldpaySDKErrorInvalidRequestTypeForTender = 100002,
     /// self-explanatory
-    WorldpaySDKErrorTerminalConnectionLost = 100003
+    WorldpaySDKErrorTerminalConnectionLost = 100003,
+    // Encryption Keys missing on device
+    WorldpaySDKErrorNoEncryptionKeys
 };
 
 /**
@@ -58,7 +60,7 @@ typedef NS_ENUM(NSInteger, WPYEnvironment)
     /// self-explanatory
     WPYEnvironmentDemo = 0,
     /// self-explanatory
-    WPYEnvironmentProd = 1,
+    WPYEnvironmentProd = 1
 };
 
 
