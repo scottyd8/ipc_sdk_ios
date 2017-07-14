@@ -8,7 +8,7 @@
 
 #import "WPYSwiperPrivate.h"
 #import "WPYPaymentResponse.h"
-#import "WorldpaySDK.h"
+#import "WorldPaySDK.h"
 #import "WPYPaymentRequest.h"
 #import "WPYPaymentRequest.h"
 #import "WPYReceiptObject.h"

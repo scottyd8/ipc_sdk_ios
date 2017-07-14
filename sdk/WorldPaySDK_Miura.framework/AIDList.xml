@@ -3,7 +3,9 @@
   <Applications>
       <!-- Visa Credit/Debit -->
       <add key="A0000000031010" value="CreditDebit"/>
+      <add key="A000000003101001" value="Credit"/>
       <add key="A000000003101008" value="Credit"/>
+      <add key="A000000003101002" value="Debit"/>
       <add key="A000000003101009" value="Debit"/>
       <!-- Visa Credit/Debit -->
       <!--<add key="A000000003101002" value="CreditDebit"/>-->
@@ -17,6 +19,8 @@
       <add key="A0000000980840" value="Debit"/>
       <!-- Mastercard Credit or Debit -->
       <add key="A0000000041010" value="CreditDebit"/>
+      <add key="A00000000410101213" value="Credit"/>
+      <add key="A00000000410101215" value="Debit"/>
       <!-- MasterCard Maestro -->
       <add key="A0000000043060" value="Debit"/>
       <!-- Cirrus

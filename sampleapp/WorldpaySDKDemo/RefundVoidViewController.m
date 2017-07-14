@@ -122,7 +122,7 @@
         
         ((WPYPaymentVoid *)request).transactionId = self.transactionIdTextField.text;
         
-        [[WorldpayAPI instance] paymentVoid:(WPYPaymentVoid *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+        [[WorldPayAPI instance] paymentVoid:(WPYPaymentVoid *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
         {
             [self handleResponse:response withError:error];
         }];
@@ -138,7 +138,7 @@
         
         ((WPYPaymentRefund *)request).transactionId = self.transactionIdTextField.text;
         
-        [[WorldpayAPI instance] paymentRefund:(WPYPaymentRefund *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+        [[WorldPayAPI instance] paymentRefund:(WPYPaymentRefund *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
         {
             [self handleResponse:response withError:error];
         }];
@@ -154,7 +154,7 @@
         
         ((WPYPaymentCapture *)request).transactionId = self.transactionIdTextField.text;
         
-        [[WorldpayAPI instance] paymentCapture:(WPYPaymentCapture *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+        [[WorldPayAPI instance] paymentCapture:(WPYPaymentCapture *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
         {
             [self handleResponse:response withError:error];
         }];

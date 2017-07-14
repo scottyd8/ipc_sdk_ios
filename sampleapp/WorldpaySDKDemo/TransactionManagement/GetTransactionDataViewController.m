@@ -50,7 +50,7 @@
     [self.view endEditing:YES];
     
     
-    [[WorldpayAPI instance] getTransactionDetails:self.transactionIdTextField.text withCompletion:^(WPYTransactionResponse *response, NSError *error) {
+    [[WorldPayAPI instance] getTransactionDetails:self.transactionIdTextField.text withCompletion:^(WPYTransactionResponse *response, NSError *error) {
         
         if(error)
         {

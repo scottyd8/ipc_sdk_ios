@@ -67,7 +67,7 @@ typedef NS_ENUM(NSInteger, WPYEnvironment)
 /**
  * This is a singleton object that contains the base of the Worldpay Total calling methods.
  */
-@interface WorldpayAPI : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate>
+@interface WorldPayAPI : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate>
 
 /**
  * Tells the WorldpayAPI object to send messages to the test host configured at compile time
@@ -94,7 +94,7 @@ typedef NS_ENUM(NSInteger, WPYEnvironment)
  *
  * @return instance pointer to singleton class
  */
-+ (WorldpayAPI *)instance;
++ (WorldPayAPI *)instance;
 
 /**
  WorldpayServerErrorDomain is the error domain used when the server attempted to process the response, but could not

@@ -97,7 +97,7 @@
     //----
     
     // Grab swiper from API
-    self.swiper = [[WorldpayAPI instance] swiperWithDelegate:self];
+    self.swiper = [[WorldPayAPI instance] swiperWithDelegate:self];
     
     [self.amountTextField setTextFieldDelegate:self];
     [self.amountTextField setKeyboardTypeDecimal];
@@ -426,7 +426,7 @@
         {
             case AUTHORIZEINDEX:
             {
-                [[WorldpayAPI instance] paymentAuthorize:(WPYPaymentAuthorize *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+                [[WorldPayAPI instance] paymentAuthorize:(WPYPaymentAuthorize *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
                 {
                     if(response.responseCode == WPYResponseCodeError || error)
                     {
@@ -447,7 +447,7 @@
             }
             case CHARGEINDEX:
             {
-                [[WorldpayAPI instance] paymentCharge:(WPYPaymentCharge *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+                [[WorldPayAPI instance] paymentCharge:(WPYPaymentCharge *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
                 {
                     if(response.responseCode == WPYResponseCodeError || error)
                     {
@@ -468,7 +468,7 @@
             }
             case CREDITINDEX:
             {
-                [[WorldpayAPI instance] paymentCredit:(WPYPaymentCredit *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+                [[WorldPayAPI instance] paymentCredit:(WPYPaymentCredit *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
                 {
                     if(response.responseCode == WPYResponseCodeError || error)
                     {
@@ -488,7 +488,7 @@
             }
             default:
             {
-                [[WorldpayAPI instance] paymentAuthorize:(WPYPaymentAuthorize *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
+                [[WorldPayAPI instance] paymentAuthorize:(WPYPaymentAuthorize *)request withCompletion:^(WPYPaymentResponse * response, NSError * error)
                 {
                     if(response.responseCode == WPYResponseCodeError || error)
                     {

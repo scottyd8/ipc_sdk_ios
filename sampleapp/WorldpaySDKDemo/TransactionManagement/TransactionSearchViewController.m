@@ -148,7 +148,7 @@
     search.amount = (self.amountTextField.textField.text.length > 0 ? [NSDecimalNumber decimalNumberWithString:self.amountTextField.textField.text] : nil);
     search.orderId = (self.orderIdTextField.textField.text.length > 0 ? self.orderIdTextField.textField.text : nil);
     
-    [[WorldpayAPI instance] searchTransactions:search withCompletion:^(WPYTransactionSearchResponse *transactionResponse, NSError *error) {
+    [[WorldPayAPI instance] searchTransactions:search withCompletion:^(WPYTransactionSearchResponse *transactionResponse, NSError *error) {
        
         
     if(error)

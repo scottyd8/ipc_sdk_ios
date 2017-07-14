@@ -55,7 +55,7 @@
 
 - (void) showTransactionsInBatch:(NSString *) batchId
 {
-    [[WorldpayAPI instance] getTransactionsInBatch:batchId withCompletion:^(WPYBatchResponse * response, NSError * error)
+    [[WorldPayAPI instance] getTransactionsInBatch:batchId withCompletion:^(WPYBatchResponse * response, NSError * error)
     {
         [self displayBatchAlertWithId:response.identifier response:response error:error];
     }];
@@ -63,7 +63,7 @@
 
 - (void) showTransactionsInCurrentBatch
 {
-    [[WorldpayAPI instance] getCurrentBatchWithCompletion:^(WPYBatchResponse * response, NSError * error)
+    [[WorldPayAPI instance] getCurrentBatchWithCompletion:^(WPYBatchResponse * response, NSError * error)
     {
         [self displayBatchAlertWithId:response.identifier response:response error:error];
     }];
@@ -134,7 +134,7 @@
         return;
     }
     
-    [[WorldpayAPI instance] closeCurrentBatchWithCompletion:^(WPYBatchResponse * response, NSError * error)
+    [[WorldPayAPI instance] closeCurrentBatchWithCompletion:^(WPYBatchResponse * response, NSError * error)
     {
         if(error != nil || !response.success)
         {

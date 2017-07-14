@@ -227,7 +227,7 @@
     
     updateTransaction.levelTwoData.status = _taxStatusValue;
     
-    [[WorldpayAPI instance] updateTransaction:updateTransaction withCompletion:^(WPYTransactionResponse *transactionResponse, NSError *error) {
+    [[WorldPayAPI instance] updateTransaction:updateTransaction withCompletion:^(WPYTransactionResponse *transactionResponse, NSError *error) {
         
         if(error)
         {

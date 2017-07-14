@@ -330,7 +330,7 @@
     
     [self syncCustomerToUI];
     
-    [[WorldpayAPI instance] createCustomer:self.customer withCompletion:^(WPYCustomerResponseData * response, NSError * error)
+    [[WorldPayAPI instance] createCustomer:self.customer withCompletion:^(WPYCustomerResponseData * response, NSError * error)
     {
         [self handleResponse:response error:error];
     }];
@@ -346,7 +346,7 @@
     
     [self syncCustomerToUI];
     
-    [[WorldpayAPI instance] updateCustomer:self.editCustomer.identifier withData:self.customer andCompletion:^(WPYCustomerResponseData * response, NSError * error)
+    [[WorldPayAPI instance] updateCustomer:self.editCustomer.identifier withData:self.customer andCompletion:^(WPYCustomerResponseData * response, NSError * error)
     {
         [self handleResponse:response error:error];
     }];

@@ -1,3 +1,10 @@
+## [1.0.35] - 2017-07-14
+
+### Fixed 
+-   EMV certification bugs
+-	Auto-select AID functionality
+-	Updated libraries to make them consistent
+
 ## [1.0.34] - 2017-06-21
 
 ### Fixed 

@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WorldpayAPI.h"
+#import "WorldPayAPI.h"
 #import "WPYAuthTokenRequest.h"
 #import "WPYAuthTokenResponse.h"
 #import "WPYCustomerRequestData.h"
@@ -53,7 +53,7 @@ FOUNDATION_EXPORT double WorldpaySDKVersionNumber;
 //! Project version string for WorldpaySDK.
 FOUNDATION_EXPORT const unsigned char WorldpaySDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <WorldpaySDK/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <WorldPaySDK/PublicHeader.h>
 
 
 #define LocalizeString(key) \
