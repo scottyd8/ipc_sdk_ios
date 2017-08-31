@@ -1,3 +1,8 @@
+## [1.0.36] - 2017-08-31
+
+### Fixed 
+-   Resolved an issue where SDK Framework info.plist file contained value "iPhoneSimulator"
+
 ## [1.0.35] - 2017-07-14
 
 ### Fixed 

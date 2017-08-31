@@ -1058,7 +1058,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/WorldpaySDKDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.worldpay.ipc.miurademo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldpay.miurademo;
 				PRODUCT_NAME = WorldpaySDKDemo;
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s arm64";
@@ -1085,7 +1085,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/WorldpaySDKDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.worldpay.ipc.miurademo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldpay.miurademo;
 				PRODUCT_NAME = WorldpaySDKDemo;
 				PROVISIONING_PROFILE = "";
 			};

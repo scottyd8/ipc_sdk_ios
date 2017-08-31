@@ -60,7 +60,8 @@ typedef NS_ENUM(NSInteger, WPYEnvironment)
     /// self-explanatory
     WPYEnvironmentDemo = 0,
     /// self-explanatory
-    WPYEnvironmentProd = 1
+    WPYEnvironmentProd = 1,
+   
 };
 
 
