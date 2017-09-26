@@ -44,4 +44,16 @@
  * All applications must present the name of their terminal vendor
  */
 @property (nonatomic, strong) NSString *terminalVendor;
+
+/**
+ * Global Device ID
+ */
+@property (nonatomic, strong) NSString *deviceId;
+
+/**
+ * SDK Version
+ */
+@property (nonatomic, strong) NSString *Version;
+
+
 @end

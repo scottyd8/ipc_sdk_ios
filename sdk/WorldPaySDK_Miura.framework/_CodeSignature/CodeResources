@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/WPYAuthTokenRequest.h</key>
 		<data>
-		JcN5dRt1cs1tz/RJaGFbtwdJB6k=
+		GA55N4KEo62D2x5IFgWWJ9F0o/8=
 		</data>
 		<key>Headers/WPYAuthTokenResponse.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Headers/WorldPayAPI.h</key>
 		<data>
-		yJUa/DSIrjQ5kDlOzxy/EPP8DYM=
+		MAmQch2VQoek0lJmr/BDQYDdFLo=
 		</data>
 		<key>Headers/WorldPaySDK.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I6+s52u5Eb67M6NWbqF9otXuCsg=
+		WRe13Kfkk0dtMnppUMdFXGbYTrg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>WPYManualTenderEntryViewController.nib</key>
 		<data>
-		kcyd59Xe/B1efJOUpRMUSJ+8/zY=
+		R4/EHEZeFvOafqUqjGeclGySVfM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -248,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JcN5dRt1cs1tz/RJaGFbtwdJB6k=
+			GA55N4KEo62D2x5IFgWWJ9F0o/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			yPitScYQhjbrMPkErRbHD9fni2YnOiBxAMb8X7VywGQ=
+			DTniyNbo8SBSjbbK+dFb+IVx0055G+xOix5Z19Z2Kdc=
 			</data>
 		</dict>
 		<key>Headers/WPYAuthTokenResponse.h</key>
@@ -710,11 +710,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yJUa/DSIrjQ5kDlOzxy/EPP8DYM=
+			MAmQch2VQoek0lJmr/BDQYDdFLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			br8qADpmO3KgNEZVRhA7EGkIxbNTLx66Wq+MGNN/tBo=
+			dMkd9fI1Haw8z5kGXSKcgWRDGBmvfcXNIHbLgEkVdY0=
 			</data>
 		</dict>
 		<key>Headers/WorldPaySDK.h</key>
@@ -754,11 +754,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kcyd59Xe/B1efJOUpRMUSJ+8/zY=
+			R4/EHEZeFvOafqUqjGeclGySVfM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Inwt71WCpgiHwTjFwgorAvEKTJHobLtvVbkq3qGkcIs=
+			VkM26HegKzQWgC8xav5Ncwi/3Q7P+jJu7EqcfpU5Ei0=
 			</data>
 		</dict>
 	</dict>
