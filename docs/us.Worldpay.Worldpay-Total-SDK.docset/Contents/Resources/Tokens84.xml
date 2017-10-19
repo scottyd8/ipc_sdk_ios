@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYManualTenderType.html">
+	<File path="Constants/WPYCardEntryMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYManualTenderType</TokenIdentifier>
-			<Abstract type="html">Types of manual entry payment methods accepted</Abstract>
-			<DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCardEntryMode</TokenIdentifier>
+			<Abstract type="html">This helps the application developer understand how the terminal read the card data in order to
+execute the payment request.  This may affect the language printed to the receipt</Abstract>
+			<DeclaredIn>WPYReceiptObject.h</DeclaredIn>
             
 			
 			<NodeRef refid="84"/>
@@ -14,21 +15,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCredit</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYManualTenderTypeCredit</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeContact</TokenIdentifier>
+            <Abstract type="html">Card was a contact card</Abstract>
+            <Declaration>WPYCardEntryModeContact</Declaration>
             
-            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
             
             <NodeRef refid="84"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCheck</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYManualTenderTypeCheck</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeContactlessEMV</TokenIdentifier>
+            <Abstract type="html">Card was a contactless EMV</Abstract>
+            <Declaration>WPYCardEntryModeContactlessEMV</Declaration>
             
-            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="84"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeContactlessMSR</TokenIdentifier>
+            <Abstract type="html">Card was a contactless magnetic stripe</Abstract>
+            <Declaration>WPYCardEntryModeContactlessMSR</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="84"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeMSR</TokenIdentifier>
+            <Abstract type="html">Card was a magnetic stripe</Abstract>
+            <Declaration>WPYCardEntryModeMSR</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            
+            <NodeRef refid="84"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeManual</TokenIdentifier>
+            <Abstract type="html">Data was entered by hand</Abstract>
+            <Declaration>WPYCardEntryModeManual</Declaration>
+            
+            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
             
             <NodeRef refid="84"/>
         </Token>

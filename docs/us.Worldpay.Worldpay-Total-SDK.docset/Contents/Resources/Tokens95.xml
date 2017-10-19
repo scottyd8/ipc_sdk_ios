@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WorldpaySDKError.html">
+	<File path="Constants/WPYManualTenderType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WorldpaySDKError</TokenIdentifier>
-			<Abstract type="html">This is the error code returned when an NSError is generated due to a missing authentication token.
-No web service calls can complete (except for the token request) without a valid authorization token</Abstract>
-			<DeclaredIn>WorldPayAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYManualTenderType</TokenIdentifier>
+			<Abstract type="html">Types of manual entry payment methods accepted</Abstract>
+			<DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
             
 			
 			<NodeRef refid="95"/>
@@ -15,31 +14,21 @@ No web service calls can complete (except for the token request) without a valid
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WorldpaySDKErrorNoAuthToken</TokenIdentifier>
-            <Abstract type="html">No auth token provided</Abstract>
-            <Declaration>WorldpaySDKErrorNoAuthToken</Declaration>
-            
-            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
-            
-            <NodeRef refid="95"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WorldpaySDKErrorInvalidRequestTypeForTender</TokenIdentifier>
-            <Abstract type="html">Returned if you try to run an auth on a manually entered check, for instance</Abstract>
-            <Declaration>WorldpaySDKErrorInvalidRequestTypeForTender</Declaration>
-            
-            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
-            
-            <NodeRef refid="95"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WorldpaySDKErrorTerminalConnectionLost</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCredit</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WorldpaySDKErrorTerminalConnectionLost</Declaration>
+            <Declaration>WPYManualTenderTypeCredit</Declaration>
             
-            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
+            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYManualTenderTypeCheck</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYManualTenderTypeCheck</Declaration>
+            
+            <DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
             
             <NodeRef refid="95"/>
         </Token>

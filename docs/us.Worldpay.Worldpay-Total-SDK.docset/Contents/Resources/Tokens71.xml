@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCVMethod.html">
+	<File path="Constants/ManualEntryError.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCVMethod</TokenIdentifier>
-			<Abstract type="html">This data indicates the type of cardholder verification that was performed on the transaction.
-The type of CVM that is used to help determine what information will be on the receipt</Abstract>
-			<DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/ManualEntryError</TokenIdentifier>
+			<Abstract type="html">Error in taking a manual transaction</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
 			<NodeRef refid="71"/>
@@ -15,61 +14,21 @@ The type of CVM that is used to help determine what information will be on the r
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodNoCVM</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ManualEntryErrorCanceled</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCVMethodNoCVM</Declaration>
+            <Declaration>ManualEntryErrorCanceled</Declaration>
             
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="71"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodPlaintextPIN</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ManualEntryErrorNotSREDReady</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCVMethodPlaintextPIN</Declaration>
+            <Declaration>ManualEntryErrorNotSREDReady</Declaration>
             
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
-            
-            <NodeRef refid="71"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodOnlinePIN</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCVMethodOnlinePIN</Declaration>
-            
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
-            
-            <NodeRef refid="71"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodMobileConfirmCode</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCVMethodMobileConfirmCode</Declaration>
-            
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
-            
-            <NodeRef refid="71"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodOfflineEncipheredPIN</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCVMethodOfflineEncipheredPIN</Declaration>
-            
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
-            
-            <NodeRef refid="71"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCVMethodSignature</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCVMethodSignature</Declaration>
-            
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="71"/>
         </Token>

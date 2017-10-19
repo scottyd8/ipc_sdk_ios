@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYPaymentToken.html">
+	<File path="Classes/WPYPaymentRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentToken</TokenIdentifier>
-			<Abstract type="html">This object represents a payment token used in place of a payment card or check</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentRequest</TokenIdentifier>
+			<Abstract type="html">This base class is used to represent the common info used for various types of payment requests.  This allows a generic object to
+be used in order to request the automatic handling of EMV transactions.  This base class cannot be used to perform an actual transaction by itself
+you must use a child object such as WPYPaymentAuthorize, WPYPaymentCredit, WPYPaymentVerify or WPYPaymentCharge.  WPYPaymentVoid should be used with a transaction
+ID and not passed in as a payment request in an EMV transaction.  The SDK will automatically generate a PaymentVoid request if the terminal requests
+that a transaction be reversed.</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
             
 			
 			<NodeRef refid="33"/>
@@ -13,11 +17,164 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/setToken:</TokenIdentifier>
-			<Abstract type="html">The ID of the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/setAmount:</TokenIdentifier>
+			<Abstract type="html">The total amount of the request, excluding the amountOther for a cashback transaction.  This is because the Anywhere Commerce devices will automatically
+add the &quot;Amount Other&quot; to the total on a cashback transaction and the Miura device ignores the amountOther field and presents the cashback prompt on the
+terminal IF the card&apos;s Application Usage Control allows cashback</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/amount</TokenIdentifier>
+			<Abstract type="html">The total amount of the request, excluding the amountOther for a cashback transaction.  This is because the Anywhere Commerce devices will automatically
+add the &quot;Amount Other&quot; to the total on a cashback transaction and the Miura device ignores the amountOther field and presents the cashback prompt on the
+terminal IF the card&apos;s Application Usage Control allows cashback</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRequest/amount</TokenIdentifier>
+			<Abstract type="html">The total amount of the request, excluding the amountOther for a cashback transaction.  This is because the Anywhere Commerce devices will automatically
+add the &quot;Amount Other&quot; to the total on a cashback transaction and the Miura device ignores the amountOther field and presents the cashback prompt on the
+terminal IF the card&apos;s Application Usage Control allows cashback</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/setAmountOther:</TokenIdentifier>
+			<Abstract type="html">The amountOther is typically used to represent the cashback amount of a transaction and is an optional parameter.  It defaults to 0.00</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amountOther</Declaration>
+			
+			
+			<Anchor>//api/name/amountOther</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/amountOther</TokenIdentifier>
+			<Abstract type="html">The amountOther is typically used to represent the cashback amount of a transaction and is an optional parameter.  It defaults to 0.00</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amountOther</Declaration>
+			
+			
+			<Anchor>//api/name/amountOther</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRequest/amountOther</TokenIdentifier>
+			<Abstract type="html">The amountOther is typically used to represent the cashback amount of a transaction and is an optional parameter.  It defaults to 0.00</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amountOther</Declaration>
+			
+			
+			<Anchor>//api/name/amountOther</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/setCard:</TokenIdentifier>
+			<Abstract type="html">The card that will be charged on this transaction.  If the card data comes from the terminal, the SDK will automatically add this parameter in order
+to help limit the PCI obligations on the merchant</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/card</TokenIdentifier>
+			<Abstract type="html">The card that will be charged on this transaction.  If the card data comes from the terminal, the SDK will automatically add this parameter in order
+to help limit the PCI obligations on the merchant</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRequest/card</TokenIdentifier>
+			<Abstract type="html">The card that will be charged on this transaction.  If the card data comes from the terminal, the SDK will automatically add this parameter in order
+to help limit the PCI obligations on the merchant</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/setCheck:</TokenIdentifier>
+			<Abstract type="html">If the purchaser is presenting a check instead of a card, this parameter should be supplied at the time of the transaction</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/check</TokenIdentifier>
+			<Abstract type="html">If the purchaser is presenting a check instead of a card, this parameter should be supplied at the time of the transaction</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRequest/check</TokenIdentifier>
+			<Abstract type="html">If the purchaser is presenting a check instead of a card, this parameter should be supplied at the time of the transaction</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/setToken:</TokenIdentifier>
+			<Abstract type="html">If using a payment token instead of a presented card or check, this property should be set</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYPaymentToken *token</Declaration>
 			
 			
 			<Anchor>//api/name/token</Anchor>
@@ -25,23 +182,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/token</TokenIdentifier>
-			<Abstract type="html">The ID of the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/token</TokenIdentifier>
+			<Abstract type="html">If using a payment token instead of a presented card or check, this property should be set</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
-			
-			
-			<Anchor>//api/name/token</Anchor>
-            <NodeRef refid="33"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentToken/token</TokenIdentifier>
-			<Abstract type="html">The ID of the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYPaymentToken *token</Declaration>
 			
 			
 			<Anchor>//api/name/token</Anchor>
@@ -49,110 +194,92 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/setPaymentType:</TokenIdentifier>
-			<Abstract type="html">The payment type associated with the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRequest/token</TokenIdentifier>
+			<Abstract type="html">If using a payment token instead of a presented card or check, this property should be set</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property WPYPaymentType paymentType</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYPaymentToken *token</Declaration>
 			
 			
-			<Anchor>//api/name/paymentType</Anchor>
+			<Anchor>//api/name/token</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/paymentType</TokenIdentifier>
-			<Abstract type="html">The payment type associated with the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/setAddress:</TokenIdentifier>
+			<Abstract type="html">Address for the account holder</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property WPYPaymentType paymentType</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
 			
 			
-			<Anchor>//api/name/paymentType</Anchor>
+			<Anchor>//api/name/address</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentToken/paymentType</TokenIdentifier>
-			<Abstract type="html">The payment type associated with the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/address</TokenIdentifier>
+			<Abstract type="html">Address for the account holder</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property WPYPaymentType paymentType</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
 			
 			
-			<Anchor>//api/name/paymentType</Anchor>
+			<Anchor>//api/name/address</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/setCustomerId:</TokenIdentifier>
-			<Abstract type="html">The ID of the customer associated with the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRequest/address</TokenIdentifier>
+			<Abstract type="html">Address for the account holder</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYAddressInfo *address</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/address</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/customerId</TokenIdentifier>
-			<Abstract type="html">The ID of the customer associated with the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/setExtendedInformation:</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/extendedInformation</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentToken/customerId</TokenIdentifier>
-			<Abstract type="html">The ID of the customer associated with the token</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentRequest/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/extendedInformation</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/setPublicKey:</TokenIdentifier>
-			<Abstract type="html">Public Key used to identify the merchant.</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentRequest/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *publicKey</Declaration>
-			
-			
-			<Anchor>//api/name/publicKey</Anchor>
-            <NodeRef refid="33"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentToken/publicKey</TokenIdentifier>
-			<Abstract type="html">Public Key used to identify the merchant.</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *publicKey</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
 			
 			
-			<Anchor>//api/name/publicKey</Anchor>
-            <NodeRef refid="33"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentToken/publicKey</TokenIdentifier>
-			<Abstract type="html">Public Key used to identify the merchant.</Abstract>
-			<DeclaredIn>WPYPaymentToken.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *publicKey</Declaration>
-			
-			
-			<Anchor>//api/name/publicKey</Anchor>
+			<Anchor>//api/name/extendedInformation</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		

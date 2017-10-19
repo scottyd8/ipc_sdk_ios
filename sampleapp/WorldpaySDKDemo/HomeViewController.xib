@@ -5,10 +5,13 @@
         <development version="7000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AdelleSans_Regular.otf">
+            <string>AdelleSans-Regular</string>
+            <string>AdelleSans-Regular</string>
             <string>AdelleSans-Regular</string>
             <string>AdelleSans-Regular</string>
             <string>AdelleSans-Regular</string>
@@ -18,6 +21,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
+                <outlet property="appVersionLabel" destination="AxL-Op-g2Z" id="w3D-Qu-0OM"/>
+                <outlet property="sdkVersionLabel" destination="YPo-L8-VP3" id="YL3-1W-Tlm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="buttons" destination="jXS-Cr-EBS" id="7ln-gn-vgZ"/>
                 <outletCollection property="buttons" destination="KJ2-TG-uyF" id="2ri-U4-xDe"/>
@@ -118,6 +123,18 @@
                         <constraint firstAttribute="width" secondItem="NqV-Fi-9Jx" secondAttribute="height" multiplier="1:1" id="zjL-pg-Hmx"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 10.10.10.12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPo-L8-VP3" userLabel="App Version">
+                    <rect key="frame" x="238" y="576" width="124" height="16"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 10.10.10.12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxL-Op-g2Z" userLabel="App Version">
+                    <rect key="frame" x="238" y="554" width="124" height="16"/>
+                    <fontDescription key="fontDescription" name="AdelleSans-Regular" family="Adelle Sans" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -126,12 +143,14 @@
                 <constraint firstItem="GRU-Io-ego" firstAttribute="leading" secondItem="KJ2-TG-uyF" secondAttribute="leading" id="3zv-YJ-Yba"/>
                 <constraint firstItem="NqV-Fi-9Jx" firstAttribute="width" secondItem="NqV-Fi-9Jx" secondAttribute="height" multiplier="1:1" id="4Nm-kL-LVo"/>
                 <constraint firstItem="w6O-69-Zlw" firstAttribute="top" secondItem="jXS-Cr-EBS" secondAttribute="bottom" id="9J6-Wo-aDy"/>
+                <constraint firstItem="AxL-Op-g2Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9lV-3r-xhd"/>
                 <constraint firstItem="NqV-Fi-9Jx" firstAttribute="trailing" secondItem="11n-XZ-1Na" secondAttribute="trailing" id="9pu-Or-wr4"/>
                 <constraint firstItem="jXS-Cr-EBS" firstAttribute="top" secondItem="tCy-Ic-cov" secondAttribute="bottom" constant="44" id="AQ4-Dj-ptG"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="height" secondItem="w6O-69-Zlw" secondAttribute="height" id="CRd-ll-E2i"/>
                 <constraint firstItem="NqV-Fi-9Jx" firstAttribute="centerY" secondItem="aNn-Fk-IJO" secondAttribute="centerY" id="DGd-vB-fL8"/>
                 <constraint firstItem="cra-U3-C5g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EQ7-Jm-Vl6"/>
                 <constraint firstItem="jXS-Cr-EBS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LSh-tl-H2K"/>
+                <constraint firstItem="YPo-L8-VP3" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="OJe-mb-Zjb"/>
                 <constraint firstItem="kHC-0b-tsK" firstAttribute="leading" secondItem="bAs-Fp-UR8" secondAttribute="leading" id="PKg-Lm-LHC"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="top" secondItem="KJ2-TG-uyF" secondAttribute="bottom" id="TLp-vY-t8c"/>
                 <constraint firstItem="tCy-Ic-cov" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UYe-QW-uMK"/>
@@ -152,6 +171,7 @@
                 <constraint firstItem="KJ2-TG-uyF" firstAttribute="leading" secondItem="jXS-Cr-EBS" secondAttribute="leading" id="mCa-P0-o8V"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="leading" secondItem="w6O-69-Zlw" secondAttribute="leading" id="mUl-cg-7MC"/>
                 <constraint firstItem="aNn-Fk-IJO" firstAttribute="leading" secondItem="GRU-Io-ego" secondAttribute="leading" id="nFx-ed-yaz"/>
+                <constraint firstItem="YPo-L8-VP3" firstAttribute="leading" secondItem="AxL-Op-g2Z" secondAttribute="leading" id="o9f-Iz-4NM"/>
                 <constraint firstItem="11n-XZ-1Na" firstAttribute="centerY" secondItem="GRU-Io-ego" secondAttribute="centerY" id="oO5-Ii-YtN"/>
                 <constraint firstItem="cra-U3-C5g" firstAttribute="height" secondItem="w6O-69-Zlw" secondAttribute="height" id="ocq-5r-H82"/>
                 <constraint firstItem="O3X-uT-oGX" firstAttribute="width" secondItem="w6O-69-Zlw" secondAttribute="width" id="pmi-Jp-gOG"/>
@@ -160,6 +180,7 @@
                 <constraint firstItem="11n-XZ-1Na" firstAttribute="trailing" secondItem="bAs-Fp-UR8" secondAttribute="trailing" id="sIA-l7-3uS"/>
                 <constraint firstItem="w6O-69-Zlw" firstAttribute="centerX" secondItem="jXS-Cr-EBS" secondAttribute="centerX" id="ueU-ox-IfI"/>
                 <constraint firstItem="KJ2-TG-uyF" firstAttribute="top" secondItem="w6O-69-Zlw" secondAttribute="bottom" id="v9j-BM-iSN"/>
+                <constraint firstAttribute="bottom" secondItem="AxL-Op-g2Z" secondAttribute="bottom" constant="30" id="x2F-0L-Ynq"/>
             </constraints>
             <point key="canvasLocation" x="318" y="384"/>
         </view>

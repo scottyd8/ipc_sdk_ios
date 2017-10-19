@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardSource.html">
+	<File path="Constants/PINMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardSource</TokenIdentifier>
-			<Abstract type="html">This indicates what interface was used for obtaining the card data.</Abstract>
-			<DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/PINMode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSwiperController.h</DeclaredIn>
             
 			
 			<NodeRef refid="76"/>
@@ -14,111 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceNotSet</TokenIdentifier>
-            <Abstract type="html">There is an intermediate state indicating we have not yet received the source type</Abstract>
-            <Declaration>WPYCardSourceNotSet</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PIN_CODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PIN_CODE</Declaration>
             
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceUnknown</TokenIdentifier>
-            <Abstract type="html">Cannot identify the card transaction type.</Abstract>
-            <Declaration>WPYCardSourceUnknown</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="76"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceCreditMSR</TokenIdentifier>
-            <Abstract type="html">Magnetic Stripe Credit</Abstract>
-            <Declaration>WPYCardSourceCreditMSR</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/ZIP_CODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ZIP_CODE</Declaration>
             
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceCreditEMV</TokenIdentifier>
-            <Abstract type="html">EMV Credit</Abstract>
-            <Declaration>WPYCardSourceCreditEMV</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="76"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceCreditEMVContactless</TokenIdentifier>
-            <Abstract type="html">Contactless EMV Credit</Abstract>
-            <Declaration>WPYCardSourceCreditEMVContactless</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/OTP_CODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OTP_CODE</Declaration>
             
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceCreditManual</TokenIdentifier>
-            <Abstract type="html">Manually Entered Credit</Abstract>
-            <Declaration>WPYCardSourceCreditManual</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceDebitSwiped</TokenIdentifier>
-            <Abstract type="html">Magnetic Stripe Debit</Abstract>
-            <Declaration>WPYCardSourceDebitSwiped</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceDebitEMV</TokenIdentifier>
-            <Abstract type="html">EMV Debit</Abstract>
-            <Declaration>WPYCardSourceDebitEMV</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceDebitEMVContactless</TokenIdentifier>
-            <Abstract type="html">Contactless EMV Debit</Abstract>
-            <Declaration>WPYCardSourceDebitEMVContactless</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceStoredValueSwiped</TokenIdentifier>
-            <Abstract type="html">Magnetic Striped Stored Value (Prepaid)</Abstract>
-            <Declaration>WPYCardSourceStoredValueSwiped</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
-            
-            <NodeRef refid="76"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardSourceStoredValueManual</TokenIdentifier>
-            <Abstract type="html">Manually Entered Stored Value (Prepaid)</Abstract>
-            <Declaration>WPYCardSourceStoredValueManual</Declaration>
-            
-            <DeclaredIn>WPYTenderedCard.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="76"/>
         </Token>

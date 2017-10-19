@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYBatchResponse.html">
+	<File path="Classes/WPYAuthTokenRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYBatchResponse</TokenIdentifier>
-			<Abstract type="html">An object that only contains the identifier for the current batch.  Note that the &apos;identifier&apos; property is common to all
-WPYDomainObjects and is therefore visible at the base class level</Abstract>
-			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYAuthTokenRequest</TokenIdentifier>
+			<Abstract type="html">This object is sent when requesting an authorization token from the server so that other APIs can be used.
+The SDK automatically stores the token in the device keychain, but returns a copy of the token just in case
+the developer needs it for some reason.  Only one ID and Key/PIN should be set, based on the processing
+gateway the application is to use</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
             
 			
 			<NodeRef refid="10"/>
@@ -14,74 +16,326 @@ WPYDomainObjects and is therefore visible at the base class level</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/setBatchId:</TokenIdentifier>
-			<Abstract type="html">A convenience method to get the WPYBatchResponse.identifier associated with the transaction</Abstract>
-			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetId:</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, getter=getBatchId) NSString *batchId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
 			
 			
-			<Anchor>//api/name/batchId</Anchor>
+			<Anchor>//api/name/secureNetId</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/getBatchId</TokenIdentifier>
-			<Abstract type="html">A convenience method to get the WPYBatchResponse.identifier associated with the transaction</Abstract>
-			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, getter=getBatchId) NSString *batchId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
 			
 			
-			<Anchor>//api/name/batchId</Anchor>
+			<Anchor>//api/name/secureNetId</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYBatchResponse/batchId</TokenIdentifier>
-			<Abstract type="html">A convenience method to get the WPYBatchResponse.identifier associated with the transaction</Abstract>
-			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, getter=getBatchId) NSString *batchId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
 			
 			
-			<Anchor>//api/name/batchId</Anchor>
+			<Anchor>//api/name/secureNetId</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/setTransactions:</TokenIdentifier>
-			<Abstract type="html">A list of transactions associated with the batch</Abstract>
-			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetKey:</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, strong) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
 			
 			
-			<Anchor>//api/name/transactions</Anchor>
+			<Anchor>//api/name/secureNetKey</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYBatchResponse/transactions</TokenIdentifier>
-			<Abstract type="html">A list of transactions associated with the batch</Abstract>
-			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, strong) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
 			
 			
-			<Anchor>//api/name/transactions</Anchor>
+			<Anchor>//api/name/secureNetKey</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYBatchResponse/transactions</TokenIdentifier>
-			<Abstract type="html">A list of transactions associated with the batch</Abstract>
-			<DeclaredIn>WPYBatchResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
+			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, strong) NSArray&lt;WPYTransaction*&gt; *transactions</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
 			
 			
-			<Anchor>//api/name/transactions</Anchor>
+			<Anchor>//api/name/secureNetKey</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersId:</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
+			
+			
+			<Anchor>//api/name/merchantPartnersId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
+			
+			
+			<Anchor>//api/name/merchantPartnersId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
+			
+			
+			<Anchor>//api/name/merchantPartnersId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersPin:</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
+			
+			
+			<Anchor>//api/name/merchantPartnersPin</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
+			
+			
+			<Anchor>//api/name/merchantPartnersPin</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
+			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
+			
+			
+			<Anchor>//api/name/merchantPartnersPin</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setApplicationId:</TokenIdentifier>
+			<Abstract type="html">All applications must set their ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/applicationId</TokenIdentifier>
+			<Abstract type="html">All applications must set their ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/applicationId</TokenIdentifier>
+			<Abstract type="html">All applications must set their ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalId:</TokenIdentifier>
+			<Abstract type="html">All applications must present a terminal ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalId</TokenIdentifier>
+			<Abstract type="html">All applications must present a terminal ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalId</TokenIdentifier>
+			<Abstract type="html">All applications must present a terminal ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalVendor:</TokenIdentifier>
+			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
+			
+			
+			<Anchor>//api/name/terminalVendor</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
+			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
+			
+			
+			<Anchor>//api/name/terminalVendor</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
+			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
+			
+			
+			<Anchor>//api/name/terminalVendor</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setDeviceId:</TokenIdentifier>
+			<Abstract type="html">Global Device ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceId</Declaration>
+			
+			
+			<Anchor>//api/name/deviceId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/deviceId</TokenIdentifier>
+			<Abstract type="html">Global Device ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceId</Declaration>
+			
+			
+			<Anchor>//api/name/deviceId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/deviceId</TokenIdentifier>
+			<Abstract type="html">Global Device ID</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceId</Declaration>
+			
+			
+			<Anchor>//api/name/deviceId</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setVersion:</TokenIdentifier>
+			<Abstract type="html">SDK Version</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/version</TokenIdentifier>
+			<Abstract type="html">SDK Version</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/version</TokenIdentifier>
+			<Abstract type="html">SDK Version</Abstract>
+			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		

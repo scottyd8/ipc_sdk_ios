@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardInputType.html">
+	<File path="Constants/PINKeyLocation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardInputType</TokenIdentifier>
-			<Abstract type="html">Type of card interactions allowed</Abstract>
-			<DeclaredIn>WPYSwiperPrivate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/PINKeyLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSwiperController.h</DeclaredIn>
             
 			
 			<NodeRef refid="75"/>
@@ -14,41 +14,121 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardInputTypeSwipeOrInsert</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardInputTypeSwipeOrInsert</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_1</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_1</Declaration>
             
-            <DeclaredIn>WPYSwiperPrivate.h</DeclaredIn>
-            
-            <NodeRef refid="75"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardInputTypeNFC</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardInputTypeNFC</Declaration>
-            
-            <DeclaredIn>WPYSwiperPrivate.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="75"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardInputTypeSwipeOnly</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardInputTypeSwipeOnly</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_2</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_2</Declaration>
             
-            <DeclaredIn>WPYSwiperPrivate.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="75"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardInputTypeInsertOnly</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardInputTypeInsertOnly</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_3</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_3</Declaration>
             
-            <DeclaredIn>WPYSwiperPrivate.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_4</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_4</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_5</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_5</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_6</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_6</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_7</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_7</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_8</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_8</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_9</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_9</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_C</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_C</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_0</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_0</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="75"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOCATION_E</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOCATION_E</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="75"/>
         </Token>

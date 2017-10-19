@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardEntryMode.html">
+	<File path="Constants/NumericDataInput.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardEntryMode</TokenIdentifier>
-			<Abstract type="html">This helps the application developer understand how the terminal read the card data in order to
-execute the payment request.  This may affect the language printed to the receipt</Abstract>
-			<DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/NumericDataInput</TokenIdentifier>
+			<Abstract type="html">Numeric data required on pinpad</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
 			<NodeRef refid="73"/>
@@ -15,51 +14,101 @@ execute the payment request.  This may affect the language printed to the receip
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeContact</TokenIdentifier>
-            <Abstract type="html">Card was a contact card</Abstract>
-            <Declaration>WPYCardEntryModeContact</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputGratuity</TokenIdentifier>
+            <Abstract type="html">Prompt for gratuity</Abstract>
+            <Declaration>NumericDataInputGratuity</Declaration>
             
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
-            
-            <NodeRef refid="73"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeContactlessEMV</TokenIdentifier>
-            <Abstract type="html">Card was a contactless EMV</Abstract>
-            <Declaration>WPYCardEntryModeContactlessEMV</Declaration>
-            
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="73"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeContactlessMSR</TokenIdentifier>
-            <Abstract type="html">Card was a contactless magnetic stripe</Abstract>
-            <Declaration>WPYCardEntryModeContactlessMSR</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputTip</TokenIdentifier>
+            <Abstract type="html">Prompt for tip</Abstract>
+            <Declaration>NumericDataInputTip</Declaration>
             
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
-            
-            <NodeRef refid="73"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeMSR</TokenIdentifier>
-            <Abstract type="html">Card was a magnetic stripe</Abstract>
-            <Declaration>WPYCardEntryModeMSR</Declaration>
-            
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="73"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEntryModeManual</TokenIdentifier>
-            <Abstract type="html">Data was entered by hand</Abstract>
-            <Declaration>WPYCardEntryModeManual</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCashback</TokenIdentifier>
+            <Abstract type="html">Prompt for cashback</Abstract>
+            <Declaration>NumericDataInputCashback</Declaration>
             
-            <DeclaredIn>WPYReceiptObject.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="73"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputExpirationDate</TokenIdentifier>
+            <Abstract type="html">Prompt for expiration date</Abstract>
+            <Declaration>NumericDataInputExpirationDate</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="73"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCVV2</TokenIdentifier>
+            <Abstract type="html">Prompt for CVV</Abstract>
+            <Declaration>NumericDataInputCVV2</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="73"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCardLastFour</TokenIdentifier>
+            <Abstract type="html">Prompt for last four digits of card</Abstract>
+            <Declaration>NumericDataInputCardLastFour</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="73"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputAccountType</TokenIdentifier>
+            <Abstract type="html">Prompt for account type</Abstract>
+            <Declaration>NumericDataInputAccountType</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="73"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputPostalCode</TokenIdentifier>
+            <Abstract type="html">Prompt for zip code</Abstract>
+            <Declaration>NumericDataInputPostalCode</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="73"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCardNumber</TokenIdentifier>
+            <Abstract type="html">prompt for card number</Abstract>
+            <Declaration>NumericDataInputCardNumber</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="73"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCustom</TokenIdentifier>
+            <Abstract type="html">Custom prompt (requires customPrompt and numberFormat to be specified)</Abstract>
+            <Declaration>NumericDataInputCustom</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="73"/>
         </Token>

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardEvent.html">
+	<File path="Constants/PINKey.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardEvent</TokenIdentifier>
-			<Abstract type="html">This notifies the application developer when certain types of events have occurred.  Some of the events may not be
-supported on all hardware.  For instance, not all terminals notify the SDK when a card has been remved from the chip
-reader</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/PINKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSwiperController.h</DeclaredIn>
             
 			
 			<NodeRef refid="74"/>
@@ -16,61 +14,71 @@ reader</Abstract>
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventSwiped</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventSwiped</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/KEY_PIN</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>KEY_PIN</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="74"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventInserted</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventInserted</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="74"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventRemoved</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventRemoved</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/KEY_BACK</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>KEY_BACK</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="74"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventNonICCInserted</TokenIdentifier>
-            <Abstract type="html">Card inserted backwards or a non-chip card was inserted</Abstract>
-            <Declaration>WPYCardEventNonICCInserted</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="74"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventBadSwipe</TokenIdentifier>
-            <Abstract type="html">Partial or no track data received</Abstract>
-            <Declaration>WPYCardEventBadSwipe</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/KEY_CANCEL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>KEY_CANCEL</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="74"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventIccCardSwiped</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardEventIccCardSwiped</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/KEY_CLEAR</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>KEY_CLEAR</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/KEY_ENTER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>KEY_ENTER</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/KEY_ENTER_WITHOUT_PIN</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>KEY_ENTER_WITHOUT_PIN</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/KEY_ENTER_INVALID_PIN_LENGTH</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>KEY_ENTER_INVALID_PIN_LENGTH</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="74"/>
         </Token>

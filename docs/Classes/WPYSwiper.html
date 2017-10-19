@@ -86,7 +86,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:">- beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:</option>
+		<option value="//api/name/beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:">- beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:</option>
 		
 		<option value="//api/name/beginManualTransactionWithRequest:">- beginManualTransactionWithRequest:</option>
 		
@@ -100,13 +100,15 @@
 		
 		<option value="//api/name/checkForCard">- checkForCard</option>
 		
+		<option value="//api/name/clearQuickChipTransaction">- clearQuickChipTransaction</option>
+		
 		<option value="//api/name/confirmTransaction:">- confirmTransaction:</option>
 		
 		<option value="//api/name/connectSwiperWithInputType:">- connectSwiperWithInputType:</option>
 		
 		<option value="//api/name/createPaymentMethod:">- createPaymentMethod:</option>
 		
-		<option value="//api/name/defaultDevicePromptText:parameters:">- defaultDevicePromptText:parameters:</option>
+		<option value="//api/name/defaultDevicePromptText:parameters:currentSettings:">- defaultDevicePromptText:parameters:currentSettings:</option>
 		
 		<option value="//api/name/disconnectSwiper">- disconnectSwiper</option>
 		
@@ -525,7 +527,7 @@ you must specify the correct input type for the hardware being used at the time 
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Creates an instance of a swiper, with a <a href="#//api/name/delegate">delegate</a> assigned at instantiation</p>
+				<p>Creates an instance of a swiper, with a <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a> assigned at instantiation</p>
 			</div>
 			
 		    
@@ -540,7 +542,7 @@ you must specify the correct input type for the hardware being used at the time 
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>The initial <a href="#//api/name/delegate">delegate</a> that the swiper will call with events.  This can be changed at any time after instantiation.</p></td>
+						<td><p>The initial <a href="../Classes/WPYSwiper.html#//api/name/delegate">delegate</a> that the swiper will call with events.  This can be changed at any time after instantiation.</p></td>
 					</tr>
 				
 				</table>
@@ -898,8 +900,8 @@ immediately if the card entry is successful.  If the card entry is canceled then
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:" title="beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:">&ndash;&nbsp;beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:</a></code>
+	<a name="//api/name/beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:" title="beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:">&ndash;&nbsp;beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -914,7 +916,7 @@ immediately if the card entry is successful.  If the card entry is canceled then
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)beginEMVTransactionWithRequest:(WPYPaymentRequest *)<em>request</em> transactionType:(WPYEMVTransactionType)<em>transactionType</em> terminalSelectsApplication:(BOOL)<em>terminalSelectsApplication</em> commonDebitMode:(USCommonDebitMode)<em>commonDebitMode</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)beginEMVTransactionWithRequest:(WPYPaymentRequest *)<em>request</em> transactionType:(WPYEMVTransactionType)<em>transactionType</em> enableGratuityOnPed:(BOOL)<em>enableGratuityOnPed</em> commonDebitMode:(USCommonDebitMode)<em>commonDebitMode</em></code></div>
 
 		    
 			
@@ -931,19 +933,19 @@ processing will happen automatically if the terminal requests it.</p></td>
 					<tr>
 						<th scope="row" class="argument-name"><code>transactionType</code></th>
 						<td><p>The transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
-cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+&lsquo;transactionType&rsquo; set as &lsquo;cashback&rsquo; will enable cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
 AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction.  Miura devices will enable cashback
-only if this is set to type Cashback but will process as a sale if the user declines to enter a cashback amount</p></td>
+If transactionType is set to type Cashback but will process as a sale if the user declines to enter a cashback amount</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>terminalSelectsApplication</code></th>
-						<td><p>This is recommended to be set to false, for better user experience. If this is set to true, then application selection will immediately happen if necessary after reading the card, handled by the terminal. If set to false, application selection will be handled by the SDK defaulting to US Common Debit if needed, which can optionally be overridden with a <a href="#//api/name/delegate">delegate</a> method didRequestSelectEMVApplication in <a href="../Protocols/WPYSwiperDelegate.html">WPYSwiperDelegate</a>.</p></td>
+						<th scope="row" class="argument-name"><code>enableGratuityOnPed</code></th>
+						<td><p>If this flag is set, the PED will prompt for gratuity. If this is not set and a value for gratuity is sent from the POS app, SDK will still send it over to our gateway but the Gratuity screen will not be prompted on the PED. If this flag is set and a value for gratuity is sent from the POS app, then the SDK will prompt the gratuity screen with the sent gratuity value from the app by default, if no gratuity is sent from POS then gratuity screen will display the amount as &lsquo;0.00&rsquo;.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>commonDebitMode</code></th>
-						<td><p>This uses the USCommonDebitMode enum, which allows values for default multi-application identifier selection, prefer US Common Debit application identifiers, or prefer Global Debit application identifiers.</p></td>
+						<td><p>This uses the USCommonDebitMode enum, which allows values for default multi-application identifier selection, prefer US Common Debit application identifiers, or prefer Global Debit application identifiers. Note: For Quick Chip this has been defaulted to prefer US Common Debit application identifiers.</p></td>
 					</tr>
 				
 				</table>
@@ -1219,6 +1221,47 @@ transaction total prior to online authorization</p>
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
 				<p>A boolean indicating whether or not the swiper&rsquo;s display can show custom text</p>
 			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WPYSwiper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearQuickChipTransaction" title="clearQuickChipTransaction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearQuickChipTransaction">&ndash;&nbsp;clearQuickChipTransaction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function will clear the card data from the SDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearQuickChipTransaction</code></div>
+
+		    
+			
+
 			
 
 			
@@ -1585,8 +1628,8 @@ selected</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/defaultDevicePromptText:parameters:" title="defaultDevicePromptText:parameters:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/defaultDevicePromptText:parameters:">&ndash;&nbsp;defaultDevicePromptText:parameters:</a></code>
+	<a name="//api/name/defaultDevicePromptText:parameters:currentSettings:" title="defaultDevicePromptText:parameters:currentSettings:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultDevicePromptText:parameters:currentSettings:">&ndash;&nbsp;defaultDevicePromptText:parameters:currentSettings:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1601,7 +1644,7 @@ selected</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSString *)defaultDevicePromptText:(WPYDevicePrompt)<em>prompt</em> parameters:(NSArray&lt;NSString*&gt; *)<em>parameters</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (NSString *)defaultDevicePromptText:(WPYDevicePrompt)<em>prompt</em> parameters:(NSArray&lt;NSString*&gt; *)<em>parameters</em> currentSettings:(TransactionSettings *)<em>currSettings</em></code></div>
 
 		    
 			
@@ -1617,6 +1660,11 @@ selected</p>
 					<tr>
 						<th scope="row" class="argument-name"><code>parameters</code></th>
 						<td><p>An optional array of strings to be used in prompt construction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currSettings</code></th>
+						<td><p>Settings of a particular transaction to be used in prompt construction</p></td>
 					</tr>
 				
 				</table>
@@ -1734,7 +1782,7 @@ after an online processing request has been completed.  It is is only used inter
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-05-10</p>
+						<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-10-13</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

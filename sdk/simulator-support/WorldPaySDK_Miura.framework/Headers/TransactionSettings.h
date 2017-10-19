@@ -153,4 +153,6 @@ typedef NS_ENUM(uint8_t, TransactionType)
  * a decision is required by the card holder or the online processor.
  */
 @property (nonatomic) USCommonDebitMode commonDebitMode;
+
+
 @end

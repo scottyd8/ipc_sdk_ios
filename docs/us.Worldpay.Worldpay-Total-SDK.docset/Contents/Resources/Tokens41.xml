@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYTenderServiceData.html">
+	<File path="Classes/WPYSwiper.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYTenderServiceData</TokenIdentifier>
-			<Abstract type="html">This optional object contains information pertaining to the service industry and a payment transaction</Abstract>
-			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYSwiper</TokenIdentifier>
+			<Abstract type="html">This is the core object used to represent the swiper. This object becomes a base class
+for specific swiper objects designed for the given peripheral</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
             
 			
 			<NodeRef refid="41"/>
@@ -13,77 +14,689 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/setGratuityAmount:</TokenIdentifier>
-			<Abstract type="html">An optional parameter is the gratiuty amount being added to the transaction. It does not modify data
-sent to the terminal in an EMV transaction</Abstract>
-			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setSwiperType:</TokenIdentifier>
+			<Abstract type="html">This is used internally to note the type of encryption used on the SRED data</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *gratuityAmount</Declaration>
+			<Declaration>@property (nonatomic, readonly) WPYSwiperType swiperType</Declaration>
 			
 			
-			<Anchor>//api/name/gratuityAmount</Anchor>
+			<Anchor>//api/name/swiperType</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/gratuityAmount</TokenIdentifier>
-			<Abstract type="html">An optional parameter is the gratiuty amount being added to the transaction. It does not modify data
-sent to the terminal in an EMV transaction</Abstract>
-			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/swiperType</TokenIdentifier>
+			<Abstract type="html">This is used internally to note the type of encryption used on the SRED data</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *gratuityAmount</Declaration>
+			<Declaration>@property (nonatomic, readonly) WPYSwiperType swiperType</Declaration>
 			
 			
-			<Anchor>//api/name/gratuityAmount</Anchor>
+			<Anchor>//api/name/swiperType</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderServiceData/gratuityAmount</TokenIdentifier>
-			<Abstract type="html">An optional parameter is the gratiuty amount being added to the transaction. It does not modify data
-sent to the terminal in an EMV transaction</Abstract>
-			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/swiperType</TokenIdentifier>
+			<Abstract type="html">This is used internally to note the type of encryption used on the SRED data</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *gratuityAmount</Declaration>
+			<Declaration>@property (nonatomic, readonly) WPYSwiperType swiperType</Declaration>
 			
 			
-			<Anchor>//api/name/gratuityAmount</Anchor>
+			<Anchor>//api/name/swiperType</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/setServer:</TokenIdentifier>
-			<Abstract type="html">An optional parameter specifying the server who is entitled to the gratuity</Abstract>
-			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate responsible for handling events from the card terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *server</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;WPYSwiperDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/server</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTenderServiceData/server</TokenIdentifier>
-			<Abstract type="html">An optional parameter specifying the server who is entitled to the gratuity</Abstract>
-			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate responsible for handling events from the card terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *server</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;WPYSwiperDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/server</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTenderServiceData/server</TokenIdentifier>
-			<Abstract type="html">An optional parameter specifying the server who is entitled to the gratuity</Abstract>
-			<DeclaredIn>WPYTenderServiceData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate responsible for handling events from the card terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *server</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;WPYSwiperDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/server</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setConnectionState:</TokenIdentifier>
+			<Abstract type="html">The current connection status of the device</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property WPYSwiperState connectionState</Declaration>
+			
+			
+			<Anchor>//api/name/connectionState</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/connectionState</TokenIdentifier>
+			<Abstract type="html">The current connection status of the device</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property WPYSwiperState connectionState</Declaration>
+			
+			
+			<Anchor>//api/name/connectionState</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/connectionState</TokenIdentifier>
+			<Abstract type="html">The current connection status of the device</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property WPYSwiperState connectionState</Declaration>
+			
+			
+			<Anchor>//api/name/connectionState</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setBluetoothSupported:</TokenIdentifier>
+			<Abstract type="html">Query to see if bluetooth is supported by the current swiper class</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isBluetoothSupported) BOOL bluetoothSupported</Declaration>
+			
+			
+			<Anchor>//api/name/bluetoothSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/isBluetoothSupported</TokenIdentifier>
+			<Abstract type="html">Query to see if bluetooth is supported by the current swiper class</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isBluetoothSupported) BOOL bluetoothSupported</Declaration>
+			
+			
+			<Anchor>//api/name/bluetoothSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/bluetoothSupported</TokenIdentifier>
+			<Abstract type="html">Query to see if bluetooth is supported by the current swiper class</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isBluetoothSupported) BOOL bluetoothSupported</Declaration>
+			
+			
+			<Anchor>//api/name/bluetoothSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setAudioJackSupported:</TokenIdentifier>
+			<Abstract type="html">Query to see if audiojack is supported by the current swiper class.  Note that
+you must specify the correct input type for the hardware being used at the time of connection</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isAudioJackSupported) BOOL audioJackSupported</Declaration>
+			
+			
+			<Anchor>//api/name/audioJackSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/isAudioJackSupported</TokenIdentifier>
+			<Abstract type="html">Query to see if audiojack is supported by the current swiper class.  Note that
+you must specify the correct input type for the hardware being used at the time of connection</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isAudioJackSupported) BOOL audioJackSupported</Declaration>
+			
+			
+			<Anchor>//api/name/audioJackSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/audioJackSupported</TokenIdentifier>
+			<Abstract type="html">Query to see if audiojack is supported by the current swiper class.  Note that
+you must specify the correct input type for the hardware being used at the time of connection</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isAudioJackSupported) BOOL audioJackSupported</Declaration>
+			
+			
+			<Anchor>//api/name/audioJackSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setNfcSupported:</TokenIdentifier>
+			<Abstract type="html">Indication of whether or not the card terminal supports NFC</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isNFCSupported) BOOL nfcSupported</Declaration>
+			
+			
+			<Anchor>//api/name/nfcSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/isNFCSupported</TokenIdentifier>
+			<Abstract type="html">Indication of whether or not the card terminal supports NFC</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isNFCSupported) BOOL nfcSupported</Declaration>
+			
+			
+			<Anchor>//api/name/nfcSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/nfcSupported</TokenIdentifier>
+			<Abstract type="html">Indication of whether or not the card terminal supports NFC</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isNFCSupported) BOOL nfcSupported</Declaration>
+			
+			
+			<Anchor>//api/name/nfcSupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setManualEntrySupported:</TokenIdentifier>
+			<Abstract type="html">Indication of whether or not the card terminal allows manual card entry on the terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isManualEntrySupported) BOOL manualEntrySupported</Declaration>
+			
+			
+			<Anchor>//api/name/manualEntrySupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/isManualEntrySupported</TokenIdentifier>
+			<Abstract type="html">Indication of whether or not the card terminal allows manual card entry on the terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isManualEntrySupported) BOOL manualEntrySupported</Declaration>
+			
+			
+			<Anchor>//api/name/manualEntrySupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/manualEntrySupported</TokenIdentifier>
+			<Abstract type="html">Indication of whether or not the card terminal allows manual card entry on the terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, getter=isManualEntrySupported) BOOL manualEntrySupported</Declaration>
+			
+			
+			<Anchor>//api/name/manualEntrySupported</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/setDeviceInputType:</TokenIdentifier>
+			<Abstract type="html">The current hardware interface used by the connected device, if any</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYSwiperInputType deviceInputType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceInputType</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/deviceInputType</TokenIdentifier>
+			<Abstract type="html">The current hardware interface used by the connected device, if any</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYSwiperInputType deviceInputType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceInputType</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYSwiper/deviceInputType</TokenIdentifier>
+			<Abstract type="html">The current hardware interface used by the connected device, if any</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYSwiperInputType deviceInputType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceInputType</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/initWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Creates an instance of a swiper, with a delegate assigned at instantiation</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDelegate:(id&lt;WPYSwiperDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The initial delegate that the swiper will call with events.  This can be changed at any time after instantiation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of a swiper</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDelegate:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/init</TokenIdentifier>
+			<Abstract type="html">Unavailable default initializer</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/connectSwiperWithInputType:</TokenIdentifier>
+			<Abstract type="html">This will connect the current Swiper object to whatever hardware interface is selected at the time of the call</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)connectSwiperWithInputType:(WPYSwiperInputType)inputType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>inputType</Name>
+					<Abstract type="html">The type of hardware interface used to communicate with the device - Audio or Bluetooth</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectSwiperWithInputType:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/disconnectSwiper</TokenIdentifier>
+			<Abstract type="html">Disconnects the current hardware and closes communication between the mobile device and the card terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)disconnectSwiper</Declaration>
+			
+			
+			<Anchor>//api/name/disconnectSwiper</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/checkForCard</TokenIdentifier>
+			<Abstract type="html">x
+Check continuously for card events - dips or swipes.  Does not return NFC tap events</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)checkForCard</Declaration>
+			
+			
+			<Anchor>//api/name/checkForCard</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/cancelCheckForCard</TokenIdentifier>
+			<Abstract type="html">Stop checking continuously for card events</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelCheckForCard</Declaration>
+			
+			
+			<Anchor>//api/name/cancelCheckForCard</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/cancelTransaction:</TokenIdentifier>
+			<Abstract type="html">Cancels the current transaction</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelTransaction:(NSString *)customMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>customMessage</Name>
+					<Abstract type="html">This will be displayed instead of default prompt (but message will be lost if request is pending)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cancelTransaction:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/beginManualTransactionWithRequest:</TokenIdentifier>
+			<Abstract type="html">Stat a transaction by requesting that the merchant manually enter the card data into the terminal.  This will only handle manual card events.  Any attempt
+to swipe, tap, or insert a card will do nothing.</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)beginManualTransactionWithRequest:(WPYPaymentRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A pointer to the request object used to complete the payment request.  This must be populated with all required info as the transaction will begin
+immediately if the card entry is successful.  If the card entry is canceled then a fail message will be sent to the delegate</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginManualTransactionWithRequest:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:</TokenIdentifier>
+			<Abstract type="html">Start a contact EMV transaction.  If no EMV card is inserted, the swiper will request that a card be inserted or swiped. This handles swipe events.</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)beginEMVTransactionWithRequest:(WPYPaymentRequest *)request transactionType:(WPYEMVTransactionType)transactionType enableGratuityOnPed:(BOOL)enableGratuityOnPed commonDebitMode:(USCommonDebitMode)commonDebitMode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A pointer to the request object used to complete the EMV Request.  This must be populated with all required info as any request for online
+processing will happen automatically if the terminal requests it.</Abstract>
+				</Parameter><Parameter>
+					<Name>transactionType</Name>
+					<Abstract type="html">The transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
+&apos;transactionType&apos; set as &apos;cashback&apos; will enable cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction.  Miura devices will enable cashback
+If transactionType is set to type Cashback but will process as a sale if the user declines to enter a cashback amount</Abstract>
+				</Parameter><Parameter>
+					<Name>enableGratuityOnPed</Name>
+					<Abstract type="html">If this flag is set, the PED will prompt for gratuity. If this is not set and a value for gratuity is sent from the POS app, SDK will still send it over to our gateway but the Gratuity screen will not be prompted on the PED. If this flag is set and a value for gratuity is sent from the POS app, then the SDK will prompt the gratuity screen with the sent gratuity value from the app by default, if no gratuity is sent from POS then gratuity screen will display the amount as &apos;0.00&apos;.</Abstract>
+				</Parameter><Parameter>
+					<Name>commonDebitMode</Name>
+					<Abstract type="html">This uses the USCommonDebitMode enum, which allows values for default multi-application identifier selection, prefer US Common Debit application identifiers, or prefer Global Debit application identifiers. Note: For Quick Chip this has been defaulted to prefer US Common Debit application identifiers.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginEMVTransactionWithRequest:transactionType:enableGratuityOnPed:commonDebitMode:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/beginNFCTransactionWithRequest:transactionType:</TokenIdentifier>
+			<Abstract type="html">Start a contactless EMV or MSD transaction.  Some hardware allows card swipes in NFC mode, others do not.  Does nothing if NFC is not supported on
+the current terminal hardware - be sure to check if NFC is available</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)beginNFCTransactionWithRequest:(WPYPaymentRequest *)request transactionType:(WPYEMVTransactionType)transactionType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A pointer to the request object used to complete the EMV Request.  This must be populated with all required info as any request for online
+processing will happen automatically if the terminal requests it.</Abstract>
+				</Parameter><Parameter>
+					<Name>transactionType</Name>
+					<Abstract type="html">The transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
+cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginNFCTransactionWithRequest:transactionType:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/createPaymentMethod:</TokenIdentifier>
+			<Abstract type="html">Generate Payment Method using card information captured from the card terminal</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)createPaymentMethod:(WPYPaymentMethodRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A request object that will be populated with the information captured by the terminal</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createPaymentMethod:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/selectEMVCardApplication:</TokenIdentifier>
+			<Abstract type="html">If the terminal is configured to pass application selection onto the application layer, this function must be called to select the card application,
+when requested.</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)selectEMVCardApplication:(NSUInteger)application</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">Application to select</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/selectEMVCardApplication:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/confirmTransaction:</TokenIdentifier>
+			<Abstract type="html">If the terminal is configured to pass final transaction confirmation requests onto the application layer, this function must be called to confirm the
+transaction total prior to online authorization</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)confirmTransaction:(BOOL)confirmed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>confirmed</Name>
+					<Abstract type="html">A boolean indicating whether the card holder has accepted the final total</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/confirmTransaction:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/swiperCanDisplayText</TokenIdentifier>
+			<Abstract type="html">This function will indicate whether or not the application developer can request to have custom text displayed onto the terminal screen</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)swiperCanDisplayText</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean indicating whether or not the swiper&apos;s display can show custom text</Abstract></ReturnValue>
+			<Anchor>//api/name/swiperCanDisplayText</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/clearQuickChipTransaction</TokenIdentifier>
+			<Abstract type="html">This function will clear the card data from the SDK</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)clearQuickChipTransaction</Declaration>
+			
+			
+			<Anchor>//api/name/clearQuickChipTransaction</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/swiperClearDisplay</TokenIdentifier>
+			<Abstract type="html">This function will clear the display on terminals that allow you to display custom text</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)swiperClearDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/swiperClearDisplay</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/displayText:</TokenIdentifier>
+			<Abstract type="html">If supported by the terminal hardware, this will request that the custom text be displayed on the screen.  The text should be line formatted
+by the developer based on the character width of the display in question.</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)displayText:(NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">A string of text that will be displayed on the terminal</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/displayText:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/selectAccountType:</TokenIdentifier>
+			<Abstract type="html">If an Application can be run as credit or debit, and the terminal hardware does not support account type selection, then the UI application will
+be asked to select credit or debit.  If the developer does not implement the appropriate delegate function, then the default of CREDIT will be
+selected</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (void)selectAccountType:(WPYCardAccountType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The account type that the user has selected.  This must be &apos;credit&apos; OR &apos;debit&apos;, any other input will default to credit.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/selectAccountType:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/getSerialNumber</TokenIdentifier>
+			<Abstract type="html">This function will return the serial number of the credit card terminal.</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getSerialNumber</Declaration>
+			
+			<ReturnValue><Abstract type="html">A credit card terminal serial number</Abstract></ReturnValue>
+			<Anchor>//api/name/getSerialNumber</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/getFirmwareVersion</TokenIdentifier>
+			<Abstract type="html">This function will return the software version number of the credit card terminal.</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getFirmwareVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">The software version of the terminal&apos;s OS</Abstract></ReturnValue>
+			<Anchor>//api/name/getFirmwareVersion</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WPYSwiper/accountTypeForAID:</TokenIdentifier>
+			<Abstract type="html">This function returns an account type of &apos;Credit&apos; &apos;Debit&apos; or &apos;CreditOrDebit&apos; based on the application selected</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>+ (WPYCardAccountType)accountTypeForAID:(NSString *)aid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aid</Name>
+					<Abstract type="html">The AID that has been selected by the card holder / terminal</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An enumeration indacting what type of transactions can be run against that AID.</Abstract></ReturnValue>
+			<Anchor>//api/name/accountTypeForAID:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/cardInserted</TokenIdentifier>
+			<Abstract type="html">This method is called to determine card insertion status for prompt messages, must override</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)cardInserted</Declaration>
+			
+			<ReturnValue><Abstract type="html">self-explanatory</Abstract></ReturnValue>
+			<Anchor>//api/name/cardInserted</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/defaultDevicePromptText:parameters:currentSettings:</TokenIdentifier>
+			<Abstract type="html">This method is called to determine default device prompt text</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)defaultDevicePromptText:(WPYDevicePrompt)prompt parameters:(NSArray&lt;NSString*&gt; *)parameters currentSettings:(TransactionSettings *)currSettings</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>prompt</Name>
+					<Abstract type="html">self-explanatory</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">An optional array of strings to be used in prompt construction</Abstract>
+				</Parameter><Parameter>
+					<Name>currSettings</Name>
+					<Abstract type="html">Settings of a particular transaction to be used in prompt construction</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self-explanatory</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultDevicePromptText:parameters:currentSettings:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYSwiper/generateOnlineAuthResponseTLV:error:</TokenIdentifier>
+			<Abstract type="html">This function should be called automatically to take a response from the processor and generate a TLV string that can be sent to the terminal
+after an online processing request has been completed.  It is is only used internally.</Abstract>
+			<DeclaredIn>WPYSwiperPrivate.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)generateOnlineAuthResponseTLV:(WPYPaymentResponse *)response error:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The response from the processor, including any EMV data returned by the issuing bank</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Any server errors that may have been returned during the processing request - this determines whether a request was declined on or offline</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A TLV string containing the appropriate data to be sent to the terminal after online processing.</Abstract></ReturnValue>
+			<Anchor>//api/name/generateOnlineAuthResponseTLV:error:</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		

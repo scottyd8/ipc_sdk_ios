@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ManualEntryError.html">
+	<File path="Constants/DeviceError.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ManualEntryError</TokenIdentifier>
-			<Abstract type="html">Error in taking a manual transaction</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/DeviceError</TokenIdentifier>
+			<Abstract type="html">Device error types</Abstract>
 			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ManualEntryErrorCanceled</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceErrorDisconnected</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ManualEntryErrorCanceled</Declaration>
+            <Declaration>DeviceErrorDisconnected</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ManualEntryErrorNotSREDReady</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceErrorDeviceBusy</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ManualEntryErrorNotSREDReady</Declaration>
+            <Declaration>DeviceErrorDeviceBusy</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             

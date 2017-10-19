@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TransactionSettings.h</key>
 		<data>
-		RYcbQyReVsFkv4GIDxdkTl+2NZQ=
+		yIJ7jB2ia9W+aTd0mGc4WiD+3xw=
 		</data>
 		<key>Headers/WPYAddressInfo.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/WPYAuthTokenRequest.h</key>
 		<data>
-		GA55N4KEo62D2x5IFgWWJ9F0o/8=
+		EsYXN37wmKHwBYIJeawhE/KGYxo=
 		</data>
 		<key>Headers/WPYAuthTokenResponse.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/WPYSwiper.h</key>
 		<data>
-		lWRVeA04kMOjwJ4XB0cU/w0BXx4=
+		xiXNEnqhXr6wltpKCGjGZmEszEY=
 		</data>
 		<key>Headers/WPYTender.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Headers/WorldPayAPI.h</key>
 		<data>
-		MAmQch2VQoek0lJmr/BDQYDdFLo=
+		5ZYcttKfTiuCukGTzbq02Uvrk2g=
 		</data>
 		<key>Headers/WorldPaySDK.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HoDYa1uOYLEv+xq4QlMYGG7QT5g=
+		PLLZUHNeijS4LthJbqwM39ifmM8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>PrivateHeaders/WPYMiuraPrivate.h</key>
 		<data>
-		C7RBvv9b/Q7wf6OXuBhiueqPVyE=
+		Hh+c01K7wwFscUBjWN9dnbRlB/g=
 		</data>
 		<key>WPYManualTenderEntryViewController.nib</key>
 		<data>
-		p+FdFwpjXaLWiBRlfUd0EEmCBMY=
+		+BwdfwNtA/A1pEm4zeKgIpGeU8s=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -226,11 +226,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RYcbQyReVsFkv4GIDxdkTl+2NZQ=
+			yIJ7jB2ia9W+aTd0mGc4WiD+3xw=
 			</data>
 			<key>hash2</key>
 			<data>
-			v8n97YepX80SOB7vH8Fm+W7WbPop5hnnR1RtRKsJMSM=
+			ymTL8E3J2WXcj09aotQapN9Ig2BbPLK/tozaqSynY1A=
 			</data>
 		</dict>
 		<key>Headers/WPYAddressInfo.h</key>
@@ -248,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GA55N4KEo62D2x5IFgWWJ9F0o/8=
+			EsYXN37wmKHwBYIJeawhE/KGYxo=
 			</data>
 			<key>hash2</key>
 			<data>
-			DTniyNbo8SBSjbbK+dFb+IVx0055G+xOix5Z19Z2Kdc=
+			B8jdiiV9GyfA0uhxRpzxH90/HpiXbMDgUNa3nCfCU1c=
 			</data>
 		</dict>
 		<key>Headers/WPYAuthTokenResponse.h</key>
@@ -589,11 +589,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lWRVeA04kMOjwJ4XB0cU/w0BXx4=
+			xiXNEnqhXr6wltpKCGjGZmEszEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MCZzMJwHRppX4pWk0aO6i9HOU3Ymsy+LTZAAm3jNMiM=
+			oHzTb+0x22xyA9hqy/wML6pFVdutfr6nahh/4zeImgI=
 			</data>
 		</dict>
 		<key>Headers/WPYTender.h</key>
@@ -710,11 +710,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MAmQch2VQoek0lJmr/BDQYDdFLo=
+			5ZYcttKfTiuCukGTzbq02Uvrk2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			dMkd9fI1Haw8z5kGXSKcgWRDGBmvfcXNIHbLgEkVdY0=
+			DajxduE1lqzwJfUHjtHm9taTl/TPvDpkfqc2ICczhy4=
 			</data>
 		</dict>
 		<key>Headers/WorldPaySDK.h</key>
@@ -743,22 +743,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C7RBvv9b/Q7wf6OXuBhiueqPVyE=
+			Hh+c01K7wwFscUBjWN9dnbRlB/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			5tJk5zYUIXNaFYq7eWQUOo1YW9S9zH7cQ0dr+tuFbQU=
+			SZ29BBJPSB2JMsNc4GQk/rTx0W1lS0QjmPfHAuIyvVM=
 			</data>
 		</dict>
 		<key>WPYManualTenderEntryViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p+FdFwpjXaLWiBRlfUd0EEmCBMY=
+			+BwdfwNtA/A1pEm4zeKgIpGeU8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			sE4t5PHuRUt3EM3phtl8hnCxR4IpGWDz/ZVGf7FldrY=
+			UAC5Vwhy523QIyBi7LpdZtZvQfoKaql1g2W+ylQuQWM=
 			</data>
 		</dict>
 	</dict>

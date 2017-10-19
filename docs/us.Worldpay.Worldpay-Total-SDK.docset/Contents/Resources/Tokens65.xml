@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/NumericDataInput.html">
+	<File path="Constants/DeviceStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/NumericDataInput</TokenIdentifier>
-			<Abstract type="html">Numeric data required on pinpad</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/DeviceStatus</TokenIdentifier>
+			<Abstract type="html">Current status of the ped</Abstract>
 			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputGratuity</TokenIdentifier>
-            <Abstract type="html">Prompt for gratuity</Abstract>
-            <Declaration>NumericDataInputGratuity</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusPoweredOn</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusPoweredOn</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputTip</TokenIdentifier>
-            <Abstract type="html">Prompt for tip</Abstract>
-            <Declaration>NumericDataInputTip</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusPinEntryEvent</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusPinEntryEvent</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCashback</TokenIdentifier>
-            <Abstract type="html">Prompt for cashback</Abstract>
-            <Declaration>NumericDataInputCashback</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusApplicationSelection</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusApplicationSelection</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputExpirationDate</TokenIdentifier>
-            <Abstract type="html">Prompt for expiration date</Abstract>
-            <Declaration>NumericDataInputExpirationDate</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusPoweringOff</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusPoweringOff</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -54,9 +54,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCVV2</TokenIdentifier>
-            <Abstract type="html">Prompt for CVV</Abstract>
-            <Declaration>NumericDataInputCVV2</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusRebooting</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusRebooting</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -64,9 +64,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCardLastFour</TokenIdentifier>
-            <Abstract type="html">Prompt for last four digits of card</Abstract>
-            <Declaration>NumericDataInputCardLastFour</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusMPIRestarting</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusMPIRestarting</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -74,9 +74,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputAccountType</TokenIdentifier>
-            <Abstract type="html">Prompt for account type</Abstract>
-            <Declaration>NumericDataInputAccountType</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusSeePhone</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusSeePhone</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -84,9 +84,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputPostalCode</TokenIdentifier>
-            <Abstract type="html">Prompt for zip code</Abstract>
-            <Declaration>NumericDataInputPostalCode</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusSuccessBeep</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusSuccessBeep</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -94,19 +94,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCardNumber</TokenIdentifier>
-            <Abstract type="html">prompt for card number</Abstract>
-            <Declaration>NumericDataInputCardNumber</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="65"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NumericDataInputCustom</TokenIdentifier>
-            <Abstract type="html">Custom prompt (requires customPrompt and numberFormat to be specified)</Abstract>
-            <Declaration>NumericDataInputCustom</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/DeviceStatusErrorBeep</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DeviceStatusErrorBeep</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             

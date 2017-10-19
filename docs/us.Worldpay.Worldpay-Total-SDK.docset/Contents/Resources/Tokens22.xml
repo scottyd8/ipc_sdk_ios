@@ -1,65 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYManualTenderEntryViewController.html">
+	<File path="Classes/WPYLogger.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYManualTenderEntryViewController</TokenIdentifier>
-			<Abstract type="html">The Manual Entry View Controller is used to  to accept card or ACH information and then send the request
-for processing.  When the event is complete, the delegate will be notified of with the payment response</Abstract>
-			<DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYLogger</TokenIdentifier>
+			<Abstract type="html">This class is used to write to the log</Abstract>
+			<DeclaredIn>WorldpayAPI.h</DeclaredIn>
             
 			
 			<NodeRef refid="22"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYManualTenderEntryViewController/initWithDelegate:tenderType:request:</TokenIdentifier>
-			<Abstract type="html">Creates a Manual Entry View Controller that can be presented by the host application to accept card or ACH information and then send the request
-for processing.  When the event is complete, the delegate will be notified of with the payment response</Abstract>
-			<DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)initWithDelegate:(id&lt;WPYManualTenderEntryDelegate&gt;)delegate tenderType:(WPYManualTenderType)tenderType request:(WPYPaymentRequest *)request</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The delegate that will be responding to the WPYManualTenderEntryDelegate protocol</Abstract>
-				</Parameter><Parameter>
-					<Name>tenderType</Name>
-					<Abstract type="html">The type of tender that is going to be entered (check or credit card)</Abstract>
-				</Parameter><Parameter>
-					<Name>request</Name>
-					<Abstract type="html">The prepopulated payment request object that will be used to process the tender. You must set things such as gratuity data, and other fields not associated with the tender itself</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithDelegate:tenderType:request:</Anchor>
-            <NodeRef refid="22"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYManualTenderEntryViewController/initWithDelegate:tenderType:paymentMethodRequest:</TokenIdentifier>
-			<Abstract type="html">Creates a Manual Entry View Controller that can be presented by the host application to accept card or ACH information and then send the request
-for processing.  When the event is complete, the delegate will be notified of with the payment response</Abstract>
-			<DeclaredIn>WPYManualTenderEntryViewController.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)initWithDelegate:(id&lt;WPYManualTenderEntryDelegate&gt;)delegate tenderType:(WPYManualTenderType)tenderType paymentMethodRequest:(WPYPaymentMethodRequest *)request</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The delegate that will be responding to the WPYManualTenderEntryDelegate protocol</Abstract>
-				</Parameter><Parameter>
-					<Name>tenderType</Name>
-					<Abstract type="html">The type of tender that is going to be entered (check or credit card)</Abstract>
-				</Parameter><Parameter>
-					<Name>request</Name>
-					<Abstract type="html">The prepopulated payment method request object that will be used to create the payment method. You must set all fields not associated directly with the tender itself</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithDelegate:tenderType:paymentMethodRequest:</Anchor>
-            <NodeRef refid="22"/>
-		</Token>
 		
         
         

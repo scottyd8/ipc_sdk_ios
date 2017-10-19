@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/NFCError.html">
+	<File path="Constants/DevicePrompt.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/NFCError</TokenIdentifier>
-			<Abstract type="html">NFC error types</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/DevicePrompt</TokenIdentifier>
+			<Abstract type="html">Prompt message types</Abstract>
 			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorAborted</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptInsertCard</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorAborted</Declaration>
+            <Declaration>DevicePromptInsertCard</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorTimeOut</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptInsertOrSwipe</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorTimeOut</Declaration>
+            <Declaration>DevicePromptInsertOrSwipe</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorCardInserted</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptChipCardSwiped</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorCardInserted</Declaration>
+            <Declaration>DevicePromptChipCardSwiped</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorCardSwiped</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptSwipeError</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorCardSwiped</Declaration>
+            <Declaration>DevicePromptSwipeError</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -54,9 +54,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorUseIccOrMsr</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptConfirmAmount</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorUseIccOrMsr</Declaration>
+            <Declaration>DevicePromptConfirmAmount</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -64,9 +64,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorUseIccMsrOrOtherCard</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptNonICCard</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorUseIccMsrOrOtherCard</Declaration>
+            <Declaration>DevicePromptNonICCard</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -74,9 +74,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorUseIcc</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptApproved</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorUseIcc</Declaration>
+            <Declaration>DevicePromptApproved</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -84,9 +84,159 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NFCErrorHardwareError</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptDeclined</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>NFCErrorHardwareError</Declaration>
+            <Declaration>DevicePromptDeclined</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptCanceled</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptCanceled</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptRetry</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptRetry</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptTransactionTimedOut</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptTransactionTimedOut</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptNfcErrorCardInserted</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptNfcErrorCardInserted</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptNfcErrorCardSwiped</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptNfcErrorCardSwiped</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptNfcErrorUseICCard</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptNfcErrorUseICCard</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptNfcErrorUseICCOrMSR</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptNfcErrorUseICCOrMSR</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptNfcHardwareError</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptNfcHardwareError</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptEmvReaderError</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptEmvReaderError</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptEmvMSRFallback</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptEmvMSRFallback</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptEmvInvalidCard</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptEmvInvalidCard</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptProcessing</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptProcessing</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptEmvRemoveCard</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptEmvRemoveCard</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptTapCardAgain</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptTapCardAgain</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="64"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevicePromptReversal</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>DevicePromptReversal</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             

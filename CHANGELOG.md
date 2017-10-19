@@ -1,3 +1,15 @@
+## [2.0.0] - 2017-10-19
+
+### ADDED 
+-   Implemented Quick Chip Features into the new SDK (Version 2.0 only).
+-   PED on ready state and perform Quick chip and Regular EMV trasnactions.
+-   Broke the confirm amount dispaly on the PED to reflect the Base, Gratuity(if applicable), Cashback(if applicable) and Total amounts.
+-   Added a new flag to enable and disable grautuity prompt on PED.
+-   Added Gratuity on POS support. Below are the three cases.                                                                                      
+    - If gratuity value is sent from POS to SDK and the gratuity flag is on, PED will reflect the value of the gratuity and enable the user to modify if needed.
+    - If gratuity value is sent from POS to SDK and the gratuity flag is off, PED will not show the gratuity screen but the gratuity value is going to be sent to the Gateway API.
+    - If gratuity value is not sent from POS to SDK and the gratuity flag is off, PED will not show the gratuity screen and the value will be sent as zero for gratuity by default to the Gateway API. 
+
 ## [1.0.37] - 2017-09-25
 
 ### Fixed 

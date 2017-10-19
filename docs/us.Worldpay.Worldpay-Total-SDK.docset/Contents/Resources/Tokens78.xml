@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCheckAccountType.html">
+	<File path="Constants/PrinterError.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCheckAccountType</TokenIdentifier>
-			<Abstract type="html">This enumeration defines the types of checking accounts that can be associated with a check.  Please note that any value
-set to &quot;Unknown&quot; will NOT be sent to the server.</Abstract>
-			<DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/PrinterError</TokenIdentifier>
+			<Abstract type="html">Receipt printer error types</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
 			<NodeRef refid="78"/>
@@ -15,61 +14,61 @@ set to &quot;Unknown&quot; will NOT be sent to the server.</Abstract>
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeUnknown</TokenIdentifier>
-            <Abstract type="html">If this is set, the transaction will not be sent to the servoer</Abstract>
-            <Declaration>WPYCheckAccountTypeUnknown</Declaration>
-            
-            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
-            
-            <NodeRef refid="78"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeChecking</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PrinterErrorNotPresent</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCheckAccountTypeChecking</Declaration>
+            <Declaration>PrinterErrorNotPresent</Declaration>
             
-            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeSavings</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PrinterErrorNoPaper</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCheckAccountTypeSavings</Declaration>
+            <Declaration>PrinterErrorNoPaper</Declaration>
             
-            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeBusinessChecking</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PrinterErrorBatteryLow</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCheckAccountTypeBusinessChecking</Declaration>
+            <Declaration>PrinterErrorBatteryLow</Declaration>
             
-            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeBusinessSavings</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PrinterErrorInternalPrinterError</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCheckAccountTypeBusinessSavings</Declaration>
+            <Declaration>PrinterErrorInternalPrinterError</Declaration>
             
-            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeEND</TokenIdentifier>
-            <Abstract type="html">Used to determine end of presentation list</Abstract>
-            <Declaration>WPYCheckAccountTypeEND</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PrinterErrorImageNotPresent</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>PrinterErrorImageNotPresent</Declaration>
             
-            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="78"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PrinterErrorImageFormatIncorrect</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>PrinterErrorImageFormatIncorrect</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="78"/>
         </Token>

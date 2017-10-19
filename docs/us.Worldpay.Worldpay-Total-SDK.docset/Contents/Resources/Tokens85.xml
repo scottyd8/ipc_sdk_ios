@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYPaymentMethodDuplicateCheckType.html">
+	<File path="Constants/WPYCardEvent.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYPaymentMethodDuplicateCheckType</TokenIdentifier>
-			<Abstract type="html">Indicates how (and whether) the method should check for duplicate accounts. Defaults to 1.</Abstract>
-			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCardEvent</TokenIdentifier>
+			<Abstract type="html">This notifies the application developer when certain types of events have occurred.  Some of the events may not be
+supported on all hardware.  For instance, not all terminals notify the SDK when a card has been remved from the chip
+reader</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
             
 			
 			<NodeRef refid="85"/>
@@ -14,51 +16,61 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYPaymentMethodDuplicateCheckTypeUnset</TokenIdentifier>
-            <Abstract type="html">Unset</Abstract>
-            <Declaration>WPYPaymentMethodDuplicateCheckTypeUnset</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventSwiped</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCardEventSwiped</Declaration>
             
-            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
-            
-            <NodeRef refid="85"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYPaymentMethodDuplicateCheckTypeNone</TokenIdentifier>
-            <Abstract type="html">Does not check for Duplicate Card Number for specified Customer ID</Abstract>
-            <Declaration>WPYPaymentMethodDuplicateCheckTypeNone</Declaration>
-            
-            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="85"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYPaymentMethodDuplicateCheckTypeCustomer</TokenIdentifier>
-            <Abstract type="html">Checks for Duplicate Card Number for specified Customer ID</Abstract>
-            <Declaration>WPYPaymentMethodDuplicateCheckTypeCustomer</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventInserted</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCardEventInserted</Declaration>
             
-            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
-            
-            <NodeRef refid="85"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYPaymentMethodDuplicateCheckTypeAllCustomersUnderId</TokenIdentifier>
-            <Abstract type="html">Checks for Duplicate Card Number for All Customer IDs for specified SecureNet ID</Abstract>
-            <Declaration>WPYPaymentMethodDuplicateCheckTypeAllCustomersUnderId</Declaration>
-            
-            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="85"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYPaymentMethodDuplicateCheckTypeAllCustomersUnderGroup</TokenIdentifier>
-            <Abstract type="html">Checks for Duplicate Card Number for All Customer IDs for specified Group ID</Abstract>
-            <Declaration>WPYPaymentMethodDuplicateCheckTypeAllCustomersUnderGroup</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventRemoved</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCardEventRemoved</Declaration>
             
-            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="85"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventNonICCInserted</TokenIdentifier>
+            <Abstract type="html">Card inserted backwards or a non-chip card was inserted</Abstract>
+            <Declaration>WPYCardEventNonICCInserted</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="85"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventBadSwipe</TokenIdentifier>
+            <Abstract type="html">Partial or no track data received</Abstract>
+            <Declaration>WPYCardEventBadSwipe</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="85"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardEventIccCardSwiped</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCardEventIccCardSwiped</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="85"/>
         </Token>

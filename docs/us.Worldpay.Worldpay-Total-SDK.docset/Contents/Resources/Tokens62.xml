@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ICCError.html">
+	<File path="Constants/CardTrack.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ICCError</TokenIdentifier>
-			<Abstract type="html">Chip card error types</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/CardTrack</TokenIdentifier>
+			<Abstract type="html">Card track specifier</Abstract>
 			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorInvalidData</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CardTrack1</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorInvalidData</Declaration>
+            <Declaration>CardTrack1</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorTerminalNotReady</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CardTrack2</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorTerminalNotReady</Declaration>
+            <Declaration>CardTrack2</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -34,89 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorNoCardInserted</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CardTrack3</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorNoCardInserted</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorInvalidCardNoMSRFallback</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorInvalidCardNoMSRFallback</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorTransactionInProgress</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorTransactionInProgress</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorDataMissing</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorDataMissing</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorUnsupportedCardTypeMSRFallback</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorUnsupportedCardTypeMSRFallback</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorMissingFile</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorMissingFile</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorReadError</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorReadError</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorInvalidIssuerPublicKey</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorInvalidIssuerPublicKey</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="62"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ICCErrorUserCanceled</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>ICCErrorUserCanceled</Declaration>
+            <Declaration>CardTrack3</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             

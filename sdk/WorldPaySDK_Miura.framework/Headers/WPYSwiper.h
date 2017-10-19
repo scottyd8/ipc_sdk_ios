@@ -109,6 +109,8 @@ typedef NS_ENUM(uint8_t, WPYDevicePrompt)
     /// self-explanatory
     WPYDevicePromptEmvMSRFallback,
     /// self-explanatory
+    WPYDevicePromptUnsupportedCardFallback,
+    /// self-explanatory
     WPYDevicePromptEmvInvalidCard,
     /// self-explanatory
     WPYDevicePromptProcessing,
@@ -131,7 +133,11 @@ typedef NS_ENUM(uint8_t, WPYDevicePrompt)
     /// self-explanatory
     WPYDevicePromptOnlinePinError,
     /// self-explanatory
-    WPYDevicePromptOnlinePinCounterExceeded
+    WPYDevicePromptOnlinePinCounterExceeded,
+    /// self-explanatory
+    WPYDevicePromptWaitingForCashier,
+    /// self-explanatory
+    WPYDevicePromptGenericError,
 };
 
 /**
@@ -308,13 +314,13 @@ typedef NS_ENUM(NSInteger, WPYEMVTransactionType)
  * @param request A pointer to the request object used to complete the EMV Request.  This must be populated with all required info as any request for online
  *        processing will happen automatically if the terminal requests it.
  * @param transactionType The transaction type to set in the Application Cryptogram - Such as a goods sale, refund, or cashback transaction. Some devices handle
- *        cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
+ *        'transactionType' set as 'cashback' will enable cashback on the terminal and will process cashback transactions as sale and will then allow the terminal user to set a cashback amount.
  *        AnywhereCommerce devices must have the cashback amount / type set at the start of the transaction.  Miura devices will enable cashback
- *        only if this is set to type Cashback but will process as a sale if the user declines to enter a cashback amount
- * @param terminalSelectsApplication This is recommended to be set to false, for better user experience. If this is set to true, then application selection will immediately happen if necessary after reading the card, handled by the terminal. If set to false, application selection will be handled by the SDK defaulting to US Common Debit if needed, which can optionally be overridden with a delegate method didRequestSelectEMVApplication in WPYSwiperDelegate.
- * @param commonDebitMode This uses the USCommonDebitMode enum, which allows values for default multi-application identifier selection, prefer US Common Debit application identifiers, or prefer Global Debit application identifiers.
+ *        If transactionType is set to type Cashback but will process as a sale if the user declines to enter a cashback amount
+ * @param enableGratuityOnPed If this flag is set, the PED will prompt for gratuity. If this is not set and a value for gratuity is sent from the POS app, SDK will still send it over to our gateway but the Gratuity screen will not be prompted on the PED. If this flag is set and a value for gratuity is sent from the POS app, then the SDK will prompt the gratuity screen with the sent gratuity value from the app by default, if no gratuity is sent from POS then gratuity screen will display the amount as '0.00'.
+ * @param commonDebitMode This uses the USCommonDebitMode enum, which allows values for default multi-application identifier selection, prefer US Common Debit application identifiers, or prefer Global Debit application identifiers. Note: For Quick Chip this has been defaulted to prefer US Common Debit application identifiers.
  */
-- (void) beginEMVTransactionWithRequest:(WPYPaymentRequest *)request transactionType:(WPYEMVTransactionType)transactionType terminalSelectsApplication: (BOOL) terminalSelectsApplication commonDebitMode: (USCommonDebitMode) commonDebitMode;
+- (void) beginEMVTransactionWithRequest:(WPYPaymentRequest *)request transactionType:(WPYEMVTransactionType)transactionType enableGratuityOnPed:(BOOL)enableGratuityOnPed commonDebitMode: (USCommonDebitMode) commonDebitMode;
 
 /**
  * Start a contactless EMV or MSD transaction.  Some hardware allows card swipes in NFC mode, others do not.  Does nothing if NFC is not supported on
@@ -356,10 +362,16 @@ typedef NS_ENUM(NSInteger, WPYEMVTransactionType)
  * @return A boolean indicating whether or not the swiper's display can show custom text
  */
 - (BOOL) swiperCanDisplayText;
+/**
+ * This function will clear the card data from the SDK 
+ *
+ */
+-(void) clearQuickChipTransaction;
 
 /**
  * This function will clear the display on terminals that allow you to display custom text
  */
+
 - (void) swiperClearDisplay;
 /**
  * If supported by the terminal hardware, this will request that the custom text be displayed on the screen.  The text should be line formatted
@@ -406,17 +418,18 @@ typedef NS_ENUM(NSInteger, WPYEMVTransactionType)
  *
  * @return self-explanatory
  */
-- (BOOL) cardInserted;
+- (BOOL)cardInserted;
 
 /**
  * This method is called to determine default device prompt text
  *
  * @param prompt self-explanatory
  * @param parameters An optional array of strings to be used in prompt construction
+ * @param currSettings Settings of a particular transaction to be used in prompt construction
  *
  * @return self-explanatory
  */
-- (NSString *) defaultDevicePromptText: (WPYDevicePrompt) prompt parameters:(NSArray<NSString *> *)parameters;
+- (NSString *) defaultDevicePromptText: (WPYDevicePrompt) prompt parameters:(NSArray<NSString *> *)parameters currentSettings:(TransactionSettings*)currSettings;
 
 @end
 

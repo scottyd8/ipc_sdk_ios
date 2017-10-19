@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYEnvironment.html">
+	<File path="Constants/WPYCardAccountType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYEnvironment</TokenIdentifier>
-			<Abstract type="html">Enum for environments</Abstract>
-			<DeclaredIn>WorldPayAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCardAccountType</TokenIdentifier>
+			<Abstract type="html">This is an indication of the type of transactions that a specific card application can support
+On devices where the terminal is capable of handling application support, it will automatically
+prompt for credit or debit when appropriate.  On non-capable devices, the application will
+be notified when the user must choose credit or debit</Abstract>
+			<DeclaredIn>WPYSwiper.h</DeclaredIn>
             
 			
 			<NodeRef refid="83"/>
@@ -14,41 +17,41 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYEnvironmentDemo</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeCredit</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYEnvironmentDemo</Declaration>
+            <Declaration>WPYCardAccountTypeCredit</Declaration>
             
-            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="83"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYEnvironmentProd</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeDebit</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYEnvironmentProd</Declaration>
+            <Declaration>WPYCardAccountTypeDebit</Declaration>
             
-            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
-            
-            <NodeRef refid="83"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYEnvironmentQA</TokenIdentifier>
-            <Abstract type="html">self-explanatory, remove these when building release version and generating docs</Abstract>
-            <Declaration>WPYEnvironmentQA</Declaration>
-            
-            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="83"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYEnvironmentDev</TokenIdentifier>
-            <Abstract type="html">self-explanatory, remove these when building release version and generating docs</Abstract>
-            <Declaration>WPYEnvironmentDev</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeCreditOrDebit</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCardAccountTypeCreditOrDebit</Declaration>
             
-            <DeclaredIn>WorldPayAPI.h</DeclaredIn>
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            
+            <NodeRef refid="83"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeUnknown</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCardAccountTypeUnknown</Declaration>
+            
+            <DeclaredIn>WPYSwiper.h</DeclaredIn>
             
             <NodeRef refid="83"/>
         </Token>

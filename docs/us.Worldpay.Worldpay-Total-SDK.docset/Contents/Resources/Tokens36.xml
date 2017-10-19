@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYResponseObject.html">
+	<File path="Classes/WPYPaymentVoid.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYResponseObject</TokenIdentifier>
-			<Abstract type="html">This is the objet that contains the results from any server transaction.</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYPaymentVoid</TokenIdentifier>
+			<Abstract type="html">This requests that the transaction specified be voided.  An EMV card need only be specified if handling the reversal
+of a transaction that was authorized online.  In the event of an EMV reversal, the SDK will automatically populate
+the card field with the reversal request data</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
             
 			
 			<NodeRef refid="36"/>
@@ -13,146 +15,242 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setResponseCode:</TokenIdentifier>
-			<Abstract type="html">Gateway response code for the current request</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/setAmount:</TokenIdentifier>
+			<Abstract type="html">The amount of the transaction being voided</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) WPYResponseCode responseCode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
 			
 			
-			<Anchor>//api/name/responseCode</Anchor>
+			<Anchor>//api/name/amount</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/responseCode</TokenIdentifier>
-			<Abstract type="html">Gateway response code for the current request</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/amount</TokenIdentifier>
+			<Abstract type="html">The amount of the transaction being voided</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) WPYResponseCode responseCode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
 			
 			
-			<Anchor>//api/name/responseCode</Anchor>
+			<Anchor>//api/name/amount</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/responseCode</TokenIdentifier>
-			<Abstract type="html">Gateway response code for the current request</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentVoid/amount</TokenIdentifier>
+			<Abstract type="html">The amount of the transaction being voided</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) WPYResponseCode responseCode</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
 			
 			
-			<Anchor>//api/name/responseCode</Anchor>
+			<Anchor>//api/name/amount</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setResponseMessage:</TokenIdentifier>
-			<Abstract type="html">Response Message containing a detailed message for the merchant, such as why a transaction was declined</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/setTransactionId:</TokenIdentifier>
+			<Abstract type="html">The ID of the transaction being voided</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *responseMessage</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/responseMessage</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/responseMessage</TokenIdentifier>
-			<Abstract type="html">Response Message containing a detailed message for the merchant, such as why a transaction was declined</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/transactionId</TokenIdentifier>
+			<Abstract type="html">The ID of the transaction being voided</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *responseMessage</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/responseMessage</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/responseMessage</TokenIdentifier>
-			<Abstract type="html">Response Message containing a detailed message for the merchant, such as why a transaction was declined</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentVoid/transactionId</TokenIdentifier>
+			<Abstract type="html">The ID of the transaction being voided</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *responseMessage</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
 			
-			<Anchor>//api/name/responseMessage</Anchor>
+			<Anchor>//api/name/transactionId</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setSuccess:</TokenIdentifier>
-			<Abstract type="html">Indicates whether or not the current request was successfully processed</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/setCard:</TokenIdentifier>
+			<Abstract type="html">This optional parameter is automatically provided by the SDK when a void is being requested due to an EMV reversal
+situation.  This parameter should not be included when a normal merchant initiated void is occuring</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL success</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
 			
 			
-			<Anchor>//api/name/success</Anchor>
+			<Anchor>//api/name/card</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/success</TokenIdentifier>
-			<Abstract type="html">Indicates whether or not the current request was successfully processed</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/card</TokenIdentifier>
+			<Abstract type="html">This optional parameter is automatically provided by the SDK when a void is being requested due to an EMV reversal
+situation.  This parameter should not be included when a normal merchant initiated void is occuring</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL success</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
 			
 			
-			<Anchor>//api/name/success</Anchor>
+			<Anchor>//api/name/card</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/success</TokenIdentifier>
-			<Abstract type="html">Indicates whether or not the current request was successfully processed</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentVoid/card</TokenIdentifier>
+			<Abstract type="html">This optional parameter is automatically provided by the SDK when a void is being requested due to an EMV reversal
+situation.  This parameter should not be included when a normal merchant initiated void is occuring</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL success</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
 			
 			
-			<Anchor>//api/name/success</Anchor>
+			<Anchor>//api/name/card</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/setResult:</TokenIdentifier>
-			<Abstract type="html">Short message indicating the result of processing. Suitable to display to the card holder</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/setVoidType:</TokenIdentifier>
+			<Abstract type="html">The type of void being sent to the gateway.  This is automatically set by the SDK to merchant unless
+the transaction is caused by an EMV reversal.  The application developer does not need to do anything
+with this parameter</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *result</Declaration>
+			<Declaration>@property (nonatomic) WPYVoidType voidType</Declaration>
 			
 			
-			<Anchor>//api/name/result</Anchor>
+			<Anchor>//api/name/voidType</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYResponseObject/result</TokenIdentifier>
-			<Abstract type="html">Short message indicating the result of processing. Suitable to display to the card holder</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/voidType</TokenIdentifier>
+			<Abstract type="html">The type of void being sent to the gateway.  This is automatically set by the SDK to merchant unless
+the transaction is caused by an EMV reversal.  The application developer does not need to do anything
+with this parameter</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *result</Declaration>
+			<Declaration>@property (nonatomic) WPYVoidType voidType</Declaration>
 			
 			
-			<Anchor>//api/name/result</Anchor>
+			<Anchor>//api/name/voidType</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYResponseObject/result</TokenIdentifier>
-			<Abstract type="html">Short message indicating the result of processing. Suitable to display to the card holder</Abstract>
-			<DeclaredIn>WPYResponseObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentVoid/voidType</TokenIdentifier>
+			<Abstract type="html">The type of void being sent to the gateway.  This is automatically set by the SDK to merchant unless
+the transaction is caused by an EMV reversal.  The application developer does not need to do anything
+with this parameter</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *result</Declaration>
+			<Declaration>@property (nonatomic) WPYVoidType voidType</Declaration>
 			
 			
-			<Anchor>//api/name/result</Anchor>
+			<Anchor>//api/name/voidType</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/setOrderId:</TokenIdentifier>
+			<Abstract type="html">Client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate
+transactions. The orderId must be unique to the merchant&apos;s SecureNet ID; however, uniqueness is only
+evaluated for APPROVED transactions and only for the last 30 days. If a transaction is declined, the
+corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/orderId</TokenIdentifier>
+			<Abstract type="html">Client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate
+transactions. The orderId must be unique to the merchant&apos;s SecureNet ID; however, uniqueness is only
+evaluated for APPROVED transactions and only for the last 30 days. If a transaction is declined, the
+corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentVoid/orderId</TokenIdentifier>
+			<Abstract type="html">Client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate
+transactions. The orderId must be unique to the merchant&apos;s SecureNet ID; however, uniqueness is only
+evaluated for APPROVED transactions and only for the last 30 days. If a transaction is declined, the
+corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/setExtendedInformation:</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYPaymentVoid/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYPaymentVoid/extendedInformation</TokenIdentifier>
+			<Abstract type="html">Optional extended card data to be provided by the merchant.  On card present transactions, the SDK will automatically add this object and populate
+card terminal information, including &quot;Terminal ID&quot;.  If a custom terminal ID is required, this object should be included or the terminal ID should
+be set via the request Auth token method</Abstract>
+			<DeclaredIn>WPYPaymentVoid.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYExtendedCardData *extendedInformation</Declaration>
+			
+			
+			<Anchor>//api/name/extendedInformation</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		

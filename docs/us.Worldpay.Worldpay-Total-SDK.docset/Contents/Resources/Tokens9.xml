@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYAuthTokenResponse.html">
+	<File path="Classes/WPYAnywhereRambler.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYAuthTokenResponse</TokenIdentifier>
-			<Abstract type="html">This class defines the data fields returned back from a WPYAuthTokenRequest transaction. You typically
-don&apos;t need to access the token as it is also kept in the device keychain, however you will likely need
-other data from the super calss WPYResponseObject</Abstract>
-			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYAnywhereRambler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WPYAnywhereRambler.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
@@ -15,38 +13,27 @@ other data from the super calss WPYResponseObject</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenResponse/setAuthToken:</TokenIdentifier>
-			<Abstract type="html">The authorization token issued by the server.</Abstract>
-			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAnywhereRambler/isAudioJackSupported</TokenIdentifier>
+			<Abstract type="html">Query to see if audiojack is supported by the current swiper class.  Note that
+you must specify the correct input type for the hardware being used at the time of connection</Abstract>
+			<DeclaredIn>WPYAnywhereRambler.mm</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, getter=authToken) NSString *authToken</Declaration>
+			<Declaration>- (BOOL)isAudioJackSupported</Declaration>
 			
 			
-			<Anchor>//api/name/authToken</Anchor>
+			<Anchor>//api/name/isAudioJackSupported</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenResponse/authToken</TokenIdentifier>
-			<Abstract type="html">The authorization token issued by the server.</Abstract>
-			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAnywhereRambler/isBluetoothSupported</TokenIdentifier>
+			<Abstract type="html">Query to see if bluetooth is supported by the current swiper class</Abstract>
+			<DeclaredIn>WPYAnywhereRambler.mm</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly, getter=authToken) NSString *authToken</Declaration>
-			
-			
-			<Anchor>//api/name/authToken</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenResponse/authToken</TokenIdentifier>
-			<Abstract type="html">The authorization token issued by the server.</Abstract>
-			<DeclaredIn>WPYAuthTokenResponse.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly, getter=authToken) NSString *authToken</Declaration>
+			<Declaration>- (BOOL)isBluetoothSupported</Declaration>
 			
 			
-			<Anchor>//api/name/authToken</Anchor>
+			<Anchor>//api/name/isBluetoothSupported</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

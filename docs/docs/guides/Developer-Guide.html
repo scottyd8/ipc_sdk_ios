@@ -126,15 +126,15 @@ card is not present for the transaction.</p>
 <tbody>
 <tr>
 <td>Address the Attached Device </td>
-<td> Gets a reference to the attached device and allows you to set up handlers for device events. <br/><br/>See:  <a href="../../Classes/WorldpayAPI.html#//api/name/swiperWithDelegate:">[WorldpayAPI swiperWithDelegate:]</a> </td>
+<td> Gets a reference to the attached device and allows you to set up handlers for device events. <br/><br/>See:  [WorldpayAPI swiperWithDelegate:] </td>
 </tr>
 <tr>
 <td>Magnetic Stripe Reader </td>
-<td> Captures the card information from the magnetic stripe reader on the attached device.<br/><br/>See:  <a href="../../Classes/WPYSwiper.html#//api/name/beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:">[WPYSwiper beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:]</a> </td>
+<td> Captures the card information from the magnetic stripe reader on the attached device.<br/><br/>See:  [WPYSwiper beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:] </td>
 </tr>
 <tr>
 <td>EMV Contact </td>
-<td> Obtains  card information from a chip card inserted in the EMV reader of the attached device.<br/><br/>See:  <a href="../../Classes/WPYSwiper.html#//api/name/beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:">[WPYSwiper beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:]</a> </td>
+<td> Obtains  card information from a chip card inserted in the EMV reader of the attached device.<br/><br/>See:  [WPYSwiper beginEMVTransactionWithRequest:transactionType:terminalSelectsApplication:commonDebitMode:] </td>
 </tr>
 <tr>
 <td>Manual Entry </td>
@@ -163,27 +163,27 @@ Integrated Payment Hub.</p>
 <tbody>
 <tr>
 <td> Authorize </td>
-<td> This call authorizes a transaction but does not capture the transaction for settlement. In a card-present environment, this option is most commonly used in serviceindustry transactions where an initial amount is authorizedprior to a gratuity being added. If the Authorization Onlycall is used, a subsequent Prior Auth Capture call must be made to capture the transaction for settlement.<br/><br/>See: <a href="../../Classes/WorldpayAPI.html#//api/name/paymentAuthorize:withCompletion:">[WorldpayAPI paymentAuthorize:withCompletion:]</a> </td>
+<td> This call authorizes a transaction but does not capture the transaction for settlement. In a card-present environment, this option is most commonly used in serviceindustry transactions where an initial amount is authorizedprior to a gratuity being added. If the Authorization Onlycall is used, a subsequent Prior Auth Capture call must be made to capture the transaction for settlement.<br/><br/>See: [WorldpayAPI paymentAuthorize:withCompletion:] </td>
 </tr>
 <tr>
 <td> Prior Auth Capture </td>
-<td> This call allows a previously authorized transaction to be captured for settlement. In a card-present environment, Prior Auth Capture is commonly used when the transactionamount must be modified during capture, e.g., in the service industry when a gratuity is added to the original amount.<br/><br/>See:  <a href="../../Classes/WorldpayAPI.html#//api/name/paymentCapture:withCompletion:">[WorldpayAPI paymentCapture:withCompletion:]</a> </td>
+<td> This call allows a previously authorized transaction to be captured for settlement. In a card-present environment, Prior Auth Capture is commonly used when the transactionamount must be modified during capture, e.g., in the service industry when a gratuity is added to the original amount.<br/><br/>See:  [WorldpayAPI paymentCapture:withCompletion:] </td>
 </tr>
 <tr>
 <td> Charge </td>
-<td> This call authorizes the transaction and, if successful, captures it. This is the most common call for card-present transactions. (For some transactions, it may be necessary to separate these steps, e.g., in the service industry example described above. In such cases, separate calls to Authorize Only and Prior Auth Capture should be used instead of Charge.)<br/><br/>See:  <a href="../../Classes/WorldpayAPI.html#//api/name/paymentCharge:withCompletion:">[WorldpayAPI paymentCharge:withCompletion:]</a></td>
+<td> This call authorizes the transaction and, if successful, captures it. This is the most common call for card-present transactions. (For some transactions, it may be necessary to separate these steps, e.g., in the service industry example described above. In such cases, separate calls to Authorize Only and Prior Auth Capture should be used instead of Charge.)<br/><br/>See:  [WorldpayAPI paymentCharge:withCompletion:]</td>
 </tr>
 <tr>
 <td> Refund </td>
-<td> The Refund method must be linked to a settled transaction. This is done by specifying the transactionId from the original Authorization or Charge as part of the request. By default, this method refunds the FULL amount of the transaction. However, you can perform a partial refund by passing a specific amount. If a refund is attempted on a transaction that has not yet settled, the Integrated Payment Hub will automatically run a Void on the transaction. The transactionType in this case will switch to Void.<br/><br/>See: <a href="../../Classes/WorldpayAPI.html#//api/name/paymentRefund:withCompletion:">[WorldpayAPI paymentRefund:withCompletion:]</a> </td>
+<td> The Refund method must be linked to a settled transaction. This is done by specifying the transactionId from the original Authorization or Charge as part of the request. By default, this method refunds the FULL amount of the transaction. However, you can perform a partial refund by passing a specific amount. If a refund is attempted on a transaction that has not yet settled, the Integrated Payment Hub will automatically run a Void on the transaction. The transactionType in this case will switch to Void.<br/><br/>See: [WorldpayAPI paymentRefund:withCompletion:] </td>
 </tr>
 <tr>
 <td> Void </td>
-<td> A void may be applied against any charge that has not yet settled; it effectively undoes the original authorization or charge as if it had never taken place.<br/><br/>See: <a href="../../Classes/WorldpayAPI.html#//api/name/paymentVoid:withCompletion:">[WorldpayAPI paymentVoid:withCompletion:]</a> </td>
+<td> A void may be applied against any charge that has not yet settled; it effectively undoes the original authorization or charge as if it had never taken place.<br/><br/>See: [WorldpayAPI paymentVoid:withCompletion:] </td>
 </tr>
 <tr>
 <td> Credit </td>
-<td> A credit is a payment from a merchant account to  a credit card or checking account that does not have to be linked to a previous transaction. To use the Credit method, the merchant must be specifically enabled for it on the Worldpay Total platform. This is not recommended due to the risk of misuse. <br/><br/>See: <a href="../../Classes/WorldpayAPI.html#//api/name/paymentCredit:withCompletion:">[WorldpayAPI paymentCredit:withCompletion:]</a> </td>
+<td> A credit is a payment from a merchant account to  a credit card or checking account that does not have to be linked to a previous transaction. To use the Credit method, the merchant must be specifically enabled for it on the Worldpay Total platform. This is not recommended due to the risk of misuse. <br/><br/>See: [WorldpayAPI paymentCredit:withCompletion:] </td>
 </tr>
 </tbody>
 </table>
@@ -221,15 +221,15 @@ merchant.</p>
 <tbody>
 <tr>
 <td>Close a Batch </td>
-<td> Closing the current open batch settles all captured transactions in the batch<br/><br/>See: <a href="../../Classes/WorldpayAPI.html#//api/name/closeCurrentBatchWithCompletion:">[WorldpayAPI closeCurrentBatchWithCompletion:]</a> </td>
+<td> Closing the current open batch settles all captured transactions in the batch<br/><br/>See: [WorldpayAPI closeCurrentBatchWithCompletion:] </td>
 </tr>
 <tr>
 <td>Retreive Current Batch ID </td>
-<td> Retrieve the ID for the current batch<br/><br/>See: <a href="../../Classes/WorldpayAPI.html#//api/name/getCurrentBatchWithCompletion:">[WorldpayAPI getCurrentBatchWithCompletion:]</a> </td>
+<td> Retrieve the ID for the current batch<br/><br/>See: [WorldpayAPI getCurrentBatchWithCompletion:] </td>
 </tr>
 <tr>
 <td>Retrieve Transactions in a Batch </td>
-<td> Calling this method retrieves the transactions in the specified batch.  It returns an array of the transactions in the open batch, along with the full details of each asreturned during the original authorization.<br/><br/>See:  <a href="../../Classes/WorldpayAPI.html#//api/name/getTransactionsInBatch:withCompletion:">[WorldpayAPI getTransactionsInBatch:withCompletion:]</a> </td>
+<td> Calling this method retrieves the transactions in the specified batch.  It returns an array of the transactions in the open batch, along with the full details of each asreturned during the original authorization.<br/><br/>See:  [WorldpayAPI getTransactionsInBatch:withCompletion:] </td>
 </tr>
 </tbody>
 </table>
@@ -294,14 +294,14 @@ SDK in a variety of ways to meet your payment needs.</p>
 
 <h2>Step 1 – Register Environment</h2>
 
-<p>Before any calls to the API can be made, the environment must be registered using <a href="../../Classes/WorldpayAPI.html#//api/name/registerEnvironment:">[WorldpayAPI registerEnvironment:]</a>. It is best to do this in your AppDelegate&rsquo;s didFinishLaunching:withOptions: method, and once it has been set, it cannot be changed again during runtime.</p>
+<p>Before any calls to the API can be made, the environment must be registered using [WorldpayAPI registerEnvironment:]. It is best to do this in your AppDelegate&rsquo;s didFinishLaunching:withOptions: method, and once it has been set, it cannot be changed again during runtime.</p>
 
 <h2>Step 2 – Obtain an Authorization Token</h2>
 
 <p>Your application has to authenticate itself with the Integrated Payment
 Hub before you can make payment transactions. The token is cached and
 used for subsequent calls. This is called using
-<a href="../../Classes/WorldpayAPI.html#//api/name/generateAuthToken:withCompletion:">[WorldpayAPI generateAuthToken:withCompletion:]</a> method which takes an
+[WorldpayAPI generateAuthToken:withCompletion:] method which takes an
 <a href="../../Classes/WPYAuthTokenRequest.html">WPYAuthTokenRequest</a> object as input. Note that this authentication token
 represents the session with the Integrated payments Hub. It is not the
 same thing as a tokenized payment method. You will need to provide your
@@ -431,7 +431,7 @@ response.</p>
 					<footer>
 						<div class="footer-copyright">
 							
-							<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-05-10</p>
+							<p class="copyright">Copyright &copy; 2017 Worldpay. All rights reserved. Updated: 2017-10-13</p>
 							
 							
 							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

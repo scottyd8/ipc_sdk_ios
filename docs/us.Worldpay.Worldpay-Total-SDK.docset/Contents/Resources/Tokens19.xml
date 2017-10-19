@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYLevelTwoData.html">
+	<File path="Classes/WPYExtendedCardData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYLevelTwoData</TokenIdentifier>
-			<Abstract type="html">This optional data gets passed up to the payment gateway with a payment request</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYExtendedCardData</TokenIdentifier>
+			<Abstract type="html">This object contains extended information that is, in general, optional when making a payment request.  This will automatically
+be added to a payment request if not provided so that some terminal information can be passed up to the server (terminal id,
+if not provided then the terminal serial number will be used, and other information).</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
             
 			
 			<NodeRef refid="19"/>
@@ -13,254 +15,698 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setOrderDate:</TokenIdentifier>
-			<Abstract type="html">Date that the order was placed</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setCardPresent:</TokenIdentifier>
+			<Abstract type="html">This flag indicates whether the card was presented at the time a transaction is processed.  This will automatically be provided
+based on the method used to acquire the card data (manual entry versus card terminal)</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
+			<Declaration>@property BOOL cardPresent</Declaration>
 			
 			
-			<Anchor>//api/name/orderDate</Anchor>
+			<Anchor>//api/name/cardPresent</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/orderDate</TokenIdentifier>
-			<Abstract type="html">Date that the order was placed</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/cardPresent</TokenIdentifier>
+			<Abstract type="html">This flag indicates whether the card was presented at the time a transaction is processed.  This will automatically be provided
+based on the method used to acquire the card data (manual entry versus card terminal)</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
+			<Declaration>@property BOOL cardPresent</Declaration>
 			
 			
-			<Anchor>//api/name/orderDate</Anchor>
+			<Anchor>//api/name/cardPresent</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/orderDate</TokenIdentifier>
-			<Abstract type="html">Date that the order was placed</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/cardPresent</TokenIdentifier>
+			<Abstract type="html">This flag indicates whether the card was presented at the time a transaction is processed.  This will automatically be provided
+based on the method used to acquire the card data (manual entry versus card terminal)</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
+			<Declaration>@property BOOL cardPresent</Declaration>
 			
 			
-			<Anchor>//api/name/orderDate</Anchor>
+			<Anchor>//api/name/cardPresent</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setDutyAmount:</TokenIdentifier>
-			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setTerminalData:</TokenIdentifier>
+			<Abstract type="html">This contains additional information about the terminal used to process the transaction.  If this information is not provided then the
+payment processing routines will automatically add the data when a terminal is used to obtain card information</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTerminalInfo *terminalData</Declaration>
 			
 			
-			<Anchor>//api/name/dutyAmount</Anchor>
+			<Anchor>//api/name/terminalData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/dutyAmount</TokenIdentifier>
-			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/terminalData</TokenIdentifier>
+			<Abstract type="html">This contains additional information about the terminal used to process the transaction.  If this information is not provided then the
+payment processing routines will automatically add the data when a terminal is used to obtain card information</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTerminalInfo *terminalData</Declaration>
 			
 			
-			<Anchor>//api/name/dutyAmount</Anchor>
+			<Anchor>//api/name/terminalData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/dutyAmount</TokenIdentifier>
-			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/terminalData</TokenIdentifier>
+			<Abstract type="html">This contains additional information about the terminal used to process the transaction.  If this information is not provided then the
+payment processing routines will automatically add the data when a terminal is used to obtain card information</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTerminalInfo *terminalData</Declaration>
 			
 			
-			<Anchor>//api/name/dutyAmount</Anchor>
+			<Anchor>//api/name/terminalData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setFreightAmount:</TokenIdentifier>
-			<Abstract type="html">The cost of freight associated with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setLevelTwoData:</TokenIdentifier>
+			<Abstract type="html">This optional parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
 			
 			
-			<Anchor>//api/name/freightAmount</Anchor>
+			<Anchor>//api/name/levelTwoData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/freightAmount</TokenIdentifier>
-			<Abstract type="html">The cost of freight associated with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/levelTwoData</TokenIdentifier>
+			<Abstract type="html">This optional parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
 			
 			
-			<Anchor>//api/name/freightAmount</Anchor>
+			<Anchor>//api/name/levelTwoData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/freightAmount</TokenIdentifier>
-			<Abstract type="html">The cost of freight associated with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/levelTwoData</TokenIdentifier>
+			<Abstract type="html">This optional parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
 			
 			
-			<Anchor>//api/name/freightAmount</Anchor>
+			<Anchor>//api/name/levelTwoData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setRetailLaneNumber:</TokenIdentifier>
-			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setServiceData:</TokenIdentifier>
+			<Abstract type="html">This optional parameter is used when processing a transaction with a gratuity.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTenderServiceData *serviceData</Declaration>
 			
 			
-			<Anchor>//api/name/retailLaneNumber</Anchor>
+			<Anchor>//api/name/serviceData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/retailLaneNumber</TokenIdentifier>
-			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/serviceData</TokenIdentifier>
+			<Abstract type="html">This optional parameter is used when processing a transaction with a gratuity.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTenderServiceData *serviceData</Declaration>
 			
 			
-			<Anchor>//api/name/retailLaneNumber</Anchor>
+			<Anchor>//api/name/serviceData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/retailLaneNumber</TokenIdentifier>
-			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/serviceData</TokenIdentifier>
+			<Abstract type="html">This optional parameter is used when processing a transaction with a gratuity.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
+			<Declaration>@property (nonatomic, strong) WPYTenderServiceData *serviceData</Declaration>
 			
 			
-			<Anchor>//api/name/retailLaneNumber</Anchor>
+			<Anchor>//api/name/serviceData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setTaxAmount:</TokenIdentifier>
-			<Abstract type="html">The amount of tax charged on the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setNotes:</TokenIdentifier>
+			<Abstract type="html">An optional parameter containing any additional notes the merchant would like to include with the transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
 			
 			
-			<Anchor>//api/name/taxAmount</Anchor>
+			<Anchor>//api/name/notes</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/taxAmount</TokenIdentifier>
-			<Abstract type="html">The amount of tax charged on the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/notes</TokenIdentifier>
+			<Abstract type="html">An optional parameter containing any additional notes the merchant would like to include with the transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
 			
 			
-			<Anchor>//api/name/taxAmount</Anchor>
+			<Anchor>//api/name/notes</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/taxAmount</TokenIdentifier>
-			<Abstract type="html">The amount of tax charged on the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/notes</TokenIdentifier>
+			<Abstract type="html">An optional parameter containing any additional notes the merchant would like to include with the transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *notes</Declaration>
 			
 			
-			<Anchor>//api/name/taxAmount</Anchor>
+			<Anchor>//api/name/notes</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setStatus:</TokenIdentifier>
-			<Abstract type="html">Tax Status of the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setInvoiceNumber:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the invoice number that the merchant associated with this transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *invoiceNumber</Declaration>
 			
 			
-			<Anchor>//api/name/status</Anchor>
+			<Anchor>//api/name/invoiceNumber</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/status</TokenIdentifier>
-			<Abstract type="html">Tax Status of the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/invoiceNumber</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the invoice number that the merchant associated with this transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *invoiceNumber</Declaration>
 			
 			
-			<Anchor>//api/name/status</Anchor>
+			<Anchor>//api/name/invoiceNumber</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/status</TokenIdentifier>
-			<Abstract type="html">Tax Status of the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/invoiceNumber</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the invoice number that the merchant associated with this transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *invoiceNumber</Declaration>
 			
 			
-			<Anchor>//api/name/status</Anchor>
+			<Anchor>//api/name/invoiceNumber</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setPurchaseOrder:</TokenIdentifier>
-			<Abstract type="html">THe purchase order number associated with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setInvoiceDescription:</TokenIdentifier>
+			<Abstract type="html">An optional parameter describing the invoice associated with the transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *invoiceDescription</Declaration>
 			
 			
-			<Anchor>//api/name/purchaseOrder</Anchor>
+			<Anchor>//api/name/invoiceDescription</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/purchaseOrder</TokenIdentifier>
-			<Abstract type="html">THe purchase order number associated with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/invoiceDescription</TokenIdentifier>
+			<Abstract type="html">An optional parameter describing the invoice associated with the transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *invoiceDescription</Declaration>
 			
 			
-			<Anchor>//api/name/purchaseOrder</Anchor>
+			<Anchor>//api/name/invoiceDescription</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/purchaseOrder</TokenIdentifier>
-			<Abstract type="html">THe purchase order number associated with the order</Abstract>
-			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/invoiceDescription</TokenIdentifier>
+			<Abstract type="html">An optional parameter describing the invoice associated with the transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *invoiceDescription</Declaration>
 			
 			
-			<Anchor>//api/name/purchaseOrder</Anchor>
+			<Anchor>//api/name/invoiceDescription</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setDeviceCode:</TokenIdentifier>
+			<Abstract type="html">An optional parameter</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceCode</Declaration>
+			
+			
+			<Anchor>//api/name/deviceCode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/deviceCode</TokenIdentifier>
+			<Abstract type="html">An optional parameter</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceCode</Declaration>
+			
+			
+			<Anchor>//api/name/deviceCode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/deviceCode</TokenIdentifier>
+			<Abstract type="html">An optional parameter</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceCode</Declaration>
+			
+			
+			<Anchor>//api/name/deviceCode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setEntrySource:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the entry source for the transaction data</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *entrySource</Declaration>
+			
+			
+			<Anchor>//api/name/entrySource</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/entrySource</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the entry source for the transaction data</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *entrySource</Declaration>
+			
+			
+			<Anchor>//api/name/entrySource</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/entrySource</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the entry source for the transaction data</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *entrySource</Declaration>
+			
+			
+			<Anchor>//api/name/entrySource</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setCashBackAmount:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicates the cashback amount set on the transaction, this does not control the cashback amount sent to
+the terminal (where applicable - See WPYPaymentRequest</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *cashBackAmount</Declaration>
+			
+			
+			<Anchor>//api/name/cashBackAmount</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/cashBackAmount</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicates the cashback amount set on the transaction, this does not control the cashback amount sent to
+the terminal (where applicable - See WPYPaymentRequest</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *cashBackAmount</Declaration>
+			
+			
+			<Anchor>//api/name/cashBackAmount</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/cashBackAmount</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicates the cashback amount set on the transaction, this does not control the cashback amount sent to
+the terminal (where applicable - See WPYPaymentRequest</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *cashBackAmount</Declaration>
+			
+			
+			<Anchor>//api/name/cashBackAmount</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setAddToVault:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether or not to add the current tendered information to the secure payment vault</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL addToVault</Declaration>
+			
+			
+			<Anchor>//api/name/addToVault</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/addToVault</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether or not to add the current tendered information to the secure payment vault</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL addToVault</Declaration>
+			
+			
+			<Anchor>//api/name/addToVault</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/addToVault</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether or not to add the current tendered information to the secure payment vault</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL addToVault</Declaration>
+			
+			
+			<Anchor>//api/name/addToVault</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setAddToVaultOnFailure:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether orn ot to add the current tendered information to the secure payment vault in the event of a failure</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL addToVaultOnFailure</Declaration>
+			
+			
+			<Anchor>//api/name/addToVaultOnFailure</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/addToVaultOnFailure</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether orn ot to add the current tendered information to the secure payment vault in the event of a failure</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL addToVaultOnFailure</Declaration>
+			
+			
+			<Anchor>//api/name/addToVaultOnFailure</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/addToVaultOnFailure</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether orn ot to add the current tendered information to the secure payment vault in the event of a failure</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL addToVaultOnFailure</Declaration>
+			
+			
+			<Anchor>//api/name/addToVaultOnFailure</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setAllowPartialCharges:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether or not the merchant allows partial charges</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowPartialCharges</Declaration>
+			
+			
+			<Anchor>//api/name/allowPartialCharges</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/allowPartialCharges</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether or not the merchant allows partial charges</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowPartialCharges</Declaration>
+			
+			
+			<Anchor>//api/name/allowPartialCharges</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/allowPartialCharges</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating whether or not the merchant allows partial charges</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowPartialCharges</Declaration>
+			
+			
+			<Anchor>//api/name/allowPartialCharges</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setTransactionDuplicateCheckIndicator:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the type of duplicate check used for a check transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) WPYTransactionDuplicateCheckType transactionDuplicateCheckIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/transactionDuplicateCheckIndicator</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/transactionDuplicateCheckIndicator</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the type of duplicate check used for a check transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) WPYTransactionDuplicateCheckType transactionDuplicateCheckIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/transactionDuplicateCheckIndicator</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/transactionDuplicateCheckIndicator</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the type of duplicate check used for a check transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) WPYTransactionDuplicateCheckType transactionDuplicateCheckIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/transactionDuplicateCheckIndicator</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setOrderId:</TokenIdentifier>
+			<Abstract type="html">An optional parameter corresponding to the order ID the merchant has assigned to this transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/orderId</TokenIdentifier>
+			<Abstract type="html">An optional parameter corresponding to the order ID the merchant has assigned to this transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/orderId</TokenIdentifier>
+			<Abstract type="html">An optional parameter corresponding to the order ID the merchant has assigned to this transaction</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *orderId</Declaration>
+			
+			
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setCurrencyCode:</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the currency code used in the transaction.  This does not override or change the country code
+programmed into a card terminal</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/currencyCode</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the currency code used in the transaction.  This does not override or change the country code
+programmed into a card terminal</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/currencyCode</TokenIdentifier>
+			<Abstract type="html">An optional parameter indicating the currency code used in the transaction.  This does not override or change the country code
+programmed into a card terminal</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *currencyCode</Declaration>
+			
+			
+			<Anchor>//api/name/currencyCode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setUserDefinedFields:</TokenIdentifier>
+			<Abstract type="html">A dictionary of user defined key/value pairs of custom data provided about the customer</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedFields</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/userDefinedFields</TokenIdentifier>
+			<Abstract type="html">A dictionary of user defined key/value pairs of custom data provided about the customer</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedFields</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/userDefinedFields</TokenIdentifier>
+			<Abstract type="html">A dictionary of user defined key/value pairs of custom data provided about the customer</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userDefinedFields</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedFields</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setTypeOfGoods:</TokenIdentifier>
+			<Abstract type="html">Type of goods that are being purchased. Valid values are DIGITAL or PHYSICAL.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *typeOfGoods</Declaration>
+			
+			
+			<Anchor>//api/name/typeOfGoods</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/typeOfGoods</TokenIdentifier>
+			<Abstract type="html">Type of goods that are being purchased. Valid values are DIGITAL or PHYSICAL.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *typeOfGoods</Declaration>
+			
+			
+			<Anchor>//api/name/typeOfGoods</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/typeOfGoods</TokenIdentifier>
+			<Abstract type="html">Type of goods that are being purchased. Valid values are DIGITAL or PHYSICAL.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *typeOfGoods</Declaration>
+			
+			
+			<Anchor>//api/name/typeOfGoods</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/setMailOrTelephoneOrderData:</TokenIdentifier>
+			<Abstract type="html">Additional data for remote orders. Required in the case of a mail, phone, or ecommerce transaction.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYMailOrTelephoneOrderData *mailOrTelephoneOrderData</Declaration>
+			
+			
+			<Anchor>//api/name/mailOrTelephoneOrderData</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYExtendedCardData/mailOrTelephoneOrderData</TokenIdentifier>
+			<Abstract type="html">Additional data for remote orders. Required in the case of a mail, phone, or ecommerce transaction.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYMailOrTelephoneOrderData *mailOrTelephoneOrderData</Declaration>
+			
+			
+			<Anchor>//api/name/mailOrTelephoneOrderData</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYExtendedCardData/mailOrTelephoneOrderData</TokenIdentifier>
+			<Abstract type="html">Additional data for remote orders. Required in the case of a mail, phone, or ecommerce transaction.</Abstract>
+			<DeclaredIn>WPYExtendedCardData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYMailOrTelephoneOrderData *mailOrTelephoneOrderData</Declaration>
+			
+			
+			<Anchor>//api/name/mailOrTelephoneOrderData</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		

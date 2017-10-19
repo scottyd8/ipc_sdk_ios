@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/WPYSwiperDelegate.html">
+	<File path="Protocols/WPYDebugDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/WPYSwiperDelegate</TokenIdentifier>
-			<Abstract type="html">Delegate protocol for handling events from the swiper.  Note that not all of these events are used by every hardware device type</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/WPYDebugDelegate</TokenIdentifier>
+			<Abstract type="html">Delegate protocol for use with debugging request and response logs</Abstract>
+			<DeclaredIn>WorldpayAPI.h</DeclaredIn>
             
 			
 			<NodeRef refid="55"/>
@@ -13,377 +13,36 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/didConnectSwiper:</TokenIdentifier>
-			<Abstract type="html">This delegate function is called when a communication channel has been opened with the credit card terminal</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WPYDebugDelegate/willSendRequest:</TokenIdentifier>
+			<Abstract type="html">This method is used to convey the request headers and body to be sent to the server</Abstract>
+			<DeclaredIn>WorldpayAPI.h</DeclaredIn>
 			
-			<Declaration>- (void)didConnectSwiper:(WPYSwiper *)swiper</Declaration>
+			<Declaration>- (void)willSendRequest:(NSString *)request</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object communicating with the credit card terminal</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didConnectSwiper:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/didDisconnectSwiper:</TokenIdentifier>
-			<Abstract type="html">This delegate function is called when the communication channel to the credit card terminal has been closed.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)didDisconnectSwiper:(WPYSwiper *)swiper</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the swiper that is reporting the end of communication</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didDisconnectSwiper:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/didFailToConnectSwiper:</TokenIdentifier>
-			<Abstract type="html">This delegate function is called when the connection to the swiper hardware fails to be created</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)didFailToConnectSwiper:(WPYSwiper *)swiper</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object that could not open the hardware communication</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didFailToConnectSwiper:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/willConnectSwiper:</TokenIdentifier>
-			<Abstract type="html">This delegate function is called when the communication channel to the credit card terminal could not be opened,
-but will be reattempted</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)willConnectSwiper:(WPYSwiper *)swiper</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object that is continuing to attempt communication with the credit card terminal</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/willConnectSwiper:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didFailWithError:</TokenIdentifier>
-			<Abstract type="html">This delegate function is called when an error has been detected when performing a requested task</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didFailWithError:(NSString *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object that experienced the error</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">An error object with information on the error that occurred</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didFailWithError:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didFinishTransactionWithResponse:</TokenIdentifier>
-			<Abstract type="html">This delegate function is called after the terminal has generated the Transaction Certificate or Application Authentication Cryptogram
-and no more online requests are pending.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didFinishTransactionWithResponse:(WPYPaymentResponse *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object that generated and processed the EMV request</Abstract>
-				</Parameter><Parameter>
-					<Name>response</Name>
-					<Abstract type="html">The authorization response from the online processor, if any.  If there was a reversal, this will be the result of the payment reversal</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didFinishTransactionWithResponse:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didFailRequest:withError:</TokenIdentifier>
-			<Abstract type="html">This delegate function is called when an attempt to make a payment failed with a non-authorization related error.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didFailRequest:(WPYPaymentRequest *)request withError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object that attempted to perform the request</Abstract>
-				</Parameter><Parameter>
 					<Name>request</Name>
-					<Abstract type="html">A reference to the failed request so that it may be retried</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">A reference to the error that caused the failure so that it can be properly handled</Abstract>
+					<Abstract type="html">Request string containing the pertinent information</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/swiper:didFailRequest:withError:</Anchor>
+			<Anchor>//api/name/willSendRequest:</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didRequestAccountTypeSelection:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the terminal is incapable of presenting the account type selection to the card holder.
-If this method is implemented then the delegate must call back the referencing object or the transaction will timeout</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WPYDebugDelegate/didReceiveResponse:</TokenIdentifier>
+			<Abstract type="html">This method is used to convey the response body that was sent from the server</Abstract>
+			<DeclaredIn>WorldpayAPI.h</DeclaredIn>
 			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didRequestAccountTypeSelection:(NSArray&lt;NSNumber*&gt; *)accountTypes</Declaration>
+			<Declaration>- (void)didReceiveResponse:(NSString *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>accountTypes</Name>
-					<Abstract type="html">An array of account types that the user must pick from (NSNumber -&gt; WPYCardAccountType enumeration)</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">Response string containing the pertinent response info</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/swiper:didRequestAccountTypeSelection:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didReturnAmountConfirmation:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called by some devices when the user confirms/rejects the transaction amount on the terminal hardware
-Miura devices do not call this method</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didReturnAmountConfirmation:(BOOL)confirmed</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>confirmed</Name>
-					<Abstract type="html">A boolean indicating whether or not the user accepted the transaction amount</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didReturnAmountConfirmation:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didKeyInAmount:currencyCode:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the user keys in an amount when requested by the device
-This method is only called by certain devices that can display text and have a keypad</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didKeyInAmount:(NSDecimalNumber *)amount currencyCode:(NSString *)currencyCode</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>amount</Name>
-					<Abstract type="html">A decimal number representing the amount the user keyed in</Abstract>
-				</Parameter><Parameter>
-					<Name>currencyCode</Name>
-					<Abstract type="html">The currency code of the keyed in amount</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didKeyInAmount:currencyCode:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:onBatteryLow:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the terminal sends a low battery status message</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper onBatteryLow:(WPYSwiperBatteryStatus)batteryStatus</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>batteryStatus</Name>
-					<Abstract type="html">Indicates the battery status of the device</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:onBatteryLow:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didRequestSelectEMVApplication:accountTypes:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the terminal is not configured to present the application options to the card holder directly, selectEMVCardApplication: on swiper must be called afterwards to continue.
-When the hardware supports it, the terminal will manage application selection automatically (Miura for instance)</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didRequestSelectEMVApplication:(NSArray *)applications accountTypes:(WPYCardAccountType)accountTypes</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>applications</Name>
-					<Abstract type="html">A list of the Application dictionaries for each application in the candidate list</Abstract>
-				</Parameter><Parameter>
-					<Name>accountTypes</Name>
-					<Abstract type="html">Indicates if credit, debit, or both are available based on application list</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didRequestSelectEMVApplication:accountTypes:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiperDidRequestFinalConfirmation:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the terminal is not configured to request final transaction amount confirmation from the card holder directly
-This is typical on audiojack devices or other devices that have no keypad</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiperDidRequestFinalConfirmation:(WPYSwiper *)swiper</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiperDidRequestFinalConfirmation:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didRequestDevicePromptText:defaultText:completion:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the terminal would like text displayed by the user.  If the terminal is capable of displaying text (swiperCanDisplayText)
-and this method is implemented, then the terminal should be sent a text string to display to the user.  This can be done via the completion handler, with a NIL
-string to have the terminal display default text.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didRequestDevicePromptText:(WPYDevicePrompt)prompt defaultText:(NSString *)defaultText completion:(void ( ^ ) ( NSString *))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>prompt</Name>
-					<Abstract type="html">An enumeration representing the type of information that should be presented to the card holder</Abstract>
-				</Parameter><Parameter>
-					<Name>defaultText</Name>
-					<Abstract type="html">The default text prompt the SDK will display</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">A completion handler to call if the terminal is capable of displaying text. If not supported, a nil handler will be sent</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didRequestDevicePromptText:defaultText:completion:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didReceiveCardEvent:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the terminal receives a card event.  It does not return the card data and therefore is called in the event that
-the card data is not going to be returned for whatever reason.  For instance, a card swipe does not return data if the card is IC capable and was swiped</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didReceiveCardEvent:(WPYCardEvent)eventType</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>eventType</Name>
-					<Abstract type="html">An enumeration representing the type of card event</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didReceiveCardEvent:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiper:didReceivePaymentMethod:withError:</TokenIdentifier>
-			<Abstract type="html">This delegate method is called when the terminal receives card data and sends it to the secure vault to create a payment method.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiper:(WPYSwiper *)swiper didReceivePaymentMethod:(WPYPaymentMethod *)method withError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object that handled the request</Abstract>
-				</Parameter><Parameter>
-					<Name>method</Name>
-					<Abstract type="html">A reference to the payment method object returned by the server</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">A reference to any error objects returned in the request</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiper:didReceivePaymentMethod:withError:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/selectDevice:forSwiper:completion:</TokenIdentifier>
-			<Abstract type="html">This method is called when a bluetooth connection attempt is made and there may be one or more devices that are available to be paired with
-For Anywhere Commerce bluetooth devices this may return all devices within range</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)selectDevice:(NSArray&lt;NSString*&gt; *)devices forSwiper:(WPYSwiper *)swiper completion:(void ( ^ ) ( int ))completion</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>devices</Name>
-					<Abstract type="html">A list of the names of all the devices visible</Abstract>
-				</Parameter><Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the object making the request</Abstract>
-				</Parameter><Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">A completion handler that must be called with the index of the device that was selected by the user</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/selectDevice:forSwiper:completion:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WPYSwiperDelegate/swiperDidReceiveKeypadInput:</TokenIdentifier>
-			<Abstract type="html">This method is called when a key is pressed on a supported device (Miura).  For EMV / PIN security, the key press will not be relayed to the
-delegate and therefore this message is only useful if the application cares about keypad presses for whatever reason.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
-			
-			<Declaration>- (void)swiperDidReceiveKeypadInput:(WPYSwiper *)swiper</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>swiper</Name>
-					<Abstract type="html">A reference to the card terminal that is receiving the key press</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/swiperDidReceiveKeypadInput:</Anchor>
+			<Anchor>//api/name/didReceiveResponse:</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		

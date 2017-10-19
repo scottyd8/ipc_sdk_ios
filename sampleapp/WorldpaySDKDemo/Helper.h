@@ -37,6 +37,8 @@ typedef NS_ENUM(NSUInteger, RESTMode) {
 + (NSString *) getPaymentType: (WPYPaymentType) paymentType;
 + (void) constrainView: (UIView *) view toSecondView: (UIView *) secondView;
 + (void) styleButtonPrimary: (UIButton *) button;
++ (NSString *)getAppVersionInfo;
++ (NSString *)getSDKVersionInfo;
 
 @end
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TransactionType.html">
+	<File path="Constants/EncryptionMethod.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TransactionType</TokenIdentifier>
-			<Abstract type="html">Type of transaction requested</Abstract>
-			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/EncryptionMethod</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSwiperController.h</DeclaredIn>
             
 			
 			<NodeRef refid="68"/>
@@ -14,31 +14,81 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TransactionTypeSale</TokenIdentifier>
-            <Abstract type="html">Standard charge transaction</Abstract>
-            <Declaration>TransactionTypeSale</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_TDES_ECB</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_TDES_ECB</Declaration>
             
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
-            
-            <NodeRef refid="68"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TransactionTypeCashBack</TokenIdentifier>
-            <Abstract type="html">Cash back transaction</Abstract>
-            <Declaration>TransactionTypeCashBack</Declaration>
-            
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="68"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TransactionTypeRefund</TokenIdentifier>
-            <Abstract type="html">Refund transaction</Abstract>
-            <Declaration>TransactionTypeRefund</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_TDES_CBC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_TDES_CBC</Declaration>
             
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_AES_ECB</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_AES_ECB</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_AES_CBC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_AES_CBC</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_MAC_ANSI_X9_9</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_MAC_ANSI_X9_9</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_MAC_ANSI_X9_19</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_MAC_ANSI_X9_19</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_MAC_METHOD_1</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_MAC_METHOD_1</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EncryptionMethod_MAC_METHOD_2</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EncryptionMethod_MAC_METHOD_2</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="68"/>
         </Token>

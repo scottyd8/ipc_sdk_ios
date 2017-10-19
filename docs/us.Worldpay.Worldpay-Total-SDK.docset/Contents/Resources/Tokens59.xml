@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/DeviceError.html">
+	<File path="Constants/CSwiperControllerDecodeResult.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/DeviceError</TokenIdentifier>
-			<Abstract type="html">Device error types</Abstract>
-			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/CSwiperControllerDecodeResult</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSwiperController.h</DeclaredIn>
             
 			
 			<NodeRef refid="59"/>
@@ -14,21 +14,71 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DeviceErrorDisconnected</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>DeviceErrorDisconnected</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CSwiperControllerDecodeResultSwipeFail</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CSwiperControllerDecodeResultSwipeFail</Declaration>
             
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="59"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DeviceErrorDeviceBusy</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>DeviceErrorDeviceBusy</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/CSwiperControllerDecodeResultCRCError</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CSwiperControllerDecodeResultCRCError</Declaration>
             
-            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CSwiperControllerDecodeResultCommError</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CSwiperControllerDecodeResultCommError</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CSwiperControllerDecodeResultTrack1Error</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CSwiperControllerDecodeResultTrack1Error</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CSwiperControllerDecodeResultTrack2Error</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CSwiperControllerDecodeResultTrack2Error</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CSwiperControllerDecodeResultTrack3Error</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CSwiperControllerDecodeResultTrack3Error</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
+            
+            <NodeRef refid="59"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CSwiperControllerDecodeResultUnknownError</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CSwiperControllerDecodeResultUnknownError</Declaration>
+            
+            <DeclaredIn>CSwiperController.h</DeclaredIn>
             
             <NodeRef refid="59"/>
         </Token>

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardAccountType.html">
+	<File path="Constants/NFCError.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardAccountType</TokenIdentifier>
-			<Abstract type="html">This is an indication of the type of transactions that a specific card application can support
-On devices where the terminal is capable of handling application support, it will automatically
-prompt for credit or debit when appropriate.  On non-capable devices, the application will
-be notified when the user must choose credit or debit</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/NFCError</TokenIdentifier>
+			<Abstract type="html">NFC error types</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
 			<NodeRef refid="72"/>
@@ -17,41 +14,81 @@ be notified when the user must choose credit or debit</Abstract>
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeCredit</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorAborted</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeCredit</Declaration>
+            <Declaration>NFCErrorAborted</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="72"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeDebit</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorTimeOut</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeDebit</Declaration>
+            <Declaration>NFCErrorTimeOut</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="72"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeCreditOrDebit</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorCardInserted</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeCreditOrDebit</Declaration>
+            <Declaration>NFCErrorCardInserted</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="72"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardAccountTypeUnknown</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorCardSwiped</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYCardAccountTypeUnknown</Declaration>
+            <Declaration>NFCErrorCardSwiped</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorUseIccOrMsr</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>NFCErrorUseIccOrMsr</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorUseIccMsrOrOtherCard</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>NFCErrorUseIccMsrOrOtherCard</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorUseIcc</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>NFCErrorUseIcc</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NFCErrorHardwareError</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>NFCErrorHardwareError</Declaration>
+            
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="72"/>
         </Token>

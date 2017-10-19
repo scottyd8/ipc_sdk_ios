@@ -15,8 +15,7 @@
     
     NSString * result;
     
-    switch (paymentType)
-    {
+    switch (paymentType) {
         case WPYPaymentTypeUnknown:
             result = @"Unknown Payment Type";
             break;
@@ -39,8 +38,8 @@
     return result;
 }
 
-+ (void) constrainView:(UIView *)view toSecondView:(UIView *) secondView
-{
+
++ (void) constrainView:(UIView *)view toSecondView:(UIView *) secondView {
     [view addSubview:secondView];
     
     view.translatesAutoresizingMaskIntoConstraints = false;
@@ -52,10 +51,19 @@
     [view addConstraint:[NSLayoutConstraint constraintWithItem:secondView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeRight multiplier:1.0 constant:0]];
 }
 
-+ (void) styleButtonPrimary: (UIButton *) button
-{
+
++ (void) styleButtonPrimary: (UIButton *) button {
     button.backgroundColor = [UIColor worldpayEmerald];
     [button setTitleColor:[UIColor worldpayWhite] forState:UIControlStateNormal];
+}
+
+
++ (NSString *)getAppVersionInfo {
+    return [NSString stringWithFormat:@"App Version %@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];
+}
+
++ (NSString *)getSDKVersionInfo {
+    return [NSString stringWithFormat:@"SDK Version %@", [[WorldPayAPI instance] getSdkVersion]];
 }
 
 @end

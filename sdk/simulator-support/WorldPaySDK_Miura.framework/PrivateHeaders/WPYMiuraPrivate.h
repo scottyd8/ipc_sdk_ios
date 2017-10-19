@@ -31,9 +31,13 @@ typedef enum : NSUInteger {
     CashbackState,
     PinState,
     PinRetryState,
-    FinalState
+    FinalState,
+    QuickChipInitailState,
+    QuickChipState,
+    QuickChipConfirmAmountState,
+    QuickChipTipState,
+    QuickChipFinalState,
 } TransactionFlowState;
-
 
 
 @interface WPYMiura () <MiuraDeviceControllerDelegate>
@@ -49,6 +53,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong) TransactionData * _Nullable currTransactionData;
 @property (nonatomic) BOOL enableCashback;
 @property (nonatomic) BOOL enableGratuity;
+@property (nonatomic) NSDecimalNumber * _Nullable quickChipCashbackAmount;
 @property (nonatomic) NSUInteger iccRetryCount;
 @property (nonatomic) BOOL cardNotSupported;
 @property (nonatomic) BOOL requireEMVFallback;

@@ -11,6 +11,7 @@
                 <outlet property="addToVaultSegmented" destination="T0a-Ka-i4Y" id="vCY-MS-4If"/>
                 <outlet property="amountTextField" destination="waI-kc-imT" id="eUI-LH-2U5"/>
                 <outlet property="cardPresentSegmented" destination="D3I-ew-RtV" id="4hG-y5-QTM"/>
+                <outlet property="clearCardDataButton" destination="qxU-Sr-hc9" id="Hv6-dr-7wW"/>
                 <outlet property="customerIdTextField" destination="LO3-YZ-bSW" id="Cab-D2-W3P"/>
                 <outlet property="extendableInfoView" destination="J58-rS-ZbV" id="bzo-00-LLS"/>
                 <outlet property="extendableViewHeightConstraint" destination="htF-im-zy8" id="1Qp-NX-K01"/>
@@ -55,7 +56,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgR-AO-Odz">
-                            <rect key="frame" x="233" y="366" width="135" height="34"/>
+                            <rect key="frame" x="233" y="457" width="135" height="34"/>
                             <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                             <state key="normal" title="Start Transaction"/>
                             <connections>
@@ -127,14 +128,27 @@
                                 <constraint firstAttribute="height" constant="45" id="mNa-KJ-gW8"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-Sr-hc9">
+                            <rect key="frame" x="233" y="500" width="135" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="135" id="IqP-Su-mI8"/>
+                                <constraint firstAttribute="height" constant="36" id="ns8-7C-FYj"/>
+                            </constraints>
+                            <state key="normal" title="Clear Card Data"/>
+                            <connections>
+                                <action selector="clearCardDataButtonPressed:" destination="-1" eventType="touchUpInside" id="s7e-zI-5nN"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="qxU-Sr-hc9" firstAttribute="top" secondItem="mgR-AO-Odz" secondAttribute="bottom" constant="9" id="4sw-XR-Hob"/>
                         <constraint firstItem="J58-rS-ZbV" firstAttribute="top" secondItem="Jgw-ln-I0Q" secondAttribute="bottom" constant="8" id="6sh-9L-Gzu"/>
                         <constraint firstItem="F09-hr-btT" firstAttribute="trailing" secondItem="D3I-ew-RtV" secondAttribute="trailing" id="76t-3E-0cd"/>
                         <constraint firstItem="heC-BV-g8n" firstAttribute="leading" secondItem="waI-kc-imT" secondAttribute="leading" id="7cg-Ii-xfO"/>
                         <constraint firstItem="waI-kc-imT" firstAttribute="top" secondItem="F09-hr-btT" secondAttribute="bottom" constant="8" id="Aaa-qJ-LWy"/>
-                        <constraint firstAttribute="bottom" secondItem="mgR-AO-Odz" secondAttribute="bottom" constant="224" id="EgA-54-dJ9"/>
+                        <constraint firstItem="qxU-Sr-hc9" firstAttribute="centerX" secondItem="mgR-AO-Odz" secondAttribute="centerX" id="C1T-7d-nsE"/>
+                        <constraint firstAttribute="bottom" secondItem="mgR-AO-Odz" secondAttribute="bottom" constant="109" id="EgA-54-dJ9"/>
                         <constraint firstAttribute="trailing" secondItem="D3I-ew-RtV" secondAttribute="trailing" constant="20" id="FFF-ig-V5g"/>
                         <constraint firstItem="waI-kc-imT" firstAttribute="trailing" secondItem="F09-hr-btT" secondAttribute="trailing" id="FTe-vg-fXk"/>
                         <constraint firstItem="Jgw-ln-I0Q" firstAttribute="leading" secondItem="heC-BV-g8n" secondAttribute="leading" id="I9G-Ki-0l5"/>
@@ -145,7 +159,7 @@
                         <constraint firstItem="F09-hr-btT" firstAttribute="leading" secondItem="D3I-ew-RtV" secondAttribute="leading" id="QZZ-ie-niE"/>
                         <constraint firstItem="J58-rS-ZbV" firstAttribute="leading" secondItem="Jgw-ln-I0Q" secondAttribute="leading" id="TLJ-9g-opF"/>
                         <constraint firstItem="D3I-ew-RtV" firstAttribute="top" secondItem="r1c-TP-D5U" secondAttribute="top" constant="10" id="UVd-H7-EcL"/>
-                        <constraint firstItem="mgR-AO-Odz" firstAttribute="top" secondItem="J58-rS-ZbV" secondAttribute="bottom" constant="33" id="UfN-SW-hI0"/>
+                        <constraint firstItem="mgR-AO-Odz" firstAttribute="top" secondItem="J58-rS-ZbV" secondAttribute="bottom" constant="124" id="UfN-SW-hI0"/>
                         <constraint firstItem="Jgw-ln-I0Q" firstAttribute="top" secondItem="heC-BV-g8n" secondAttribute="bottom" constant="8" id="VLz-es-E82"/>
                         <constraint firstItem="heC-BV-g8n" firstAttribute="top" secondItem="waI-kc-imT" secondAttribute="bottom" constant="8" id="gth-pb-0Wx"/>
                         <constraint firstItem="waI-kc-imT" firstAttribute="leading" secondItem="F09-hr-btT" secondAttribute="leading" id="jqm-VG-loE"/>

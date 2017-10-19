@@ -16,6 +16,7 @@
 #import "LabeledTextField.h"
 #import "LabeledDropDownTextField.h"
 
+
 #define YESINDEX 0
 #define NOINDEX 1
 #define VAULTINDEX 2
@@ -49,6 +50,7 @@
 @property (weak, nonatomic) IBOutlet UIView * vaultView;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *formLabels;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *clearCardDataButton;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, atomic) UIAlertController * swiperAlert;
 @property (weak, nonatomic) UITextField * activeTextField;
@@ -56,6 +58,7 @@
 @property (assign, atomic) BOOL transition;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *addToVaultConstraints;
 @property (assign, atomic) BOOL transactionInProgress;
+@property (assign, atomic) BOOL gratuityOnPed;
 @property (strong, nonatomic) WPYPaymentRequest * currRequest;
 
 @end
@@ -134,6 +137,12 @@
                 textField.text = @"";
             }
         }
+        else
+        {
+        
+            self.extendedInfoView.gratuityAmount.text = @"0.00";
+        
+        }
     }];
     
     UITapGestureRecognizer *recognizer1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeFocusFromTextField:)];
@@ -159,6 +168,7 @@
     }];
     
     [Helper styleButtonPrimary:self.startButton];
+    [Helper styleButtonPrimary:self.clearCardDataButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -219,7 +229,7 @@
 - (IBAction)segmentedTouched:(id)sender
 {
     [self removeFocusFromTextField:nil];
-    
+
     if([self.cardPresentSegmented selectedSegmentIndex] == VAULTINDEX)
     {
         [self toggleVaultInfo:true];
@@ -236,6 +246,11 @@
         [self toggleVaultInfo:false];
         [self.extendedInfoView setTerminalGratuity];
     }
+}
+- (IBAction)clearCardDataButtonPressed:(id)sender {
+
+    [self.swiper clearQuickChipTransaction];
+
 }
 
 - (IBAction) startTransaction
@@ -323,7 +338,15 @@
     
     self.currRequest = request;
     
-    WPYEMVTransactionType transactionType = WPYEMVTransactionTypeCashback;
+    WPYEMVTransactionType transactionType;
+    if ([self.extendedInfoView.cashbackSegmentedControl selectedSegmentIndex] == 0)
+    {
+        transactionType = WPYEMVTransactionTypeServices;
+    }
+    else
+    {
+        transactionType = WPYEMVTransactionTypeCashback;
+    }
     
     request.amount = [NSDecimalNumber decimalNumberWithString:self.amountTextField.text];
     
@@ -376,9 +399,14 @@
         extendedData.serviceData = serviceData;
     }
     
-    if(self.extendedInfoView.terminalGratuity.selectedSegmentIndex != 0)
+    if(self.extendedInfoView.terminalGratuity.selectedSegmentIndex == 0)
     {
-        transactionType = WPYEMVTransactionTypeServices;
+        self.gratuityOnPed = NO;
+        request.extendedInformation.serviceData.gratuityAmount = [NSDecimalNumber decimalNumberWithString:self.extendedInfoView.gratuityAmount.text];
+    }
+    else
+    {
+        self.gratuityOnPed = YES;
     }
     
     request.extendedInformation = extendedData;
@@ -410,8 +438,7 @@
     {
         // Swiper transaction started
         [self startTransactionProgress];
-        
-        [self.swiper beginEMVTransactionWithRequest:request transactionType:transactionType terminalSelectsApplication: false commonDebitMode: USCommonDebitModeDefault];
+        [self.swiper beginEMVTransactionWithRequest:request transactionType:transactionType enableGratuityOnPed:self.gratuityOnPed commonDebitMode:USCommonDebitModePreferCommonDebit];
     }
     else if([self.cardPresentSegmented selectedSegmentIndex] == VAULTINDEX)
     {
@@ -883,11 +910,12 @@
             defaultPrompt = [NSString stringWithFormat:@"Confirm Total: %@", self.currRequest.amount.stringValue];
 #else
         {
-            NSNumberFormatter *currencyFormatter = [NSNumberFormatter new];
-            currencyFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-            NSNumber *number = [currencyFormatter numberFromString:self.currRequest.amount.stringValue];
-            currencyFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
-            defaultPrompt = [NSString stringWithFormat:@"Confirm Total: \n%@", [currencyFormatter stringFromNumber:number]];
+//            NSNumberFormatter *currencyFormatter = [NSNumberFormatter new];
+//            currencyFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+//            NSNumber *number = [currencyFormatter numberFromString:self.currRequest.amount.stringValue];
+//            currencyFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+//            defaultPrompt = [NSString stringWithFormat:@"Confirm Total: \n%@", [currencyFormatter stringFromNumber:number]];
+            defaultPrompt = nil;
         }
 #endif
             break;

@@ -28,9 +28,7 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Generate auth token necessary for API calls
     
     WPYAuthTokenRequest *authTokenRequest = [[WPYAuthTokenRequest alloc] init];
@@ -45,30 +43,24 @@
     [WorldPayAPI instance].debugDelegate = self;
     
     // This must be called prior to any API calls being made or the SDK will assert and exit() 
-    [[WorldPayAPI instance] registerEnvironment: WPYEnvironmentDemo];
+    [[WorldPayAPI instance] registerEnvironment: WPYEnvironmentProd];
     
-    [[WorldPayAPI instance] generateAuthToken:authTokenRequest withCompletion:^(WPYAuthTokenResponse *result, NSError *error)
-    {
-        if(!result || !result.success || error)
-        {
+    [[WorldPayAPI instance] generateAuthToken:authTokenRequest withCompletion:^(WPYAuthTokenResponse *result, NSError *error) {
+        if (!result || !result.success || error) {
             NSLog(@"Error generating AUTH Token: %@", error);
              
             UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Unable to generate an auth token, please validate you are connected to the internet and your SecureNet Id and Key are correct in AppDelegate." preferredStyle:UIAlertControllerStyleAlert];
              
-            [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
-            {
+            [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 exit(0);
             }]];
              
             [self.window.rootViewController presentViewController:alert animated:true completion:nil];
-        }
-        else
-        {
+        }else {
             NSLog(@"%@", @"Auth token generated");
             
             self.authTokenAvailable = true;
         }
-        
     }];
     
     // UIAppearance Proxy settings
@@ -91,6 +83,7 @@
     HomeViewController * homeViewController = [[HomeViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController * homeNav = [[UINavigationController alloc] initWithRootViewController: homeViewController];
     homeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[((UIViewController *)[[homeNav viewControllers] firstObject]) title] image:[self imageWithImage:[UIImage imageNamed:@"home_icon"]] tag:[index current]];
+    homeViewController.edgesForExtendedLayout = UIRectEdgeTop;
     
     // 2nd tab for Transactions (Auth, Charge, Credit)
     TransactionViewController * transactionViewController = [[TransactionViewController alloc] initWithNibName:nil bundle:nil];
@@ -122,8 +115,8 @@
     return YES;
 }
 
-- (UIImage *)imageWithImage:(UIImage *)image
-{
+
+- (UIImage *)imageWithImage:(UIImage *)image {
     CGSize newSize = CGSizeMake(30, 30);
     UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
@@ -133,40 +126,40 @@
     return [newImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
+
+- (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
+
+- (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)didReceiveResponse:(NSString *)response
-{
+
+- (void)didReceiveResponse:(NSString *)response {
     NSLog(@"Response: %@", response);
 }
 
-- (void)willSendRequest:(NSString *)request
-{
+
+- (void)willSendRequest:(NSString *)request {
     NSLog(@"Request: %@", request);
 }
 

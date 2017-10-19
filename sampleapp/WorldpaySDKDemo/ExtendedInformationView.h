@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *serverName;
 @property (weak, nonatomic) IBOutlet UITextField *notes;
 @property (weak, nonatomic) IBOutlet UISegmentedControl * terminalGratuity;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *cashbackSegmentedControl;
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *textFields;
 
 + (CGFloat) expectedHeight;

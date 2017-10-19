@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYAuthTokenRequest.html">
+	<File path="Classes/WPYAnywhereNomad.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYAuthTokenRequest</TokenIdentifier>
-			<Abstract type="html">This object is sent when requesting an authorization token from the server so that other APIs can be used.
-The SDK automatically stores the token in the device keychain, but returns a copy of the token just in case
-the developer needs it for some reason.  Only one ID and Key/PIN should be set, based on the processing
-gateway the application is to use</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYAnywhereNomad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WPYAnywhereNomad.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -16,254 +13,19 @@ gateway the application is to use</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetId:</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYAnywhereNomad/initWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Creates an instance of a swiper, with a delegate assigned at instantiation</Abstract>
+			<DeclaredIn>WPYAnywhereNomad.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
-			
-			
-			<Anchor>//api/name/secureNetId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
-			
-			
-			<Anchor>//api/name/secureNetId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetId</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetId</Declaration>
-			
-			
-			<Anchor>//api/name/secureNetId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setSecureNetKey:</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
-			
-			
-			<Anchor>//api/name/secureNetKey</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
-			
-			
-			<Anchor>//api/name/secureNetKey</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/secureNetKey</TokenIdentifier>
-			<Abstract type="html">If using the SecureNet gateway, this key must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *secureNetKey</Declaration>
-			
-			
-			<Anchor>//api/name/secureNetKey</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersId:</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
-			
-			
-			<Anchor>//api/name/merchantPartnersId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
-			
-			
-			<Anchor>//api/name/merchantPartnersId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersId</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this ID must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersId</Declaration>
-			
-			
-			<Anchor>//api/name/merchantPartnersId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setMerchantPartnersPin:</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
-			
-			
-			<Anchor>//api/name/merchantPartnersPin</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
-			
-			
-			<Anchor>//api/name/merchantPartnersPin</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/merchantPartnersPin</TokenIdentifier>
-			<Abstract type="html">If using the Merchant Partners gateway, this PIN must be set</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *merchantPartnersPin</Declaration>
-			
-			
-			<Anchor>//api/name/merchantPartnersPin</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setApplicationId:</TokenIdentifier>
-			<Abstract type="html">All applications must set their ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
-			
-			
-			<Anchor>//api/name/applicationId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/applicationId</TokenIdentifier>
-			<Abstract type="html">All applications must set their ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
-			
-			
-			<Anchor>//api/name/applicationId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/applicationId</TokenIdentifier>
-			<Abstract type="html">All applications must set their ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *applicationId</Declaration>
-			
-			
-			<Anchor>//api/name/applicationId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalId:</TokenIdentifier>
-			<Abstract type="html">All applications must present a terminal ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
-			
-			
-			<Anchor>//api/name/terminalId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalId</TokenIdentifier>
-			<Abstract type="html">All applications must present a terminal ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
-			
-			
-			<Anchor>//api/name/terminalId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalId</TokenIdentifier>
-			<Abstract type="html">All applications must present a terminal ID</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *terminalId</Declaration>
-			
-			
-			<Anchor>//api/name/terminalId</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/setTerminalVendor:</TokenIdentifier>
-			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
-			
-			
-			<Anchor>//api/name/terminalVendor</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
-			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
-			
-			
-			<Anchor>//api/name/terminalVendor</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYAuthTokenRequest/terminalVendor</TokenIdentifier>
-			<Abstract type="html">All applications must present the name of their terminal vendor</Abstract>
-			<DeclaredIn>WPYAuthTokenRequest.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *terminalVendor</Declaration>
-			
-			
-			<Anchor>//api/name/terminalVendor</Anchor>
+			<Declaration>- (instancetype)initWithDelegate:(id&lt;WPYSwiperDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The initial delegate that the swiper will call with events.  This can be changed at any time after instantiation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of a swiper</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDelegate:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

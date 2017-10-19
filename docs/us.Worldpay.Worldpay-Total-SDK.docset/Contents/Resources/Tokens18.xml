@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYGetPaymentToken.html">
+	<File path="Classes/WPYEMVData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYGetPaymentToken</TokenIdentifier>
-			<Abstract type="html">This request will generate a payment token that represents the presented card or check.  The customer ID must be provided</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYEMVData</TokenIdentifier>
+			<Abstract type="html">Private object that contains information that the SDK will pass down to the credit card terminal</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
             
 			
 			<NodeRef refid="18"/>
@@ -13,146 +13,209 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setCard:</TokenIdentifier>
-			<Abstract type="html">The card data that is to be tokenized</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setEmvAuthResponseCode:</TokenIdentifier>
+			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *emvAuthResponseCode</Declaration>
 			
 			
-			<Anchor>//api/name/card</Anchor>
+			<Anchor>//api/name/emvAuthResponseCode</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/card</TokenIdentifier>
-			<Abstract type="html">The card data that is to be tokenized</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/emvAuthResponseCode</TokenIdentifier>
+			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *emvAuthResponseCode</Declaration>
 			
 			
-			<Anchor>//api/name/card</Anchor>
+			<Anchor>//api/name/emvAuthResponseCode</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/card</TokenIdentifier>
-			<Abstract type="html">The card data that is to be tokenized</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/emvAuthResponseCode</TokenIdentifier>
+			<Abstract type="html">EMV Auth Code (Used for tag 8A if provided, otherwise generated manually based on gateway response)</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYTenderedCard *card</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *emvAuthResponseCode</Declaration>
 			
 			
-			<Anchor>//api/name/card</Anchor>
+			<Anchor>//api/name/emvAuthResponseCode</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setCheck:</TokenIdentifier>
-			<Abstract type="html">The check data that is to be tokenized</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerAuthenticationData:</TokenIdentifier>
+			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
+and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
 			
 			
-			<Anchor>//api/name/check</Anchor>
+			<Anchor>//api/name/issuerAuthenticationData</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/check</TokenIdentifier>
-			<Abstract type="html">The check data that is to be tokenized</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerAuthenticationData</TokenIdentifier>
+			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
+and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
 			
 			
-			<Anchor>//api/name/check</Anchor>
+			<Anchor>//api/name/issuerAuthenticationData</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/check</TokenIdentifier>
-			<Abstract type="html">The check data that is to be tokenized</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerAuthenticationData</TokenIdentifier>
+			<Abstract type="html">EMV Issuer Authentication Data tag 91, if provided.  This is cryptographically signed by the issuer
+and cannot be derived.  The card has the option to decline if this data is not returned on an authorization</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYTenderedCheck *check</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerAuthenticationData</Declaration>
 			
 			
-			<Anchor>//api/name/check</Anchor>
+			<Anchor>//api/name/issuerAuthenticationData</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setCustomerId:</TokenIdentifier>
-			<Abstract type="html">The Customer ID that this payment token will be associated with</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptResult:</TokenIdentifier>
+			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/issuerScriptResult</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/customerId</TokenIdentifier>
-			<Abstract type="html">The Customer ID that this payment token will be associated with</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptResult</TokenIdentifier>
+			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/issuerScriptResult</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/customerId</TokenIdentifier>
-			<Abstract type="html">The Customer ID that this payment token will be associated with</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptResult</TokenIdentifier>
+			<Abstract type="html">This is returned by the terminal after the issuer scripts have been completed</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptResult</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/issuerScriptResult</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/setAddToVault:</TokenIdentifier>
-			<Abstract type="html">A flag indicating whether or not this payment method should be saved in the payment vault</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptTemplate1:</TokenIdentifier>
+			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
+should be included in the 2nd AC upon completion</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property BOOL addToVault</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
 			
 			
-			<Anchor>//api/name/addToVault</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYGetPaymentToken/addToVault</TokenIdentifier>
-			<Abstract type="html">A flag indicating whether or not this payment method should be saved in the payment vault</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptTemplate1</TokenIdentifier>
+			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
+should be included in the 2nd AC upon completion</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property BOOL addToVault</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
 			
 			
-			<Anchor>//api/name/addToVault</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYGetPaymentToken/addToVault</TokenIdentifier>
-			<Abstract type="html">A flag indicating whether or not this payment method should be saved in the payment vault</Abstract>
-			<DeclaredIn>WPYGetPaymentToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptTemplate1</TokenIdentifier>
+			<Abstract type="html">Issuer Script 1 is run prior to the Second AC generation and is embedded in tag 71.  The script result
+should be included in the 2nd AC upon completion</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
 			
-			<Declaration>@property BOOL addToVault</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate1</Declaration>
 			
 			
-			<Anchor>//api/name/addToVault</Anchor>
+			<Anchor>//api/name/issuerScriptTemplate1</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/setIssuerScriptTemplate2:</TokenIdentifier>
+			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
+be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
+			
+			
+			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/issuerScriptTemplate2</TokenIdentifier>
+			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
+be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
+			
+			
+			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYEMVData/issuerScriptTemplate2</TokenIdentifier>
+			<Abstract type="html">Issuer SCript i2 is run after the Second AC generation and is embedded in tag 72.  The script result will
+be returned by the terminal and the result should also be included in the next ARQC generated by the card</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *issuerScriptTemplate2</Declaration>
+			
+			
+			<Anchor>//api/name/issuerScriptTemplate2</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYEMVData/encodeEMVDataWithAuthCode:</TokenIdentifier>
+			<Abstract type="html">This method will take the object and, based on the auth code and response message from the gateway, will
+create the EMV result TLV to send down to the terminal for 2nd AC generation</Abstract>
+			<DeclaredIn>WPYEMVData.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)encodeEMVDataWithAuthCode:(WPYResponseCode)responseCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>responseCode</Name>
+					<Abstract type="html">The response code returned on the Payment Response</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The &quot;Response Text&quot; returned by the server, which may contain information about a declined transaction.</Abstract></ReturnValue>
+			<Anchor>//api/name/encodeEMVDataWithAuthCode:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		

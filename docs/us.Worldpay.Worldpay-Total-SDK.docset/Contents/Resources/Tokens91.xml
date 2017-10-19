@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYSwiperType.html">
+	<File path="Constants/WPYCustomerDuplicateCheckType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYSwiperType</TokenIdentifier>
-			<Abstract type="html">The type of encryption used to secure the SRED data for a card read from a terminal</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCustomerDuplicateCheckType</TokenIdentifier>
+			<Abstract type="html">indicates how the method should behave if the Customer ID already exists. Default is 0.</Abstract>
+			<DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
 			
 			<NodeRef refid="91"/>
@@ -14,51 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeNotSet</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeNotSet</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeUnset</TokenIdentifier>
+            <Abstract type="html">Unset</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeUnset</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="91"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeNone</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeNone</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
             <NodeRef refid="91"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeIDTech</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeIDTech</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeError</TokenIdentifier>
+            <Abstract type="html">If Customer ID exists then return an Error.</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeError</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="91"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeMagTek</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeMagTek</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
             <NodeRef refid="91"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperTypeMiura</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperTypeMiura</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCustomerDuplicateCheckTypeContinue</TokenIdentifier>
+            <Abstract type="html">If Customer ID exists then do not add account but continue with transaction.</Abstract>
+            <Declaration>WPYCustomerDuplicateCheckTypeContinue</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYDomainObject.h</DeclaredIn>
             
             <NodeRef refid="91"/>
         </Token>

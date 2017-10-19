@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYTransactionUpdate.html">
+	<File path="Classes/WPYTransactionSearch.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYTransactionUpdate</TokenIdentifier>
-			<Abstract type="html">Request object used to update transaction</Abstract>
-			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTransactionSearch</TokenIdentifier>
+			<Abstract type="html">Request object used to search for transactions</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
             
 			
 			<NodeRef refid="50"/>
@@ -13,9 +13,81 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/setTransactionId:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setStartDate:</TokenIdentifier>
+			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/startDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/startDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setEndDate:</TokenIdentifier>
+			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/endDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/endDate</TokenIdentifier>
+			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setTransactionId:</TokenIdentifier>
 			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
@@ -25,9 +97,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/transactionId</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/transactionId</TokenIdentifier>
 			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
@@ -37,9 +109,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionUpdate/transactionId</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/transactionId</TokenIdentifier>
 			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
 			
@@ -49,38 +121,110 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/setLevelTwoData:</TokenIdentifier>
-			<Abstract type="html">This parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
-			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setOrderId:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
 			
-			<Anchor>//api/name/levelTwoData</Anchor>
+			<Anchor>//api/name/orderId</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionUpdate/levelTwoData</TokenIdentifier>
-			<Abstract type="html">This parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
-			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/orderId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
 			
-			<Anchor>//api/name/levelTwoData</Anchor>
+			<Anchor>//api/name/orderId</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionUpdate/levelTwoData</TokenIdentifier>
-			<Abstract type="html">This parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
-			<DeclaredIn>WPYTransactionUpdate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/orderId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
 			
-			<Anchor>//api/name/levelTwoData</Anchor>
+			<Anchor>//api/name/orderId</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setAmount:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/amount</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/amount</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setCustomerId:</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/customerId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/customerId</TokenIdentifier>
+			<Abstract type="html">Self-explanatory</Abstract>
+			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			
+			
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		

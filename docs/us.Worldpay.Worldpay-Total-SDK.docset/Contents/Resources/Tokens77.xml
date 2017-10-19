@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYCardType.html">
+	<File path="Constants/PinError.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYCardType</TokenIdentifier>
-			<Abstract type="html">The card brand associated with a card.  This is used internally when performing card number validation</Abstract>
-			<DeclaredIn>WPYTender.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/PinError</TokenIdentifier>
+			<Abstract type="html">Error types in processing a PIN</Abstract>
+			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
 			<NodeRef refid="77"/>
@@ -14,111 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeVisa</TokenIdentifier>
-            <Abstract type="html">Visa</Abstract>
-            <Declaration>WPYCardTypeVisa</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PinErrorCanceled</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>PinErrorCanceled</Declaration>
             
-            <DeclaredIn>WPYTender.h</DeclaredIn>
-            
-            <NodeRef refid="77"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeMaster</TokenIdentifier>
-            <Abstract type="html">MasterCard</Abstract>
-            <Declaration>WPYCardTypeMaster</Declaration>
-            
-            <DeclaredIn>WPYTender.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="77"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeAmex</TokenIdentifier>
-            <Abstract type="html">American Express</Abstract>
-            <Declaration>WPYCardTypeAmex</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PinErrorInternalError09</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>PinErrorInternalError09</Declaration>
             
-            <DeclaredIn>WPYTender.h</DeclaredIn>
-            
-            <NodeRef refid="77"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeDiscover</TokenIdentifier>
-            <Abstract type="html">Discover Card</Abstract>
-            <Declaration>WPYCardTypeDiscover</Declaration>
-            
-            <DeclaredIn>WPYTender.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="77"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeDiners</TokenIdentifier>
-            <Abstract type="html">Diners Club</Abstract>
-            <Declaration>WPYCardTypeDiners</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PinErrorInternalError0A</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>PinErrorInternalError0A</Declaration>
             
-            <DeclaredIn>WPYTender.h</DeclaredIn>
-            
-            <NodeRef refid="77"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeJcb</TokenIdentifier>
-            <Abstract type="html">JCB (Japanese Credit Bureau)</Abstract>
-            <Declaration>WPYCardTypeJcb</Declaration>
-            
-            <DeclaredIn>WPYTender.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="77"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeBc</TokenIdentifier>
-            <Abstract type="html">Barclay Card</Abstract>
-            <Declaration>WPYCardTypeBc</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PinErrorInternalError0B</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>PinErrorInternalError0B</Declaration>
             
-            <DeclaredIn>WPYTender.h</DeclaredIn>
-            
-            <NodeRef refid="77"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeDina</TokenIdentifier>
-            <Abstract type="html">DinaCard (Serbian)</Abstract>
-            <Declaration>WPYCardTypeDina</Declaration>
-            
-            <DeclaredIn>WPYTender.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="77"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeMaestro</TokenIdentifier>
-            <Abstract type="html">Maestro (MasterCard debit)</Abstract>
-            <Declaration>WPYCardTypeMaestro</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PinErrorUserBypassedPin</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>PinErrorUserBypassedPin</Declaration>
             
-            <DeclaredIn>WPYTender.h</DeclaredIn>
-            
-            <NodeRef refid="77"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeUnionPay</TokenIdentifier>
-            <Abstract type="html">Union Pay</Abstract>
-            <Declaration>WPYCardTypeUnionPay</Declaration>
-            
-            <DeclaredIn>WPYTender.h</DeclaredIn>
-            
-            <NodeRef refid="77"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYCardTypeUnknown</TokenIdentifier>
-            <Abstract type="html">Unknown</Abstract>
-            <Declaration>WPYCardTypeUnknown</Declaration>
-            
-            <DeclaredIn>WPYTender.h</DeclaredIn>
+            <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
             <NodeRef refid="77"/>
         </Token>

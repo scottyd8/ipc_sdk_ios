@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYTransactionSearch.html">
+	<File path="Classes/WPYTransaction.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYTransactionSearch</TokenIdentifier>
-			<Abstract type="html">Request object used to search for transactions</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYTransaction</TokenIdentifier>
+			<Abstract type="html">This class contains the attributes and methods to perform a credit/debit/check transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
             
 			
 			<NodeRef refid="48"/>
@@ -13,117 +13,521 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setStartDate:</TokenIdentifier>
-			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setCustomerId:</TokenIdentifier>
+			<Abstract type="html">The ID of the customer associated with the transaction, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/startDate</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/startDate</TokenIdentifier>
-			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/customerId</TokenIdentifier>
+			<Abstract type="html">The ID of the customer associated with the transaction, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/startDate</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/startDate</TokenIdentifier>
-			<Abstract type="html">This corresponds to the start date of the requested search</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/customerId</TokenIdentifier>
+			<Abstract type="html">The ID of the customer associated with the transaction, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *startDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *customerId</Declaration>
 			
 			
-			<Anchor>//api/name/startDate</Anchor>
+			<Anchor>//api/name/customerId</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setEndDate:</TokenIdentifier>
-			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setDate:</TokenIdentifier>
+			<Abstract type="html">The date/time of the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *date</Declaration>
 			
 			
-			<Anchor>//api/name/endDate</Anchor>
+			<Anchor>//api/name/date</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/endDate</TokenIdentifier>
-			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/date</TokenIdentifier>
+			<Abstract type="html">The date/time of the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *date</Declaration>
 			
 			
-			<Anchor>//api/name/endDate</Anchor>
+			<Anchor>//api/name/date</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/endDate</TokenIdentifier>
-			<Abstract type="html">This corresponds to the end date of the requested search</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/date</TokenIdentifier>
+			<Abstract type="html">The date/time of the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDate *endDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *date</Declaration>
 			
 			
-			<Anchor>//api/name/endDate</Anchor>
+			<Anchor>//api/name/date</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setTransactionId:</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAuthorizationCode:</TokenIdentifier>
+			<Abstract type="html">The authorization code returned from the payment gateway</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *authorizationCode</Declaration>
 			
 			
-			<Anchor>//api/name/transactionId</Anchor>
+			<Anchor>//api/name/authorizationCode</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/transactionId</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/authorizationCode</TokenIdentifier>
+			<Abstract type="html">The authorization code returned from the payment gateway</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *authorizationCode</Declaration>
 			
 			
-			<Anchor>//api/name/transactionId</Anchor>
+			<Anchor>//api/name/authorizationCode</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/transactionId</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/authorizationCode</TokenIdentifier>
+			<Abstract type="html">The authorization code returned from the payment gateway</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *transactionId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *authorizationCode</Declaration>
 			
 			
-			<Anchor>//api/name/transactionId</Anchor>
+			<Anchor>//api/name/authorizationCode</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setOrderId:</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAmount:</TokenIdentifier>
+			<Abstract type="html">The amount of the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/amount</TokenIdentifier>
+			<Abstract type="html">The amount of the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/amount</TokenIdentifier>
+			<Abstract type="html">The amount of the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *amount</Declaration>
+			
+			
+			<Anchor>//api/name/amount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setGratuity:</TokenIdentifier>
+			<Abstract type="html">The amount of the gratuity associated with the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *gratuity</Declaration>
+			
+			
+			<Anchor>//api/name/gratuity</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/gratuity</TokenIdentifier>
+			<Abstract type="html">The amount of the gratuity associated with the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *gratuity</Declaration>
+			
+			
+			<Anchor>//api/name/gratuity</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/gratuity</TokenIdentifier>
+			<Abstract type="html">The amount of the gratuity associated with the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *gratuity</Declaration>
+			
+			
+			<Anchor>//api/name/gratuity</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setCard:</TokenIdentifier>
+			<Abstract type="html">The credit card specific transaction data associated with the request, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYCardTransactionData *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/card</TokenIdentifier>
+			<Abstract type="html">The credit card specific transaction data associated with the request, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYCardTransactionData *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/card</TokenIdentifier>
+			<Abstract type="html">The credit card specific transaction data associated with the request, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYCardTransactionData *card</Declaration>
+			
+			
+			<Anchor>//api/name/card</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setCheck:</TokenIdentifier>
+			<Abstract type="html">The check specific transaction data associated with the request, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYCheckTransactionData *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/check</TokenIdentifier>
+			<Abstract type="html">The check specific transaction data associated with the request, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYCheckTransactionData *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/check</TokenIdentifier>
+			<Abstract type="html">The check specific transaction data associated with the request, if any</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYCheckTransactionData *check</Declaration>
+			
+			
+			<Anchor>//api/name/check</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setBillAddress:</TokenIdentifier>
+			<Abstract type="html">The billing address associated with the payment request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYAddressInfo *billAddress</Declaration>
+			
+			
+			<Anchor>//api/name/billAddress</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/billAddress</TokenIdentifier>
+			<Abstract type="html">The billing address associated with the payment request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYAddressInfo *billAddress</Declaration>
+			
+			
+			<Anchor>//api/name/billAddress</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/billAddress</TokenIdentifier>
+			<Abstract type="html">The billing address associated with the payment request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYAddressInfo *billAddress</Declaration>
+			
+			
+			<Anchor>//api/name/billAddress</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setEmail:</TokenIdentifier>
+			<Abstract type="html">The email address that is associated with the request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/email</TokenIdentifier>
+			<Abstract type="html">The email address that is associated with the request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/email</TokenIdentifier>
+			<Abstract type="html">The email address that is associated with the request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setPaymentType:</TokenIdentifier>
+			<Abstract type="html">The payment type associated with the request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYPaymentType paymentType</Declaration>
+			
+			
+			<Anchor>//api/name/paymentType</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/paymentType</TokenIdentifier>
+			<Abstract type="html">The payment type associated with the request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYPaymentType paymentType</Declaration>
+			
+			
+			<Anchor>//api/name/paymentType</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/paymentType</TokenIdentifier>
+			<Abstract type="html">The payment type associated with the request</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) WPYPaymentType paymentType</Declaration>
+			
+			
+			<Anchor>//api/name/paymentType</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setResponseText:</TokenIdentifier>
+			<Abstract type="html">Response text from the payment processor containing information about the transaction.
+This will be displayed on the terminal, when possible (See WPYSwiper</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *responseText</Declaration>
+			
+			
+			<Anchor>//api/name/responseText</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/responseText</TokenIdentifier>
+			<Abstract type="html">Response text from the payment processor containing information about the transaction.
+This will be displayed on the terminal, when possible (See WPYSwiper</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *responseText</Declaration>
+			
+			
+			<Anchor>//api/name/responseText</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/responseText</TokenIdentifier>
+			<Abstract type="html">Response text from the payment processor containing information about the transaction.
+This will be displayed on the terminal, when possible (See WPYSwiper</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *responseText</Declaration>
+			
+			
+			<Anchor>//api/name/responseText</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setTransactionIdentifier:</TokenIdentifier>
+			<Abstract type="html">A convenience method to get the WPYTransaction.identifier associated with the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=getTransactionIdentifier) NSString *transactionIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/transactionIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/getTransactionIdentifier</TokenIdentifier>
+			<Abstract type="html">A convenience method to get the WPYTransaction.identifier associated with the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=getTransactionIdentifier) NSString *transactionIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/transactionIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/transactionIdentifier</TokenIdentifier>
+			<Abstract type="html">A convenience method to get the WPYTransaction.identifier associated with the transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=getTransactionIdentifier) NSString *transactionIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/transactionIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setLevelTwoData:</TokenIdentifier>
+			<Abstract type="html">This optional parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			
+			
+			<Anchor>//api/name/levelTwoData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/levelTwoData</TokenIdentifier>
+			<Abstract type="html">This optional parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			
+			
+			<Anchor>//api/name/levelTwoData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/levelTwoData</TokenIdentifier>
+			<Abstract type="html">This optional parameter contains data that the merchant wishes to pass up to the payment gateway for that specific transaction</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) WPYLevelTwoData *levelTwoData</Declaration>
+			
+			
+			<Anchor>//api/name/levelTwoData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setTransactionType:</TokenIdentifier>
+			<Abstract type="html">transaction type identifier.
+type of transaction. Values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionType</Declaration>
+			
+			
+			<Anchor>//api/name/transactionType</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/transactionType</TokenIdentifier>
+			<Abstract type="html">transaction type identifier.
+type of transaction. Values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionType</Declaration>
+			
+			
+			<Anchor>//api/name/transactionType</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/transactionType</TokenIdentifier>
+			<Abstract type="html">transaction type identifier.
+type of transaction. Values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *transactionType</Declaration>
+			
+			
+			<Anchor>//api/name/transactionType</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setOrderId:</TokenIdentifier>
+			<Abstract type="html">client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate transactions. The orderId must be unique to
+the merchant&apos;s SecureNet ID; however, uniqueness is only evaluated for APPROVED transactions and only for the last 30 days. If a transaction is
+declined, the corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
@@ -133,9 +537,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/orderId</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/orderId</TokenIdentifier>
+			<Abstract type="html">client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate transactions. The orderId must be unique to
+the merchant&apos;s SecureNet ID; however, uniqueness is only evaluated for APPROVED transactions and only for the last 30 days. If a transaction is
+declined, the corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
@@ -145,9 +551,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/orderId</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/orderId</TokenIdentifier>
+			<Abstract type="html">client-generated unique ID for each transaction, used as a way to prevent the processing of duplicate transactions. The orderId must be unique to
+the merchant&apos;s SecureNet ID; however, uniqueness is only evaluated for APPROVED transactions and only for the last 30 days. If a transaction is
+declined, the corresponding orderId may be used again.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSString *orderId</Declaration>
 			
@@ -157,74 +565,623 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setAmount:</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAllowedPartialCharges:</TokenIdentifier>
+			<Abstract type="html">indicates whether partial payments are to be accepted.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL allowedPartialCharges</Declaration>
 			
 			
-			<Anchor>//api/name/amount</Anchor>
+			<Anchor>//api/name/allowedPartialCharges</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/amount</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/allowedPartialCharges</TokenIdentifier>
+			<Abstract type="html">indicates whether partial payments are to be accepted.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL allowedPartialCharges</Declaration>
 			
 			
-			<Anchor>//api/name/amount</Anchor>
+			<Anchor>//api/name/allowedPartialCharges</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/amount</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/allowedPartialCharges</TokenIdentifier>
+			<Abstract type="html">indicates whether partial payments are to be accepted.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDecimalNumber *amount</Declaration>
+			<Declaration>@property (nonatomic, assign) BOOL allowedPartialCharges</Declaration>
 			
 			
-			<Anchor>//api/name/amount</Anchor>
+			<Anchor>//api/name/allowedPartialCharges</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/setCustomerId:</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setPaymentTypeCode:</TokenIdentifier>
+			<Abstract type="html">credit card or check type. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *paymentTypeCode</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/paymentTypeCode</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYTransactionSearch/customerId</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/paymentTypeCode</TokenIdentifier>
+			<Abstract type="html">credit card or check type. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *paymentTypeCode</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/paymentTypeCode</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYTransactionSearch/customerId</TokenIdentifier>
-			<Abstract type="html">Self-explanatory</Abstract>
-			<DeclaredIn>WPYTransactionSearch.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/paymentTypeCode</TokenIdentifier>
+			<Abstract type="html">credit card or check type. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *customerId</Declaration>
+			<Declaration>@property (nonatomic, strong) NSString *paymentTypeCode</Declaration>
 			
 			
-			<Anchor>//api/name/customerId</Anchor>
+			<Anchor>//api/name/paymentTypeCode</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setPaymentTypeResult:</TokenIdentifier>
+			<Abstract type="html">transaction method. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *paymentTypeResult</Declaration>
+			
+			
+			<Anchor>//api/name/paymentTypeResult</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/paymentTypeResult</TokenIdentifier>
+			<Abstract type="html">transaction method. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *paymentTypeResult</Declaration>
+			
+			
+			<Anchor>//api/name/paymentTypeResult</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/paymentTypeResult</TokenIdentifier>
+			<Abstract type="html">transaction method. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *paymentTypeResult</Declaration>
+			
+			
+			<Anchor>//api/name/paymentTypeResult</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setLevel2Valid:</TokenIdentifier>
+			<Abstract type="html">indicates whether the credit card is level 2 eligible.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL level2Valid</Declaration>
+			
+			
+			<Anchor>//api/name/level2Valid</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/level2Valid</TokenIdentifier>
+			<Abstract type="html">indicates whether the credit card is level 2 eligible.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL level2Valid</Declaration>
+			
+			
+			<Anchor>//api/name/level2Valid</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/level2Valid</TokenIdentifier>
+			<Abstract type="html">indicates whether the credit card is level 2 eligible.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL level2Valid</Declaration>
+			
+			
+			<Anchor>//api/name/level2Valid</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setCardCodeResult:</TokenIdentifier>
+			<Abstract type="html">card security code result. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *cardCodeResult</Declaration>
+			
+			
+			<Anchor>//api/name/cardCodeResult</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/cardCodeResult</TokenIdentifier>
+			<Abstract type="html">card security code result. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *cardCodeResult</Declaration>
+			
+			
+			<Anchor>//api/name/cardCodeResult</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/cardCodeResult</TokenIdentifier>
+			<Abstract type="html">card security code result. Valid values are:</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *cardCodeResult</Declaration>
+			
+			
+			<Anchor>//api/name/cardCodeResult</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setCashbackAmount:</TokenIdentifier>
+			<Abstract type="html">cash back amount given to a customer. Commonly used for debit transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *cashbackAmount</Declaration>
+			
+			
+			<Anchor>//api/name/cashbackAmount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/cashbackAmount</TokenIdentifier>
+			<Abstract type="html">cash back amount given to a customer. Commonly used for debit transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *cashbackAmount</Declaration>
+			
+			
+			<Anchor>//api/name/cashbackAmount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/cashbackAmount</TokenIdentifier>
+			<Abstract type="html">cash back amount given to a customer. Commonly used for debit transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *cashbackAmount</Declaration>
+			
+			
+			<Anchor>//api/name/cashbackAmount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setIndustrySpecificData:</TokenIdentifier>
+			<Abstract type="html">industry-specific data for ecommerce and moto transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *industrySpecificData</Declaration>
+			
+			
+			<Anchor>//api/name/industrySpecificData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/industrySpecificData</TokenIdentifier>
+			<Abstract type="html">industry-specific data for ecommerce and moto transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *industrySpecificData</Declaration>
+			
+			
+			<Anchor>//api/name/industrySpecificData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/industrySpecificData</TokenIdentifier>
+			<Abstract type="html">industry-specific data for ecommerce and moto transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *industrySpecificData</Declaration>
+			
+			
+			<Anchor>//api/name/industrySpecificData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setNetworkCode:</TokenIdentifier>
+			<Abstract type="html">identifier for the network that returned the transaction response.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *networkCode</Declaration>
+			
+			
+			<Anchor>//api/name/networkCode</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/networkCode</TokenIdentifier>
+			<Abstract type="html">identifier for the network that returned the transaction response.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *networkCode</Declaration>
+			
+			
+			<Anchor>//api/name/networkCode</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/networkCode</TokenIdentifier>
+			<Abstract type="html">identifier for the network that returned the transaction response.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *networkCode</Declaration>
+			
+			
+			<Anchor>//api/name/networkCode</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setEmailReceipt:</TokenIdentifier>
+			<Abstract type="html">indicates whether the functionality to send reciept via email is enabled or not.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailReceipt</Declaration>
+			
+			
+			<Anchor>//api/name/emailReceipt</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/emailReceipt</TokenIdentifier>
+			<Abstract type="html">indicates whether the functionality to send reciept via email is enabled or not.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailReceipt</Declaration>
+			
+			
+			<Anchor>//api/name/emailReceipt</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/emailReceipt</TokenIdentifier>
+			<Abstract type="html">indicates whether the functionality to send reciept via email is enabled or not.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailReceipt</Declaration>
+			
+			
+			<Anchor>//api/name/emailReceipt</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAdditionalData1:</TokenIdentifier>
+			<Abstract type="html">For stored value cards this is the Previous Balance (15 characters long zero filled decimal number with explicit decimal point) followed by Cash Out
+Amount (15 characters long zero filled decimal number with explicit decimal point).</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData1</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData1</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/additionalData1</TokenIdentifier>
+			<Abstract type="html">For stored value cards this is the Previous Balance (15 characters long zero filled decimal number with explicit decimal point) followed by Cash Out
+Amount (15 characters long zero filled decimal number with explicit decimal point).</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData1</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData1</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/additionalData1</TokenIdentifier>
+			<Abstract type="html">For stored value cards this is the Previous Balance (15 characters long zero filled decimal number with explicit decimal point) followed by Cash Out
+Amount (15 characters long zero filled decimal number with explicit decimal point).</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData1</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData1</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAdditionalData2:</TokenIdentifier>
+			<Abstract type="html">For EBT transactions, it will contain the FNS # echoed from the ADDITIONALINFO field of the MERCHANT_KEY object. For stored value cards this is the
+virtual issued card number.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData2</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData2</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/additionalData2</TokenIdentifier>
+			<Abstract type="html">For EBT transactions, it will contain the FNS # echoed from the ADDITIONALINFO field of the MERCHANT_KEY object. For stored value cards this is the
+virtual issued card number.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData2</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData2</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/additionalData2</TokenIdentifier>
+			<Abstract type="html">For EBT transactions, it will contain the FNS # echoed from the ADDITIONALINFO field of the MERCHANT_KEY object. For stored value cards this is the
+virtual issued card number.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData2</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData2</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAdditionalData3:</TokenIdentifier>
+			<Abstract type="html">For EBT transactions, it will contain the Voucher # echoed from the ADDITIONALINFO field of the CARD object. For stored value cards it is the issued
+card EXP date.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData3</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData3</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/additionalData3</TokenIdentifier>
+			<Abstract type="html">For EBT transactions, it will contain the Voucher # echoed from the ADDITIONALINFO field of the CARD object. For stored value cards it is the issued
+card EXP date.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData3</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData3</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/additionalData3</TokenIdentifier>
+			<Abstract type="html">For EBT transactions, it will contain the Voucher # echoed from the ADDITIONALINFO field of the CARD object. For stored value cards it is the issued
+card EXP date.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData3</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData3</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAdditionalData4:</TokenIdentifier>
+			<Abstract type="html">Virtual issued card pin number. Used only for specific stored value card transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData4</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData4</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/additionalData4</TokenIdentifier>
+			<Abstract type="html">Virtual issued card pin number. Used only for specific stored value card transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData4</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData4</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/additionalData4</TokenIdentifier>
+			<Abstract type="html">Virtual issued card pin number. Used only for specific stored value card transactions.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData4</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData4</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAdditionalData5:</TokenIdentifier>
+			<Abstract type="html">P2P Encryption Transaction Response-String (22 Characters): 7-digit Key ID + {1,2} + MMddyyyyHHmmss</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData5</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData5</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/additionalData5</TokenIdentifier>
+			<Abstract type="html">P2P Encryption Transaction Response-String (22 Characters): 7-digit Key ID + {1,2} + MMddyyyyHHmmss</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData5</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData5</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/additionalData5</TokenIdentifier>
+			<Abstract type="html">P2P Encryption Transaction Response-String (22 Characters): 7-digit Key ID + {1,2} + MMddyyyyHHmmss</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *additionalData5</Declaration>
+			
+			
+			<Anchor>//api/name/additionalData5</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setAuthorizedAmount:</TokenIdentifier>
+			<Abstract type="html">authorized amount.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *authorizedAmount</Declaration>
+			
+			
+			<Anchor>//api/name/authorizedAmount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/authorizedAmount</TokenIdentifier>
+			<Abstract type="html">authorized amount.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *authorizedAmount</Declaration>
+			
+			
+			<Anchor>//api/name/authorizedAmount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/authorizedAmount</TokenIdentifier>
+			<Abstract type="html">authorized amount.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *authorizedAmount</Declaration>
+			
+			
+			<Anchor>//api/name/authorizedAmount</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setSettlementData:</TokenIdentifier>
+			<Abstract type="html">date/time, amount, and batchId of the settled transaction.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) SettlementData *settlementData</Declaration>
+			
+			
+			<Anchor>//api/name/settlementData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/settlementData</TokenIdentifier>
+			<Abstract type="html">date/time, amount, and batchId of the settled transaction.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) SettlementData *settlementData</Declaration>
+			
+			
+			<Anchor>//api/name/settlementData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/settlementData</TokenIdentifier>
+			<Abstract type="html">date/time, amount, and batchId of the settled transaction.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) SettlementData *settlementData</Declaration>
+			
+			
+			<Anchor>//api/name/settlementData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/setVaultData:</TokenIdentifier>
+			<Abstract type="html">customer data and Vault token.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) VaultData *vaultData</Declaration>
+			
+			
+			<Anchor>//api/name/vaultData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYTransaction/vaultData</TokenIdentifier>
+			<Abstract type="html">customer data and Vault token.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) VaultData *vaultData</Declaration>
+			
+			
+			<Anchor>//api/name/vaultData</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYTransaction/vaultData</TokenIdentifier>
+			<Abstract type="html">customer data and Vault token.</Abstract>
+			<DeclaredIn>WPYTransaction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) VaultData *vaultData</Declaration>
+			
+			
+			<Anchor>//api/name/vaultData</Anchor>
             <NodeRef refid="48"/>
 		</Token>
 		

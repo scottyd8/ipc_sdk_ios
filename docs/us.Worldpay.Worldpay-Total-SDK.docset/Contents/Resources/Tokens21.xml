@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WPYMailOrTelephoneOrderData.html">
+	<File path="Classes/WPYLevelTwoData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WPYMailOrTelephoneOrderData</TokenIdentifier>
-			<Abstract type="html">Model data for Mail Or Telephone Order Data</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WPYLevelTwoData</TokenIdentifier>
+			<Abstract type="html">This optional data gets passed up to the payment gateway with a payment request</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
             
 			
 			<NodeRef refid="21"/>
@@ -13,110 +13,254 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYMailOrTelephoneOrderData/setType:</TokenIdentifier>
-			<Abstract type="html">Type of transaction. valid values are:</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setOrderDate:</TokenIdentifier>
+			<Abstract type="html">Date that the order was placed</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/orderDate</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYMailOrTelephoneOrderData/type</TokenIdentifier>
-			<Abstract type="html">Type of transaction. valid values are:</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/orderDate</TokenIdentifier>
+			<Abstract type="html">Date that the order was placed</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/orderDate</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYMailOrTelephoneOrderData/type</TokenIdentifier>
-			<Abstract type="html">Type of transaction. valid values are:</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/orderDate</TokenIdentifier>
+			<Abstract type="html">Date that the order was placed</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDate *orderDate</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/orderDate</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYMailOrTelephoneOrderData/setTotalNumberOfInstallments:</TokenIdentifier>
-			<Abstract type="html">Total number of installments. Required if type is INSTALLMENT.</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setDutyAmount:</TokenIdentifier>
+			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *totalNumberOfInstallments</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
 			
 			
-			<Anchor>//api/name/totalNumberOfInstallments</Anchor>
+			<Anchor>//api/name/dutyAmount</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYMailOrTelephoneOrderData/totalNumberOfInstallments</TokenIdentifier>
-			<Abstract type="html">Total number of installments. Required if type is INSTALLMENT.</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/dutyAmount</TokenIdentifier>
+			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *totalNumberOfInstallments</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
 			
 			
-			<Anchor>//api/name/totalNumberOfInstallments</Anchor>
+			<Anchor>//api/name/dutyAmount</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYMailOrTelephoneOrderData/totalNumberOfInstallments</TokenIdentifier>
-			<Abstract type="html">Total number of installments. Required if type is INSTALLMENT.</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/dutyAmount</TokenIdentifier>
+			<Abstract type="html">Amount of duty to be charged with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *totalNumberOfInstallments</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *dutyAmount</Declaration>
 			
 			
-			<Anchor>//api/name/totalNumberOfInstallments</Anchor>
+			<Anchor>//api/name/dutyAmount</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYMailOrTelephoneOrderData/setCurrentInstallment:</TokenIdentifier>
-			<Abstract type="html">Current installment number. Required if type is INSTALLMENT.</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setFreightAmount:</TokenIdentifier>
+			<Abstract type="html">The cost of freight associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *currentInstallment</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
 			
 			
-			<Anchor>//api/name/currentInstallment</Anchor>
+			<Anchor>//api/name/freightAmount</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WPYMailOrTelephoneOrderData/currentInstallment</TokenIdentifier>
-			<Abstract type="html">Current installment number. Required if type is INSTALLMENT.</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/freightAmount</TokenIdentifier>
+			<Abstract type="html">The cost of freight associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *currentInstallment</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
 			
 			
-			<Anchor>//api/name/currentInstallment</Anchor>
+			<Anchor>//api/name/freightAmount</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WPYMailOrTelephoneOrderData/currentInstallment</TokenIdentifier>
-			<Abstract type="html">Current installment number. Required if type is INSTALLMENT.</Abstract>
-			<DeclaredIn>WPYMailOrTelephoneOrderData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/freightAmount</TokenIdentifier>
+			<Abstract type="html">The cost of freight associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *currentInstallment</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *freightAmount</Declaration>
 			
 			
-			<Anchor>//api/name/currentInstallment</Anchor>
+			<Anchor>//api/name/freightAmount</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setRetailLaneNumber:</TokenIdentifier>
+			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
+			
+			
+			<Anchor>//api/name/retailLaneNumber</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/retailLaneNumber</TokenIdentifier>
+			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
+			
+			
+			<Anchor>//api/name/retailLaneNumber</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/retailLaneNumber</TokenIdentifier>
+			<Abstract type="html">The retail lane or register associated with the transaction</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *retailLaneNumber</Declaration>
+			
+			
+			<Anchor>//api/name/retailLaneNumber</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setTaxAmount:</TokenIdentifier>
+			<Abstract type="html">The amount of tax charged on the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
+			
+			
+			<Anchor>//api/name/taxAmount</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/taxAmount</TokenIdentifier>
+			<Abstract type="html">The amount of tax charged on the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
+			
+			
+			<Anchor>//api/name/taxAmount</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/taxAmount</TokenIdentifier>
+			<Abstract type="html">The amount of tax charged on the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDecimalNumber *taxAmount</Declaration>
+			
+			
+			<Anchor>//api/name/taxAmount</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setStatus:</TokenIdentifier>
+			<Abstract type="html">Tax Status of the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/status</TokenIdentifier>
+			<Abstract type="html">Tax Status of the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/status</TokenIdentifier>
+			<Abstract type="html">Tax Status of the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/setPurchaseOrder:</TokenIdentifier>
+			<Abstract type="html">THe purchase order number associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			
+			
+			<Anchor>//api/name/purchaseOrder</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WPYLevelTwoData/purchaseOrder</TokenIdentifier>
+			<Abstract type="html">THe purchase order number associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			
+			
+			<Anchor>//api/name/purchaseOrder</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WPYLevelTwoData/purchaseOrder</TokenIdentifier>
+			<Abstract type="html">THe purchase order number associated with the order</Abstract>
+			<DeclaredIn>WPYLevelTwoData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *purchaseOrder</Declaration>
+			
+			
+			<Anchor>//api/name/purchaseOrder</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		

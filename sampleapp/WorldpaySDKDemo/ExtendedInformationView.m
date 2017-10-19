@@ -35,7 +35,7 @@
     
     if(GRATUITYHIDDEN)
     {
-        [self hideGratuity];
+        //[self hideGratuity];
     }
     
     [self setTerminalGratuity];
@@ -62,9 +62,9 @@
 {
     if(!GRATUITYHIDDEN)
     {
-        [self.gratuityAmount setHidden:true];
-        [self.gratuityAmount setEnabled:false];
-        [self.gratuityAmount setText:nil];
+        [self.gratuityAmount setHidden:false];
+        [self.gratuityAmount setEnabled:true];
+        [self.gratuityAmount setText:@"0.00"];
         [self.terminalGratuity setHidden:false];
     }
 }
@@ -76,6 +76,7 @@
         [self.terminalGratuity setHidden:true];
         [self.terminalGratuity setSelectedSegmentIndex:0];
         [self.gratuityAmount setEnabled:true];
+        [self.gratuityAmount setText:@"0.00"];
         [self.gratuityAmount setHidden:false];
     }
 }

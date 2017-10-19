@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WPYSwiperInputType.html">
+	<File path="Constants/WPYCheckAccountType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WPYSwiperInputType</TokenIdentifier>
-			<Abstract type="html">Hardware interface used to connect to the terminal.  You can query the WPYSwiper to see if it supports
-bluetooth or audio jack capabilities.  For instance, the Anywhere Commerce version of the SDK supports
-both types of connections.</Abstract>
-			<DeclaredIn>WPYSwiper.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WPYCheckAccountType</TokenIdentifier>
+			<Abstract type="html">This enumeration defines the types of checking accounts that can be associated with a check.  Please note that any value
+set to &quot;Unknown&quot; will NOT be sent to the server.</Abstract>
+			<DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
 			
 			<NodeRef refid="89"/>
@@ -16,31 +15,61 @@ both types of connections.</Abstract>
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperInputTypeUnknown</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperInputTypeUnknown</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeUnknown</TokenIdentifier>
+            <Abstract type="html">If this is set, the transaction will not be sent to the servoer</Abstract>
+            <Declaration>WPYCheckAccountTypeUnknown</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
-            
-            <NodeRef refid="89"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperInputTypeAudio</TokenIdentifier>
-            <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperInputTypeAudio</Declaration>
-            
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="89"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WPYSwiperInputTypeBluetooth</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeChecking</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>WPYSwiperInputTypeBluetooth</Declaration>
+            <Declaration>WPYCheckAccountTypeChecking</Declaration>
             
-            <DeclaredIn>WPYSwiper.h</DeclaredIn>
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeSavings</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCheckAccountTypeSavings</Declaration>
+            
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeBusinessChecking</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCheckAccountTypeBusinessChecking</Declaration>
+            
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeBusinessSavings</TokenIdentifier>
+            <Abstract type="html">self-explanatory</Abstract>
+            <Declaration>WPYCheckAccountTypeBusinessSavings</Declaration>
+            
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
+            
+            <NodeRef refid="89"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WPYCheckAccountTypeEND</TokenIdentifier>
+            <Abstract type="html">Used to determine end of presentation list</Abstract>
+            <Declaration>WPYCheckAccountTypeEND</Declaration>
+            
+            <DeclaredIn>WPYTenderedCheck.h</DeclaredIn>
             
             <NodeRef refid="89"/>
         </Token>

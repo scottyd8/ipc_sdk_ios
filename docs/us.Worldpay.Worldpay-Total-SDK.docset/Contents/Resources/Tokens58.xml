@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CardTrack.html">
+	<File path="Constants/BatteryStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CardTrack</TokenIdentifier>
-			<Abstract type="html">Card track specifier</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/BatteryStatus</TokenIdentifier>
+			<Abstract type="html">Battery status</Abstract>
 			<DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CardTrack1</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BatteryStatusNotPluggedIn</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>CardTrack1</Declaration>
+            <Declaration>BatteryStatusNotPluggedIn</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CardTrack2</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BatteryStatusCharging</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>CardTrack2</Declaration>
+            <Declaration>BatteryStatusCharging</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CardTrack3</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BatteryStatusFullyChargedPluggedIn</TokenIdentifier>
             <Abstract type="html">self-explanatory</Abstract>
-            <Declaration>CardTrack3</Declaration>
+            <Declaration>BatteryStatusFullyChargedPluggedIn</Declaration>
             
             <DeclaredIn>MiuraDeviceController.h</DeclaredIn>
             
